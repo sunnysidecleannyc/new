@@ -44,7 +44,7 @@ const GOOGLE_REVIEWS = [
   { text: 'Karina was great and very helpful', name: 'Joseph Busacca', location: 'New York', rating: 5, datePublished: '2026-02-19' },
   { text: 'Great job. Friendly and professional.', name: 'Adam Berger', location: 'New York', rating: 5, datePublished: '2026-02-17' },
   { text: 'Ines Enriquez was incredible. Loved this job. Worth every penny.', name: 'Jessica Pace', location: 'New York', rating: 5, datePublished: '2026-02-16' },
-  { text: 'Jeff is a real gem. Super communicative easy going and responsive. In a city with a lot of fly by night operations, NYC Maids is the real deal.', name: 'Brad Lieberman', location: 'New York', rating: 5, datePublished: '2026-02-06' },
+  { text: 'Jeff is a real gem. Super communicative easy going and responsive. In a city with a lot of fly by night operations, Sunnyside Clean is the real deal.', name: 'Brad Lieberman', location: 'New York', rating: 5, datePublished: '2026-02-06' },
   { text: 'Moving into an apartment clean. Had my daughter\'s room, a bathroom and a kitchen to clean. Cindy came and cleaned very well. Even cleaned up my living room as bonus. Right on time, fast, easy to book and communicate. Will be using again. No complaints!', name: 'Eeland Stribling', location: 'New York', rating: 5, datePublished: '2026-01-23' },
   { text: 'Great experience. Texted the number on their website on Saturday and had a deep cleaning scheduled for that following Monday at 9am. The cleaner was prompt and super nice/friendly.', name: 'Kelsey Wheeler', location: 'New York', rating: 5, datePublished: '2026-02-06' },
   { text: 'Maria did an amazing job! My apartment is spotless and she is so easy to work with. Was very happy to accommodate all of my requests.', name: 'Jason Klig', location: 'New York', rating: 5, datePublished: '2025-12-20' },
@@ -634,7 +634,7 @@ export function howToBookSchema() {
       {
         '@type': 'HowToStep',
         name: 'Contact Us',
-        text: 'Call (212) 202-8400, text us, or book online at thenycmaid.com/book/new',
+        text: 'Call (212) 202-8400, text us, or book online at cleaningservicesunnysideny.com',
         url: 'https://www.thenycmaid.com/book/new',
         position: 1,
       },
