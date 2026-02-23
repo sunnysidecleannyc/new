@@ -59,9 +59,7 @@ export default function MarketingNav() {
                 <span>(212) 202-8400</span>
               </a>
             </div>
-            <div className="hidden lg:flex items-center gap-4">
-              <a href="https://buy.stripe.com/8x2aEZ4FL0wYfxe5f0fnO03" target="_blank" rel="noopener noreferrer" className="text-[#A8F0DC] font-semibold tracking-widest uppercase text-[10px] hover:text-white transition-colors">Pay Now</a>
-            </div>
+            <div className="hidden lg:flex items-center gap-4" />
           </div>
         </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
