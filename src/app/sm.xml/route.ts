@@ -42,6 +42,13 @@ export async function GET() {
     urls.push({ loc: `${BASE_URL}/service-areas/${n.urlSlug}`, lastmod: now, changefreq: 'weekly', priority: '0.8' })
   }
 
+  // Neighborhood × Service combo pages (/{neighborhoodSlug}/{serviceSlug})
+  for (const n of ALL_NEIGHBORHOODS) {
+    for (const service of SERVICES) {
+      urls.push({ loc: `${BASE_URL}/${n.urlSlug}/${service.slug}`, lastmod: now, changefreq: 'weekly', priority: '0.7' })
+    }
+  }
+
   // Blog posts (/cleaning-tips-and-tricks/{slug})
   for (const post of BLOG_POSTS) {
     urls.push({ loc: `${BASE_URL}/cleaning-tips-and-tricks/${post.slug}`, lastmod: post.date, changefreq: 'monthly', priority: '0.7' })
