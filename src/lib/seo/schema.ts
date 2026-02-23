@@ -6,7 +6,7 @@ import { AREAS } from './data/areas'
 
 const BUSINESS = {
   name: 'Sunnyside Clean NYC',
-  legalName: 'Sunnyside Clean NYC — A NYC Cleaning Services Company',
+  legalName: 'Sunnyside Clean NYC — A NYC Maid Services Company',
   url: 'https://www.cleaningservicesunnysideny.com',
   phone: '+1-212-202-8400',
   phoneDisplay: '(212) 202-8400',
@@ -20,7 +20,7 @@ const BUSINESS = {
   foundingDate: '2018',
   currenciesAccepted: 'USD',
   paymentAccepted: 'Cash, Credit Card, Debit Card, Zelle (hi@thenycmaid.com), Venmo, Apple Pay',
-  description: 'Professional house cleaning services across New York City — Manhattan, Brooklyn & Queens. Deep cleaning, regular apartment cleaning, move-in/move-out, post-construction cleanup, weekly cleaning service, same-day cleaning, Airbnb turnover, and office cleaning. Licensed, insured, and background-checked cleaners. A NYC Cleaning Services Company — serving NYC since 2018.',
+  description: 'Professional house cleaning services across New York City — Manhattan, Brooklyn & Queens. Deep cleaning, regular apartment cleaning, move-in/move-out, post-construction cleanup, weekly cleaning service, same-day cleaning, Airbnb turnover, and office cleaning. Licensed, insured, and background-checked cleaners. A NYC Maid Services Company — serving NYC since 2018.',
   slogan: "New York City's Most Trusted Cleaning Service",
   knowsLanguage: ['en', 'es'],
   numberOfEmployees: { '@type': 'QuantitativeValue' as const, minValue: 10, maxValue: 25 },
@@ -703,7 +703,7 @@ export function areaItemListSchema() {
       '@type': 'ListItem',
       position: i + 1,
       name: a.name,
-      url: `${BUSINESS.url}/${a.urlSlug}`,
+      url: `${BUSINESS.url}/service-areas/${a.urlSlug}`,
       item: {
         '@type': 'Place',
         name: a.name,
@@ -768,7 +768,7 @@ export function homepageSchemas() {
 }
 
 export function areaPageSchemas(area: Area) {
-  const url = `${BUSINESS.url}/${area.urlSlug}`
+  const url = `${BUSINESS.url}/service-areas/${area.urlSlug}`
   const title = `${area.name} Cleaning Service & House Cleaning From $49/hr | Sunnyside Clean NYC`
   const description = `Professional house cleaning in ${area.name} from $49/hr. Deep cleaning, weekly cleaning service, move-in/out & more. Licensed, insured, 5.0★ Google. ${BUSINESS.phoneDisplay}`
   return [
@@ -795,7 +795,7 @@ export function areaPageSchemas(area: Area) {
 }
 
 export function neighborhoodPageSchemas(neighborhood: Neighborhood, area: Area) {
-  const url = `${BUSINESS.url}/${neighborhood.urlSlug}`
+  const url = `${BUSINESS.url}/service-areas/${neighborhood.urlSlug}`
   const title = `${neighborhood.name} Cleaning Service & House Cleaning From $49/hr | Sunnyside Clean NYC`
   const description = `Professional cleaning in ${neighborhood.name}, ${area.name}. Serving ${neighborhood.housing_types.slice(0, 2).join(', ')} near ${neighborhood.landmarks[0]}. From $49/hr. 5.0★ Google. ${BUSINESS.phoneDisplay}`
   return [
@@ -807,14 +807,14 @@ export function neighborhoodPageSchemas(neighborhood: Neighborhood, area: Area) 
       description,
       breadcrumb: [
         { name: 'Home', url: BUSINESS.url },
-        { name: area.name, url: `${BUSINESS.url}/${area.urlSlug}` },
+        { name: area.name, url: `${BUSINESS.url}/service-areas/${area.urlSlug}` },
         { name: neighborhood.name, url },
       ],
     }),
     localBusinessSchema(neighborhood, area),
     breadcrumbSchema([
       { name: 'Home', url: BUSINESS.url },
-      { name: area.name, url: `${BUSINESS.url}/${area.urlSlug}` },
+      { name: area.name, url: `${BUSINESS.url}/service-areas/${area.urlSlug}` },
       { name: neighborhood.name, url },
     ]),
     {
@@ -848,8 +848,8 @@ export function neighborhoodServicePageSchemas(neighborhood: Neighborhood, servi
       description,
       breadcrumb: [
         { name: 'Home', url: BUSINESS.url },
-        { name: area.name, url: `${BUSINESS.url}/${area.urlSlug}` },
-        { name: neighborhood.name, url: `${BUSINESS.url}/${neighborhood.urlSlug}` },
+        { name: area.name, url: `${BUSINESS.url}/service-areas/${area.urlSlug}` },
+        { name: neighborhood.name, url: `${BUSINESS.url}/service-areas/${neighborhood.urlSlug}` },
         { name: service.name, url },
       ],
     }),
@@ -858,8 +858,8 @@ export function neighborhoodServicePageSchemas(neighborhood: Neighborhood, servi
     professionalServiceSchema(service, neighborhood, area),
     breadcrumbSchema([
       { name: 'Home', url: BUSINESS.url },
-      { name: area.name, url: `${BUSINESS.url}/${area.urlSlug}` },
-      { name: neighborhood.name, url: `${BUSINESS.url}/${neighborhood.urlSlug}` },
+      { name: area.name, url: `${BUSINESS.url}/service-areas/${area.urlSlug}` },
+      { name: neighborhood.name, url: `${BUSINESS.url}/service-areas/${neighborhood.urlSlug}` },
       { name: service.name, url },
     ]),
     howToBookSchema(),

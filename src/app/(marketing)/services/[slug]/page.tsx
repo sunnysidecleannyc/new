@@ -86,7 +86,7 @@ export default async function ServicePage({ params }: Props) {
               <h1 className="font-[family-name:var(--font-bebas)] text-4xl md:text-5xl lg:text-6xl text-white tracking-wide leading-[0.95] mb-5">
                 {rich?.heroH1 || `${service.name} in NYC — Professional & Affordable`}
               </h1>
-              <p className="text-[#A8F0DC]/80 text-sm font-medium tracking-wide uppercase mb-4">Sunnyside Clean NYC — A NYC Cleaning Services Company</p>
+              <p className="text-[#A8F0DC]/80 text-sm font-medium tracking-wide uppercase mb-4">Sunnyside Clean NYC — A NYC Maid Services Company</p>
               <p className="text-blue-200/60 text-lg leading-relaxed mb-6">
                 {rich?.heroSubtitle || content.intro}
               </p>

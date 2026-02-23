@@ -103,7 +103,7 @@ export default async function BlogPostPage({ params }: Props) {
             {post.title}
           </h1>
           <p className="text-blue-200/60 text-lg leading-relaxed max-w-2xl mx-auto">{post.excerpt}</p>
-          <p className="text-[#A8F0DC]/60 text-sm font-medium tracking-wide uppercase mt-6">Sunnyside Clean NYC — A NYC Cleaning Services Company</p>
+          <p className="text-[#A8F0DC]/60 text-sm font-medium tracking-wide uppercase mt-6">Sunnyside Clean NYC — A NYC Maid Services Company</p>
         </div>
       </section>
 

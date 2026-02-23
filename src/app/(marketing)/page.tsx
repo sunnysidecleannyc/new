@@ -43,72 +43,74 @@ const testimonials = [
   { text: 'After trying three different cleaning companies in NYC, Sunnyside Clean NYC is hands down the most affordable and thorough.', name: 'Jenna M', location: 'New York' },
 ]
 
+const L = (href: string, text: string) => `<a href="${href}" class="text-[#1E2A4A] underline underline-offset-2">${text}</a>`
+
 const homepageFAQs = [
   // Pricing & Booking
-  { question: 'How much does house cleaning cost in NYC?', answer: 'Our house cleaning services start at $49/hour when you provide supplies, or $65/hour when we bring everything. Same-day and emergency service is $100/hour. Final cost depends on home size and service type.' },
-  { question: 'Do you charge by the hour or a flat rate?', answer: 'We charge by the hour. This keeps pricing fair — you only pay for the time your space actually needs. No inflated flat-rate quotes.' },
-  { question: 'Is there a minimum number of hours?', answer: 'We have a 2-hour minimum for most bookings. This ensures our cleaners have enough time to deliver a thorough, quality clean.' },
+  { question: 'How much does house cleaning cost in NYC?', answer: `Our ${L('/services/nyc-house-cleaning-service', 'house cleaning services')} start at $49/hour when you provide supplies, or $65/hour when we bring everything. ${L('/services/nyc-same-day-cleaning-service', 'Same-day and emergency service')} is $100/hour. See ${L('/nyc-cleaning-service-pricing', 'full pricing details')}.` },
+  { question: 'Do you charge by the hour or a flat rate?', answer: `We charge by the hour. The rate is the same regardless of service type or neighborhood — $49/hr with your supplies, $65/hr when we bring everything. No inflated flat-rate quotes. See ${L('/nyc-cleaning-service-pricing', 'pricing')}.` },
+  { question: 'Is there a minimum number of hours?', answer: `We have a 2-hour minimum for most bookings. This ensures our cleaners have enough time to deliver a thorough, quality clean. Most ${L('/services/nyc-apartment-cleaning-service', 'apartment cleanings')} take 2–4 hours.` },
   { question: 'How do I book a cleaning?', answer: 'Text or call us at (212) 202-8400. We typically schedule within 24-48 hours, with same-day availability for urgent requests.' },
   { question: 'Can I book online?', answer: 'Yes! You can book directly through our website. Just click "Book Online" in the menu, or text us if you prefer a personal touch.' },
-  { question: 'Do you offer same-day cleaning?', answer: 'Yes. Same-day and emergency cleaning is available at $100/hour. We dispatch a professional cleaner to your door within hours.' },
+  { question: 'Do you offer same-day cleaning?', answer: `Yes. ${L('/services/nyc-same-day-cleaning-service', 'Same-day and emergency cleaning')} is available at $100/hour. We dispatch a professional cleaner to your door within hours.` },
   { question: 'What payment methods do you accept?', answer: 'We accept credit cards, debit cards, Zelle (hi@thenycmaid.com), Venmo, Apple Pay, and cash. You can also pay securely online through our payment portal.' },
   { question: 'Do I need to tip my cleaner?', answer: 'Tipping is never required but always appreciated. If you feel your cleaner did a great job, a tip is a wonderful way to show it.' },
 
   // Services
-  { question: 'What types of cleaning do you offer?', answer: 'We offer regular apartment cleaning, deep cleaning, move-in/move-out cleaning, post-construction cleanup, weekly/bi-weekly/monthly service, Airbnb turnover cleaning, same-day cleaning, and office cleaning.' },
-  { question: 'What is included in a regular cleaning?', answer: 'A regular cleaning covers dusting, vacuuming, mopping, kitchen cleaning (counters, sink, appliances), bathroom cleaning (toilet, tub, sink, mirror), and general tidying of all rooms.' },
-  { question: 'What is included in a deep cleaning?', answer: 'A deep clean covers everything in a regular clean plus inside appliances (oven, fridge), baseboards, light fixtures, window sills, behind furniture, inside cabinets, and detailed scrubbing of all surfaces.' },
-  { question: 'Do you offer move-in/move-out cleaning?', answer: 'Yes. Our move-in/move-out service is designed to get your apartment spotless for the next occupant or ready for you to settle in. We clean every surface, inside cabinets, appliances, and more.' },
-  { question: 'Do you clean offices and commercial spaces?', answer: 'Yes. We offer office cleaning for small to mid-size commercial spaces across the NYC metro area. Contact us for a custom quote.' },
+  { question: 'What types of cleaning do you offer?', answer: `We offer ${L('/services/nyc-apartment-cleaning-service', 'apartment cleaning')}, ${L('/services/nyc-deep-cleaning-service', 'deep cleaning')}, ${L('/services/nyc-moving-cleaning-service', 'move-in/move-out cleaning')}, ${L('/services/nyc-same-day-cleaning-service', 'same-day cleaning')}, ${L('/services/nyc-maid-service', 'weekly/bi-weekly/monthly service')}, ${L('/services/nyc-office-cleaning-service', 'office cleaning')}, ${L('/services/nyc-window-cleaning-service', 'window cleaning')}, ${L('/services/nyc-junk-removal-cleaning-service', 'junk removal')}, and ${L('/services/nyc-home-organizing-service', 'home organizing')}. See ${L('/nyc-cleaning-services-offered', 'all services')}.` },
+  { question: 'What is included in a regular cleaning?', answer: `A ${L('/services/nyc-house-cleaning-service', 'regular cleaning')} covers dusting, vacuuming, mopping, kitchen cleaning (counters, sink, appliances), bathroom cleaning (toilet, tub, sink, mirror), and general tidying of all rooms.` },
+  { question: 'What is included in a deep cleaning?', answer: `A ${L('/services/nyc-deep-cleaning-service', 'deep clean')} covers everything in a regular clean plus inside appliances (oven, fridge), baseboards, light fixtures, window sills, behind furniture, inside cabinets, and detailed scrubbing of all surfaces.` },
+  { question: 'Do you offer move-in/move-out cleaning?', answer: `Yes. Our ${L('/services/nyc-moving-cleaning-service', 'move-in/move-out service')} is designed to get your apartment spotless for the next occupant or ready for you to settle in. We clean every surface, inside cabinets, appliances, and more.` },
+  { question: 'Do you clean offices and commercial spaces?', answer: `Yes. We offer ${L('/services/nyc-office-cleaning-service', 'office cleaning')} for small to mid-size commercial spaces across the NYC metro area. ${L('/contact-nyc-cleaning-service-sunnyside-clean-nyc', 'Contact us')} for a custom quote.` },
   { question: 'Can you clean after a renovation or construction?', answer: 'Absolutely. Post-construction cleanup is one of our specialties. We remove dust, debris, paint splatters, and get your space move-in ready.' },
   { question: 'Do you offer Airbnb and short-term rental cleaning?', answer: 'Yes. We provide fast-turnaround Airbnb cleaning between guests — fresh linens, restocked supplies, and a spotless space for your next booking.' },
   { question: 'Can I customize what gets cleaned?', answer: 'Of course. Just let us know your priorities and we will tailor the cleaning to focus on what matters most to you.' },
 
   // Supplies & Equipment
-  { question: 'Do you bring your own cleaning supplies?', answer: 'We offer both options. At $49/hour, you provide supplies. At $65/hour (normally $75), we bring all professional-grade supplies and equipment.' },
+  { question: 'Do you bring your own cleaning supplies?', answer: `We offer both options. At $49/hour, you provide supplies. At $65/hour, we bring all professional-grade supplies and equipment. See ${L('/nyc-cleaning-service-pricing', 'pricing details')}.` },
   { question: 'What cleaning products do you use?', answer: 'We use professional-grade, effective cleaning products. If you have preferences for eco-friendly or specific brands, just let us know and we will accommodate.' },
   { question: 'Can I request eco-friendly or green products?', answer: 'Yes. We are happy to use eco-friendly, non-toxic, or hypoallergenic products. Just mention your preference when booking.' },
-  { question: 'Do I need to provide a vacuum or mop?', answer: 'If you choose our $49/hour rate, yes — you provide all supplies and equipment. At $65/hour, we bring everything including vacuums, mops, and all cleaning tools.' },
+  { question: 'Do I need to provide a vacuum or mop?', answer: `If you choose our $49/hour rate, yes — you provide all supplies and equipment. At $65/hour, we bring everything including vacuums, mops, and all cleaning tools. See ${L('/nyc-cleaning-service-pricing', 'pricing')}.` },
 
   // Trust & Safety
-  { question: 'Are your cleaners background-checked and insured?', answer: 'Yes. Every cleaner on our team is fully background-checked, licensed, and insured. We carry general liability insurance and bonding for your complete peace of mind.' },
+  { question: 'Are your cleaners background-checked and insured?', answer: `Yes. Every cleaner on our team is fully background-checked, licensed, and insured. We carry general liability insurance and bonding for your complete peace of mind. ${L('/about-nyc-cleaning-service-sunnyside-clean-nyc', 'Learn more about us')}.` },
   { question: 'Are your cleaners employees or contractors?', answer: 'Our cleaners are vetted professionals who work with us regularly. Every cleaner is background-checked and trained to our quality standards.' },
   { question: 'Do you carry liability insurance?', answer: 'Yes. We carry full general liability insurance and bonding. Your home and belongings are protected on every visit.' },
-  { question: 'What if something is damaged during cleaning?', answer: 'We carry liability insurance for exactly this reason. If anything is damaged, contact us immediately and we will resolve it. Your property is always protected.' },
-  { question: 'Can I request the same cleaner each time?', answer: 'Yes. We do our best to match you with the same cleaner for recurring appointments. Consistency matters and we know you want someone you trust.' },
+  { question: 'What if something is damaged during cleaning?', answer: `We carry liability insurance for exactly this reason. If anything is damaged, ${L('/contact-nyc-cleaning-service-sunnyside-clean-nyc', 'contact us')} immediately and we will resolve it. Your property is always protected.` },
+  { question: 'Can I request the same cleaner each time?', answer: `Yes. For ${L('/services/nyc-maid-service', 'recurring appointments')}, we match you with the same cleaner every visit. Consistency matters and we know you want someone you trust.` },
   { question: 'Will I need to be home during the cleaning?', answer: 'It is up to you. Many clients leave a key, provide door codes, or arrange access with their doorman. You are welcome to be home or out — whatever is most comfortable.' },
 
   // Scheduling & Policies
-  { question: 'How far in advance should I book?', answer: 'We recommend booking 2-3 days in advance for regular cleanings. For same-day service, contact us as early as possible and we will do our best to accommodate.' },
+  { question: 'How far in advance should I book?', answer: `We recommend booking 2-3 days in advance for regular cleanings. For ${L('/services/nyc-same-day-cleaning-service', 'same-day service')}, contact us as early as possible and we will do our best to accommodate.` },
   { question: 'What is your cancellation policy?', answer: 'We ask for 24 hours notice for cancellations or rescheduling. Same-day cancellations may be subject to a fee. We understand things come up and always try to be flexible.' },
   { question: 'Can I reschedule my cleaning?', answer: 'Of course. Just text or call us at least 24 hours before your appointment and we will find a new time that works for you.' },
   { question: 'What days and hours are you available?', answer: 'Our office is open Monday through Saturday 7am–7pm. Our sales and booking line is available 24/7 — call or text (212) 202-8400 anytime.' },
   { question: 'Do you clean on weekends?', answer: 'Yes, we offer Saturday appointments from 7am–7pm. Sunday availability may be limited — contact us to check.' },
-  { question: 'Do you offer recurring cleaning schedules?', answer: 'Yes. We offer weekly, bi-weekly, and monthly recurring cleaning. Recurring clients get priority scheduling and a consistent cleaner.' },
+  { question: 'Do you offer recurring cleaning schedules?', answer: `Yes. We offer ${L('/services/nyc-maid-service', 'weekly, bi-weekly, and monthly recurring cleaning')}. Recurring clients get priority scheduling and a consistent cleaner.` },
 
   // Areas & Coverage
-  { question: 'What areas do you serve?', answer: 'We serve all of Manhattan, Brooklyn, and Queens. We cover 225+ neighborhoods across New York City.' },
-  { question: 'Do you serve Brooklyn?', answer: 'Yes. We serve all Brooklyn neighborhoods including Brooklyn Heights, Park Slope, Williamsburg, DUMBO, Cobble Hill, Fort Greene, Bushwick, Bed-Stuy, and many more.' },
-  { question: 'Do you serve Queens?', answer: 'Yes. We cover Astoria, Long Island City, Forest Hills, Jackson Heights, Flushing, Bayside, and neighborhoods throughout Queens.' },
-  { question: 'Do you serve the Upper East Side?', answer: 'Yes. The Upper East Side is one of our most popular service areas. We clean apartments and townhouses throughout the UES regularly.' },
-  { question: 'Is there a travel fee for areas outside Manhattan?', answer: 'No travel fees. Our pricing is the same across all service areas — Manhattan, Brooklyn, and Queens.' },
+  { question: 'What areas do you serve?', answer: `We serve all of ${L('/service-areas/manhattan-cleaning-services', 'Manhattan')}, ${L('/service-areas/brooklyn-cleaning-services', 'Brooklyn')}, and ${L('/service-areas/queens-cleaning-services', 'Queens')}. We cover ${L('/service-areas', '225+ neighborhoods')} across New York City.` },
+  { question: 'Do you serve Brooklyn?', answer: `Yes. We serve all ${L('/service-areas/brooklyn-cleaning-services', 'Brooklyn neighborhoods')} including ${L('/service-areas/brooklyn-heights-cleaning-services', 'Brooklyn Heights')}, ${L('/service-areas/park-slope-cleaning-services', 'Park Slope')}, ${L('/service-areas/williamsburg-cleaning-services', 'Williamsburg')}, ${L('/service-areas/dumbo-cleaning-services', 'DUMBO')}, Cobble Hill, Fort Greene, Bushwick, Bed-Stuy, and many more.` },
+  { question: 'Do you serve Queens?', answer: `Yes. We cover ${L('/service-areas/astoria-cleaning-services', 'Astoria')}, ${L('/service-areas/long-island-city-cleaning-services', 'Long Island City')}, ${L('/service-areas/forest-hills-cleaning-services', 'Forest Hills')}, Jackson Heights, Flushing, Bayside, and neighborhoods throughout ${L('/service-areas/queens-cleaning-services', 'Queens')}.` },
+  { question: 'Do you serve the Upper East Side?', answer: `Yes. The ${L('/service-areas/upper-east-side-cleaning-services', 'Upper East Side')} is one of our most popular service areas. We clean apartments and townhouses throughout the UES regularly.` },
+  { question: 'Is there a travel fee for areas outside Manhattan?', answer: `No travel fees. Our ${L('/nyc-cleaning-service-pricing', 'pricing')} is the same across all ${L('/service-areas', 'service areas')} — Manhattan, Brooklyn, and Queens.` },
 
   // Quality & Satisfaction
-  { question: 'What if I am not happy with the cleaning?', answer: 'Your satisfaction is guaranteed. If you are not happy with any aspect of the clean, contact us within 24 hours and we will send someone back to make it right at no extra charge.' },
+  { question: 'What if I am not happy with the cleaning?', answer: `Your satisfaction is guaranteed. If you are not happy with any aspect of the clean, ${L('/contact-nyc-cleaning-service-sunnyside-clean-nyc', 'contact us')} within 24 hours and we will send someone back to make it right at no extra charge.` },
   { question: 'How do you maintain quality?', answer: 'We use detailed checklists, conduct regular quality reviews, and only work with experienced, vetted cleaners. Every clean is held to the same high standard.' },
   { question: 'Do you have reviews I can read?', answer: 'Yes! We have a 5.0-star Google rating. You can read verified reviews on our Reviews page or on Google directly.' },
-  { question: 'How long have you been in business?', answer: 'Sunnyside Clean NYC has been serving the New York City metro area since 2018. A NYC Cleaning Services Company — we have cleaned thousands of homes and built a loyal client base through consistent quality.' },
+  { question: 'How long have you been in business?', answer: `Sunnyside Clean NYC has been serving the New York City metro area since 2018. A NYC Maid Services Company — we have cleaned thousands of homes and built a loyal client base through consistent quality. ${L('/about-nyc-cleaning-service-sunnyside-clean-nyc', 'Read our story')}.` },
 
   // Special Situations
   { question: 'Can you clean if I have pets?', answer: 'Absolutely. We love pets! Just let us know so we can plan accordingly. We are experienced with homes that have dogs, cats, and other animals.' },
-  { question: 'Do you clean high-rise apartments?', answer: 'Yes. We regularly clean in high-rise buildings across Manhattan, Brooklyn, and Queens. We are comfortable working with doormen, building management, and freight elevator schedules.' },
-  { question: 'Can you clean a studio apartment?', answer: 'Of course. Studios, one-bedrooms, and small spaces are no problem. Our 2-hour minimum is usually perfect for a thorough studio clean.' },
+  { question: 'Do you clean high-rise apartments?', answer: `Yes. We regularly clean in high-rise buildings across ${L('/service-areas/manhattan-cleaning-services', 'Manhattan')}, ${L('/service-areas/brooklyn-cleaning-services', 'Brooklyn')}, and ${L('/service-areas/queens-cleaning-services', 'Queens')}. We are comfortable working with doormen, building management, and freight elevator schedules.` },
+  { question: 'Can you clean a studio apartment?', answer: `Of course. Studios, one-bedrooms, and small spaces are no problem. Our 2-hour minimum is usually perfect for a thorough ${L('/services/nyc-apartment-cleaning-service', 'studio clean')}.` },
   { question: 'Do you clean pre-war apartments?', answer: 'Yes. Our cleaners are experienced with the unique features of pre-war apartments — hardwood floors, crown molding, older fixtures, and everything that makes them special.' },
   { question: 'Can you help prepare for a party or event?', answer: 'Yes. We offer pre-event and post-event cleaning. Get your place guest-ready before, or let us handle the cleanup after.' },
 
   // Referral & Extras
-  { question: 'Do you have a referral program?', answer: 'Yes! Refer a friend and earn 10% commission on every cleaning they book — not just the first one. It is recurring income for as long as they stay a client. Sign up on our Referral Program page.' },
-  { question: 'How do I contact you?', answer: 'Text or call (212) 202-8400, or email hi@thenycmaid.com. Texting is the fastest way to reach us.' },
+  { question: 'Do you have a referral program?', answer: 'Yes! Refer a friend and earn 10% commission on every cleaning they book — not just the first one. It is recurring income for as long as they stay a client.' },
+  { question: 'How do I contact you?', answer: `Text or call (212) 202-8400, or email hi@thenycmaid.com. Texting is the fastest way to reach us. You can also visit our ${L('/contact-nyc-cleaning-service-sunnyside-clean-nyc', 'contact page')}.` },
 ]
 
 export default function HomePage() {

@@ -74,8 +74,8 @@ export default async function NeighborhoodServicePage({ params }: Props) {
   const faqs = allFaqs.slice(0, 25)
 
   const breadcrumbItems = [
-    { name: area.name, href: `/${area.urlSlug}` },
-    { name: neighborhood.name, href: `/${neighborhood.urlSlug}` },
+    { name: area.name, href: `/service-areas/${area.urlSlug}` },
+    { name: neighborhood.name, href: `/service-areas/${neighborhood.urlSlug}` },
     { name: service.name, href: `/${neighborhood.urlSlug}/${service.slug}` },
   ]
 
@@ -88,9 +88,9 @@ export default async function NeighborhoodServicePage({ params }: Props) {
         <div className="max-w-6xl mx-auto px-4">
           {/* Inline breadcrumb trail */}
           <div className="flex items-center gap-2 mb-6">
-            <Link href={`/${area.urlSlug}`} className="text-xs font-semibold text-[#A8F0DC]/70 tracking-[0.15em] uppercase hover:text-[#A8F0DC] transition-colors">{area.name}</Link>
+            <Link href={`/service-areas/${area.urlSlug}`} className="text-xs font-semibold text-[#A8F0DC]/70 tracking-[0.15em] uppercase hover:text-[#A8F0DC] transition-colors">{area.name}</Link>
             <span className="text-white/20">/</span>
-            <Link href={`/${neighborhood.urlSlug}`} className="text-xs font-semibold text-[#A8F0DC]/70 tracking-[0.15em] uppercase hover:text-[#A8F0DC] transition-colors">{neighborhood.name}</Link>
+            <Link href={`/service-areas/${neighborhood.urlSlug}`} className="text-xs font-semibold text-[#A8F0DC]/70 tracking-[0.15em] uppercase hover:text-[#A8F0DC] transition-colors">{neighborhood.name}</Link>
             <span className="text-white/20">/</span>
             <span className="text-xs font-semibold text-white/40 tracking-[0.15em] uppercase">{service.shortName}</span>
           </div>

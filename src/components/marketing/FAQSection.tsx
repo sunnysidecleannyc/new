@@ -6,10 +6,13 @@ interface FAQ {
   answer: string
 }
 
+const stripHtml = (s: string) => s.replace(/<[^>]*>/g, '')
+
 export default function FAQSection({ faqs, title, columns }: { faqs: FAQ[]; title?: string; columns?: 2 }) {
   const mid = columns === 2 ? Math.ceil(faqs.length / 2) : faqs.length
   const left = faqs.slice(0, mid)
   const right = columns === 2 ? faqs.slice(mid) : []
+  const schemaFaqs = faqs.map(f => ({ question: f.question, answer: stripHtml(f.answer) }))
 
   const renderFaq = (faq: FAQ, i: number) => (
     <details key={i} className="group bg-white border border-gray-200 rounded-xl overflow-hidden">
@@ -17,15 +20,13 @@ export default function FAQSection({ faqs, title, columns }: { faqs: FAQ[]; titl
         {faq.question}
         <span className="text-gray-400 group-open:rotate-45 transition-transform text-xl flex-shrink-0 ml-4">+</span>
       </summary>
-      <div className="px-6 pb-5 text-gray-600 leading-relaxed">
-        {faq.answer}
-      </div>
+      <div className="px-6 pb-5 text-gray-600 leading-relaxed" dangerouslySetInnerHTML={{ __html: faq.answer }} />
     </details>
   )
 
   return (
     <section className="py-20 bg-gray-50">
-      <JsonLd data={faqSchema(faqs)} />
+      <JsonLd data={faqSchema(schemaFaqs)} />
       <div className={columns === 2 ? 'max-w-7xl mx-auto px-4' : 'max-w-3xl mx-auto px-4'}>
         <h2 className="font-[family-name:var(--font-bebas)] text-3xl text-[#1E2A4A] tracking-wide mb-10 text-center">
           {title || 'Frequently Asked Questions'}
