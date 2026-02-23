@@ -4,7 +4,7 @@ export const LONG_ISLAND_NEIGHBORHOODS: Neighborhood[] = [
   // === North Shore / Gold Coast ===
   {
     slug: 'great-neck',
-    urlSlug: 'great-neck-maid-service',
+    urlSlug: 'great-neck-cleaning-services',
     name: 'Great Neck',
     area: 'long-island',
     lat: 40.8007, lng: -73.7285,
@@ -16,7 +16,7 @@ export const LONG_ISLAND_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'manhasset',
-    urlSlug: 'manhasset-maid-service',
+    urlSlug: 'manhasset-cleaning-services',
     name: 'Manhasset',
     area: 'long-island',
     lat: 40.7979, lng: -73.6993,
@@ -28,7 +28,7 @@ export const LONG_ISLAND_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'port-washington',
-    urlSlug: 'port-washington-maid-service',
+    urlSlug: 'port-washington-cleaning-services',
     name: 'Port Washington',
     area: 'long-island',
     lat: 40.8257, lng: -73.6982,
@@ -40,7 +40,7 @@ export const LONG_ISLAND_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'sands-point',
-    urlSlug: 'sands-point-maid-service',
+    urlSlug: 'sands-point-cleaning-services',
     name: 'Sands Point',
     area: 'long-island',
     lat: 40.8520, lng: -73.7193,
@@ -52,7 +52,7 @@ export const LONG_ISLAND_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'roslyn',
-    urlSlug: 'roslyn-maid-service',
+    urlSlug: 'roslyn-cleaning-services',
     name: 'Roslyn',
     area: 'long-island',
     lat: 40.7994, lng: -73.6510,
@@ -64,7 +64,7 @@ export const LONG_ISLAND_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'roslyn-heights',
-    urlSlug: 'roslyn-heights-maid-service',
+    urlSlug: 'roslyn-heights-cleaning-services',
     name: 'Roslyn Heights',
     area: 'long-island',
     lat: 40.7841, lng: -73.6447,
@@ -76,7 +76,7 @@ export const LONG_ISLAND_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'old-westbury',
-    urlSlug: 'old-westbury-maid-service',
+    urlSlug: 'old-westbury-cleaning-services',
     name: 'Old Westbury',
     area: 'long-island',
     lat: 40.7880, lng: -73.5973,
@@ -88,7 +88,7 @@ export const LONG_ISLAND_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'brookville',
-    urlSlug: 'brookville-maid-service',
+    urlSlug: 'brookville-cleaning-services',
     name: 'Brookville',
     area: 'long-island',
     lat: 40.8117, lng: -73.5687,
@@ -100,7 +100,7 @@ export const LONG_ISLAND_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'muttontown',
-    urlSlug: 'muttontown-maid-service',
+    urlSlug: 'muttontown-cleaning-services',
     name: 'Muttontown',
     area: 'long-island',
     lat: 40.8236, lng: -73.5454,
@@ -112,7 +112,7 @@ export const LONG_ISLAND_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'glen-cove',
-    urlSlug: 'glen-cove-maid-service',
+    urlSlug: 'glen-cove-cleaning-services',
     name: 'Glen Cove',
     area: 'long-island',
     lat: 40.8623, lng: -73.6337,
@@ -124,7 +124,7 @@ export const LONG_ISLAND_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'sea-cliff',
-    urlSlug: 'sea-cliff-maid-service',
+    urlSlug: 'sea-cliff-cleaning-services',
     name: 'Sea Cliff',
     area: 'long-island',
     lat: 40.8493, lng: -73.6447,
@@ -136,7 +136,7 @@ export const LONG_ISLAND_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'locust-valley',
-    urlSlug: 'locust-valley-maid-service',
+    urlSlug: 'locust-valley-cleaning-services',
     name: 'Locust Valley',
     area: 'long-island',
     lat: 40.8755, lng: -73.5992,
@@ -148,7 +148,7 @@ export const LONG_ISLAND_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'oyster-bay',
-    urlSlug: 'oyster-bay-maid-service',
+    urlSlug: 'oyster-bay-cleaning-services',
     name: 'Oyster Bay',
     area: 'long-island',
     lat: 40.8715, lng: -73.5318,
@@ -160,7 +160,7 @@ export const LONG_ISLAND_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'cold-spring-harbor',
-    urlSlug: 'cold-spring-harbor-maid-service',
+    urlSlug: 'cold-spring-harbor-cleaning-services',
     name: 'Cold Spring Harbor',
     area: 'long-island',
     lat: 40.8715, lng: -73.4567,
@@ -174,7 +174,7 @@ export const LONG_ISLAND_NEIGHBORHOODS: Neighborhood[] = [
   // === Central Nassau ===
   {
     slug: 'garden-city',
-    urlSlug: 'garden-city-maid-service',
+    urlSlug: 'garden-city-cleaning-services',
     name: 'Garden City',
     area: 'long-island',
     lat: 40.7268, lng: -73.6343,
@@ -186,7 +186,7 @@ export const LONG_ISLAND_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'westbury',
-    urlSlug: 'westbury-maid-service',
+    urlSlug: 'westbury-cleaning-services',
     name: 'Westbury',
     area: 'long-island',
     lat: 40.7558, lng: -73.5870,
@@ -198,7 +198,7 @@ export const LONG_ISLAND_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'mineola',
-    urlSlug: 'mineola-maid-service',
+    urlSlug: 'mineola-cleaning-services',
     name: 'Mineola',
     area: 'long-island',
     lat: 40.7488, lng: -73.6404,
@@ -210,7 +210,7 @@ export const LONG_ISLAND_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'albertson',
-    urlSlug: 'albertson-maid-service',
+    urlSlug: 'albertson-cleaning-services',
     name: 'Albertson',
     area: 'long-island',
     lat: 40.7744, lng: -73.6437,
@@ -222,7 +222,7 @@ export const LONG_ISLAND_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'east-hills',
-    urlSlug: 'east-hills-maid-service',
+    urlSlug: 'east-hills-cleaning-services',
     name: 'East Hills',
     area: 'long-island',
     lat: 40.7906, lng: -73.6270,
@@ -234,7 +234,7 @@ export const LONG_ISLAND_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'new-hyde-park',
-    urlSlug: 'new-hyde-park-maid-service',
+    urlSlug: 'new-hyde-park-cleaning-services',
     name: 'New Hyde Park',
     area: 'long-island',
     lat: 40.7351, lng: -73.6879,
@@ -246,7 +246,7 @@ export const LONG_ISLAND_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'jericho',
-    urlSlug: 'jericho-maid-service',
+    urlSlug: 'jericho-cleaning-services',
     name: 'Jericho',
     area: 'long-island',
     lat: 40.7931, lng: -73.5395,
@@ -258,7 +258,7 @@ export const LONG_ISLAND_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'syosset',
-    urlSlug: 'syosset-maid-service',
+    urlSlug: 'syosset-cleaning-services',
     name: 'Syosset',
     area: 'long-island',
     lat: 40.8259, lng: -73.5021,
@@ -270,7 +270,7 @@ export const LONG_ISLAND_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'woodbury-li',
-    urlSlug: 'woodbury-long-island-maid-service',
+    urlSlug: 'woodbury-long-island-cleaning-services',
     name: 'Woodbury',
     area: 'long-island',
     lat: 40.8126, lng: -73.4703,
@@ -282,7 +282,7 @@ export const LONG_ISLAND_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'hicksville',
-    urlSlug: 'hicksville-maid-service',
+    urlSlug: 'hicksville-cleaning-services',
     name: 'Hicksville',
     area: 'long-island',
     lat: 40.7632, lng: -73.5249,
@@ -294,7 +294,7 @@ export const LONG_ISLAND_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'plainview',
-    urlSlug: 'plainview-maid-service',
+    urlSlug: 'plainview-cleaning-services',
     name: 'Plainview',
     area: 'long-island',
     lat: 40.7765, lng: -73.4675,
@@ -306,7 +306,7 @@ export const LONG_ISLAND_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'bethpage',
-    urlSlug: 'bethpage-maid-service',
+    urlSlug: 'bethpage-cleaning-services',
     name: 'Bethpage',
     area: 'long-island',
     lat: 40.7443, lng: -73.4838,
@@ -318,7 +318,7 @@ export const LONG_ISLAND_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'farmingdale',
-    urlSlug: 'farmingdale-maid-service',
+    urlSlug: 'farmingdale-cleaning-services',
     name: 'Farmingdale',
     area: 'long-island',
     lat: 40.7326, lng: -73.4454,
@@ -332,7 +332,7 @@ export const LONG_ISLAND_NEIGHBORHOODS: Neighborhood[] = [
   // === South Shore ===
   {
     slug: 'hempstead',
-    urlSlug: 'hempstead-maid-service',
+    urlSlug: 'hempstead-cleaning-services',
     name: 'Hempstead',
     area: 'long-island',
     lat: 40.7062, lng: -73.6187,
@@ -344,7 +344,7 @@ export const LONG_ISLAND_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'east-meadow',
-    urlSlug: 'east-meadow-maid-service',
+    urlSlug: 'east-meadow-cleaning-services',
     name: 'East Meadow',
     area: 'long-island',
     lat: 40.7138, lng: -73.5590,
@@ -356,7 +356,7 @@ export const LONG_ISLAND_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'franklin-square',
-    urlSlug: 'franklin-square-maid-service',
+    urlSlug: 'franklin-square-cleaning-services',
     name: 'Franklin Square',
     area: 'long-island',
     lat: 40.7073, lng: -73.6762,
@@ -368,7 +368,7 @@ export const LONG_ISLAND_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'valley-stream',
-    urlSlug: 'valley-stream-maid-service',
+    urlSlug: 'valley-stream-cleaning-services',
     name: 'Valley Stream',
     area: 'long-island',
     lat: 40.6643, lng: -73.7027,
@@ -380,7 +380,7 @@ export const LONG_ISLAND_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'lynbrook',
-    urlSlug: 'lynbrook-maid-service',
+    urlSlug: 'lynbrook-cleaning-services',
     name: 'Lynbrook',
     area: 'long-island',
     lat: 40.6548, lng: -73.6718,
@@ -392,7 +392,7 @@ export const LONG_ISLAND_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'rockville-centre',
-    urlSlug: 'rockville-centre-maid-service',
+    urlSlug: 'rockville-centre-cleaning-services',
     name: 'Rockville Centre',
     area: 'long-island',
     lat: 40.6588, lng: -73.6412,
@@ -404,7 +404,7 @@ export const LONG_ISLAND_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'oceanside',
-    urlSlug: 'oceanside-maid-service',
+    urlSlug: 'oceanside-cleaning-services',
     name: 'Oceanside',
     area: 'long-island',
     lat: 40.6388, lng: -73.6404,
@@ -416,7 +416,7 @@ export const LONG_ISLAND_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'baldwin',
-    urlSlug: 'baldwin-maid-service',
+    urlSlug: 'baldwin-cleaning-services',
     name: 'Baldwin',
     area: 'long-island',
     lat: 40.6565, lng: -73.6093,
@@ -428,7 +428,7 @@ export const LONG_ISLAND_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'freeport',
-    urlSlug: 'freeport-maid-service',
+    urlSlug: 'freeport-cleaning-services',
     name: 'Freeport',
     area: 'long-island',
     lat: 40.6576, lng: -73.5832,
@@ -440,7 +440,7 @@ export const LONG_ISLAND_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'merrick',
-    urlSlug: 'merrick-maid-service',
+    urlSlug: 'merrick-cleaning-services',
     name: 'Merrick',
     area: 'long-island',
     lat: 40.6632, lng: -73.5513,
@@ -452,7 +452,7 @@ export const LONG_ISLAND_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'bellmore',
-    urlSlug: 'bellmore-maid-service',
+    urlSlug: 'bellmore-cleaning-services',
     name: 'Bellmore',
     area: 'long-island',
     lat: 40.6688, lng: -73.5271,
@@ -464,7 +464,7 @@ export const LONG_ISLAND_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'wantagh',
-    urlSlug: 'wantagh-maid-service',
+    urlSlug: 'wantagh-cleaning-services',
     name: 'Wantagh',
     area: 'long-island',
     lat: 40.6835, lng: -73.5099,
@@ -476,7 +476,7 @@ export const LONG_ISLAND_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'seaford',
-    urlSlug: 'seaford-maid-service',
+    urlSlug: 'seaford-cleaning-services',
     name: 'Seaford',
     area: 'long-island',
     lat: 40.6660, lng: -73.4882,
@@ -488,7 +488,7 @@ export const LONG_ISLAND_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'massapequa',
-    urlSlug: 'massapequa-maid-service',
+    urlSlug: 'massapequa-cleaning-services',
     name: 'Massapequa',
     area: 'long-island',
     lat: 40.6810, lng: -73.4735,
@@ -500,7 +500,7 @@ export const LONG_ISLAND_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'levittown',
-    urlSlug: 'levittown-maid-service',
+    urlSlug: 'levittown-cleaning-services',
     name: 'Levittown',
     area: 'long-island',
     lat: 40.7259, lng: -73.5143,
@@ -514,7 +514,7 @@ export const LONG_ISLAND_NEIGHBORHOODS: Neighborhood[] = [
   // === Five Towns ===
   {
     slug: 'hewlett',
-    urlSlug: 'hewlett-maid-service',
+    urlSlug: 'hewlett-cleaning-services',
     name: 'Hewlett',
     area: 'long-island',
     lat: 40.6375, lng: -73.6949,
@@ -526,7 +526,7 @@ export const LONG_ISLAND_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'woodmere',
-    urlSlug: 'woodmere-maid-service',
+    urlSlug: 'woodmere-cleaning-services',
     name: 'Woodmere',
     area: 'long-island',
     lat: 40.6323, lng: -73.7126,
@@ -538,7 +538,7 @@ export const LONG_ISLAND_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'cedarhurst',
-    urlSlug: 'cedarhurst-maid-service',
+    urlSlug: 'cedarhurst-cleaning-services',
     name: 'Cedarhurst',
     area: 'long-island',
     lat: 40.6238, lng: -73.7244,
@@ -550,7 +550,7 @@ export const LONG_ISLAND_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'lawrence',
-    urlSlug: 'lawrence-maid-service',
+    urlSlug: 'lawrence-cleaning-services',
     name: 'Lawrence',
     area: 'long-island',
     lat: 40.6156, lng: -73.7340,
@@ -562,7 +562,7 @@ export const LONG_ISLAND_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'inwood-li',
-    urlSlug: 'inwood-long-island-maid-service',
+    urlSlug: 'inwood-long-island-cleaning-services',
     name: 'Inwood',
     area: 'long-island',
     lat: 40.6192, lng: -73.7499,
@@ -574,7 +574,7 @@ export const LONG_ISLAND_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'long-beach',
-    urlSlug: 'long-beach-maid-service',
+    urlSlug: 'long-beach-cleaning-services',
     name: 'Long Beach',
     area: 'long-island',
     lat: 40.5885, lng: -73.6579,
@@ -588,7 +588,7 @@ export const LONG_ISLAND_NEIGHBORHOODS: Neighborhood[] = [
   // === Western Suffolk ===
   {
     slug: 'huntington',
-    urlSlug: 'huntington-maid-service',
+    urlSlug: 'huntington-cleaning-services',
     name: 'Huntington',
     area: 'long-island',
     lat: 40.8682, lng: -73.4257,
@@ -600,7 +600,7 @@ export const LONG_ISLAND_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'northport',
-    urlSlug: 'northport-maid-service',
+    urlSlug: 'northport-cleaning-services',
     name: 'Northport',
     area: 'long-island',
     lat: 40.9004, lng: -73.3434,
@@ -612,7 +612,7 @@ export const LONG_ISLAND_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'dix-hills',
-    urlSlug: 'dix-hills-maid-service',
+    urlSlug: 'dix-hills-cleaning-services',
     name: 'Dix Hills',
     area: 'long-island',
     lat: 40.8046, lng: -73.3370,
@@ -624,7 +624,7 @@ export const LONG_ISLAND_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'commack',
-    urlSlug: 'commack-maid-service',
+    urlSlug: 'commack-cleaning-services',
     name: 'Commack',
     area: 'long-island',
     lat: 40.8426, lng: -73.2929,
@@ -636,7 +636,7 @@ export const LONG_ISLAND_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'melville',
-    urlSlug: 'melville-maid-service',
+    urlSlug: 'melville-cleaning-services',
     name: 'Melville',
     area: 'long-island',
     lat: 40.7934, lng: -73.4151,
@@ -648,7 +648,7 @@ export const LONG_ISLAND_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'smithtown',
-    urlSlug: 'smithtown-maid-service',
+    urlSlug: 'smithtown-cleaning-services',
     name: 'Smithtown',
     area: 'long-island',
     lat: 40.8559, lng: -73.2007,
@@ -660,7 +660,7 @@ export const LONG_ISLAND_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'kings-park',
-    urlSlug: 'kings-park-maid-service',
+    urlSlug: 'kings-park-cleaning-services',
     name: 'Kings Park',
     area: 'long-island',
     lat: 40.8862, lng: -73.2429,
@@ -674,7 +674,7 @@ export const LONG_ISLAND_NEIGHBORHOODS: Neighborhood[] = [
   // === Additional Western Nassau & Suffolk ===
   {
     slug: 'elmont',
-    urlSlug: 'elmont-maid-service',
+    urlSlug: 'elmont-cleaning-services',
     name: 'Elmont',
     area: 'long-island',
     lat: 40.7004, lng: -73.7085,
@@ -686,7 +686,7 @@ export const LONG_ISLAND_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'west-hempstead',
-    urlSlug: 'west-hempstead-maid-service',
+    urlSlug: 'west-hempstead-cleaning-services',
     name: 'West Hempstead',
     area: 'long-island',
     lat: 40.6885, lng: -73.6504,
@@ -698,7 +698,7 @@ export const LONG_ISLAND_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'williston-park',
-    urlSlug: 'williston-park-maid-service',
+    urlSlug: 'williston-park-cleaning-services',
     name: 'Williston Park',
     area: 'long-island',
     lat: 40.7568, lng: -73.6490,
@@ -710,7 +710,7 @@ export const LONG_ISLAND_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'malverne',
-    urlSlug: 'malverne-maid-service',
+    urlSlug: 'malverne-cleaning-services',
     name: 'Malverne',
     area: 'long-island',
     lat: 40.6707, lng: -73.6718,
@@ -722,7 +722,7 @@ export const LONG_ISLAND_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'lake-success',
-    urlSlug: 'lake-success-maid-service',
+    urlSlug: 'lake-success-cleaning-services',
     name: 'Lake Success',
     area: 'long-island',
     lat: 40.7709, lng: -73.7174,
@@ -734,7 +734,7 @@ export const LONG_ISLAND_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'island-park',
-    urlSlug: 'island-park-maid-service',
+    urlSlug: 'island-park-cleaning-services',
     name: 'Island Park',
     area: 'long-island',
     lat: 40.6045, lng: -73.6554,
@@ -746,7 +746,7 @@ export const LONG_ISLAND_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'lido-beach',
-    urlSlug: 'lido-beach-maid-service',
+    urlSlug: 'lido-beach-cleaning-services',
     name: 'Lido Beach',
     area: 'long-island',
     lat: 40.5888, lng: -73.6265,
@@ -758,7 +758,7 @@ export const LONG_ISLAND_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'atlantic-beach',
-    urlSlug: 'atlantic-beach-maid-service',
+    urlSlug: 'atlantic-beach-cleaning-services',
     name: 'Atlantic Beach',
     area: 'long-island',
     lat: 40.5892, lng: -73.7290,
@@ -770,7 +770,7 @@ export const LONG_ISLAND_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'east-northport',
-    urlSlug: 'east-northport-maid-service',
+    urlSlug: 'east-northport-cleaning-services',
     name: 'East Northport',
     area: 'long-island',
     lat: 40.8768, lng: -73.3243,
@@ -782,7 +782,7 @@ export const LONG_ISLAND_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'greenlawn',
-    urlSlug: 'greenlawn-maid-service',
+    urlSlug: 'greenlawn-cleaning-services',
     name: 'Greenlawn',
     area: 'long-island',
     lat: 40.8620, lng: -73.3649,
@@ -794,7 +794,7 @@ export const LONG_ISLAND_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'south-huntington',
-    urlSlug: 'south-huntington-maid-service',
+    urlSlug: 'south-huntington-cleaning-services',
     name: 'South Huntington',
     area: 'long-island',
     lat: 40.8234, lng: -73.3965,
@@ -806,7 +806,7 @@ export const LONG_ISLAND_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'uniondale',
-    urlSlug: 'uniondale-maid-service',
+    urlSlug: 'uniondale-cleaning-services',
     name: 'Uniondale',
     area: 'long-island',
     lat: 40.7004, lng: -73.5935,

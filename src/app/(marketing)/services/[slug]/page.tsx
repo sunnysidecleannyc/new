@@ -24,9 +24,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const service = getServiceByUrlSlug(slug)
   if (!service) return {}
 
-  const url = `https://www.thenycmaid.com/services/${slug}`
-  const title = `${service.name} in NYC From ${service.priceRange.split('–')[0]} | 5-Star Rated | The NYC Maid`
-  const description = `Professional ${service.name.toLowerCase()} across Manhattan, Brooklyn, Queens, Long Island & NJ. ${service.features.slice(0, 2).join(', ')} & more. From ${service.priceRange.split('–')[0]}. 5.0★ Google. (212) 202-8400`
+  const url = `https://www.cleaningservicesunnysideny.com/services/${slug}`
+  const title = `${service.name} in NYC From ${service.priceRange.split('\u2013')[0]} | 5-Star Rated | Sunnyside Clean NYC`
+  const description = `Professional ${service.name.toLowerCase()} across Manhattan, Brooklyn, Queens, Long Island & NJ. ${service.features.slice(0, 2).join(', ')} & more. From ${service.priceRange.split('\u2013')[0]}. 5.0★ Google. (212) 202-8400`
 
   return {
     title: { absolute: title },
@@ -37,7 +37,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       description,
       url,
       type: 'website',
-      siteName: 'The NYC Maid',
+      siteName: 'Sunnyside Clean NYC',
       locale: 'en_US',
     },
     twitter: {
@@ -86,15 +86,16 @@ export default async function ServicePage({ params }: Props) {
               <h1 className="font-[family-name:var(--font-bebas)] text-4xl md:text-5xl lg:text-6xl text-white tracking-wide leading-[0.95] mb-5">
                 {rich?.heroH1 || `${service.name} in NYC — Professional & Affordable`}
               </h1>
+              <p className="text-[#A8F0DC]/80 text-sm font-medium tracking-wide uppercase mb-4">Sunnyside Clean NYC — A NYC Maid Company</p>
               <p className="text-blue-200/60 text-lg leading-relaxed mb-6">
                 {rich?.heroSubtitle || content.intro}
               </p>
               <div className="flex flex-col sm:flex-row items-start gap-4">
-                <a href="sms:2122028400" className="bg-[#A8F0DC] text-[#1E2A4A] px-8 py-3.5 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#8DE8CC] transition-colors">
-                  Text (212) 202-8400
+                <a href="https://www.thenycmaid.com/book" className="bg-[#A8F0DC] text-[#1E2A4A] px-8 py-3.5 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#8DE8CC] transition-colors">
+                  Book a Cleaning
                 </a>
                 <a href="tel:2122028400" className="text-blue-200/60 font-medium py-3.5 hover:text-white transition-colors underline underline-offset-4">
-                  or Call Us
+                  or Call (212) 202-8400
                 </a>
               </div>
             </div>
@@ -123,8 +124,8 @@ export default async function ServicePage({ params }: Props) {
                   <p className="font-[family-name:var(--font-bebas)] text-2xl text-[#1E2A4A] tracking-wide">{service.duration}</p>
                   <p className="text-[#1E2A4A]/60 text-xs mt-1">Pay only for time worked &middot; No upfront cost</p>
                 </div>
-                <a href="sms:2122028400" className="block text-center bg-[#A8F0DC] text-[#1E2A4A] px-6 py-3.5 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#8DE8CC] transition-colors">
-                  Text to Book
+                <a href="https://www.thenycmaid.com/book" className="block text-center bg-[#A8F0DC] text-[#1E2A4A] px-6 py-3.5 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#8DE8CC] transition-colors">
+                  Book a Cleaning
                 </a>
               </div>
             </div>
@@ -134,7 +135,7 @@ export default async function ServicePage({ params }: Props) {
 
       <div className="max-w-7xl mx-auto px-4 py-8">
         <Breadcrumbs items={[
-          { name: 'Services', href: '/nyc-maid-service-services-offered-by-the-nyc-maid' },
+          { name: 'Services', href: '/services-offered' },
           { name: service.name, href: `/services/${service.urlSlug}` },
         ]} />
       </div>
@@ -152,8 +153,8 @@ export default async function ServicePage({ params }: Props) {
                   <p className="text-gray-500 leading-relaxed mb-6">{rich.whatIs.subheading}</p>
                 )}
                 <div className="flex flex-col sm:flex-row items-start gap-3">
-                  <a href="sms:2122028400" className="bg-[#A8F0DC] text-[#1E2A4A] px-6 py-3 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#8DE8CC] transition-colors">
-                    Text (212) 202-8400
+                  <a href="https://www.thenycmaid.com/book" className="bg-[#A8F0DC] text-[#1E2A4A] px-6 py-3 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#8DE8CC] transition-colors">
+                    Book a Cleaning
                   </a>
                   <a href="tel:2122028400" className="text-[#1E2A4A]/60 font-medium py-3 hover:text-[#1E2A4A] transition-colors underline underline-offset-4">
                     or Call Us
@@ -210,8 +211,8 @@ export default async function ServicePage({ params }: Props) {
                 <h2 className="font-[family-name:var(--font-bebas)] text-3xl md:text-4xl text-[#1E2A4A] tracking-wide leading-tight mb-4">{rich.comparison.title}</h2>
                 <p className="text-gray-500 leading-relaxed mb-6">A regular clean maintains your home. A deep clean resets it. See exactly what&apos;s covered in each service so you know which one you need.</p>
                 <div className="flex flex-col sm:flex-row items-start gap-3">
-                  <a href="sms:2122028400" className="bg-[#A8F0DC] text-[#1E2A4A] px-6 py-3 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#8DE8CC] transition-colors">
-                    Text to Book
+                  <a href="https://www.thenycmaid.com/book" className="bg-[#A8F0DC] text-[#1E2A4A] px-6 py-3 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#8DE8CC] transition-colors">
+                    Book a Cleaning
                   </a>
                   <a href="tel:2122028400" className="text-[#1E2A4A]/60 font-medium py-3 hover:text-[#1E2A4A] transition-colors underline underline-offset-4">
                     or Call Us
@@ -248,9 +249,9 @@ export default async function ServicePage({ params }: Props) {
               <div className="lg:col-span-2 lg:sticky lg:top-28">
                 <div className="w-10 h-[3px] bg-[#A8F0DC] mb-5" />
                 <h2 className="font-[family-name:var(--font-bebas)] text-3xl md:text-4xl text-[#1E2A4A] tracking-wide leading-tight mb-4">{rich.whenToBook.title}</h2>
-                <p className="text-gray-500 leading-relaxed mb-6">If any of these apply to you, a professional {service.name.toLowerCase()} is the move. Text us and we&apos;ll get you on the schedule.</p>
-                <a href="sms:2122028400" className="inline-block bg-[#A8F0DC] text-[#1E2A4A] px-6 py-3 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#8DE8CC] transition-colors">
-                  Text to Book
+                <p className="text-gray-500 leading-relaxed mb-6">If any of these apply to you, a professional {service.name.toLowerCase()} is the move. Book online or call and we&apos;ll get you on the schedule.</p>
+                <a href="https://www.thenycmaid.com/book" className="inline-block bg-[#A8F0DC] text-[#1E2A4A] px-6 py-3 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#8DE8CC] transition-colors">
+                  Book a Cleaning
                 </a>
               </div>
               <div className="lg:col-span-3 grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -320,7 +321,7 @@ export default async function ServicePage({ params }: Props) {
             <div>
               <h3 className="font-[family-name:var(--font-bebas)] text-xl text-[#1E2A4A] tracking-wide mb-2">{service.name} Cost Summary</h3>
               <p className="text-[#1E2A4A]/80 leading-relaxed">{rich.pricingNote}</p>
-              <Link href="/updated-nyc-maid-service-industry-pricing" className="inline-block mt-3 text-[#1E2A4A] font-semibold text-sm underline underline-offset-4">Full pricing details &rarr;</Link>
+              <Link href="/pricing" className="inline-block mt-3 text-[#1E2A4A] font-semibold text-sm underline underline-offset-4">Full pricing details &rarr;</Link>
             </div>
           </div>
         </section>
@@ -361,7 +362,7 @@ export default async function ServicePage({ params }: Props) {
               <div className="bg-gray-50 rounded-xl p-6 text-center">
                 <p className="font-[family-name:var(--font-bebas)] text-3xl text-[#1E2A4A] tracking-wide mb-1">{service.priceRange}</p>
                 <p className="text-gray-500 text-sm mb-4">{service.duration}</p>
-                <a href="sms:2122028400" className="inline-block bg-[#A8F0DC] text-[#1E2A4A] px-8 py-3 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#8DE8CC] transition-colors">
+                <a href="https://www.thenycmaid.com/book" className="inline-block bg-[#A8F0DC] text-[#1E2A4A] px-8 py-3 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#8DE8CC] transition-colors">
                   Get a Quote
                 </a>
               </div>
@@ -377,7 +378,7 @@ export default async function ServicePage({ params }: Props) {
           <p className="font-[family-name:var(--font-bebas)] text-3xl md:text-4xl text-white tracking-wide text-center mb-12">Book in 3 Simple Steps</p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
-              { n: '01', t: 'Text or Call', d: 'Reach us at (212) 202-8400 with your address, preferred date, and any special requests.' },
+              { n: '01', t: 'Book Online or Call', d: 'Visit thenycmaid.com/book or call (212) 202-8400 with your address, preferred date, and any special requests.' },
               { n: '02', t: 'We Confirm', d: 'We match you with a background-checked, insured cleaner and lock in your appointment — usually within the hour.' },
               { n: '03', t: 'Pay After', d: 'Your cleaner arrives on time, does the work, and you pay only after the cleaning is complete. No deposits ever.' },
             ].map(s => (
@@ -389,8 +390,8 @@ export default async function ServicePage({ params }: Props) {
             ))}
           </div>
           <div className="flex justify-center mt-10">
-            <a href="sms:2122028400" className="bg-[#A8F0DC] text-[#1E2A4A] px-10 py-4 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#8DE8CC] transition-colors">
-              Text (212) 202-8400
+            <a href="https://www.thenycmaid.com/book" className="bg-[#A8F0DC] text-[#1E2A4A] px-10 py-4 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#8DE8CC] transition-colors">
+              Book a Cleaning
             </a>
           </div>
         </div>
@@ -400,21 +401,21 @@ export default async function ServicePage({ params }: Props) {
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4">
           <h2 className="text-xs font-semibold text-gray-400 tracking-[0.25em] uppercase mb-3 text-center">{service.name} Near You</h2>
-          <p className="font-[family-name:var(--font-bebas)] text-3xl md:text-4xl text-[#1E2A4A] tracking-wide text-center mb-4">{service.name} Across Manhattan, Brooklyn, Queens & Beyond</p>
-          <p className="text-gray-500 text-center max-w-2xl mx-auto mb-12">Same rates, same quality — no matter which neighborhood you call home. Click any location to book {service.name.toLowerCase()} in your area.</p>
+          <p className="font-[family-name:var(--font-bebas)] text-3xl md:text-4xl text-[#1E2A4A] tracking-wide text-center mb-4">{service.name} Across Manhattan, Brooklyn, Queens &amp; Beyond</p>
+          <p className="text-gray-500 text-center max-w-2xl mx-auto mb-12">Same rates, same quality — no matter which neighborhood you call home. Click any location to learn more about {service.name.toLowerCase()} in your area.</p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
             {AREAS.map(area => {
               const neighborhoods = getNeighborhoodsByArea(area.slug).slice(0, 8)
               return (
                 <div key={area.slug} className="bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-md transition-shadow">
-                  <Link href={`/${area.urlSlug}`} className="flex items-center justify-between mb-4 group">
+                  <Link href={`/service-areas/${area.urlSlug}`} className="flex items-center justify-between mb-4 group">
                     <h3 className="font-[family-name:var(--font-bebas)] text-xl text-[#1E2A4A] tracking-wide group-hover:text-[#1E2A4A]/70 transition-colors">{area.name}</h3>
                     <span className="text-[#A8F0DC] text-sm font-medium group-hover:underline underline-offset-4">{neighborhoods.length}+ areas &rarr;</span>
                   </Link>
                   <div className="flex flex-wrap gap-1.5">
                     {neighborhoods.map(n => (
-                      <Link key={n.slug} href={`/${n.urlSlug}/${service.slug}`} className="px-3 py-1.5 bg-gray-50 border border-gray-100 rounded-lg text-xs text-gray-600 hover:border-[#A8F0DC] hover:bg-[#F5FBF8] hover:text-[#1E2A4A] transition-all">
+                      <Link key={n.slug} href={`/service-areas/${n.urlSlug}`} className="px-3 py-1.5 bg-gray-50 border border-gray-100 rounded-lg text-xs text-gray-600 hover:border-[#A8F0DC] hover:bg-[#F5FBF8] hover:text-[#1E2A4A] transition-all">
                         {n.name}
                       </Link>
                     ))}
@@ -425,7 +426,7 @@ export default async function ServicePage({ params }: Props) {
           </div>
 
           <div className="text-center mt-10">
-            <Link href="/service-areas-served-by-the-nyc-maid" className="inline-block bg-[#1E2A4A] text-white px-8 py-3.5 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#1E2A4A]/90 transition-colors">
+            <Link href="/service-areas" className="inline-block bg-[#1E2A4A] text-white px-8 py-3.5 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#1E2A4A]/90 transition-colors">
               Browse All 225+ Neighborhoods &rarr;
             </Link>
           </div>
@@ -449,7 +450,7 @@ export default async function ServicePage({ params }: Props) {
               >
                 <div className="flex items-start justify-between mb-3">
                   <h3 className="font-[family-name:var(--font-bebas)] text-xl text-[#1E2A4A] tracking-wide group-hover:text-[#1E2A4A]/70 transition-colors">{s.name}</h3>
-                  <span className="text-[#1E2A4A] font-bold text-sm whitespace-nowrap ml-3">From {s.priceRange.split('–')[0]}</span>
+                  <span className="text-[#1E2A4A] font-bold text-sm whitespace-nowrap ml-3">From {s.priceRange.split('\u2013')[0]}</span>
                 </div>
                 <p className="text-gray-500 text-sm leading-relaxed mb-4 line-clamp-2">{s.description}</p>
                 <div className="flex flex-wrap gap-1.5 mb-4">
@@ -465,7 +466,7 @@ export default async function ServicePage({ params }: Props) {
             ))}
           </div>
           <div className="text-center mt-10">
-            <Link href="/nyc-maid-service-services-offered-by-the-nyc-maid" className="inline-block bg-[#A8F0DC] text-[#1E2A4A] px-8 py-3.5 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#8DE8CC] transition-colors">
+            <Link href="/services-offered" className="inline-block bg-[#A8F0DC] text-[#1E2A4A] px-8 py-3.5 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#8DE8CC] transition-colors">
               View All Services &amp; Pricing
             </Link>
           </div>
@@ -473,7 +474,7 @@ export default async function ServicePage({ params }: Props) {
       </section>
 
       <FAQSection faqs={faqs} title={`${service.name} — Frequently Asked Questions`} columns={2} />
-      <CTABlock title={`Book ${service.name} Today`} subtitle="Text or call — trusted by thousands of New Yorkers." />
+      <CTABlock title={`Book ${service.name} Today`} subtitle="Book online or call — trusted by thousands of New Yorkers." />
     </>
   )
 }

@@ -21,9 +21,9 @@ function pick<T>(arr: T[], seed: string, offset = 0): T {
 
 export function homepageContent() {
   return {
-    title: 'NYC Maid Service & House Cleaning From $49/hr | 5-Star Rated | The NYC Maid',
-    metaDescription: 'NYC\'s top-rated maid service from $49/hr. House cleaning across Manhattan, Brooklyn, Queens, Long Island & NJ. Licensed, insured. 5.0★ Google. (212) 202-8400',
-    h1: 'NYC\'s #1 Rated Maid Service & House Cleaning — From $49/hr',
+    title: 'NYC Cleaning Service & House Cleaning From $49/hr | 5-Star Rated | Sunnyside Clean NYC',
+    metaDescription: 'NYC\'s top-rated cleaning service from $49/hr. House cleaning across Manhattan, Brooklyn, Queens, Long Island & NJ. Licensed, insured. 5.0★ Google. (212) 202-8400',
+    h1: 'NYC\'s #1 Rated Cleaning Service & House Cleaning — From $49/hr',
     subtitle: 'Professional house cleaning across Manhattan, Brooklyn, Queens, Long Island & New Jersey. Licensed, insured, and loved by thousands of clients.',
   }
 }
@@ -66,7 +66,7 @@ export function areaContent(area: Area) {
 // ============ NEIGHBORHOOD PAGES ============
 
 const introTemplates = [
-  (n: Neighborhood) => `Looking for a reliable cleaning service in ${n.name}? The NYC Maid has been trusted by ${n.name} residents for years, delivering spotless results in ${n.housing_types[0]}, ${n.housing_types[1]}, and more.`,
+  (n: Neighborhood) => `Looking for a reliable cleaning service in ${n.name}? Sunnyside Clean NYC has been trusted by ${n.name} residents for years, delivering spotless results in ${n.housing_types[0]}, ${n.housing_types[1]}, and more.`,
   (n: Neighborhood) => `${n.name} deserves a cleaning team that understands its unique homes. From ${n.housing_types[0]} to ${n.housing_types[1]}, our experienced cleaners handle every detail with care.`,
   (n: Neighborhood) => `Your ${n.name} home should always feel fresh and welcoming. Our professional cleaning team specializes in the ${n.housing_types[0]} and ${n.housing_types[1]} that make this neighborhood special.`,
   (n: Neighborhood) => `Residents of ${n.name} know their neighborhood is one of a kind — and their cleaning service should be too. Near ${n.landmarks[0]}, we provide thorough, reliable cleaning tailored to local homes.`,
@@ -133,7 +133,7 @@ export function neighborhoodFunFacts(neighborhood: Neighborhood): { label: strin
 
 const serviceIntroTemplates = [
   (n: Neighborhood, s: Service) => `Need ${s.name.toLowerCase()} in ${n.name}? Our professional cleaning team specializes in ${s.name.toLowerCase()} for ${n.housing_types[0]} and ${n.housing_types[1]} throughout the neighborhood.`,
-  (n: Neighborhood, s: Service) => `${n.name} residents trust The NYC Maid for expert ${s.name.toLowerCase()}. We understand the unique ${n.cleaning_challenges[0]} and ${n.cleaning_challenges[1]} that come with cleaning homes in this area.`,
+  (n: Neighborhood, s: Service) => `${n.name} residents trust Sunnyside Clean NYC for expert ${s.name.toLowerCase()}. We understand the unique ${n.cleaning_challenges[0]} and ${n.cleaning_challenges[1]} that come with cleaning homes in this area.`,
   (n: Neighborhood, s: Service) => `Our ${s.name.toLowerCase()} service in ${n.name} is tailored to the neighborhood's ${n.housing_types[0]} and ${n.housing_types[1]}. Near ${n.landmarks[0]}, we deliver exceptional results every time.`,
   (n: Neighborhood, s: Service) => `From ${n.cleaning_challenges[0]} to ${n.cleaning_challenges[1]}, our ${s.name.toLowerCase()} team in ${n.name} handles it all. Trusted by local residents for thorough, reliable service.`,
 ]
@@ -376,7 +376,7 @@ const richContentMap: Record<string, ServiceRichContent> = {
       heading: 'What Is Weekly Maid Service?',
       subheading: 'Weekly service is the gold standard of home maintenance. Your assigned cleaner comes on the same day each week, maintaining your apartment in consistently perfect condition.',
       body: [
-        'Weekly maid service means you never have to think about cleaning again. Every week, your dedicated cleaner arrives on schedule, cleans your entire apartment to your standards, and leaves everything spotless.',
+        'Weekly cleaning service means you never have to think about cleaning again. Every week, your dedicated cleaner arrives on schedule, cleans your entire apartment to your standards, and leaves everything spotless.',
         'Because weekly service is maintenance-based, each visit is fast and efficient — typically 2–3 hours. Your cleaner isn\'t playing catch-up; they\'re maintaining an already clean home. This means lower cost per visit and better results.',
         'Weekly clients get priority scheduling, the same cleaner every visit, and the lowest effective hourly rate at $49/hr with your supplies. It\'s the most popular service for busy NYC professionals and families.',
       ],
@@ -408,9 +408,9 @@ const richContentMap: Record<string, ServiceRichContent> = {
         ],
       },
     ],
-    pricingNote: 'Weekly maid service typically costs $98–$195 per visit. Most 1-bedroom apartments need just 2 hours ($98 at $49/hr) per weekly visit. 2-bedrooms average 2.5 hours ($122). The weekly consistency keeps each visit short and affordable.',
+    pricingNote: 'Weekly cleaning service typically costs $98–$195 per visit. Most 1-bedroom apartments need just 2 hours ($98 at $49/hr) per weekly visit. 2-bedrooms average 2.5 hours ($122). The weekly consistency keeps each visit short and affordable.',
     faqs: [
-      { question: 'How much does weekly maid service cost in NYC?', answer: 'Weekly service is $49/hr with your supplies or $65/hr when we bring everything. Most 1-bedroom weekly cleans take 2 hours ($98–$130/visit). 2-bedrooms average 2.5 hours ($122–$162/visit). It\'s the most cost-effective way to maintain a spotless home.' },
+      { question: 'How much does weekly cleaning service cost in NYC?', answer: 'Weekly service is $49/hr with your supplies or $65/hr when we bring everything. Most 1-bedroom weekly cleans take 2 hours ($98–$130/visit). 2-bedrooms average 2.5 hours ($122–$162/visit). It\'s the most cost-effective way to maintain a spotless home.' },
       { question: 'Will I get the same cleaner every week?', answer: 'Yes. We specifically assign one cleaner to your home for all recurring visits. They learn your preferences, your space, and your standards. If your regular cleaner is unavailable, we\'ll notify you in advance and send a qualified replacement.' },
       { question: 'What day of the week can I schedule service?', answer: 'We offer Monday through Friday 8am–6pm and Saturday 9am–4pm. You choose your preferred day and time, and we keep that slot reserved for you every week.' },
       { question: 'What if I need to skip a week?', answer: 'We require 3 days notice to reschedule within the same week. If you need to cancel a service entirely, 7 days notice is required. Consistent scheduling protects our cleaners\' income and ensures availability for all clients.' },
@@ -923,16 +923,16 @@ export function commonServiceFAQs(service: Service): { question: string; answer:
   return [
     { question: 'Are your cleaners background-checked?', answer: 'Yes. Every cleaner on our team undergoes a comprehensive background check before their first assignment. We also carry general liability insurance and bonding for your protection. You can trust that the person entering your home has been fully vetted.' },
     { question: 'Do I need to be home during the cleaning?', answer: 'No. Many clients leave a key, provide a door code, or arrange access through their doorman or building management. You\'re welcome to be home or away — whatever is most comfortable. We\'ll text you when we arrive and when we\'re done.' },
-    { question: 'How do I book a cleaning?', answer: 'Text or call (212) 202-8400. Tell us your address, preferred date, and any special requests. We\'ll confirm your appointment and match you with a cleaner, usually within the hour. You can also book online at thenycmaid.com/book/new.' },
+    { question: 'How do I book a cleaning?', answer: 'Text or call (212) 202-8400. Tell us your address, preferred date, and any special requests. We\'ll confirm your appointment and match you with a cleaner, usually within the hour. You can also book online at thenycmaid.com/book.' },
     { question: 'What areas do you serve?', answer: 'We serve all of Manhattan, Brooklyn, Queens, Long Island (North Shore), and northern New Jersey (Hudson County). Same rates everywhere — no travel surcharges regardless of location.' },
-    { question: 'Do I pay before or after the cleaning?', answer: 'After. We never charge upfront or take deposits. You pay only after the cleaning is complete, before the cleaner leaves. We accept cash, Venmo, Zelle (hi@thenycmaid.com), and credit card.' },
+    { question: 'Do I pay before or after the cleaning?', answer: 'After. We never charge upfront or take deposits. You pay only after the cleaning is complete, before the cleaner leaves. We accept cash, Venmo, Zelle (hello@cleaningservicesunnysideny.com), and credit card.' },
     { question: 'What if I\'m not satisfied with the cleaning?', answer: 'Let us know within 24 hours and we\'ll send a cleaner back to address any issues at no additional cost. We stand behind our work — your satisfaction is non-negotiable.' },
     { question: 'Do you bring your own cleaning supplies?', answer: 'At $65/hr, yes — we bring professional-grade products, microfiber systems, and a commercial vacuum. At $49/hr, you provide your own supplies. Either way, we\'re happy to use specific products you prefer (eco-friendly, hypoallergenic, etc.).' },
     { question: 'Can I request a specific cleaner?', answer: 'For recurring services, we automatically assign the same cleaner to your home every visit. For one-time bookings, we match you with the best available cleaner for your area and service type.' },
     { question: 'How far in advance do I need to book?', answer: 'We recommend booking 3–5 days ahead for the best availability. For same-day service, text us as early as possible — morning requests before 10am have the best chance of afternoon availability.' },
     { question: `Is ${service.name.toLowerCase()} available on weekends?`, answer: 'We offer service Monday through Friday 8am–6pm and Saturday 9am–4pm. Saturday slots fill up fast, so book early if you prefer weekend service. We do not offer Sunday service.' },
-    { question: 'What payment methods do you accept?', answer: 'We accept cash, Venmo, Zelle (hi@thenycmaid.com), and credit card (via Stripe). Payment is collected after the cleaning is complete, before the cleaner leaves. No deposits, no pre-authorization holds.' },
-    { question: 'Are you licensed and insured?', answer: 'Yes. The NYC Maid is a fully licensed cleaning company with general liability insurance and bonding. Every cleaner is covered while working in your home. We can provide proof of insurance upon request.' },
+    { question: 'What payment methods do you accept?', answer: 'We accept cash, Venmo, Zelle (hello@cleaningservicesunnysideny.com), and credit card (via Stripe). Payment is collected after the cleaning is complete, before the cleaner leaves. No deposits, no pre-authorization holds.' },
+    { question: 'Are you licensed and insured?', answer: 'Yes. Sunnyside Clean NYC is a fully licensed cleaning company with general liability insurance and bonding. Every cleaner is covered while working in your home. We can provide proof of insurance upon request.' },
     { question: 'Do you offer eco-friendly or green cleaning?', answer: 'Yes. If you prefer eco-friendly, plant-based, or hypoallergenic products, just let us know when booking. At $65/hr we can bring green products; at $49/hr you provide your preferred products and we\'ll use them.' },
     { question: `Can I combine ${service.name.toLowerCase()} with other services?`, answer: `Absolutely. Many clients combine services — for example, a deep clean followed by weekly maintenance, or a move-out clean with post-construction cleanup. Let us know what you need and we'll create a custom plan.` },
     { question: 'What if I need to cancel or reschedule?', answer: 'For one-time services, we have a no-cancellation policy once confirmed. For recurring services, we require 7 days notice to cancel and 3 days notice to reschedule within the same week. This protects our cleaners\' schedules.' },
@@ -940,6 +940,6 @@ export function commonServiceFAQs(service: Service): { question: string; answer:
     { question: 'How do you handle pets during cleaning?', answer: 'We\'re pet-friendly. If you have pets, let us know when booking so we can match you with a pet-comfortable cleaner. We ask that aggressive animals be secured in a separate room during the cleaning for everyone\'s safety.' },
     { question: 'Do you offer gift certificates?', answer: 'Yes — cleaning makes a great gift. Text us at (212) 202-8400 to purchase a gift certificate in any amount. We\'ll send a digital certificate that the recipient can redeem for any service.' },
     { question: 'What happens if something is damaged during cleaning?', answer: 'We carry general liability insurance specifically for this reason. If a cleaner accidentally damages something in your home, report it within 24 hours and we\'ll work with you to resolve it through our insurance coverage.' },
-    { question: 'Do you have a referral program?', answer: 'Yes. Refer a friend and earn money every time they book a cleaning — not just the first time. Visit thenycmaid.com/referral or text us for details. It\'s one of the most generous referral programs in NYC cleaning.' },
+    { question: 'Do you have a referral program?', answer: 'Yes. Refer a friend and earn money every time they book a cleaning — not just the first time. Visit cleaningservicesunnysideny.com/referral or text us for details. It\'s one of the most generous referral programs in NYC cleaning.' },
   ]
 }

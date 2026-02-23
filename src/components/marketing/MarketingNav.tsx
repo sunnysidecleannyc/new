@@ -4,23 +4,25 @@ import Image from 'next/image'
 import { useState, useEffect } from 'react'
 
 const serviceLinks = [
-  { name: 'Deep Cleaning', href: '/services/deep-cleaning-service-in-nyc' },
-  { name: 'Regular Apartment Cleaning', href: '/services/apartment-cleaning-service-in-nyc' },
-  { name: 'Weekly Service', href: '/services/weekly-maid-service-in-nyc' },
-  { name: 'Bi-Weekly Cleaning', href: '/services/bi-weekly-cleaning-service-in-nyc' },
-  { name: 'Move-In/Move-Out', href: '/services/move-in-move-out-cleaning-service-in-nyc' },
-  { name: 'Post-Construction', href: '/services/post-construction-cleanup-service-in-nyc' },
-  { name: 'Airbnb Cleaning', href: '/services/airbnb-cleaning-in-nyc' },
-  { name: 'Same-Day Cleaning', href: '/services/same-day-cleaning-service-in-nyc' },
-  { name: 'All Services', href: '/nyc-maid-service-services-offered-by-the-nyc-maid' },
+  { name: 'Deep Cleaning', href: '/services/nyc-deep-cleaning-service' },
+  { name: 'Apartment Cleaning', href: '/services/nyc-apartment-cleaning-service' },
+  { name: 'House Cleaning', href: '/services/nyc-house-cleaning-service' },
+  { name: 'Moving Cleaning', href: '/services/nyc-moving-cleaning-service' },
+  { name: 'Same-Day Cleaning', href: '/services/nyc-same-day-cleaning-service' },
+  { name: 'Window Cleaning', href: '/services/nyc-window-cleaning-service' },
+  { name: 'Junk Removal', href: '/services/nyc-junk-removal-cleaning-service' },
+  { name: 'Home Organizing', href: '/services/nyc-home-organizing-service' },
+  { name: 'Common Area Cleaning', href: '/services/nyc-common-area-cleaning-service' },
+  { name: 'Office Cleaning', href: '/services/nyc-office-cleaning-service' },
+  { name: 'Maid Service', href: '/services/nyc-maid-service' },
+  { name: 'All Services', href: '/nyc-cleaning-services-offered' },
 ]
 
 const moreLinks = [
-  { name: 'About', href: '/about-the-nyc-maid-service-company' },
-  { name: 'FAQ', href: '/nyc-cleaning-service-frequently-asked-questions-in-2025' },
-  { name: 'Careers', href: '/available-nyc-maid-jobs' },
-  { name: 'Locations', href: '/service-areas-served-by-the-nyc-maid' },
-  { name: 'Reviews', href: '/nyc-customer-reviews-for-the-nyc-maid' },
+  { name: 'About', href: '/about-nyc-cleaning-service-sunnyside-clean-nyc' },
+  { name: 'FAQ', href: '/frequently-asked-cleaning-service-related-questions' },
+  { name: 'Service Areas', href: '/service-areas' },
+  { name: 'Blog & Tips', href: '/cleaning-tips-and-tricks' },
 ]
 
 export default function MarketingNav() {
@@ -43,15 +45,11 @@ export default function MarketingNav() {
         <div className="bg-[#1E2A4A] text-gray-300 text-xs">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-center lg:justify-between h-9">
             <div className="flex items-center gap-1.5 sm:gap-2 text-[10px] tracking-widest uppercase">
-              <span className="text-white/80 font-semibold hidden sm:inline">Maid Service:</span>
-              <Link href="/service-areas-served-by-the-nyc-maid" className="hover:text-white transition-colors font-semibold text-white/80">NYC</Link>
-              <span className="text-white/20">|</span>
-              <Link href="/long-island-maid-service" className="hover:text-white transition-colors font-semibold text-white/80">L.I.</Link>
-              <span className="text-white/20">|</span>
-              <Link href="/new-jersey-maid-service" className="hover:text-white transition-colors font-semibold text-white/80">NJ</Link>
+              <span className="text-white/80 font-semibold hidden sm:inline">Cleaning Service:</span>
+              <Link href="/service-areas" className="hover:text-white transition-colors font-semibold text-white/80">NYC</Link>
               <span className="text-white/20">-</span>
               <span className="text-white/80 font-semibold">Open 24/7</span>
-              <span className="text-white/20">·</span>
+              <span className="text-white/20">&middot;</span>
               <a href="tel:2122028400" className="inline-flex items-center gap-1 text-[#A8F0DC] font-semibold tracking-widest uppercase text-[10px] hover:text-white transition-colors">
                 <svg aria-hidden="true" className="w-3 h-3 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.24 1.01l-2.2 2.2z"/></svg>
                 <span>(212) 202-8400</span>
@@ -62,20 +60,14 @@ export default function MarketingNav() {
               </a>
             </div>
             <div className="hidden lg:flex items-center gap-4">
-              <a href="/book" target="_blank" rel="noopener noreferrer" className="text-[#A8F0DC] font-semibold tracking-widest uppercase text-[10px] hover:text-white transition-colors">Client Login</a>
-              <span className="text-white/30">|</span>
               <a href="https://buy.stripe.com/8x2aEZ4FL0wYfxe5f0fnO03" target="_blank" rel="noopener noreferrer" className="text-[#A8F0DC] font-semibold tracking-widest uppercase text-[10px] hover:text-white transition-colors">Pay Now</a>
-              <span className="text-white/30">|</span>
-              <a href="/get-paid-for-cleaning-referrals-every-time-they-are-serviced" target="_blank" rel="noopener noreferrer" className="text-[#A8F0DC] font-semibold tracking-widest uppercase text-[10px] hover:text-white transition-colors">Refer Someone</a>
-              <span className="text-white/30">|</span>
-              <a href="/team" className="text-[#A8F0DC] font-semibold tracking-widest uppercase text-[10px] hover:text-white transition-colors">Team Login</a>
             </div>
           </div>
         </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-[72px]">
             <Link href="/" className="flex-shrink-0">
-              <Image src="/logo.png" alt="The NYC Maid" width={160} height={48} className="h-10 sm:h-12 w-auto" priority />
+              <Image src="/images/sunnyside-clean-nyc.png" alt="Sunnyside Clean NYC" width={160} height={48} className="h-10 sm:h-12 w-auto" priority />
             </Link>
 
             <nav className="hidden lg:flex items-center justify-center flex-1 gap-8 mx-8">
@@ -98,8 +90,8 @@ export default function MarketingNav() {
                 </div>
               </div>
 
-              <Link href="/updated-nyc-maid-service-industry-pricing" className="text-[#1E2A4A] hover:text-[#1E2A4A]/70 font-medium text-[15px] tracking-wide">Pricing</Link>
-              <Link href="/contact-the-nyc-maid-service-today" className="text-[#1E2A4A] hover:text-[#1E2A4A]/70 font-medium text-[15px] tracking-wide">Contact</Link>
+              <Link href="/nyc-cleaning-service-pricing" className="text-[#1E2A4A] hover:text-[#1E2A4A]/70 font-medium text-[15px] tracking-wide">Pricing</Link>
+              <Link href="/contact-nyc-cleaning-service-sunnyside-clean-nyc" className="text-[#1E2A4A] hover:text-[#1E2A4A]/70 font-medium text-[15px] tracking-wide">Contact</Link>
 
               {/* More Dropdown */}
               <div className="relative group">
@@ -119,14 +111,14 @@ export default function MarketingNav() {
               </div>
             </nav>
 
-            <a href="/book/new" className="hidden lg:inline-block bg-[#A8F0DC] text-[#1E2A4A] px-6 py-2.5 rounded-md font-bold text-sm tracking-widest uppercase hover:bg-[#8DE8CC] transition-colors whitespace-nowrap">
-              Book Yourself in 30 Sec
+            <a href="https://www.thenycmaid.com/book" className="hidden lg:inline-block bg-[#A8F0DC] text-[#1E2A4A] px-6 py-2.5 rounded-md font-bold text-sm tracking-widest uppercase hover:bg-[#8DE8CC] transition-colors whitespace-nowrap">
+              Book a Cleaning
             </a>
 
             {/* Mobile hamburger */}
             <div className="lg:hidden flex items-center gap-3">
-              <a href="/book/new" className="bg-[#A8F0DC] text-[#1E2A4A] px-4 py-2 rounded-md font-bold text-xs tracking-widest uppercase">
-                Book in 30 Sec
+              <a href="https://www.thenycmaid.com/book" className="bg-[#A8F0DC] text-[#1E2A4A] px-4 py-2 rounded-md font-bold text-xs tracking-widest uppercase">
+                Book a Cleaning
               </a>
               <button onClick={() => setMobileOpen(!mobileOpen)} aria-label="Open navigation menu" aria-expanded={mobileOpen} className="p-2 text-[#1E2A4A]">
                 <svg aria-hidden="true" className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -148,7 +140,7 @@ export default function MarketingNav() {
           {/* White header with logo + close */}
           <div className="bg-white flex items-center justify-between px-5 py-4">
             <Link href="/" onClick={closeMenu}>
-              <Image src="/logo.png" alt="The NYC Maid" width={140} height={42} className="h-9 w-auto" />
+              <Image src="/images/sunnyside-clean-nyc.png" alt="Sunnyside Clean NYC" width={140} height={42} className="h-9 w-auto" />
             </Link>
             <button onClick={closeMenu} aria-label="Close navigation menu" className="p-2 text-[#1E2A4A]">
               <svg aria-hidden="true" className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -176,8 +168,8 @@ export default function MarketingNav() {
                 </div>
               )}
 
-              <Link href="/updated-nyc-maid-service-industry-pricing" onClick={closeMenu} className="block py-3 text-white font-medium text-lg">Pricing</Link>
-              <Link href="/contact-the-nyc-maid-service-today" onClick={closeMenu} className="block py-3 text-white font-medium text-lg">Contact</Link>
+              <Link href="/nyc-cleaning-service-pricing" onClick={closeMenu} className="block py-3 text-white font-medium text-lg">Pricing</Link>
+              <Link href="/contact-nyc-cleaning-service-sunnyside-clean-nyc" onClick={closeMenu} className="block py-3 text-white font-medium text-lg">Contact</Link>
 
               <button onClick={() => setMoreOpen(!moreOpen)} aria-expanded={moreOpen} className="w-full flex items-center justify-between py-3 text-white font-medium text-lg">
                 More
@@ -194,10 +186,8 @@ export default function MarketingNav() {
               )}
 
               <div className="border-t border-white/10 mt-4 pt-4 space-y-1">
-                <Link href="/book" onClick={closeMenu} className="block py-3 text-[#A8F0DC] font-medium">Client Login</Link>
-                <Link href="/book/new" onClick={closeMenu} className="block py-3 text-[#A8F0DC] font-medium">Book Online</Link>
+                <a href="https://www.thenycmaid.com/book" onClick={closeMenu} className="block py-3 text-[#A8F0DC] font-medium">Book a Cleaning</a>
                 <a href="https://buy.stripe.com/8x2aEZ4FL0wYfxe5f0fnO03" target="_blank" rel="noopener noreferrer" onClick={closeMenu} className="block py-3 text-[#A8F0DC] font-medium">Pay Now</a>
-                <Link href="/get-paid-for-cleaning-referrals-every-time-they-are-serviced" onClick={closeMenu} className="block py-3 text-[#A8F0DC] font-medium">Referral Program</Link>
               </div>
 
               <div className="border-t border-white/10 mt-4 pt-6 space-y-3 text-center">

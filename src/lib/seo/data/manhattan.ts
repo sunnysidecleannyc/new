@@ -3,7 +3,7 @@ import { Neighborhood } from '../locations'
 export const MANHATTAN_NEIGHBORHOODS: Neighborhood[] = [
   {
     slug: 'upper-east-side',
-    urlSlug: 'upper-east-side-maid-service',
+    urlSlug: 'upper-east-side-cleaning-services',
     name: 'Upper East Side',
     area: 'manhattan',
     lat: 40.7736, lng: -73.9566,
@@ -15,7 +15,7 @@ export const MANHATTAN_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'upper-west-side',
-    urlSlug: 'upper-west-side-maid-service',
+    urlSlug: 'upper-west-side-cleaning-services',
     name: 'Upper West Side',
     area: 'manhattan',
     lat: 40.7870, lng: -73.9754,
@@ -27,7 +27,7 @@ export const MANHATTAN_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'midtown',
-    urlSlug: 'midtown-manhattan-maid-service',
+    urlSlug: 'midtown-manhattan-cleaning-services',
     name: 'Midtown',
     area: 'manhattan',
     lat: 40.7549, lng: -73.9840,
@@ -39,7 +39,7 @@ export const MANHATTAN_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'hells-kitchen',
-    urlSlug: 'hells-kitchen-maid-service',
+    urlSlug: 'hells-kitchen-cleaning-services',
     name: "Hell's Kitchen",
     area: 'manhattan',
     lat: 40.7638, lng: -73.9918,
@@ -51,7 +51,7 @@ export const MANHATTAN_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'chelsea',
-    urlSlug: 'chelsea-maid-service',
+    urlSlug: 'chelsea-cleaning-services',
     name: 'Chelsea',
     area: 'manhattan',
     lat: 40.7465, lng: -74.0014,
@@ -63,7 +63,7 @@ export const MANHATTAN_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'gramercy',
-    urlSlug: 'gramercy-maid-service',
+    urlSlug: 'gramercy-cleaning-services',
     name: 'Gramercy',
     area: 'manhattan',
     lat: 40.7378, lng: -73.9847,
@@ -75,7 +75,7 @@ export const MANHATTAN_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'murray-hill',
-    urlSlug: 'murray-hill-maid-service',
+    urlSlug: 'murray-hill-cleaning-services',
     name: 'Murray Hill',
     area: 'manhattan',
     lat: 40.7478, lng: -73.9755,
@@ -87,7 +87,7 @@ export const MANHATTAN_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'west-village',
-    urlSlug: 'west-village-maid-service',
+    urlSlug: 'west-village-cleaning-services',
     name: 'West Village',
     area: 'manhattan',
     lat: 40.7358, lng: -74.0036,
@@ -99,7 +99,7 @@ export const MANHATTAN_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'greenwich-village',
-    urlSlug: 'greenwich-maid-service',
+    urlSlug: 'greenwich-cleaning-services',
     name: 'Greenwich Village',
     area: 'manhattan',
     lat: 40.7336, lng: -73.9997,
@@ -111,7 +111,7 @@ export const MANHATTAN_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'east-village',
-    urlSlug: 'east-village-maid-service',
+    urlSlug: 'east-village-cleaning-services',
     name: 'East Village',
     area: 'manhattan',
     lat: 40.7264, lng: -73.9818,
@@ -123,7 +123,7 @@ export const MANHATTAN_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'lower-east-side',
-    urlSlug: 'lower-east-side-maid-service',
+    urlSlug: 'lower-east-side-cleaning-services',
     name: 'Lower East Side',
     area: 'manhattan',
     lat: 40.7156, lng: -73.9874,
@@ -135,7 +135,7 @@ export const MANHATTAN_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'soho',
-    urlSlug: 'soho-maid-service',
+    urlSlug: 'soho-cleaning-services',
     name: 'SoHo',
     area: 'manhattan',
     lat: 40.7233, lng: -74.0030,
@@ -147,7 +147,7 @@ export const MANHATTAN_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'nolita',
-    urlSlug: 'nolita-maid-service',
+    urlSlug: 'nolita-cleaning-services',
     name: 'Nolita',
     area: 'manhattan',
     lat: 40.7234, lng: -73.9961,
@@ -159,7 +159,7 @@ export const MANHATTAN_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'little-italy',
-    urlSlug: 'little-italy-maid-service',
+    urlSlug: 'little-italy-cleaning-services',
     name: 'Little Italy',
     area: 'manhattan',
     lat: 40.7191, lng: -73.9973,
@@ -171,7 +171,7 @@ export const MANHATTAN_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'chinatown',
-    urlSlug: 'chinatown-maid-service',
+    urlSlug: 'chinatown-cleaning-services',
     name: 'Chinatown',
     area: 'manhattan',
     lat: 40.7158, lng: -73.9970,
@@ -183,7 +183,7 @@ export const MANHATTAN_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'two-bridges',
-    urlSlug: 'two-bridges-maid-service',
+    urlSlug: 'two-bridges-cleaning-services',
     name: 'Two Bridges',
     area: 'manhattan',
     lat: 40.7118, lng: -73.9941,
@@ -195,7 +195,7 @@ export const MANHATTAN_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'tribeca',
-    urlSlug: 'tribeca-maid-service',
+    urlSlug: 'tribeca-cleaning-services',
     name: 'Tribeca',
     area: 'manhattan',
     lat: 40.7163, lng: -74.0086,
@@ -207,7 +207,7 @@ export const MANHATTAN_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'financial-district',
-    urlSlug: 'financial-district-maid-service',
+    urlSlug: 'financial-district-cleaning-services',
     name: 'Financial District',
     area: 'manhattan',
     lat: 40.7074, lng: -74.0113,
@@ -219,7 +219,7 @@ export const MANHATTAN_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'battery-park',
-    urlSlug: 'battery-park-maid-service',
+    urlSlug: 'battery-park-cleaning-services',
     name: 'Battery Park City',
     area: 'manhattan',
     lat: 40.7033, lng: -74.0170,
@@ -231,7 +231,7 @@ export const MANHATTAN_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'harlem',
-    urlSlug: 'harlem-maid-service',
+    urlSlug: 'harlem-cleaning-services',
     name: 'Harlem',
     area: 'manhattan',
     lat: 40.8116, lng: -73.9465,
@@ -243,7 +243,7 @@ export const MANHATTAN_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'washington-heights',
-    urlSlug: 'washington-heights-maid-service',
+    urlSlug: 'washington-heights-cleaning-services',
     name: 'Washington Heights',
     area: 'manhattan',
     lat: 40.8417, lng: -73.9393,
@@ -255,7 +255,7 @@ export const MANHATTAN_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'union-square',
-    urlSlug: 'union-square-maid-service',
+    urlSlug: 'union-square-cleaning-services',
     name: 'Union Square',
     area: 'manhattan',
     lat: 40.7359, lng: -73.9911,
@@ -267,7 +267,7 @@ export const MANHATTAN_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'flatiron',
-    urlSlug: 'flatiron-maid-service',
+    urlSlug: 'flatiron-cleaning-services',
     name: 'Flatiron District',
     area: 'manhattan',
     lat: 40.7410, lng: -73.9897,
@@ -279,7 +279,7 @@ export const MANHATTAN_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'nomad',
-    urlSlug: 'nomad-maid-service',
+    urlSlug: 'nomad-cleaning-services',
     name: 'NoMad',
     area: 'manhattan',
     lat: 40.7450, lng: -73.9885,
@@ -291,7 +291,7 @@ export const MANHATTAN_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'stuyvesant-town',
-    urlSlug: 'stuyvesant-town-maid-service',
+    urlSlug: 'stuyvesant-town-cleaning-services',
     name: 'Stuyvesant Town',
     area: 'manhattan',
     lat: 40.7310, lng: -73.9760,
@@ -303,7 +303,7 @@ export const MANHATTAN_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'kips-bay',
-    urlSlug: 'kips-bay-maid-service',
+    urlSlug: 'kips-bay-cleaning-services',
     name: 'Kips Bay',
     area: 'manhattan',
     lat: 40.7425, lng: -73.9785,
@@ -315,7 +315,7 @@ export const MANHATTAN_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'columbus-circle',
-    urlSlug: 'columbus-circle-maid-service',
+    urlSlug: 'columbus-circle-cleaning-services',
     name: 'Columbus Circle',
     area: 'manhattan',
     lat: 40.7681, lng: -73.9819,
@@ -327,7 +327,7 @@ export const MANHATTAN_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'roosevelt-island',
-    urlSlug: 'roosevelt-island-maid-service',
+    urlSlug: 'roosevelt-island-cleaning-services',
     name: 'Roosevelt Island',
     area: 'manhattan',
     lat: 40.7614, lng: -73.9511,
@@ -339,7 +339,7 @@ export const MANHATTAN_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'hudson-yards',
-    urlSlug: 'hudson-yards-maid-service',
+    urlSlug: 'hudson-yards-cleaning-services',
     name: 'Hudson Yards',
     area: 'manhattan',
     lat: 40.7539, lng: -74.0020,
@@ -351,7 +351,7 @@ export const MANHATTAN_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'midtown-east',
-    urlSlug: 'midtown-east-maid-service',
+    urlSlug: 'midtown-east-cleaning-services',
     name: 'Midtown East',
     area: 'manhattan',
     lat: 40.7527, lng: -73.9713,
@@ -363,7 +363,7 @@ export const MANHATTAN_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'midtown-west',
-    urlSlug: 'midtown-west-maid-service',
+    urlSlug: 'midtown-west-cleaning-services',
     name: 'Midtown West',
     area: 'manhattan',
     lat: 40.7590, lng: -73.9900,
@@ -375,7 +375,7 @@ export const MANHATTAN_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'east-harlem',
-    urlSlug: 'east-harlem-maid-service',
+    urlSlug: 'east-harlem-cleaning-services',
     name: 'East Harlem',
     area: 'manhattan',
     lat: 40.7957, lng: -73.9425,
@@ -387,7 +387,7 @@ export const MANHATTAN_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'morningside-heights',
-    urlSlug: 'morningside-heights-maid-service',
+    urlSlug: 'morningside-heights-cleaning-services',
     name: 'Morningside Heights',
     area: 'manhattan',
     lat: 40.8100, lng: -73.9625,
@@ -399,7 +399,7 @@ export const MANHATTAN_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'hamilton-heights',
-    urlSlug: 'hamilton-heights-maid-service',
+    urlSlug: 'hamilton-heights-cleaning-services',
     name: 'Hamilton Heights',
     area: 'manhattan',
     lat: 40.8250, lng: -73.9490,
@@ -411,7 +411,7 @@ export const MANHATTAN_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'inwood',
-    urlSlug: 'inwood-maid-service',
+    urlSlug: 'inwood-cleaning-services',
     name: 'Inwood',
     area: 'manhattan',
     lat: 40.8677, lng: -73.9212,
@@ -423,7 +423,7 @@ export const MANHATTAN_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'yorkville',
-    urlSlug: 'yorkville-maid-service',
+    urlSlug: 'yorkville-cleaning-services',
     name: 'Yorkville',
     area: 'manhattan',
     lat: 40.7764, lng: -73.9494,
@@ -435,7 +435,7 @@ export const MANHATTAN_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'carnegie-hill',
-    urlSlug: 'carnegie-hill-maid-service',
+    urlSlug: 'carnegie-hill-cleaning-services',
     name: 'Carnegie Hill',
     area: 'manhattan',
     lat: 40.7845, lng: -73.9560,
@@ -447,7 +447,7 @@ export const MANHATTAN_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'lenox-hill',
-    urlSlug: 'lenox-hill-maid-service',
+    urlSlug: 'lenox-hill-cleaning-services',
     name: 'Lenox Hill',
     area: 'manhattan',
     lat: 40.7672, lng: -73.9620,
@@ -459,7 +459,7 @@ export const MANHATTAN_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'turtle-bay',
-    urlSlug: 'turtle-bay-maid-service',
+    urlSlug: 'turtle-bay-cleaning-services',
     name: 'Turtle Bay',
     area: 'manhattan',
     lat: 40.7527, lng: -73.9680,
@@ -471,7 +471,7 @@ export const MANHATTAN_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'sutton-place',
-    urlSlug: 'sutton-place-maid-service',
+    urlSlug: 'sutton-place-cleaning-services',
     name: 'Sutton Place',
     area: 'manhattan',
     lat: 40.7585, lng: -73.9615,
@@ -483,7 +483,7 @@ export const MANHATTAN_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'beekman-place',
-    urlSlug: 'beekman-place-maid-service',
+    urlSlug: 'beekman-place-cleaning-services',
     name: 'Beekman Place',
     area: 'manhattan',
     lat: 40.7540, lng: -73.9650,
@@ -495,7 +495,7 @@ export const MANHATTAN_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'central-park-south',
-    urlSlug: 'central-park-south-maid-service',
+    urlSlug: 'central-park-south-cleaning-services',
     name: 'Central Park South',
     area: 'manhattan',
     lat: 40.7660, lng: -73.9790,
@@ -507,7 +507,7 @@ export const MANHATTAN_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'theater-district',
-    urlSlug: 'theater-district-maid-service',
+    urlSlug: 'theater-district-cleaning-services',
     name: 'Theater District',
     area: 'manhattan',
     lat: 40.7580, lng: -73.9855,
@@ -519,7 +519,7 @@ export const MANHATTAN_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'koreatown',
-    urlSlug: 'koreatown-maid-service',
+    urlSlug: 'koreatown-cleaning-services',
     name: 'Koreatown',
     area: 'manhattan',
     lat: 40.7480, lng: -73.9870,
@@ -531,7 +531,7 @@ export const MANHATTAN_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'herald-square',
-    urlSlug: 'herald-square-maid-service',
+    urlSlug: 'herald-square-cleaning-services',
     name: 'Herald Square',
     area: 'manhattan',
     lat: 40.7497, lng: -73.9878,
@@ -543,7 +543,7 @@ export const MANHATTAN_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'tudor-city',
-    urlSlug: 'tudor-city-maid-service',
+    urlSlug: 'tudor-city-cleaning-services',
     name: 'Tudor City',
     area: 'manhattan',
     lat: 40.7490, lng: -73.9710,
@@ -555,7 +555,7 @@ export const MANHATTAN_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'manhattan-valley',
-    urlSlug: 'manhattan-valley-maid-service',
+    urlSlug: 'manhattan-valley-cleaning-services',
     name: 'Manhattan Valley',
     area: 'manhattan',
     lat: 40.7980, lng: -73.9660,
@@ -567,7 +567,7 @@ export const MANHATTAN_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'sugar-hill',
-    urlSlug: 'sugar-hill-maid-service',
+    urlSlug: 'sugar-hill-cleaning-services',
     name: 'Sugar Hill',
     area: 'manhattan',
     lat: 40.8270, lng: -73.9430,
@@ -579,7 +579,7 @@ export const MANHATTAN_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'marble-hill',
-    urlSlug: 'marble-hill-maid-service',
+    urlSlug: 'marble-hill-cleaning-services',
     name: 'Marble Hill',
     area: 'manhattan',
     lat: 40.8745, lng: -73.9105,
@@ -593,7 +593,7 @@ export const MANHATTAN_NEIGHBORHOODS: Neighborhood[] = [
   // === Missing Sub-Neighborhoods & Micro-Neighborhoods ===
   {
     slug: 'noho',
-    urlSlug: 'noho-maid-service',
+    urlSlug: 'noho-cleaning-services',
     name: 'NoHo',
     area: 'manhattan',
     lat: 40.7260, lng: -73.9928,
@@ -605,7 +605,7 @@ export const MANHATTAN_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'meatpacking',
-    urlSlug: 'meatpacking-district-maid-service',
+    urlSlug: 'meatpacking-district-cleaning-services',
     name: 'Meatpacking District',
     area: 'manhattan',
     lat: 40.7409, lng: -74.0078,
@@ -617,7 +617,7 @@ export const MANHATTAN_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'alphabet-city',
-    urlSlug: 'alphabet-city-maid-service',
+    urlSlug: 'alphabet-city-cleaning-services',
     name: 'Alphabet City',
     area: 'manhattan',
     lat: 40.7234, lng: -73.9777,
@@ -629,7 +629,7 @@ export const MANHATTAN_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'hudson-heights',
-    urlSlug: 'hudson-heights-maid-service',
+    urlSlug: 'hudson-heights-cleaning-services',
     name: 'Hudson Heights',
     area: 'manhattan',
     lat: 40.8530, lng: -73.9370,
@@ -641,7 +641,7 @@ export const MANHATTAN_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'manhattanville',
-    urlSlug: 'manhattanville-maid-service',
+    urlSlug: 'manhattanville-cleaning-services',
     name: 'Manhattanville',
     area: 'manhattan',
     lat: 40.8170, lng: -73.9560,
@@ -653,7 +653,7 @@ export const MANHATTAN_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'fort-george',
-    urlSlug: 'fort-george-maid-service',
+    urlSlug: 'fort-george-cleaning-services',
     name: 'Fort George',
     area: 'manhattan',
     lat: 40.8520, lng: -73.9290,
@@ -665,7 +665,7 @@ export const MANHATTAN_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'civic-center',
-    urlSlug: 'civic-center-maid-service',
+    urlSlug: 'civic-center-cleaning-services',
     name: 'Civic Center',
     area: 'manhattan',
     lat: 40.7128, lng: -74.0060,
@@ -677,7 +677,7 @@ export const MANHATTAN_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'rose-hill',
-    urlSlug: 'rose-hill-maid-service',
+    urlSlug: 'rose-hill-cleaning-services',
     name: 'Rose Hill',
     area: 'manhattan',
     lat: 40.7440, lng: -73.9810,
@@ -689,7 +689,7 @@ export const MANHATTAN_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'peter-cooper-village',
-    urlSlug: 'peter-cooper-village-maid-service',
+    urlSlug: 'peter-cooper-village-cleaning-services',
     name: 'Peter Cooper Village',
     area: 'manhattan',
     lat: 40.7340, lng: -73.9750,
@@ -701,7 +701,7 @@ export const MANHATTAN_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'south-street-seaport',
-    urlSlug: 'south-street-seaport-maid-service',
+    urlSlug: 'south-street-seaport-cleaning-services',
     name: 'South Street Seaport',
     area: 'manhattan',
     lat: 40.7063, lng: -74.0031,

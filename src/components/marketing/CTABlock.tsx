@@ -7,15 +7,15 @@ export default function CTABlock({ title, subtitle }: { title?: string; subtitle
             {title || 'Ready for a Spotless Home?'}
           </h2>
           <p className="text-[#1E2A4A]/70 text-lg mt-2">
-            {subtitle || 'Text or call us today — trusted by thousands of NYC residents.'}
+            {subtitle || 'Book your cleaning service today — trusted by thousands of NYC residents.'}
           </p>
         </div>
         <div className="flex flex-col sm:flex-row items-center gap-4 flex-shrink-0">
+          <a href="https://www.thenycmaid.com/book" className="bg-[#1E2A4A] text-white px-8 py-3.5 rounded-md font-bold text-sm tracking-widest uppercase hover:bg-[#1E2A4A]/90 transition-colors">
+            Book a Cleaning
+          </a>
           <a href="tel:2122028400" className="border-2 border-[#1E2A4A] text-[#1E2A4A] px-8 py-3.5 rounded-md font-bold text-sm tracking-widest uppercase hover:bg-[#1E2A4A] hover:text-white transition-colors">
             Call (212) 202-8400
-          </a>
-          <a href="sms:2122028400" className="text-[#1E2A4A] font-semibold text-lg hover:underline underline-offset-4">
-            or Text Us
           </a>
         </div>
       </div>

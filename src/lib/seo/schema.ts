@@ -5,22 +5,22 @@ import { SERVICES } from './services'
 import { AREAS } from './data/areas'
 
 const BUSINESS = {
-  name: 'The NYC Maid',
-  legalName: 'The NYC Maid Cleaning Service LLC',
-  url: 'https://www.thenycmaid.com',
+  name: 'Sunnyside Clean NYC',
+  legalName: 'Sunnyside Clean NYC — A NYC Maid Company',
+  url: 'https://www.cleaningservicesunnysideny.com',
   phone: '+1-212-202-8400',
   phoneDisplay: '(212) 202-8400',
-  email: 'hi@thenycmaid.com',
-  logo: 'https://www.thenycmaid.com/icon-512.png',
-  image: 'https://www.thenycmaid.com/icon-512.png',
+  email: 'hello@cleaningservicesunnysideny.com',
+  logo: 'https://www.cleaningservicesunnysideny.com/icon-512.png',
+  image: 'https://www.cleaningservicesunnysideny.com/icon-512.png',
   priceRange: '$$',
   ratingValue: '5.0',
   ratingCount: '27',
   reviewCount: '27',
   foundingDate: '2018',
   currenciesAccepted: 'USD',
-  paymentAccepted: 'Cash, Credit Card, Debit Card, Zelle (hi@thenycmaid.com), Venmo, Apple Pay',
-  description: 'Professional house cleaning services across New York City, Long Island, and New Jersey. Deep cleaning, regular apartment cleaning, move-in/move-out, post-construction cleanup, weekly maid service, same-day cleaning, Airbnb turnover, and office cleaning. Licensed, insured, and background-checked cleaners. Serving NYC since 2018.',
+  paymentAccepted: 'Cash, Credit Card, Debit Card, Zelle (hello@cleaningservicesunnysideny.com), Venmo, Apple Pay',
+  description: 'Professional house cleaning services across New York City, Long Island, and New Jersey. Deep cleaning, regular apartment cleaning, move-in/move-out, post-construction cleanup, weekly cleaning service, same-day cleaning, Airbnb turnover, and office cleaning. Licensed, insured, and background-checked cleaners. A NYC Maid Company — serving NYC since 2018.',
   slogan: "New York City's Most Trusted Cleaning Service",
   knowsLanguage: ['en', 'es'],
   numberOfEmployees: { '@type': 'QuantitativeValue' as const, minValue: 10, maxValue: 25 },
@@ -57,16 +57,16 @@ const GOOGLE_REVIEWS = [
   { text: 'Service was great and very friendly staff.', name: 'Priya Vadlamudi', location: 'New York', rating: 5, datePublished: '2025-11-20' },
   { text: 'Great service, cleaning, and pricing!', name: 'Erik Berlin', location: 'New York', rating: 5, datePublished: '2025-12-20' },
   { text: 'Super fast to book, incredibly kind people, and great results!', name: 'Kayli Watson', location: 'New York', rating: 5, datePublished: '2024-08-15' },
-  { text: 'We just had our apartment painted and needed a deep clean to get rid of loads of dust. NYC Maid sent a wonderful cleaner who was prompt, professional and did an amazing job. Highly recommend!!!', name: 'Julie Salamon', location: 'New York', rating: 5, datePublished: '2024-06-22' },
+  { text: 'We just had our apartment painted and needed a deep clean to get rid of loads of dust. Sunnyside Clean NYC sent a wonderful cleaner who was prompt, professional and did an amazing job. Highly recommend!!!', name: 'Julie Salamon', location: 'New York', rating: 5, datePublished: '2024-06-22' },
   { text: 'Super detailed!', name: 'Moodap', location: 'New York', rating: 5, datePublished: '2024-09-10' },
   { text: 'Everything was spotless, from oven stove to fridge.', name: 'Antong', location: 'New York', rating: 5, datePublished: '2024-05-18' },
   { text: "Best cleaning service I've used in the 20 years I've lived in NYC! Consistently efficient, thorough...", name: 'Courtney Gamble', location: 'New York', rating: 5, datePublished: '2024-07-03' },
   { text: 'Perfect for post move deep cleaning. Appliances were spotless. Looked brand new.', name: 'Shilpa Ray', location: 'New York', rating: 5, datePublished: '2024-04-28' },
   { text: 'The very best service every time, amazing!!', name: 'Greg Farr', location: 'New York', rating: 5, datePublished: '2024-03-14' },
-  { text: 'The NYC Maid Cleaning Service is so efficient and professional! I know I can always count on them.', name: 'Maria Lina', location: 'New York', rating: 5, datePublished: '2024-02-20' },
+  { text: 'Sunnyside Clean NYC is so efficient and professional! I know I can always count on them.', name: 'Maria Lina', location: 'New York', rating: 5, datePublished: '2024-02-20' },
   { text: 'Excellent service and a great price! Prompt and thorough, would highly recommend!', name: 'Timothy Wojcik', location: 'New York', rating: 5, datePublished: '2024-01-15' },
-  { text: '5 Stars - Absolutely the Best Cleaning Service in NYC! I gotta say, The NYC Maid is truly the best.', name: 'Jenni Martinez', location: 'New York', rating: 5, datePublished: '2023-11-08' },
-  { text: 'After trying three different cleaning companies in NYC, The NYC Maid is hands down the most affordable and thorough.', name: 'Jenna M', location: 'New York', rating: 5, datePublished: '2023-10-22' },
+  { text: '5 Stars - Absolutely the Best Cleaning Service in NYC! I gotta say, Sunnyside Clean is truly the best.', name: 'Jenni Martinez', location: 'New York', rating: 5, datePublished: '2023-11-08' },
+  { text: 'After trying three different cleaning companies in NYC, Sunnyside Clean NYC is hands down the most affordable and thorough.', name: 'Jenna M', location: 'New York', rating: 5, datePublished: '2023-10-22' },
 ]
 
 // ============ REUSABLE REFERENCES ============
@@ -93,7 +93,7 @@ const logoObj = {
   contentUrl: BUSINESS.logo,
   width: 512,
   height: 512,
-  caption: 'The NYC Maid Logo',
+  caption: 'Sunnyside Clean NYC Logo',
 }
 
 const aggregateRatingObj = {
@@ -200,7 +200,7 @@ export function organizationSchema() {
       'Apartment Cleaning',
       'Office Cleaning',
       'Airbnb Cleaning',
-      'Maid Service',
+      'Cleaning Service',
       'Residential Cleaning',
       'Commercial Cleaning',
       'NYC Apartment Cleaning',
@@ -242,7 +242,7 @@ export function webSiteSchema() {
       '@type': 'SearchAction',
       target: {
         '@type': 'EntryPoint',
-        urlTemplate: `${BUSINESS.url}/service-areas-served-by-the-nyc-maid?q={search_term_string}`,
+        urlTemplate: `${BUSINESS.url}/service-areas?q={search_term_string}`,
       },
       'query-input': 'required name=search_term_string',
     },
@@ -342,7 +342,7 @@ export function localBusinessSchema(neighborhood?: Neighborhood, area?: Area) {
       latitude: neighborhood.lat,
       longitude: neighborhood.lng,
     } : geoObj,
-    hasMap: 'https://maps.google.com/?q=The+NYC+Maid+150+W+47th+St+New+York+NY+10036',
+    hasMap: 'https://maps.google.com/?q=Sunnyside+Clean+NYC+150+W+47th+St+New+York+NY+10036',
     areaServed,
     serviceArea: serviceAreaObj,
     aggregateRating: aggregateRatingObj,
@@ -358,7 +358,7 @@ export function localBusinessSchema(neighborhood?: Neighborhood, area?: Area) {
           itemListElement: [
             { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Deep Cleaning', url: `${BUSINESS.url}/services/deep-cleaning-service-in-nyc` } },
             { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Regular Apartment Cleaning', url: `${BUSINESS.url}/services/apartment-cleaning-service-in-nyc` } },
-            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Weekly Maid Service', url: `${BUSINESS.url}/services/weekly-maid-service-in-nyc` } },
+            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Weekly Cleaning Service', url: `${BUSINESS.url}/services/weekly-maid-service-in-nyc` } },
             { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Bi-Weekly Cleaning', url: `${BUSINESS.url}/services/bi-weekly-cleaning-service-in-nyc` } },
             { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Monthly Cleaning', url: `${BUSINESS.url}/services/monthly-cleaning-service-in-nyc` } },
             { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Move-In/Move-Out Cleaning', url: `${BUSINESS.url}/services/move-in-move-out-cleaning-service-in-nyc` } },
@@ -406,7 +406,7 @@ export function localBusinessSchema(neighborhood?: Neighborhood, area?: Area) {
         '@type': 'ReserveAction',
         target: {
           '@type': 'EntryPoint',
-          urlTemplate: `${BUSINESS.url}/book/new`,
+          urlTemplate: 'https://www.thenycmaid.com/book',
           actionPlatform: ['http://schema.org/DesktopWebPlatform', 'http://schema.org/IOSPlatform', 'http://schema.org/AndroidPlatform'],
         },
         result: { '@type': 'Reservation', name: 'Book Cleaning Service' },
@@ -487,7 +487,7 @@ export function serviceSchema(service: Service, neighborhood?: Neighborhood, are
     },
     potentialAction: {
       '@type': 'ReserveAction',
-      target: `${BUSINESS.url}/book/new`,
+      target: 'https://www.thenycmaid.com/book',
       result: { '@type': 'Reservation', name: `Book ${service.name}` },
     },
   }
@@ -628,15 +628,15 @@ export function siteNavigationSchema() {
     name: 'Main Navigation',
     hasPart: [
       { '@type': 'WebPage', name: 'Home', url: BUSINESS.url },
-      { '@type': 'WebPage', name: 'Services', url: `${BUSINESS.url}/nyc-maid-service-services-offered-by-the-nyc-maid` },
-      { '@type': 'WebPage', name: 'Service Areas', url: `${BUSINESS.url}/service-areas-served-by-the-nyc-maid` },
-      { '@type': 'WebPage', name: 'Pricing', url: `${BUSINESS.url}/updated-nyc-maid-service-industry-pricing` },
-      { '@type': 'WebPage', name: 'Reviews', url: `${BUSINESS.url}/nyc-customer-reviews-for-the-nyc-maid` },
-      { '@type': 'WebPage', name: 'FAQ', url: `${BUSINESS.url}/nyc-cleaning-service-frequently-asked-questions-in-2025` },
-      { '@type': 'WebPage', name: 'Blog', url: `${BUSINESS.url}/nyc-maid-service-blog` },
-      { '@type': 'WebPage', name: 'About', url: `${BUSINESS.url}/about-the-nyc-maid-service-company` },
-      { '@type': 'WebPage', name: 'Contact', url: `${BUSINESS.url}/contact-the-nyc-maid-service-today` },
-      { '@type': 'WebPage', name: 'Book Now', url: `${BUSINESS.url}/book/new` },
+      { '@type': 'WebPage', name: 'Services', url: `${BUSINESS.url}/nyc-cleaning-services-offered` },
+      { '@type': 'WebPage', name: 'Service Areas', url: `${BUSINESS.url}/service-areas` },
+      { '@type': 'WebPage', name: 'Pricing', url: `${BUSINESS.url}/nyc-cleaning-service-pricing` },
+      { '@type': 'WebPage', name: 'Reviews', url: `${BUSINESS.url}/nyc-customer-reviews` },
+      { '@type': 'WebPage', name: 'FAQ', url: `${BUSINESS.url}/frequently-asked-cleaning-service-related-questions` },
+      { '@type': 'WebPage', name: 'Blog', url: `${BUSINESS.url}/cleaning-tips-and-tricks` },
+      { '@type': 'WebPage', name: 'About', url: `${BUSINESS.url}/about-nyc-cleaning-service-sunnyside-clean-nyc` },
+      { '@type': 'WebPage', name: 'Contact', url: `${BUSINESS.url}/contact-nyc-cleaning-service-sunnyside-clean-nyc` },
+      { '@type': 'WebPage', name: 'Book Now', url: 'https://www.thenycmaid.com/book' },
     ],
   }
 }
@@ -649,7 +649,7 @@ export function howToBookSchema() {
   return {
     '@context': 'https://schema.org',
     '@type': 'HowTo',
-    name: 'How to Book a Cleaning Service with The NYC Maid',
+    name: 'How to Book a Cleaning Service with Sunnyside Clean NYC',
     description: 'Book a professional cleaning in just 3 simple steps.',
     totalTime: 'PT5M',
     estimatedCost: { '@type': 'MonetaryAmount', currency: 'USD', value: '49' },
@@ -657,8 +657,8 @@ export function howToBookSchema() {
       {
         '@type': 'HowToStep',
         name: 'Contact Us',
-        text: 'Call (212) 202-8400, text us, or book online at thenycmaid.com/book/new',
-        url: `${BUSINESS.url}/book/new`,
+        text: 'Call (212) 202-8400, text us, or book online at thenycmaid.com/book',
+        url: 'https://www.thenycmaid.com/book',
         position: 1,
       },
       {
@@ -688,7 +688,7 @@ export function serviceItemListSchema() {
   return {
     '@context': 'https://schema.org',
     '@type': 'ItemList',
-    name: 'Cleaning Services Offered by The NYC Maid',
+    name: 'Cleaning Services Offered by Sunnyside Clean NYC',
     description: 'Complete list of professional cleaning services available across NYC, Long Island, and New Jersey.',
     numberOfItems: SERVICES.length,
     itemListElement: SERVICES.map((s, i) => ({
@@ -719,7 +719,7 @@ export function areaItemListSchema() {
   return {
     '@context': 'https://schema.org',
     '@type': 'ItemList',
-    name: 'Service Areas Covered by The NYC Maid',
+    name: 'Service Areas Covered by Sunnyside Clean NYC',
     description: 'We serve over 225 neighborhoods across NYC, Long Island, and New Jersey.',
     numberOfItems: AREAS.length,
     itemListElement: AREAS.map((a, i) => ({
@@ -745,7 +745,7 @@ export function professionalServiceSchema(service: Service, neighborhood?: Neigh
   return {
     '@context': 'https://schema.org',
     '@type': 'ProfessionalService',
-    name: `${service.name}${neighborhood ? ` in ${neighborhood.name}` : ''} - The NYC Maid`,
+    name: `${service.name}${neighborhood ? ` in ${neighborhood.name}` : ''} - Sunnyside Clean NYC`,
     description: service.description,
     url: neighborhood ? `${BUSINESS.url}/${neighborhood.urlSlug}/${service.slug}` : `${BUSINESS.url}/services/${service.urlSlug}`,
     telephone: BUSINESS.phone,
@@ -773,7 +773,7 @@ export function homepageSchemas() {
     webSiteSchema(),
     webPageSchema({
       url,
-      name: 'NYC Maid Service & House Cleaning From $49/hr | 5-Star Rated | The NYC Maid',
+      name: 'NYC Cleaning Service & House Cleaning From $49/hr | 5-Star Rated | Sunnyside Clean NYC',
       description: BUSINESS.description,
       type: 'CollectionPage',
       speakable: ['h1', '.hero-description'],
@@ -792,8 +792,8 @@ export function homepageSchemas() {
 
 export function areaPageSchemas(area: Area) {
   const url = `${BUSINESS.url}/${area.urlSlug}`
-  const title = `${area.name} Maid Service & House Cleaning From $49/hr | The NYC Maid`
-  const description = `Professional house cleaning in ${area.name} from $49/hr. Deep cleaning, weekly maid service, move-in/out & more. Licensed, insured, 5.0★ Google. ${BUSINESS.phoneDisplay}`
+  const title = `${area.name} Cleaning Service & House Cleaning From $49/hr | Sunnyside Clean NYC`
+  const description = `Professional house cleaning in ${area.name} from $49/hr. Deep cleaning, weekly cleaning service, move-in/out & more. Licensed, insured, 5.0★ Google. ${BUSINESS.phoneDisplay}`
   return [
     organizationSchema(),
     webSiteSchema(),
@@ -819,7 +819,7 @@ export function areaPageSchemas(area: Area) {
 
 export function neighborhoodPageSchemas(neighborhood: Neighborhood, area: Area) {
   const url = `${BUSINESS.url}/${neighborhood.urlSlug}`
-  const title = `${neighborhood.name} Maid Service & House Cleaning From $49/hr | The NYC Maid`
+  const title = `${neighborhood.name} Cleaning Service & House Cleaning From $49/hr | Sunnyside Clean NYC`
   const description = `Professional cleaning in ${neighborhood.name}, ${area.name}. Serving ${neighborhood.housing_types.slice(0, 2).join(', ')} near ${neighborhood.landmarks[0]}. From $49/hr. 5.0★ Google. ${BUSINESS.phoneDisplay}`
   return [
     organizationSchema(),
@@ -860,7 +860,7 @@ export function neighborhoodPageSchemas(neighborhood: Neighborhood, area: Area) 
 
 export function neighborhoodServicePageSchemas(neighborhood: Neighborhood, service: Service, area: Area) {
   const url = `${BUSINESS.url}/${neighborhood.urlSlug}/${service.slug}`
-  const title = `${service.name} in ${neighborhood.name}, ${area.name} From $49/hr | The NYC Maid`
+  const title = `${service.name} in ${neighborhood.name}, ${area.name} From $49/hr | Sunnyside Clean NYC`
   const description = `Professional ${service.name.toLowerCase()} in ${neighborhood.name}, ${area.name}. ${service.features.slice(0, 3).join(', ')} & more. ${service.priceRange}. 5.0★ Google. ${BUSINESS.phoneDisplay}`
   return [
     organizationSchema(),
@@ -893,7 +893,7 @@ export function neighborhoodServicePageSchemas(neighborhood: Neighborhood, servi
 
 export function servicePageSchemas(service: Service) {
   const url = `${BUSINESS.url}/services/${service.urlSlug}`
-  const title = `${service.name} in NYC From ${service.priceRange.split('–')[0]} | 5-Star Rated | The NYC Maid`
+  const title = `${service.name} in NYC From ${service.priceRange.split('–')[0]} | 5-Star Rated | Sunnyside Clean NYC`
   const description = `Professional ${service.name.toLowerCase()} across Manhattan, Brooklyn, Queens, Long Island & NJ. ${service.features.slice(0, 3).join(', ')} & more. From ${service.priceRange.split('–')[0]}. 5.0★ Google. ${BUSINESS.phoneDisplay}`
   return [
     organizationSchema(),
@@ -904,7 +904,7 @@ export function servicePageSchemas(service: Service) {
       description,
       breadcrumb: [
         { name: 'Home', url: BUSINESS.url },
-        { name: 'Services', url: `${BUSINESS.url}/nyc-maid-service-services-offered-by-the-nyc-maid` },
+        { name: 'Services', url: `${BUSINESS.url}/nyc-cleaning-services-offered` },
         { name: service.name, url },
       ],
     }),
@@ -913,7 +913,7 @@ export function servicePageSchemas(service: Service) {
     professionalServiceSchema(service),
     breadcrumbSchema([
       { name: 'Home', url: BUSINESS.url },
-      { name: 'Services', url: `${BUSINESS.url}/nyc-maid-service-services-offered-by-the-nyc-maid` },
+      { name: 'Services', url: `${BUSINESS.url}/nyc-cleaning-services-offered` },
       { name: service.name, url },
     ]),
     howToBookSchema(),

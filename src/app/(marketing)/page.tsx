@@ -14,12 +14,12 @@ const content = homepageContent()
 export const metadata: Metadata = {
   title: { absolute: content.title },
   description: content.metaDescription,
-  alternates: { canonical: 'https://www.thenycmaid.com' },
+  alternates: { canonical: 'https://www.cleaningservicesunnysideny.com' },
   openGraph: {
     title: content.title,
     description: content.metaDescription,
-    url: 'https://www.thenycmaid.com',
-    siteName: 'The NYC Maid',
+    url: 'https://www.cleaningservicesunnysideny.com',
+    siteName: 'Sunnyside Clean NYC',
     type: 'website',
     locale: 'en_US',
   },
@@ -38,9 +38,9 @@ export const metadata: Metadata = {
 }
 
 const testimonials = [
-  { text: 'We just had our apartment painted and needed a deep clean to get rid of loads of dust. NYC Maid sent a wonderful cleaner who was prompt, professional and did an amazing job. Highly recommend!!!', name: 'Julie Salamon', location: 'New York' },
+  { text: 'We just had our apartment painted and needed a deep clean to get rid of loads of dust. Sunnyside Clean NYC sent a wonderful cleaner who was prompt, professional and did an amazing job. Highly recommend!!!', name: 'Julie Salamon', location: 'New York' },
   { text: 'Best cleaning service I\'ve used in the 20 years I\'ve lived in NYC! Consistently efficient, thorough...', name: 'Courtney Gamble', location: 'New York' },
-  { text: 'After trying three different cleaning companies in NYC, The NYC Maid is hands down the most affordable and thorough.', name: 'Jenna M', location: 'New York' },
+  { text: 'After trying three different cleaning companies in NYC, Sunnyside Clean NYC is hands down the most affordable and thorough.', name: 'Jenna M', location: 'New York' },
 ]
 
 const homepageFAQs = [
@@ -51,7 +51,7 @@ const homepageFAQs = [
   { question: 'How do I book a cleaning?', answer: 'Text or call us at (212) 202-8400. We typically schedule within 24-48 hours, with same-day availability for urgent requests.' },
   { question: 'Can I book online?', answer: 'Yes! You can book directly through our website. Just click "Book Online" in the menu, or text us if you prefer a personal touch.' },
   { question: 'Do you offer same-day cleaning?', answer: 'Yes. Same-day and emergency cleaning is available at $100/hour. We dispatch a professional cleaner to your door within hours.' },
-  { question: 'What payment methods do you accept?', answer: 'We accept credit cards, debit cards, Zelle (hi@thenycmaid.com), Venmo, Apple Pay, and cash. You can also pay securely online through our payment portal.' },
+  { question: 'What payment methods do you accept?', answer: 'We accept credit cards, debit cards, Zelle (hello@cleaningservicesunnysideny.com), Venmo, Apple Pay, and cash. You can also pay securely online through our payment portal.' },
   { question: 'Do I need to tip my cleaner?', answer: 'Tipping is never required but always appreciated. If you feel your cleaner did a great job, a tip is a wonderful way to show it.' },
 
   // Services
@@ -99,7 +99,7 @@ const homepageFAQs = [
   { question: 'What if I am not happy with the cleaning?', answer: 'Your satisfaction is guaranteed. If you are not happy with any aspect of the clean, contact us within 24 hours and we will send someone back to make it right at no extra charge.' },
   { question: 'How do you maintain quality?', answer: 'We use detailed checklists, conduct regular quality reviews, and only work with experienced, vetted cleaners. Every clean is held to the same high standard.' },
   { question: 'Do you have reviews I can read?', answer: 'Yes! We have a 5.0-star Google rating. You can read verified reviews on our Reviews page or on Google directly.' },
-  { question: 'How long have you been in business?', answer: 'The NYC Maid has been serving the New York City metro area since 2018. We have cleaned thousands of homes and built a loyal client base through consistent quality.' },
+  { question: 'How long have you been in business?', answer: 'Sunnyside Clean NYC has been serving the New York City metro area since 2018. A NYC Maid Company — we have cleaned thousands of homes and built a loyal client base through consistent quality.' },
 
   // Special Situations
   { question: 'Can you clean if I have pets?', answer: 'Absolutely. We love pets! Just let us know so we can plan accordingly. We are experienced with homes that have dogs, cats, and other animals.' },
@@ -110,7 +110,7 @@ const homepageFAQs = [
 
   // Referral & Extras
   { question: 'Do you have a referral program?', answer: 'Yes! Refer a friend and earn 10% commission on every cleaning they book — not just the first one. It is recurring income for as long as they stay a client. Sign up on our Referral Program page.' },
-  { question: 'How do I contact you?', answer: 'Text or call (212) 202-8400, or email hi@thenycmaid.com. Texting is the fastest way to reach us.' },
+  { question: 'How do I contact you?', answer: 'Text or call (212) 202-8400, or email hello@cleaningservicesunnysideny.com. Texting is the fastest way to reach us.' },
 ]
 
 export default function HomePage() {
@@ -194,7 +194,7 @@ export default function HomePage() {
             {/* Left — story */}
             <div>
               <h2 className="text-xs font-semibold text-gray-400 tracking-[0.25em] uppercase mb-3">New York City&apos;s Trusted Home Cleaning Company Since 2018</h2>
-              <p className="font-[family-name:var(--font-bebas)] text-4xl md:text-5xl text-[#1E2A4A] tracking-wide leading-tight mb-4">Welcome to The NYC Maid</p>
+              <p className="font-[family-name:var(--font-bebas)] text-4xl md:text-5xl text-[#1E2A4A] tracking-wide leading-tight mb-4">Welcome to Sunnyside Clean NYC</p>
               <div className="w-12 h-[2px] bg-[#A8F0DC] mb-6" />
               <p className="text-gray-600 text-lg leading-relaxed mb-5">
                 We&apos;re a small, dedicated cleaning company that treats every home like our own. No apps, no algorithms, no random strangers — just experienced, professional cleaners who show up on time, do beautiful work, and earn your trust visit after visit.
@@ -212,7 +212,7 @@ export default function HomePage() {
                 We started in 2018 with one cleaner and a commitment to doing things the right way. Today we&apos;re one of the highest-rated cleaning companies in New York — not because we&apos;re the biggest, but because we care the most. Read our <Link href="/nyc-customer-reviews-for-the-nyc-maid" className="text-[#1E2A4A] underline underline-offset-2">customer reviews</Link> and see for yourself.
               </p>
               <div className="flex flex-wrap items-center gap-4">
-                <Link href="/about-the-nyc-maid-service-company" className="inline-block bg-[#1E2A4A] text-white px-6 py-3 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#1E2A4A]/90 transition-colors">
+                <Link href="/about-nyc-cleaning-service-sunnyside-clean-nyc" className="inline-block bg-[#1E2A4A] text-white px-6 py-3 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#1E2A4A]/90 transition-colors">
                   Learn More About Us
                 </Link>
                 <a href="sms:2122028400" className="inline-block bg-[#A8F0DC] text-[#1E2A4A] px-6 py-3 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#8DE8CC] transition-colors">
@@ -227,7 +227,7 @@ export default function HomePage() {
             {/* Right — at a glance + quick stats */}
             <div className="space-y-6">
               <div className="bg-[#F5FBF8] border border-[#A8F0DC]/30 rounded-2xl p-8">
-                <h3 className="font-[family-name:var(--font-bebas)] text-2xl text-[#1E2A4A] tracking-wide mb-5">The NYC Maid at a Glance</h3>
+                <h3 className="font-[family-name:var(--font-bebas)] text-2xl text-[#1E2A4A] tracking-wide mb-5">Sunnyside Clean NYC at a Glance</h3>
                 <div className="grid grid-cols-2 gap-6">
                   <div>
                     <p className="font-[family-name:var(--font-bebas)] text-3xl text-[#1E2A4A] tracking-wide">2018</p>
@@ -275,10 +275,10 @@ export default function HomePage() {
       {/* Pricing Deep Dive */}
       <section className="py-20 bg-[#A8F0DC]">
         <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-xs font-semibold text-[#1E2A4A]/50 tracking-[0.25em] uppercase mb-3 text-center">NYC Maid Service Pricing Explained — Hourly Rates, Average Costs &amp; What to Expect</h2>
+          <h2 className="text-xs font-semibold text-[#1E2A4A]/50 tracking-[0.25em] uppercase mb-3 text-center">NYC Cleaning Service Pricing Explained — Hourly Rates, Average Costs &amp; What to Expect</h2>
           <p className="font-[family-name:var(--font-bebas)] text-4xl md:text-5xl text-[#1E2A4A] tracking-wide text-center mb-4">How Much Does House Cleaning Cost in New York City?</p>
           <p className="text-[#1E2A4A]/70 text-center max-w-3xl mx-auto mb-14">
-            We keep it simple: flat hourly rates, no hidden fees, no contracts. Choose the option that fits your situation. Every tier includes the same professional, <Link href="/about-the-nyc-maid-service-company" className="text-[#1E2A4A] font-semibold underline underline-offset-2">background-checked cleaners</Link> — the only difference is who brings the supplies. See our full <Link href="/updated-nyc-maid-service-industry-pricing" className="text-[#1E2A4A] font-semibold underline underline-offset-2">pricing page</Link> for more details.
+            We keep it simple: flat hourly rates, no hidden fees, no contracts. Choose the option that fits your situation. Every tier includes the same professional, <Link href="/about-nyc-cleaning-service-sunnyside-clean-nyc" className="text-[#1E2A4A] font-semibold underline underline-offset-2">background-checked cleaners</Link> — the only difference is who brings the supplies. See our full <Link href="/updated-nyc-maid-service-industry-pricing" className="text-[#1E2A4A] font-semibold underline underline-offset-2">pricing page</Link> for more details.
           </p>
 
           {/* 3 pricing cards */}
@@ -425,7 +425,7 @@ export default function HomePage() {
 
           {/* Quick comparison + CTA */}
           <div className="bg-white border border-gray-200 rounded-2xl p-8 text-center">
-            <h3 className="font-[family-name:var(--font-bebas)] text-2xl text-[#1E2A4A] tracking-wide mb-2">How NYC Maid Pricing Compares to the Industry</h3>
+            <h3 className="font-[family-name:var(--font-bebas)] text-2xl text-[#1E2A4A] tracking-wide mb-2">How Our Pricing Compares to the Industry</h3>
             <p className="text-gray-500 text-sm max-w-2xl mx-auto mb-6">
               Most NYC cleaning companies charge $75–$120/hr or use opaque flat-rate quotes that hide the true cost. We publish our rates, charge by the hour, and never surprise you with add-on fees. What you see is what you pay.
             </p>
@@ -435,7 +435,7 @@ export default function HomePage() {
                 <p className="font-[family-name:var(--font-bebas)] text-2xl text-gray-400 tracking-wide">$75–$120/hr</p>
               </div>
               <div className="bg-[#F5FBF8] border border-[#A8F0DC]/30 rounded-xl p-4">
-                <p className="text-xs text-[#A8F0DC] font-semibold tracking-wide uppercase mb-1">The NYC Maid</p>
+                <p className="text-xs text-[#A8F0DC] font-semibold tracking-wide uppercase mb-1">Sunnyside Clean NYC</p>
                 <p className="font-[family-name:var(--font-bebas)] text-2xl text-[#1E2A4A] tracking-wide">$49–$65/hr</p>
               </div>
               <div className="bg-gray-50 rounded-xl p-4">
@@ -499,7 +499,7 @@ export default function HomePage() {
                   { name: 'Joseph Busacca', time: 'a day ago', text: 'Karina was great and very helpful.', initial: 'J', color: 'bg-indigo-500' },
                   { name: 'Adam Berger', time: '3 days ago', text: 'Great job. Friendly and professional.', initial: 'A', color: 'bg-slate-500' },
                   { name: 'Jessica Pace', time: '4 days ago', text: 'Ines Enriquez was incredible. Loved this job. Worth every penny.', initial: 'J', color: 'bg-purple-500' },
-                  { name: 'Brad Lieberman', time: '2 weeks ago', text: 'Jeff is a real gem. Super communicative easy going and responsive. In a city with a lot of fly by night operations, NYC Maids is the real deal.', initial: 'B', color: 'bg-amber-400' },
+                  { name: 'Brad Lieberman', time: '2 weeks ago', text: 'Jeff is a real gem. Super communicative easy going and responsive. In a city with a lot of fly by night operations, Sunnyside Clean is the real deal.', initial: 'B', color: 'bg-amber-400' },
                   { name: 'Eeland Stribling', time: '4 weeks ago', text: 'Cindy came and cleaned very well. Even cleaned up my living room as bonus. Right on time, fast, easy to book and communicate. Will be using again. No complaints!', initial: 'E', color: 'bg-violet-400' },
                   { name: 'Kelsey Wheeler', time: '2 weeks ago', text: 'Great experience. Texted the number on their website on Saturday and had a deep cleaning scheduled for that following Monday at 9am. The cleaner was prompt and super nice/friendly.', initial: 'K', color: 'bg-cyan-400' },
                   { name: 'Jason Klig', time: '2 months ago', text: 'Maria did an amazing job! My apartment is spotless and she is so easy to work with. Was very happy to accommodate all of my requests.', initial: 'J', color: 'bg-lime-500' },
@@ -512,16 +512,16 @@ export default function HomePage() {
                   { name: 'Priya Vadlamudi', time: '3 months ago', text: 'Service was great and very friendly staff.', initial: 'P', color: 'bg-pink-500' },
                   { name: 'Erik Berlin', time: '2 months ago', text: 'Great service, cleaning, and pricing!', initial: 'E', color: 'bg-teal-500' },
                   { name: 'Kayli Watson', time: '5 months ago', text: 'Super fast to book, incredibly kind people, and great results!', initial: 'K', color: 'bg-pink-400' },
-                  { name: 'Julie Salamon', time: '5 months ago', text: 'We just had our apartment painted and needed a deep clean to get rid of loads of dust. NYC Maid sent a wonderful cleaner who was prompt, professional and did an amazing job. Highly recommend!!!', initial: 'J', color: 'bg-orange-400' },
+                  { name: 'Julie Salamon', time: '5 months ago', text: 'We just had our apartment painted and needed a deep clean to get rid of loads of dust. Sunnyside Clean NYC sent a wonderful cleaner who was prompt, professional and did an amazing job. Highly recommend!!!', initial: 'J', color: 'bg-orange-400' },
                   { name: 'Moodap', time: '5 months ago', text: 'Super detailed!', initial: 'M', color: 'bg-green-500' },
                   { name: 'Antong', time: '6 months ago', text: 'Everything was spotless, from oven stove to fridge.', initial: 'A', color: 'bg-teal-400' },
                   { name: 'Courtney Gamble', time: '6 months ago', text: "Best cleaning service I've used in the 20 years I've lived in NYC! Consistently efficient, thorough...", initial: 'C', color: 'bg-purple-400' },
                   { name: 'Shilpa Ray', time: '6 months ago', text: 'Perfect for post move deep cleaning. Appliances were spotless. Looked brand new.', initial: 'S', color: 'bg-blue-400' },
                   { name: 'Greg Farr', time: '6 months ago', text: 'The very best service every time, amazing!!', initial: 'G', color: 'bg-indigo-400' },
-                  { name: 'Maria Lina', time: '6 months ago', text: 'The NYC Maid Cleaning Service is so efficient and professional! I know I can always count on them.', initial: 'M', color: 'bg-rose-400' },
+                  { name: 'Maria Lina', time: '6 months ago', text: 'Sunnyside Clean NYC is so efficient and professional! I know I can always count on them.', initial: 'M', color: 'bg-rose-400' },
                   { name: 'Timothy Wojcik', time: '7 months ago', text: 'Excellent service and a great price! Prompt and thorough, would highly recommend!', initial: 'T', color: 'bg-amber-500' },
-                  { name: 'Jenni Martinez', time: '7 months ago', text: '5 Stars \u2013 Absolutely the Best Cleaning Service in NYC! I gotta say, The NYC Maid is truly the best.', initial: 'J', color: 'bg-emerald-500' },
-                  { name: 'Jenna M', time: '7 months ago', text: 'After trying three different cleaning companies in NYC, The NYC Maid is hands down the most affordable and thorough.', initial: 'J', color: 'bg-sky-500' },
+                  { name: 'Jenni Martinez', time: '7 months ago', text: '5 Stars \u2013 Absolutely the Best Cleaning Service in NYC! I gotta say, Sunnyside Clean is truly the best.', initial: 'J', color: 'bg-emerald-500' },
+                  { name: 'Jenna M', time: '7 months ago', text: 'After trying three different cleaning companies in NYC, Sunnyside Clean NYC is hands down the most affordable and thorough.', initial: 'J', color: 'bg-sky-500' },
                 ].map((review, i) => (
                   <div key={i} className="border border-gray-200 rounded-xl p-5">
                     <div className="flex items-center gap-2.5 mb-2">
@@ -570,13 +570,13 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
           <div>
             <h2 className="text-xs font-semibold text-gray-400 tracking-[0.2em] uppercase mb-3">Licensed &amp; Insured NYC Cleaning Company</h2>
-            <p className="font-[family-name:var(--font-bebas)] text-4xl md:text-5xl text-[#1E2A4A] tracking-wide leading-tight mb-6">Why Thousands of New Yorkers Trust The NYC Maid</p>
+            <p className="font-[family-name:var(--font-bebas)] text-4xl md:text-5xl text-[#1E2A4A] tracking-wide leading-tight mb-6">Why Thousands of New Yorkers Trust Sunnyside Clean NYC</p>
             <div className="w-12 h-[2px] bg-[#A8F0DC] mb-6" />
             <p className="text-gray-600 text-lg leading-relaxed mb-4">
               We provide personalized, hourly <Link href="/updated-nyc-maid-service-industry-pricing" className="text-[#1E2A4A] underline underline-offset-2">cleaning service pricing</Link> for each unique space — ensuring high-quality cleaning tailored to your needs. No contracts, no hidden fees, no surprises.
             </p>
             <p className="text-gray-600 leading-relaxed mb-6">
-              Every cleaner on our team is fully background-checked and insured. Whether you need a <Link href="/services/apartment-cleaning-service-in-nyc" className="text-[#1E2A4A] underline underline-offset-2">regular apartment cleaning</Link> in <Link href="/manhattan-maid-service" className="text-[#1E2A4A] underline underline-offset-2">Manhattan</Link>, a <Link href="/services/deep-cleaning-service-in-nyc" className="text-[#1E2A4A] underline underline-offset-2">deep clean</Link> in <Link href="/brooklyn-maid-service" className="text-[#1E2A4A] underline underline-offset-2">Brooklyn</Link>, or <Link href="/services/airbnb-cleaning-in-nyc" className="text-[#1E2A4A] underline underline-offset-2">Airbnb turnover cleaning</Link> in <Link href="/queens-maid-service" className="text-[#1E2A4A] underline underline-offset-2">Queens</Link> — we&apos;ve got you covered. <Link href="/about-the-nyc-maid-service-company" className="text-[#1E2A4A] underline underline-offset-2">Learn more about our company</Link>.
+              Every cleaner on our team is fully background-checked and insured. Whether you need a <Link href="/services/apartment-cleaning-service-in-nyc" className="text-[#1E2A4A] underline underline-offset-2">regular apartment cleaning</Link> in <Link href="/manhattan-maid-service" className="text-[#1E2A4A] underline underline-offset-2">Manhattan</Link>, a <Link href="/services/deep-cleaning-service-in-nyc" className="text-[#1E2A4A] underline underline-offset-2">deep clean</Link> in <Link href="/brooklyn-maid-service" className="text-[#1E2A4A] underline underline-offset-2">Brooklyn</Link>, or <Link href="/services/airbnb-cleaning-in-nyc" className="text-[#1E2A4A] underline underline-offset-2">Airbnb turnover cleaning</Link> in <Link href="/queens-maid-service" className="text-[#1E2A4A] underline underline-offset-2">Queens</Link> — we&apos;ve got you covered. <Link href="/about-nyc-cleaning-service-sunnyside-clean-nyc" className="text-[#1E2A4A] underline underline-offset-2">Learn more about our company</Link>.
             </p>
             <div className="flex flex-col sm:flex-row items-start gap-4">
               <a href="sms:2122028400" className="inline-block bg-[#A8F0DC] text-[#1E2A4A] px-8 py-3.5 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#8DE8CC] transition-colors">
@@ -620,7 +620,7 @@ export default function HomePage() {
           </p>
           <p className="text-[#1E2A4A]/70 font-medium tracking-wide">&mdash; {testimonials[0].name}, {testimonials[0].location}</p>
           <div className="mt-8">
-            <Link href="/nyc-customer-reviews-for-the-nyc-maid" className="text-[#1E2A4A] font-semibold text-sm tracking-wide hover:underline underline-offset-4">Read All NYC Maid Service Reviews &rarr;</Link>
+            <Link href="/nyc-customer-reviews-for-the-nyc-maid" className="text-[#1E2A4A] font-semibold text-sm tracking-wide hover:underline underline-offset-4">Read All Cleaning Service Reviews &rarr;</Link>
           </div>
         </div>
       </section>
@@ -628,8 +628,8 @@ export default function HomePage() {
       {/* Why Clients Choose Us */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-xs font-semibold text-gray-400 tracking-[0.25em] uppercase mb-3 text-center">What Makes The NYC Maid Different From Other NYC Cleaning Services</h2>
-          <p className="font-[family-name:var(--font-bebas)] text-4xl md:text-5xl text-[#1E2A4A] tracking-wide text-center mb-4">Why Clients Choose The NYC Maid Over Every Other Cleaning Company</p>
+          <h2 className="text-xs font-semibold text-gray-400 tracking-[0.25em] uppercase mb-3 text-center">What Makes Sunnyside Clean NYC Different From Other NYC Cleaning Services</h2>
+          <p className="font-[family-name:var(--font-bebas)] text-4xl md:text-5xl text-[#1E2A4A] tracking-wide text-center mb-4">Why Clients Choose Sunnyside Clean NYC Over Every Other Cleaning Company</p>
           <p className="text-gray-500 text-center max-w-3xl mx-auto mb-14">
             No money upfront — you pay only after your cleaning is complete. Flat <Link href="/updated-nyc-maid-service-industry-pricing" className="text-[#1E2A4A] underline underline-offset-2">hourly pricing</Link> with no surprise fees. Experienced, professional cleaners — not random gig workers. <Link href="/services/weekly-maid-service-in-nyc" className="text-[#1E2A4A] underline underline-offset-2">Weekly</Link> and <Link href="/services/bi-weekly-cleaning-service-in-nyc" className="text-[#1E2A4A] underline underline-offset-2">bi-weekly recurring service</Link> available. No contracts — stay because you&apos;re happy.
           </p>
@@ -659,7 +659,7 @@ export default function HomePage() {
                 {[
                   'Payment is requested when the cleaning is nearly complete',
                   'You see the results before you pay',
-                  'Accepted methods: Zelle (hi@thenycmaid.com) or Apple Pay',
+                  'Accepted methods: Zelle (hello@cleaningservicesunnysideny.com) or Apple Pay',
                   'No processing fees, no delays, no chargebacks',
                   'Cleaner remains on site until payment is completed',
                 ].map(item => (
@@ -711,7 +711,7 @@ export default function HomePage() {
             <Link href="/available-nyc-maid-jobs" className="text-[#1E2A4A] font-semibold text-sm hover:underline underline-offset-4">Join Our Cleaning Team &rarr;</Link>
           </div>
           <div>
-            <h2 className="text-xs font-semibold text-gray-400 tracking-[0.2em] uppercase mb-3">The Ideal NYC Maid Service Client</h2>
+            <h2 className="text-xs font-semibold text-gray-400 tracking-[0.2em] uppercase mb-3">The Ideal Cleaning Service Client</h2>
             <p className="font-[family-name:var(--font-bebas)] text-3xl text-[#1E2A4A] tracking-wide mb-6">Who We&apos;re Best For</p>
             <div className="w-12 h-[2px] bg-[#A8F0DC] mb-6" />
             <ul className="space-y-4">
@@ -905,7 +905,7 @@ export default function HomePage() {
           <h2 className="text-xs font-semibold text-gray-400 tracking-[0.25em] uppercase mb-3">Earn Passive Income With Our NYC Cleaning Referral Program</h2>
           <p className="font-[family-name:var(--font-bebas)] text-3xl md:text-4xl text-[#1E2A4A] tracking-wide mb-4">Get Paid 10% Every Time Your Referral Books a Cleaning</p>
           <p className="text-gray-500 max-w-2xl mx-auto mb-8">
-            Refer friends, family, or neighbors to The NYC Maid and earn 10% recurring commission on every cleaning they book — not just the first. Paid via Zelle or Apple Cash after each completed visit. No limit on referrals, no cap on earnings.
+            Refer friends, family, or neighbors to Sunnyside Clean NYC and earn 10% recurring commission on every cleaning they book — not just the first. Paid via Zelle or Apple Cash after each completed visit. No limit on referrals, no cap on earnings.
           </p>
           <Link href="/get-paid-for-cleaning-referrals-every-time-they-are-serviced" target="_blank" className="inline-block bg-[#1E2A4A] text-white px-8 py-3.5 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#1E2A4A]/90 transition-colors">
             Join the Referral Program &rarr;

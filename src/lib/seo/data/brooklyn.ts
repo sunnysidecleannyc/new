@@ -4,7 +4,7 @@ export const BROOKLYN_NEIGHBORHOODS: Neighborhood[] = [
   // === Downtown / Waterfront ===
   {
     slug: 'brooklyn-heights',
-    urlSlug: 'brooklyn-heights-maid-service',
+    urlSlug: 'brooklyn-heights-cleaning-services',
     name: 'Brooklyn Heights',
     area: 'brooklyn',
     lat: 40.6958, lng: -73.9936,
@@ -16,7 +16,7 @@ export const BROOKLYN_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'dumbo',
-    urlSlug: 'dumbo-maid-service',
+    urlSlug: 'dumbo-cleaning-services',
     name: 'DUMBO',
     area: 'brooklyn',
     lat: 40.7033, lng: -73.9888,
@@ -28,7 +28,7 @@ export const BROOKLYN_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'vinegar-hill',
-    urlSlug: 'vinegar-hill-maid-service',
+    urlSlug: 'vinegar-hill-cleaning-services',
     name: 'Vinegar Hill',
     area: 'brooklyn',
     lat: 40.7037, lng: -73.9826,
@@ -40,7 +40,7 @@ export const BROOKLYN_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'downtown-brooklyn',
-    urlSlug: 'downtown-brooklyn-maid-service',
+    urlSlug: 'downtown-brooklyn-cleaning-services',
     name: 'Downtown Brooklyn',
     area: 'brooklyn',
     lat: 40.6930, lng: -73.9857,
@@ -52,7 +52,7 @@ export const BROOKLYN_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'red-hook',
-    urlSlug: 'red-hook-maid-service',
+    urlSlug: 'red-hook-cleaning-services',
     name: 'Red Hook',
     area: 'brooklyn',
     lat: 40.6734, lng: -74.0061,
@@ -66,7 +66,7 @@ export const BROOKLYN_NEIGHBORHOODS: Neighborhood[] = [
   // === Brownstone Brooklyn ===
   {
     slug: 'cobble-hill',
-    urlSlug: 'cobble-hill-maid-service',
+    urlSlug: 'cobble-hill-cleaning-services',
     name: 'Cobble Hill',
     area: 'brooklyn',
     lat: 40.6860, lng: -73.9963,
@@ -78,7 +78,7 @@ export const BROOKLYN_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'carroll-gardens',
-    urlSlug: 'carroll-gardens-maid-service',
+    urlSlug: 'carroll-gardens-cleaning-services',
     name: 'Carroll Gardens',
     area: 'brooklyn',
     lat: 40.6795, lng: -73.9991,
@@ -90,7 +90,7 @@ export const BROOKLYN_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'boerum-hill',
-    urlSlug: 'boerum-hill-maid-service',
+    urlSlug: 'boerum-hill-cleaning-services',
     name: 'Boerum Hill',
     area: 'brooklyn',
     lat: 40.6848, lng: -73.9845,
@@ -102,7 +102,7 @@ export const BROOKLYN_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'fort-greene',
-    urlSlug: 'fort-greene-maid-service',
+    urlSlug: 'fort-greene-cleaning-services',
     name: 'Fort Greene',
     area: 'brooklyn',
     lat: 40.6892, lng: -73.9744,
@@ -114,7 +114,7 @@ export const BROOKLYN_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'clinton-hill',
-    urlSlug: 'clinton-hill-maid-service',
+    urlSlug: 'clinton-hill-cleaning-services',
     name: 'Clinton Hill',
     area: 'brooklyn',
     lat: 40.6890, lng: -73.9654,
@@ -126,7 +126,7 @@ export const BROOKLYN_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'gowanus',
-    urlSlug: 'gowanus-maid-service',
+    urlSlug: 'gowanus-cleaning-services',
     name: 'Gowanus',
     area: 'brooklyn',
     lat: 40.6740, lng: -73.9881,
@@ -140,7 +140,7 @@ export const BROOKLYN_NEIGHBORHOODS: Neighborhood[] = [
   // === Park Slope area ===
   {
     slug: 'park-slope',
-    urlSlug: 'park-slope-maid-service',
+    urlSlug: 'park-slope-cleaning-services',
     name: 'Park Slope',
     area: 'brooklyn',
     lat: 40.6710, lng: -73.9778,
@@ -152,7 +152,7 @@ export const BROOKLYN_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'south-slope',
-    urlSlug: 'south-slope-maid-service',
+    urlSlug: 'south-slope-cleaning-services',
     name: 'South Slope',
     area: 'brooklyn',
     lat: 40.6610, lng: -73.9850,
@@ -164,7 +164,7 @@ export const BROOKLYN_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'windsor-terrace',
-    urlSlug: 'windsor-terrace-maid-service',
+    urlSlug: 'windsor-terrace-cleaning-services',
     name: 'Windsor Terrace',
     area: 'brooklyn',
     lat: 40.6540, lng: -73.9758,
@@ -176,7 +176,7 @@ export const BROOKLYN_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'greenwood-heights',
-    urlSlug: 'greenwood-heights-maid-service',
+    urlSlug: 'greenwood-heights-cleaning-services',
     name: 'Greenwood Heights',
     area: 'brooklyn',
     lat: 40.6570, lng: -73.9900,
@@ -188,7 +188,7 @@ export const BROOKLYN_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'prospect-heights',
-    urlSlug: 'prospect-heights-maid-service',
+    urlSlug: 'prospect-heights-cleaning-services',
     name: 'Prospect Heights',
     area: 'brooklyn',
     lat: 40.6776, lng: -73.9690,
@@ -200,7 +200,7 @@ export const BROOKLYN_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'prospect-lefferts-gardens',
-    urlSlug: 'prospect-lefferts-gardens-maid-service',
+    urlSlug: 'prospect-lefferts-gardens-cleaning-services',
     name: 'Prospect Lefferts Gardens',
     area: 'brooklyn',
     lat: 40.6592, lng: -73.9533,
@@ -214,7 +214,7 @@ export const BROOKLYN_NEIGHBORHOODS: Neighborhood[] = [
   // === North Brooklyn ===
   {
     slug: 'williamsburg',
-    urlSlug: 'williamsburg-maid-service',
+    urlSlug: 'williamsburg-cleaning-services',
     name: 'Williamsburg',
     area: 'brooklyn',
     lat: 40.7081, lng: -73.9571,
@@ -226,7 +226,7 @@ export const BROOKLYN_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'greenpoint',
-    urlSlug: 'greenpoint-maid-service',
+    urlSlug: 'greenpoint-cleaning-services',
     name: 'Greenpoint',
     area: 'brooklyn',
     lat: 40.7274, lng: -73.9514,
@@ -238,7 +238,7 @@ export const BROOKLYN_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'east-williamsburg',
-    urlSlug: 'east-williamsburg-maid-service',
+    urlSlug: 'east-williamsburg-cleaning-services',
     name: 'East Williamsburg',
     area: 'brooklyn',
     lat: 40.7118, lng: -73.9364,
@@ -250,7 +250,7 @@ export const BROOKLYN_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'bushwick',
-    urlSlug: 'bushwick-maid-service',
+    urlSlug: 'bushwick-cleaning-services',
     name: 'Bushwick',
     area: 'brooklyn',
     lat: 40.6942, lng: -73.9213,
@@ -264,7 +264,7 @@ export const BROOKLYN_NEIGHBORHOODS: Neighborhood[] = [
   // === Central Brooklyn ===
   {
     slug: 'bed-stuy',
-    urlSlug: 'bed-stuy-maid-service',
+    urlSlug: 'bed-stuy-cleaning-services',
     name: 'Bedford-Stuyvesant',
     area: 'brooklyn',
     lat: 40.6834, lng: -73.9413,
@@ -276,7 +276,7 @@ export const BROOKLYN_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'crown-heights',
-    urlSlug: 'crown-heights-maid-service',
+    urlSlug: 'crown-heights-cleaning-services',
     name: 'Crown Heights',
     area: 'brooklyn',
     lat: 40.6694, lng: -73.9422,
@@ -290,7 +290,7 @@ export const BROOKLYN_NEIGHBORHOODS: Neighborhood[] = [
   // === Flatbush area ===
   {
     slug: 'flatbush',
-    urlSlug: 'flatbush-maid-service',
+    urlSlug: 'flatbush-cleaning-services',
     name: 'Flatbush',
     area: 'brooklyn',
     lat: 40.6500, lng: -73.9581,
@@ -302,7 +302,7 @@ export const BROOKLYN_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'ditmas-park',
-    urlSlug: 'ditmas-park-maid-service',
+    urlSlug: 'ditmas-park-cleaning-services',
     name: 'Ditmas Park',
     area: 'brooklyn',
     lat: 40.6363, lng: -73.9618,
@@ -314,7 +314,7 @@ export const BROOKLYN_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'east-flatbush',
-    urlSlug: 'east-flatbush-maid-service',
+    urlSlug: 'east-flatbush-cleaning-services',
     name: 'East Flatbush',
     area: 'brooklyn',
     lat: 40.6490, lng: -73.9306,
@@ -326,7 +326,7 @@ export const BROOKLYN_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'midwood',
-    urlSlug: 'midwood-maid-service',
+    urlSlug: 'midwood-cleaning-services',
     name: 'Midwood',
     area: 'brooklyn',
     lat: 40.6215, lng: -73.9582,
@@ -338,7 +338,7 @@ export const BROOKLYN_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'kensington',
-    urlSlug: 'kensington-maid-service',
+    urlSlug: 'kensington-cleaning-services',
     name: 'Kensington',
     area: 'brooklyn',
     lat: 40.6389, lng: -73.9726,
@@ -352,7 +352,7 @@ export const BROOKLYN_NEIGHBORHOODS: Neighborhood[] = [
   // === South Brooklyn ===
   {
     slug: 'sunset-park',
-    urlSlug: 'sunset-park-maid-service',
+    urlSlug: 'sunset-park-cleaning-services',
     name: 'Sunset Park',
     area: 'brooklyn',
     lat: 40.6453, lng: -74.0154,
@@ -364,7 +364,7 @@ export const BROOKLYN_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'bay-ridge',
-    urlSlug: 'bay-ridge-maid-service',
+    urlSlug: 'bay-ridge-cleaning-services',
     name: 'Bay Ridge',
     area: 'brooklyn',
     lat: 40.6348, lng: -74.0286,
@@ -376,7 +376,7 @@ export const BROOKLYN_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'dyker-heights',
-    urlSlug: 'dyker-heights-maid-service',
+    urlSlug: 'dyker-heights-cleaning-services',
     name: 'Dyker Heights',
     area: 'brooklyn',
     lat: 40.6217, lng: -74.0093,
@@ -388,7 +388,7 @@ export const BROOKLYN_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'fort-hamilton',
-    urlSlug: 'fort-hamilton-maid-service',
+    urlSlug: 'fort-hamilton-cleaning-services',
     name: 'Fort Hamilton',
     area: 'brooklyn',
     lat: 40.6135, lng: -74.0316,
@@ -400,7 +400,7 @@ export const BROOKLYN_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'borough-park',
-    urlSlug: 'borough-park-maid-service',
+    urlSlug: 'borough-park-cleaning-services',
     name: 'Borough Park',
     area: 'brooklyn',
     lat: 40.6340, lng: -73.9920,
@@ -412,7 +412,7 @@ export const BROOKLYN_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'bensonhurst',
-    urlSlug: 'bensonhurst-maid-service',
+    urlSlug: 'bensonhurst-cleaning-services',
     name: 'Bensonhurst',
     area: 'brooklyn',
     lat: 40.6049, lng: -73.9937,
@@ -424,7 +424,7 @@ export const BROOKLYN_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'bath-beach',
-    urlSlug: 'bath-beach-maid-service',
+    urlSlug: 'bath-beach-cleaning-services',
     name: 'Bath Beach',
     area: 'brooklyn',
     lat: 40.6019, lng: -74.0060,
@@ -436,7 +436,7 @@ export const BROOKLYN_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'gravesend',
-    urlSlug: 'gravesend-maid-service',
+    urlSlug: 'gravesend-cleaning-services',
     name: 'Gravesend',
     area: 'brooklyn',
     lat: 40.5955, lng: -73.9730,
@@ -450,7 +450,7 @@ export const BROOKLYN_NEIGHBORHOODS: Neighborhood[] = [
   // === Coastal Brooklyn ===
   {
     slug: 'coney-island',
-    urlSlug: 'coney-island-maid-service',
+    urlSlug: 'coney-island-cleaning-services',
     name: 'Coney Island',
     area: 'brooklyn',
     lat: 40.5749, lng: -73.9712,
@@ -462,7 +462,7 @@ export const BROOKLYN_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'brighton-beach',
-    urlSlug: 'brighton-beach-maid-service',
+    urlSlug: 'brighton-beach-cleaning-services',
     name: 'Brighton Beach',
     area: 'brooklyn',
     lat: 40.5776, lng: -73.9596,
@@ -474,7 +474,7 @@ export const BROOKLYN_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'manhattan-beach',
-    urlSlug: 'manhattan-beach-maid-service',
+    urlSlug: 'manhattan-beach-cleaning-services',
     name: 'Manhattan Beach',
     area: 'brooklyn',
     lat: 40.5782, lng: -73.9383,
@@ -486,7 +486,7 @@ export const BROOKLYN_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'sheepshead-bay',
-    urlSlug: 'sheepshead-bay-maid-service',
+    urlSlug: 'sheepshead-bay-cleaning-services',
     name: 'Sheepshead Bay',
     area: 'brooklyn',
     lat: 40.5880, lng: -73.9434,
@@ -500,7 +500,7 @@ export const BROOKLYN_NEIGHBORHOODS: Neighborhood[] = [
   // === East Brooklyn ===
   {
     slug: 'marine-park',
-    urlSlug: 'marine-park-maid-service',
+    urlSlug: 'marine-park-cleaning-services',
     name: 'Marine Park',
     area: 'brooklyn',
     lat: 40.6021, lng: -73.9240,
@@ -512,7 +512,7 @@ export const BROOKLYN_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'mill-basin',
-    urlSlug: 'mill-basin-maid-service',
+    urlSlug: 'mill-basin-cleaning-services',
     name: 'Mill Basin',
     area: 'brooklyn',
     lat: 40.5975, lng: -73.9077,
@@ -524,7 +524,7 @@ export const BROOKLYN_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'flatlands',
-    urlSlug: 'flatlands-maid-service',
+    urlSlug: 'flatlands-cleaning-services',
     name: 'Flatlands',
     area: 'brooklyn',
     lat: 40.6213, lng: -73.9279,
@@ -536,7 +536,7 @@ export const BROOKLYN_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'canarsie',
-    urlSlug: 'canarsie-maid-service',
+    urlSlug: 'canarsie-cleaning-services',
     name: 'Canarsie',
     area: 'brooklyn',
     lat: 40.6389, lng: -73.8960,
@@ -548,7 +548,7 @@ export const BROOKLYN_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'brownsville',
-    urlSlug: 'brownsville-maid-service',
+    urlSlug: 'brownsville-cleaning-services',
     name: 'Brownsville',
     area: 'brooklyn',
     lat: 40.6624, lng: -73.9124,
@@ -560,7 +560,7 @@ export const BROOKLYN_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'east-new-york',
-    urlSlug: 'east-new-york-maid-service',
+    urlSlug: 'east-new-york-cleaning-services',
     name: 'East New York',
     area: 'brooklyn',
     lat: 40.6590, lng: -73.8826,
@@ -572,7 +572,7 @@ export const BROOKLYN_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'bergen-beach',
-    urlSlug: 'bergen-beach-maid-service',
+    urlSlug: 'bergen-beach-cleaning-services',
     name: 'Bergen Beach',
     area: 'brooklyn',
     lat: 40.6194, lng: -73.9066,
@@ -584,7 +584,7 @@ export const BROOKLYN_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'gerritsen-beach',
-    urlSlug: 'gerritsen-beach-maid-service',
+    urlSlug: 'gerritsen-beach-cleaning-services',
     name: 'Gerritsen Beach',
     area: 'brooklyn',
     lat: 40.5841, lng: -73.9219,
@@ -598,7 +598,7 @@ export const BROOKLYN_NEIGHBORHOODS: Neighborhood[] = [
   // === Misc ===
   {
     slug: 'ocean-hill',
-    urlSlug: 'ocean-hill-maid-service',
+    urlSlug: 'ocean-hill-cleaning-services',
     name: 'Ocean Hill',
     area: 'brooklyn',
     lat: 40.6784, lng: -73.9133,
@@ -610,7 +610,7 @@ export const BROOKLYN_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'cypress-hills',
-    urlSlug: 'cypress-hills-maid-service',
+    urlSlug: 'cypress-hills-cleaning-services',
     name: 'Cypress Hills',
     area: 'brooklyn',
     lat: 40.6738, lng: -73.8821,
@@ -622,7 +622,7 @@ export const BROOKLYN_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'bay-ridge-south',
-    urlSlug: 'bay-ridge-south-maid-service',
+    urlSlug: 'bay-ridge-south-cleaning-services',
     name: 'Bay Ridge South',
     area: 'brooklyn',
     lat: 40.6210, lng: -74.0270,
@@ -636,7 +636,7 @@ export const BROOKLYN_NEIGHBORHOODS: Neighborhood[] = [
   // === Missing Sub-Neighborhoods & Micro-Neighborhoods ===
   {
     slug: 'south-williamsburg',
-    urlSlug: 'south-williamsburg-maid-service',
+    urlSlug: 'south-williamsburg-cleaning-services',
     name: 'South Williamsburg',
     area: 'brooklyn',
     lat: 40.7059, lng: -73.9580,
@@ -648,7 +648,7 @@ export const BROOKLYN_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'prospect-park-south',
-    urlSlug: 'prospect-park-south-maid-service',
+    urlSlug: 'prospect-park-south-cleaning-services',
     name: 'Prospect Park South',
     area: 'brooklyn',
     lat: 40.6420, lng: -73.9650,
@@ -660,7 +660,7 @@ export const BROOKLYN_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'homecrest',
-    urlSlug: 'homecrest-maid-service',
+    urlSlug: 'homecrest-cleaning-services',
     name: 'Homecrest',
     area: 'brooklyn',
     lat: 40.5990, lng: -73.9560,
@@ -672,7 +672,7 @@ export const BROOKLYN_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'mapleton',
-    urlSlug: 'mapleton-maid-service',
+    urlSlug: 'mapleton-cleaning-services',
     name: 'Mapleton',
     area: 'brooklyn',
     lat: 40.6180, lng: -73.9920,
@@ -684,7 +684,7 @@ export const BROOKLYN_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'madison',
-    urlSlug: 'madison-brooklyn-maid-service',
+    urlSlug: 'madison-brooklyn-cleaning-services',
     name: 'Madison',
     area: 'brooklyn',
     lat: 40.6090, lng: -73.9480,
@@ -696,7 +696,7 @@ export const BROOKLYN_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'columbia-waterfront',
-    urlSlug: 'columbia-waterfront-maid-service',
+    urlSlug: 'columbia-waterfront-cleaning-services',
     name: 'Columbia Street Waterfront District',
     area: 'brooklyn',
     lat: 40.6780, lng: -74.0060,
@@ -708,7 +708,7 @@ export const BROOKLYN_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'spring-creek',
-    urlSlug: 'spring-creek-maid-service',
+    urlSlug: 'spring-creek-cleaning-services',
     name: 'Spring Creek',
     area: 'brooklyn',
     lat: 40.6480, lng: -73.8830,
@@ -720,7 +720,7 @@ export const BROOKLYN_NEIGHBORHOODS: Neighborhood[] = [
   },
   {
     slug: 'georgetown',
-    urlSlug: 'georgetown-brooklyn-maid-service',
+    urlSlug: 'georgetown-brooklyn-cleaning-services',
     name: 'Georgetown',
     area: 'brooklyn',
     lat: 40.6120, lng: -73.9120,
