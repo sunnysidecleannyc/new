@@ -466,7 +466,7 @@ export default async function ServicePage({ params }: Props) {
             ))}
           </div>
           <div className="text-center mt-10">
-            <Link href="/services-offered" className="inline-block bg-[#A8F0DC] text-[#1E2A4A] px-8 py-3.5 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#8DE8CC] transition-colors">
+            <Link href="/nyc-cleaning-services-offered" className="inline-block bg-[#A8F0DC] text-[#1E2A4A] px-8 py-3.5 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#8DE8CC] transition-colors">
               View All Services &amp; Pricing
             </Link>
           </div>

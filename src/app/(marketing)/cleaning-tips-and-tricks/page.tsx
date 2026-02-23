@@ -276,7 +276,7 @@ export default function TipsPage() {
 
         <div className="text-center">
           <p className="text-gray-600">
-            Want more in-depth articles? Check out our <Link href="/blog" className="text-[#1E2A4A] font-semibold hover:underline">blog</Link> for detailed cleaning guides.
+            Want more in-depth articles? Check out our <Link href="/cleaning-tips-and-tricks" className="text-[#1E2A4A] font-semibold hover:underline">cleaning tips</Link> for detailed cleaning guides.
           </p>
         </div>
       </div>

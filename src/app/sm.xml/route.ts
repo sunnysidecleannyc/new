@@ -22,11 +22,6 @@ export async function GET() {
     { path: '/nyc-cleaning-service-pricing', freq: 'weekly', pri: '0.9' },
     { path: '/frequently-asked-cleaning-service-related-questions', freq: 'monthly', pri: '0.8' },
     { path: '/cleaning-tips-and-tricks', freq: 'weekly', pri: '0.7' },
-    { path: '/privacy-policy', freq: 'yearly', pri: '0.3' },
-    { path: '/terms-conditions', freq: 'yearly', pri: '0.3' },
-    { path: '/legal', freq: 'yearly', pri: '0.3' },
-    { path: '/refund-policy', freq: 'yearly', pri: '0.3' },
-    { path: '/do-not-share-policy', freq: 'yearly', pri: '0.3' },
   ]
   for (const p of staticPages) {
     urls.push({ loc: `${BASE_URL}${p.path}`, lastmod: now, changefreq: p.freq, priority: p.pri })

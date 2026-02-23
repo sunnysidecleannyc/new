@@ -851,9 +851,9 @@ export default function HomePage() {
           <p className="text-gray-500 max-w-2xl mx-auto mb-8">
             Refer friends, family, or neighbors to Sunnyside Clean NYC and earn 10% recurring commission on every cleaning they book — not just the first. Paid via Zelle or Apple Cash after each completed visit. No limit on referrals, no cap on earnings.
           </p>
-          <Link href="/get-paid-for-cleaning-referrals-every-time-they-are-serviced" target="_blank" className="inline-block bg-[#1E2A4A] text-white px-8 py-3.5 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#1E2A4A]/90 transition-colors">
+          <a href="https://www.thenycmaid.com/get-paid-for-cleaning-referrals-every-time-they-are-serviced" target="_blank" rel="noopener noreferrer" className="inline-block bg-[#1E2A4A] text-white px-8 py-3.5 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#1E2A4A]/90 transition-colors">
             Join the Referral Program &rarr;
-          </Link>
+          </a>
         </div>
       </section>
 

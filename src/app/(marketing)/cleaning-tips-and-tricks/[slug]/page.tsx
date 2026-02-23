@@ -162,7 +162,7 @@ export default async function BlogPostPage({ params }: Props) {
 
         {/* Back to blog */}
         <div className="text-center mt-10">
-          <Link href="/blog" className="text-[#1E2A4A] font-semibold text-sm hover:underline underline-offset-4">
+          <Link href="/cleaning-tips-and-tricks" className="text-[#1E2A4A] font-semibold text-sm hover:underline underline-offset-4">
             &larr; Back to all articles
           </Link>
         </div>

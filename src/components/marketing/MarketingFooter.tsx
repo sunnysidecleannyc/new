@@ -103,11 +103,11 @@ export default function MarketingFooter() {
       <div className="border-t border-white/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="flex flex-wrap items-center gap-3 sm:gap-4 text-xs text-gray-500">
-            <Link href="/privacy-policy" className="hover:text-gray-300 transition-colors">Privacy</Link>
-            <Link href="/terms-conditions" className="hover:text-gray-300 transition-colors">Terms</Link>
-            <Link href="/refund-policy" className="hover:text-gray-300 transition-colors">Refunds</Link>
-            <Link href="/legal" className="hover:text-gray-300 transition-colors">Legal</Link>
-            <Link href="/do-not-share-policy" className="hover:text-gray-300 transition-colors">Do Not Share</Link>
+            <a href="https://www.thenycmaid.com/privacy-policy" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300 transition-colors">Privacy</a>
+            <a href="https://www.thenycmaid.com/terms-conditions" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300 transition-colors">Terms</a>
+            <a href="https://www.thenycmaid.com/refund-policy" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300 transition-colors">Refunds</a>
+            <a href="https://www.thenycmaid.com/legal" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300 transition-colors">Legal</a>
+            <a href="https://www.thenycmaid.com/do-not-share-policy" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300 transition-colors">Do Not Share</a>
           </div>
           <p className="text-xs text-gray-500">&copy; {new Date().getFullYear()} Sunnyside Clean NYC &middot; A NYC Cleaning Services Company &middot; <a href="tel:2122028400" className="text-[#A8F0DC]/70 hover:text-[#A8F0DC]">(212) 202-8400</a> &middot; NYC Web Design by{' '}<a href="https://www.consortiumnyc.com/" target="_blank" rel="noopener noreferrer" className="text-[#A8F0DC] font-semibold hover:text-white underline underline-offset-2 decoration-[#A8F0DC]/50">Consortium NYC</a></p>
         </div>

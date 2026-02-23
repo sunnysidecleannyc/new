@@ -457,7 +457,7 @@ export function serviceSchema(service: Service, neighborhood?: Neighborhood, are
       reviewBody: r.text,
       datePublished: r.datePublished,
     })),
-    termsOfService: `${BUSINESS.url}/terms-conditions`,
+    termsOfService: `https://www.thenycmaid.com/terms-conditions`,
     audience: {
       '@type': 'Audience',
       audienceType: service.idealFor.join(', '),
@@ -608,7 +608,7 @@ export function siteNavigationSchema() {
       { '@type': 'WebPage', name: 'Services', url: `${BUSINESS.url}/nyc-cleaning-services-offered` },
       { '@type': 'WebPage', name: 'Service Areas', url: `${BUSINESS.url}/service-areas` },
       { '@type': 'WebPage', name: 'Pricing', url: `${BUSINESS.url}/nyc-cleaning-service-pricing` },
-      { '@type': 'WebPage', name: 'Reviews', url: `${BUSINESS.url}/nyc-customer-reviews` },
+      { '@type': 'WebPage', name: 'Reviews', url: 'https://share.google/Iq9oblq3vJr07aP27' },
       { '@type': 'WebPage', name: 'FAQ', url: `${BUSINESS.url}/frequently-asked-cleaning-service-related-questions` },
       { '@type': 'WebPage', name: 'Blog', url: `${BUSINESS.url}/cleaning-tips-and-tricks` },
       { '@type': 'WebPage', name: 'About', url: `${BUSINESS.url}/about-nyc-cleaning-service-sunnyside-clean-nyc` },
