@@ -6,7 +6,7 @@ import { AREAS } from './data/areas'
 
 const BUSINESS = {
   name: 'Sunnyside Clean NYC',
-  legalName: 'Sunnyside Clean NYC — A NYC Maid Company',
+  legalName: 'Sunnyside Clean NYC — A NYC Maid Services Company',
   url: 'https://www.cleaningservicesunnysideny.com',
   phone: '+1-212-202-8400',
   phoneDisplay: '(212) 202-8400',
@@ -20,7 +20,7 @@ const BUSINESS = {
   foundingDate: '2018',
   currenciesAccepted: 'USD',
   paymentAccepted: 'Cash, Credit Card, Debit Card, Zelle (hello@cleaningservicesunnysideny.com), Venmo, Apple Pay',
-  description: 'Professional house cleaning services across New York City, Long Island, and New Jersey. Deep cleaning, regular apartment cleaning, move-in/move-out, post-construction cleanup, weekly cleaning service, same-day cleaning, Airbnb turnover, and office cleaning. Licensed, insured, and background-checked cleaners. A NYC Maid Company — serving NYC since 2018.',
+  description: 'Professional house cleaning services across New York City — Manhattan, Brooklyn & Queens. Deep cleaning, regular apartment cleaning, move-in/move-out, post-construction cleanup, weekly cleaning service, same-day cleaning, Airbnb turnover, and office cleaning. Licensed, insured, and background-checked cleaners. A NYC Maid Services Company — serving NYC since 2018.',
   slogan: "New York City's Most Trusted Cleaning Service",
   knowsLanguage: ['en', 'es'],
   numberOfEmployees: { '@type': 'QuantitativeValue' as const, minValue: 10, maxValue: 25 },
@@ -139,9 +139,6 @@ const fullAreaServed = [
   { '@type': 'Borough' as const, name: 'Manhattan, New York' },
   { '@type': 'Borough' as const, name: 'Brooklyn, New York' },
   { '@type': 'Borough' as const, name: 'Queens, New York' },
-  { '@type': 'AdministrativeArea' as const, name: 'Nassau County, New York' },
-  { '@type': 'AdministrativeArea' as const, name: 'Suffolk County, New York' },
-  { '@type': 'State' as const, name: 'New Jersey' },
 ]
 
 const serviceAreaObj = {
@@ -351,30 +348,10 @@ export function localBusinessSchema(neighborhood?: Neighborhood, area?: Area) {
     hasOfferCatalog: {
       '@type': 'OfferCatalog',
       name: 'Cleaning Services',
-      itemListElement: [
-        {
-          '@type': 'OfferCatalog',
-          name: 'Residential Cleaning',
-          itemListElement: [
-            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Deep Cleaning', url: `${BUSINESS.url}/services/deep-cleaning-service-in-nyc` } },
-            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Regular Apartment Cleaning', url: `${BUSINESS.url}/services/apartment-cleaning-service-in-nyc` } },
-            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Weekly Cleaning Service', url: `${BUSINESS.url}/services/weekly-maid-service-in-nyc` } },
-            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Bi-Weekly Cleaning', url: `${BUSINESS.url}/services/bi-weekly-cleaning-service-in-nyc` } },
-            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Monthly Cleaning', url: `${BUSINESS.url}/services/monthly-cleaning-service-in-nyc` } },
-            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Move-In/Move-Out Cleaning', url: `${BUSINESS.url}/services/move-in-move-out-cleaning-service-in-nyc` } },
-            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Post-Construction Cleanup', url: `${BUSINESS.url}/services/post-construction-cleanup-service-in-nyc` } },
-            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Same-Day Cleaning', url: `${BUSINESS.url}/services/same-day-cleaning-service-in-nyc` } },
-          ],
-        },
-        {
-          '@type': 'OfferCatalog',
-          name: 'Commercial Cleaning',
-          itemListElement: [
-            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Office Cleaning', url: `${BUSINESS.url}/services/office-cleaning-service-in-nyc` } },
-            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Airbnb & Short-Term Rental Cleaning', url: `${BUSINESS.url}/services/airbnb-cleaning-in-nyc` } },
-          ],
-        },
-      ],
+      itemListElement: SERVICES.map(s => ({
+        '@type': 'Offer',
+        itemOffered: { '@type': 'Service', name: s.name, url: `${BUSINESS.url}/services/${s.urlSlug}` },
+      })),
     },
     makesOffer: [
       {
@@ -689,7 +666,7 @@ export function serviceItemListSchema() {
     '@context': 'https://schema.org',
     '@type': 'ItemList',
     name: 'Cleaning Services Offered by Sunnyside Clean NYC',
-    description: 'Complete list of professional cleaning services available across NYC, Long Island, and New Jersey.',
+    description: 'Complete list of professional cleaning services available across NYC — Manhattan, Brooklyn & Queens.',
     numberOfItems: SERVICES.length,
     itemListElement: SERVICES.map((s, i) => ({
       '@type': 'ListItem',
@@ -720,7 +697,7 @@ export function areaItemListSchema() {
     '@context': 'https://schema.org',
     '@type': 'ItemList',
     name: 'Service Areas Covered by Sunnyside Clean NYC',
-    description: 'We serve over 225 neighborhoods across NYC, Long Island, and New Jersey.',
+    description: `We serve over ${AREAS.length * 80}+ neighborhoods across Manhattan, Brooklyn & Queens.`,
     numberOfItems: AREAS.length,
     itemListElement: AREAS.map((a, i) => ({
       '@type': 'ListItem',
@@ -894,7 +871,7 @@ export function neighborhoodServicePageSchemas(neighborhood: Neighborhood, servi
 export function servicePageSchemas(service: Service) {
   const url = `${BUSINESS.url}/services/${service.urlSlug}`
   const title = `${service.name} in NYC From ${service.priceRange.split('–')[0]} | 5-Star Rated | Sunnyside Clean NYC`
-  const description = `Professional ${service.name.toLowerCase()} across Manhattan, Brooklyn, Queens, Long Island & NJ. ${service.features.slice(0, 3).join(', ')} & more. From ${service.priceRange.split('–')[0]}. 5.0★ Google. ${BUSINESS.phoneDisplay}`
+  const description = `Professional ${service.name.toLowerCase()} across Manhattan, Brooklyn & Queens. ${service.features.slice(0, 3).join(', ')} & more. From ${service.priceRange.split('–')[0]}. 5.0★ Google. ${BUSINESS.phoneDisplay}`
   return [
     organizationSchema(),
     webSiteSchema(),

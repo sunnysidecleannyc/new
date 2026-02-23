@@ -10,7 +10,7 @@ import CTABlock from '@/components/marketing/CTABlock'
 
 const url = 'https://www.cleaningservicesunnysideny.com/about-nyc-cleaning-service-sunnyside-clean-nyc'
 const title = 'About Sunnyside Clean NYC | Affordable, Reliable NYC Cleaning Since 2018'
-const description = 'Sunnyside Clean NYC is a NYC Maid company and one of NYC\'s most trusted cleaning services — affordable rates from $49/hr, reliable background-checked cleaners, and consistent quality since 2018. Serving 225+ neighborhoods. 5.0★ Google. (212) 202-8400'
+const description = 'Sunnyside Clean NYC is one of NYC\'s most trusted cleaning services — affordable rates from $49/hr, reliable background-checked cleaners, and consistent quality since 2018. A NYC Maid Services Company. Serving 267+ neighborhoods. 5.0★ Google. (212) 202-8400'
 
 export const metadata: Metadata = {
   title: { absolute: title },
@@ -22,11 +22,11 @@ export const metadata: Metadata = {
 }
 
 const aboutFaqs = [
-  { question: 'How long has Sunnyside Clean NYC been in business?', answer: 'Since 2018. Founded as a sister company of The NYC Maid, we started serving Sunnyside and surrounding Queens neighborhoods and have expanded across Manhattan, Brooklyn, Queens, Long Island, and New Jersey. We\'ve completed thousands of cleanings and maintain a 5.0-star Google rating.' },
+  { question: 'How long has Sunnyside Clean NYC been in business?', answer: 'Since 2018. We started serving Sunnyside and surrounding Queens neighborhoods and have expanded across Manhattan, Brooklyn, and Queens. We\'ve completed thousands of cleanings and maintain a 5.0-star Google rating.' },
   { question: 'Are your cleaners employees or contractors?', answer: 'Our cleaners are independent professionals who work exclusively with us. Every cleaner is background-checked, trained on our quality standards, and covered by our general liability insurance while working in your home.' },
   { question: 'How do you keep prices so affordable?', answer: 'We keep overhead low — no storefront, no middle-management layer, no expensive marketing budgets. We pass those savings to you. Our cleaners earn competitive pay while you get rates well below the NYC average.' },
   { question: 'What makes you different from other cleaning companies?', answer: 'Three things: consistency (same cleaner every visit for recurring clients), affordability ($49/hr is among the lowest rates in NYC for licensed, insured service), and reliability (we show up on time, every time, and we don\'t cancel).' },
-  { question: 'How many neighborhoods do you serve?', answer: `We serve ${ALL_NEIGHBORHOODS.length}+ neighborhoods across Manhattan, Brooklyn, Queens, Long Island, and New Jersey. Same rates everywhere — no travel surcharges.` },
+  { question: 'How many neighborhoods do you serve?', answer: `We serve ${ALL_NEIGHBORHOODS.length}+ neighborhoods across Manhattan, Brooklyn, and Queens. Same rates everywhere — no travel surcharges.` },
   { question: 'Do you serve commercial spaces too?', answer: 'Yes. We clean offices, co-working spaces, medical offices, and retail spaces. Same hourly rates, same quality. Many of our residential clients also use us for their workspaces.' },
   { question: 'How do I know I can trust your cleaners?', answer: 'Every cleaner undergoes a comprehensive background check. We carry general liability insurance and bonding. We\'ve been in business since 2018 with a perfect 5.0-star Google rating and zero complaints filed with the BBB.' },
   { question: 'What languages do your cleaners speak?', answer: 'Our team is bilingual — English and Spanish. We can accommodate communication preferences for both languages.' },
@@ -57,7 +57,7 @@ export default function AboutPage() {
             Affordable. Reliable. Friendly.
           </h1>
           <p className="text-blue-200/60 text-lg max-w-2xl mx-auto leading-relaxed">
-            Sunnyside Clean NYC has been keeping New York homes clean since 2018. A sister company of The NYC Maid, we bring the same professional standards to Sunnyside and neighborhoods across the city. No gimmicks, no corporate nonsense — just honest, dependable cleaning from people who care.
+            Sunnyside Clean NYC has been keeping New York homes clean since 2018. We bring professional standards to Sunnyside and neighborhoods across the city. No gimmicks, no corporate nonsense — just honest, dependable cleaning from people who care.
           </p>
         </div>
       </section>
@@ -75,7 +75,7 @@ export default function AboutPage() {
               <p className="font-[family-name:var(--font-bebas)] text-4xl text-[#1E2A4A] tracking-wide leading-tight mb-6">Built on a Simple Idea: Show Up, Do Great Work, Charge Fair Prices</p>
               <div className="space-y-5 text-gray-600 leading-relaxed">
                 <p>
-                  Sunnyside Clean NYC was founded in 2018 as a sister company of The NYC Maid, with a simple mission: bring the same professional, reliable cleaning services that Manhattan clients loved to Sunnyside and surrounding Queens neighborhoods. We saw families and professionals in the area struggling to find trustworthy, affordable cleaning — and we knew we could do better.
+                  Sunnyside Clean NYC was founded in 2018 with a simple mission: bring professional, reliable cleaning services to Sunnyside and surrounding Queens neighborhoods. We saw families and professionals in the area struggling to find trustworthy, affordable cleaning — and we knew we could do better.
                 </p>
                 <p>
                   Our approach was simple from day one: hire great people, pay them well, charge honest prices, and show up on time. No surge pricing when demand is high. No bait-and-switch quotes. No cancelling on clients because a higher-paying job came in. Just reliable, thorough cleaning from people who genuinely take pride in their work.
@@ -84,7 +84,7 @@ export default function AboutPage() {
                   What started in Sunnyside quickly grew across all five boroughs and beyond. That approach has earned us a perfect 5.0-star rating on Google with 27 verified reviews, thousands of completed cleanings, and a client base that includes everyone from studios in Astoria to brownstones in Park Slope to offices in Midtown. Many of our clients have been with us for years — and they stay because we deliver the same quality every single visit.
                 </p>
                 <p>
-                  Today we serve {ALL_NEIGHBORHOODS.length}+ neighborhoods across Manhattan, Brooklyn, Queens, Long Island, and New Jersey. Our team is bilingual (English and Spanish), background-checked, licensed, and insured. And our prices haven&apos;t changed — $49/hr with your supplies, $65/hr when we bring everything.
+                  Today we serve {ALL_NEIGHBORHOODS.length}+ neighborhoods across Manhattan, Brooklyn, and Queens. Our team is bilingual (English and Spanish), background-checked, licensed, and insured. And our prices haven&apos;t changed — $49/hr with your supplies, $65/hr when we bring everything.
                 </p>
               </div>
             </div>
@@ -150,7 +150,7 @@ export default function AboutPage() {
           <p className="font-[family-name:var(--font-bebas)] text-3xl md:text-4xl text-[#1E2A4A] tracking-wide text-center mb-12">Why Thousands of New Yorkers Trust Us</p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
-              { title: 'Truly Affordable', detail: 'Our rates start at $49/hr — well below the NYC average for licensed, insured cleaning. No surge pricing, no hidden fees, no travel charges. Manhattan to Long Island, same rate.' },
+              { title: 'Truly Affordable', detail: 'Our rates start at $49/hr — well below the NYC average for licensed, insured cleaning. No surge pricing, no hidden fees, no travel charges. Same rate across Manhattan, Brooklyn & Queens.' },
               { title: 'Reliably On Time', detail: 'We show up when we say we will. Period. We don\'t cancel, we don\'t reschedule last-minute, and we don\'t ghost. Our cleaners are punctual and our scheduling team confirms every appointment.' },
               { title: 'Consistent Quality', detail: 'For recurring clients, we assign the same cleaner every visit. They learn your home, your preferences, and your standards. The result is consistent, reliable quality — not a different stranger every time.' },
               { title: 'Friendly People', detail: 'Our cleaners are warm, respectful, and professional. Many of our 5-star reviews mention how friendly and pleasant our team is. We hire for character first, then train for skill.' },
@@ -244,7 +244,7 @@ export default function AboutPage() {
             <p className="text-[#1E2A4A]/80 leading-relaxed">
               If you&apos;re an experienced cleaner who takes pride in their work, we&apos;d love to hear from you. Competitive pay, flexible hours, respectful management, and steady work.
             </p>
-            <Link href="/available-nyc-maid-jobs" className="inline-block mt-3 text-[#1E2A4A] font-semibold text-sm underline underline-offset-4">See open positions &rarr;</Link>
+            <a href="mailto:hello@cleaningservicesunnysideny.com" className="inline-block mt-3 text-[#1E2A4A] font-semibold text-sm underline underline-offset-4">Contact us about open positions &rarr;</a>
           </div>
         </div>
       </section>

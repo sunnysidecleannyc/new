@@ -9,11 +9,11 @@ import CTABlock from '@/components/marketing/CTABlock'
 
 export const metadata: Metadata = {
   title: { absolute: 'NYC Cleaning Services — Deep Clean, Move-In/Out & More | Sunnyside Clean NYC' },
-  description: 'All cleaning services by Sunnyside Clean NYC from $49/hr. Deep cleaning, weekly cleaning, move-in/out, same-day, office cleaning and more. Manhattan, Brooklyn, Queens & Long Island.',
+  description: 'All cleaning services by Sunnyside Clean NYC from $49/hr. Deep cleaning, weekly cleaning, move-in/out, same-day, office cleaning and more. Manhattan, Brooklyn & Queens.',
   alternates: { canonical: 'https://www.cleaningservicesunnysideny.com/nyc-cleaning-services-offered' },
   openGraph: {
     title: 'NYC Cleaning Services — Deep Clean, Weekly & More | Sunnyside Clean NYC',
-    description: 'Professional cleaning services from $49/hr across NYC, Brooklyn, Queens & Long Island. Licensed, insured, 5-star rated.',
+    description: 'Professional cleaning services from $49/hr across Manhattan, Brooklyn & Queens. Licensed, insured, 5-star rated.',
     url: 'https://www.cleaningservicesunnysideny.com/nyc-cleaning-services-offered',
   },
 }
@@ -41,7 +41,7 @@ export default function ServicesIndexPage() {
             NYC House Cleaning Services — Every Type of Clean, One Trusted Team
           </h1>
           <p className="text-blue-200/70 text-lg max-w-3xl leading-relaxed mb-8">
-            From <Link href="/services/weekly-maid-service-in-nyc" className="text-[#A8F0DC] underline underline-offset-2">weekly maid service</Link> and <Link href="/services/deep-cleaning-service-in-nyc" className="text-[#A8F0DC] underline underline-offset-2">deep cleaning</Link> to <Link href="/services/move-in-move-out-cleaning-service-in-nyc" className="text-[#A8F0DC] underline underline-offset-2">move-in/move-out</Link>, <Link href="/services/post-construction-cleanup-service-in-nyc" className="text-[#A8F0DC] underline underline-offset-2">post-renovation cleanup</Link>, and <Link href="/services/same-day-cleaning-service-in-nyc" className="text-[#A8F0DC] underline underline-offset-2">same-day emergency service</Link> — our background-checked, insured cleaners handle it all across Manhattan, Brooklyn, Queens, Long Island &amp; New Jersey.
+            From <Link href="/services/nyc-maid-service" className="text-[#A8F0DC] underline underline-offset-2">weekly cleaning service</Link> and <Link href="/services/nyc-deep-cleaning-service" className="text-[#A8F0DC] underline underline-offset-2">deep cleaning</Link> to <Link href="/services/nyc-moving-cleaning-service" className="text-[#A8F0DC] underline underline-offset-2">move-in/move-out</Link>, <Link href="/services/nyc-house-cleaning-service" className="text-[#A8F0DC] underline underline-offset-2">house cleaning</Link>, and <Link href="/services/nyc-same-day-cleaning-service" className="text-[#A8F0DC] underline underline-offset-2">same-day emergency service</Link> — our background-checked, insured cleaners handle it all across Manhattan, Brooklyn &amp; Queens.
           </p>
           <div className="flex flex-wrap gap-x-6 gap-y-2 mb-10">
             <span className="text-[#A8F0DC] text-sm font-medium">&#10003; From $49/hr</span>
@@ -61,7 +61,7 @@ export default function ServicesIndexPage() {
       </section>
 
       <div className="max-w-7xl mx-auto px-4 py-12">
-        <Breadcrumbs items={[{ name: 'Services', href: '/nyc-maid-service-services-offered-by-the-nyc-maid' }]} />
+        <Breadcrumbs items={[{ name: 'Services', href: '/nyc-cleaning-services-offered' }]} />
       </div>
 
       {/* Service cards (reuse homepage grid with icons) */}
@@ -120,7 +120,7 @@ export default function ServicesIndexPage() {
               <p className="font-[family-name:var(--font-bebas)] text-4xl text-[#1E2A4A] tracking-wide">$100<span className="text-xl text-gray-300">/hr</span></p>
             </div>
           </div>
-          <Link href="/updated-nyc-maid-service-industry-pricing" className="inline-block bg-[#1E2A4A] text-white px-8 py-3.5 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#1E2A4A]/90 transition-colors">
+          <Link href="/nyc-cleaning-service-pricing" className="inline-block bg-[#1E2A4A] text-white px-8 py-3.5 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#1E2A4A]/90 transition-colors">
             View Full Pricing Details
           </Link>
         </div>
@@ -134,10 +134,10 @@ export default function ServicesIndexPage() {
             <p className="font-[family-name:var(--font-bebas)] text-3xl md:text-4xl text-[#1E2A4A] tracking-wide leading-tight mb-6">Same Professional Standards — Every Service, Every Visit</p>
             <div className="w-12 h-[2px] bg-[#A8F0DC] mb-6" />
             <p className="text-gray-600 leading-relaxed mb-5">
-              Whether you book a <Link href="/services/deep-cleaning-service-in-nyc" className="text-[#1E2A4A] underline underline-offset-2">deep clean</Link>, a <Link href="/services/weekly-maid-service-in-nyc" className="text-[#1E2A4A] underline underline-offset-2">weekly maid service</Link>, or a <Link href="/services/same-day-cleaning-service-in-nyc" className="text-[#1E2A4A] underline underline-offset-2">same-day emergency clean</Link> — you get the same background-checked, insured professional and the same attention to detail. We don&apos;t send different tiers of cleaners for different services.
+              Whether you book a <Link href="/services/nyc-deep-cleaning-service" className="text-[#1E2A4A] underline underline-offset-2">deep clean</Link>, a <Link href="/services/nyc-maid-service" className="text-[#1E2A4A] underline underline-offset-2">weekly cleaning service</Link>, or a <Link href="/services/nyc-same-day-cleaning-service" className="text-[#1E2A4A] underline underline-offset-2">same-day emergency clean</Link> — you get the same background-checked, insured professional and the same attention to detail. We don&apos;t send different tiers of cleaners for different services.
             </p>
             <p className="text-gray-600 leading-relaxed mb-6">
-              Our cleaners serve <Link href="/manhattan-maid-service" className="text-[#1E2A4A] underline underline-offset-2">Manhattan</Link>, <Link href="/brooklyn-maid-service" className="text-[#1E2A4A] underline underline-offset-2">Brooklyn</Link>, <Link href="/queens-maid-service" className="text-[#1E2A4A] underline underline-offset-2">Queens</Link>, <Link href="/long-island-maid-service" className="text-[#1E2A4A] underline underline-offset-2">Long Island</Link>, and <Link href="/new-jersey-maid-service" className="text-[#1E2A4A] underline underline-offset-2">New Jersey</Link> — same rates, same quality, no travel fees. <Link href="/nyc-customer-reviews-for-the-nyc-maid" className="text-[#1E2A4A] underline underline-offset-2">Read our reviews</Link> to see what clients say.
+              Our cleaners serve <Link href="/service-areas/nyc-cleaning-services" className="text-[#1E2A4A] underline underline-offset-2">Manhattan</Link>, <Link href="/service-areas/brooklyn-cleaning-services" className="text-[#1E2A4A] underline underline-offset-2">Brooklyn</Link>, and <Link href="/service-areas/queens-cleaning-services" className="text-[#1E2A4A] underline underline-offset-2">Queens</Link> — same rates, same quality, no travel fees.
             </p>
             <div className="flex flex-col sm:flex-row items-start gap-4">
               <a href="sms:2122028400" className="inline-block bg-[#A8F0DC] text-[#1E2A4A] px-8 py-3.5 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#8DE8CC] transition-colors">
@@ -171,15 +171,15 @@ export default function ServicesIndexPage() {
           <h2 className="text-xs font-semibold text-gray-400 tracking-[0.25em] uppercase mb-3">Available Across 225+ Neighborhoods</h2>
           <p className="font-[family-name:var(--font-bebas)] text-3xl text-[#1E2A4A] tracking-wide mb-4">All Services Available in Every Area We Serve</p>
           <p className="text-gray-500 max-w-2xl mx-auto mb-8">
-            Every service listed above is available in all of our coverage areas. Same rates, same quality — whether you&apos;re in the <Link href="/upper-east-side-maid-service" className="text-[#1E2A4A] underline underline-offset-2">Upper East Side</Link>, <Link href="/williamsburg-maid-service" className="text-[#1E2A4A] underline underline-offset-2">Williamsburg</Link>, <Link href="/astoria-maid-service" className="text-[#1E2A4A] underline underline-offset-2">Astoria</Link>, <Link href="/great-neck-maid-service" className="text-[#1E2A4A] underline underline-offset-2">Great Neck</Link>, or <Link href="/hoboken-maid-service" className="text-[#1E2A4A] underline underline-offset-2">Hoboken</Link>.
+            Every service listed above is available in all of our coverage areas. Same rates, same quality — whether you&apos;re in the <Link href="/service-areas/upper-east-side-cleaning-services" className="text-[#1E2A4A] underline underline-offset-2">Upper East Side</Link>, <Link href="/service-areas/williamsburg-cleaning-services" className="text-[#1E2A4A] underline underline-offset-2">Williamsburg</Link>, or <Link href="/service-areas/astoria-cleaning-services" className="text-[#1E2A4A] underline underline-offset-2">Astoria</Link>.
           </p>
-          <Link href="/service-areas-served-by-the-nyc-maid" className="inline-block bg-[#1E2A4A] text-white px-8 py-3.5 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#1E2A4A]/90 transition-colors">
+          <Link href="/service-areas" className="inline-block bg-[#1E2A4A] text-white px-8 py-3.5 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#1E2A4A]/90 transition-colors">
             Browse All Service Areas &rarr;
           </Link>
         </div>
       </section>
 
-      <CTABlock title="Book Any Cleaning Service Today" subtitle="Text or call — trusted by New Yorkers across Manhattan, Brooklyn, Queens, Long Island & New Jersey." />
+      <CTABlock title="Book Any Cleaning Service Today" subtitle="Text or call — trusted by New Yorkers across Manhattan, Brooklyn & Queens." />
     </>
   )
 }

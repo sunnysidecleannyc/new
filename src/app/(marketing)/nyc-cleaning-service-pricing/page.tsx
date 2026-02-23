@@ -8,7 +8,7 @@ import CTABlock from '@/components/marketing/CTABlock'
 
 const url = 'https://www.cleaningservicesunnysideny.com/nyc-cleaning-service-pricing'
 const title = 'NYC Cleaning Service Pricing From $49/hr | Transparent Rates | Sunnyside Clean NYC'
-const description = 'Transparent hourly cleaning rates across NYC, Brooklyn, Queens, Long Island & NJ. $49/hr your supplies, $65/hr we bring everything, $100/hr same-day. No hidden fees. 5.0★ Google. (212) 202-8400'
+const description = 'Transparent hourly cleaning rates across Manhattan, Brooklyn & Queens. $49/hr your supplies, $65/hr we bring everything, $100/hr same-day. No hidden fees. 5.0★ Google. (212) 202-8400'
 
 export const metadata: Metadata = {
   title: { absolute: title },
@@ -23,7 +23,7 @@ const pricingFaqs = [
   { question: 'How much does house cleaning cost in NYC?', answer: 'Our rates are $49/hr when you provide supplies, $65/hr when we bring everything, and $100/hr for same-day emergency service. A typical NYC apartment cleaning costs $98–$390 depending on size and service type. We provide a custom quote based on your specific needs.' },
   { question: 'Do you charge by the hour or by the job?', answer: 'We charge by the hour at a flat rate. $49/hr if you provide cleaning supplies, $65/hr if we bring our own professional-grade products and equipment. The total cost depends on how long your cleaning takes, which we estimate upfront based on your home size and service type.' },
   { question: 'Is there a minimum charge?', answer: 'Our minimum booking is 2 hours. For most studio and 1-bedroom regular cleanings, 2 hours is sufficient. Deep cleans and larger apartments typically require 3–6+ hours.' },
-  { question: 'Do you charge extra for travel or different neighborhoods?', answer: 'No. Every neighborhood we serve — from Manhattan to Brooklyn to Long Island — gets the same flat hourly rate. No travel surcharges, no surge pricing, no zone fees.' },
+  { question: 'Do you charge extra for travel or different neighborhoods?', answer: 'No. Every neighborhood we serve — from Manhattan to Brooklyn to Queens — gets the same flat hourly rate. No travel surcharges, no surge pricing, no zone fees.' },
   { question: 'What\'s the difference between $49/hr and $65/hr?', answer: 'At $49/hr, you provide the cleaning supplies and equipment (vacuum, mop, products). At $65/hr, we bring everything — professional-grade products, microfiber systems, and a commercial vacuum. The cleaning quality and thoroughness is identical.' },
   { question: 'How much does a deep cleaning cost?', answer: 'Deep cleaning typically costs $196–$390 for a standard NYC apartment. Studios run $196–$245, 1-bedrooms $245–$325, and 2-3 bedrooms $325–$390+. The exact price depends on square footage, condition, and whether you want us to bring supplies.' },
   { question: 'How much does move-in/move-out cleaning cost?', answer: 'Move-in/move-out cleaning runs $260–$520. These take 4–8 hours because we clean inside every cabinet, drawer, closet, and appliance. Empty apartments are easier to clean but require more detail work to be deposit-ready.' },
@@ -43,11 +43,11 @@ export default function PricingPage() {
       <JsonLd data={[
         organizationSchema(),
         webSiteSchema(),
-        webPageSchema({ url, name: title, description, breadcrumb: [{ name: 'Home', url: 'https://www.thenycmaid.com' }, { name: 'Pricing', url }] }),
+        webPageSchema({ url, name: title, description, breadcrumb: [{ name: 'Home', url: 'https://www.cleaningservicesunnysideny.com' }, { name: 'Pricing', url }] }),
         localBusinessSchema(),
         pricingOffersSchema(),
         howToBookSchema(),
-        breadcrumbSchema([{ name: 'Home', url: 'https://www.thenycmaid.com' }, { name: 'Pricing', url }]),
+        breadcrumbSchema([{ name: 'Home', url: 'https://www.cleaningservicesunnysideny.com' }, { name: 'Pricing', url }]),
         faqSchema(pricingFaqs),
         ...reviewSchemas(),
       ]} />
@@ -122,7 +122,7 @@ export default function PricingPage() {
       </section>
 
       <div className="max-w-7xl mx-auto px-4 py-8">
-        <Breadcrumbs items={[{ name: 'Pricing', href: '/updated-nyc-maid-service-industry-pricing' }]} />
+        <Breadcrumbs items={[{ name: 'Pricing', href: '/nyc-cleaning-service-pricing' }]} />
       </div>
 
       {/* Pricing guarantees */}
@@ -133,7 +133,7 @@ export default function PricingPage() {
               { label: 'No Hidden Fees', detail: 'The quote you get is the price you pay' },
               { label: 'Pay After', detail: 'Never upfront — pay when the job is done' },
               { label: 'No Contracts', detail: 'Cancel recurring service anytime' },
-              { label: 'Same Rate Everywhere', detail: 'Manhattan to Long Island — same price' },
+              { label: 'Same Rate Everywhere', detail: 'Manhattan, Brooklyn & Queens — same price' },
             ].map(g => (
               <div key={g.label} className="bg-gray-50 border border-gray-100 rounded-xl p-5 text-center">
                 <p className="font-[family-name:var(--font-bebas)] text-lg text-[#1E2A4A] tracking-wide mb-1">{g.label}</p>

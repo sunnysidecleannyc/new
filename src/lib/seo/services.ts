@@ -124,9 +124,9 @@ export const SERVICES: Service[] = [
   {
     slug: 'maid-service',
     urlSlug: 'nyc-maid-service',
-    name: 'NYC Maid Service',
-    shortName: 'Maid Service',
-    description: 'Reliable, recurring maid service for NYC homes and apartments. The same trusted cleaner every visit, maintaining your home to the highest standard week after week.',
+    name: 'NYC Recurring Cleaning Service',
+    shortName: 'Recurring Cleaning',
+    description: 'Reliable, recurring cleaning service for NYC homes and apartments. The same trusted cleaner every visit, maintaining your home to the highest standard week after week.',
     features: ['Same dedicated cleaner each visit', 'Full kitchen wipe-down and sanitize', 'Bathroom toilet, shower, and sink', 'Vacuuming all rooms and hallways', 'Mopping kitchen and bathroom floors', 'Bed making with fresh linens', 'Surface dusting throughout', 'Mirror and glass cleaning', 'Trash and recycling removal', 'Countertop and table wipe-down', 'Appliance fronts and handles', 'Rotating focus areas each visit'],
     idealFor: ['Weekly maintenance', 'Bi-weekly upkeep', 'Busy professionals', 'Families who want consistency'],
     priceRange: '$98–$260',

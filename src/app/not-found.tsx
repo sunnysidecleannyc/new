@@ -20,15 +20,13 @@ export default function NotFound() {
         <div className="border-t border-white/10 pt-8">
           <p className="text-white/40 text-sm mb-4">Looking for one of these?</p>
           <div className="flex flex-wrap justify-center gap-3">
-            <Link href="/service-areas-served-by-the-nyc-maid" className="text-sm text-[#A8F0DC]/70 hover:text-[#A8F0DC] transition-colors">Service Areas</Link>
+            <Link href="/service-areas" className="text-sm text-[#A8F0DC]/70 hover:text-[#A8F0DC] transition-colors">Service Areas</Link>
             <span className="text-white/20">|</span>
-            <Link href="/updated-nyc-maid-service-industry-pricing" className="text-sm text-[#A8F0DC]/70 hover:text-[#A8F0DC] transition-colors">Pricing</Link>
+            <Link href="/nyc-cleaning-service-pricing" className="text-sm text-[#A8F0DC]/70 hover:text-[#A8F0DC] transition-colors">Pricing</Link>
             <span className="text-white/20">|</span>
-            <Link href="/nyc-maid-service-services-offered-by-the-nyc-maid" className="text-sm text-[#A8F0DC]/70 hover:text-[#A8F0DC] transition-colors">Services</Link>
+            <Link href="/nyc-cleaning-services-offered" className="text-sm text-[#A8F0DC]/70 hover:text-[#A8F0DC] transition-colors">Services</Link>
             <span className="text-white/20">|</span>
-            <Link href="/book/new" className="text-sm text-[#A8F0DC]/70 hover:text-[#A8F0DC] transition-colors">Book Online</Link>
-            <span className="text-white/20">|</span>
-            <Link href="/available-nyc-maid-jobs" className="text-sm text-[#A8F0DC]/70 hover:text-[#A8F0DC] transition-colors">Careers</Link>
+            <a href="https://www.thenycmaid.com/book" className="text-sm text-[#A8F0DC]/70 hover:text-[#A8F0DC] transition-colors">Book Online</a>
           </div>
         </div>
       </div>

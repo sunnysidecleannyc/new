@@ -37,7 +37,7 @@ const serviceFooterLinks = [
   { name: 'Home Organizing', href: '/services/nyc-home-organizing-service' },
   { name: 'Common Area Cleaning', href: '/services/nyc-common-area-cleaning-service' },
   { name: 'Office Cleaning', href: '/services/nyc-office-cleaning-service' },
-  { name: 'Maid Service', href: '/services/nyc-maid-service' },
+  { name: 'Recurring Cleaning', href: '/services/nyc-maid-service' },
 ]
 
 export default function MarketingFooter() {
@@ -46,7 +46,7 @@ export default function MarketingFooter() {
       {/* Main footer brand */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-8">
         <h2 className="font-[family-name:var(--font-bebas)] text-white text-3xl md:text-4xl tracking-wide text-center mb-1">Sunnyside Clean NYC</h2>
-        <p className="text-center text-gray-400 text-sm tracking-wide mb-2">A NYC Maid Company</p>
+        <p className="text-center text-gray-400 text-sm tracking-wide mb-2">A NYC Maid Services Company</p>
         <div className="w-16 h-[2px] bg-[#A8F0DC] mx-auto mb-12" />
       </div>
 
@@ -109,7 +109,7 @@ export default function MarketingFooter() {
             <Link href="/legal" className="hover:text-gray-300 transition-colors">Legal</Link>
             <Link href="/do-not-share-policy" className="hover:text-gray-300 transition-colors">Do Not Share</Link>
           </div>
-          <p className="text-xs text-gray-500">&copy; {new Date().getFullYear()} Sunnyside Clean NYC &middot; A NYC Maid Company &middot; <a href="tel:2122028400" className="text-[#A8F0DC]/70 hover:text-[#A8F0DC]">(212) 202-8400</a> &middot; NYC Web Design by{' '}<a href="https://www.consortiumnyc.com/" target="_blank" rel="noopener noreferrer" className="text-[#A8F0DC] font-semibold hover:text-white underline underline-offset-2 decoration-[#A8F0DC]/50">Consortium NYC</a></p>
+          <p className="text-xs text-gray-500">&copy; {new Date().getFullYear()} Sunnyside Clean NYC &middot; A NYC Maid Services Company &middot; <a href="tel:2122028400" className="text-[#A8F0DC]/70 hover:text-[#A8F0DC]">(212) 202-8400</a> &middot; NYC Web Design by{' '}<a href="https://www.consortiumnyc.com/" target="_blank" rel="noopener noreferrer" className="text-[#A8F0DC] font-semibold hover:text-white underline underline-offset-2 decoration-[#A8F0DC]/50">Consortium NYC</a></p>
         </div>
       </div>
     </footer>

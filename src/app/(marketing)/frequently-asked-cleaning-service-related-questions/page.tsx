@@ -24,7 +24,7 @@ const serviceFAQs = [
 ]
 
 const schedulingFAQs = [
-  { question: 'How do I book a cleaning?', answer: 'Text or call (212) 202-8400, or book online at thenycmaid.com/book/new. We typically schedule within 24–48 hours. Same-day availability for urgent requests.' },
+  { question: 'How do I book a cleaning?', answer: 'Text or call (212) 202-8400, or book online at thenycmaid.com/book. We typically schedule within 24–48 hours. Same-day availability for urgent requests.' },
   { question: 'Can I get the same cleaner each time?', answer: 'Yes. For recurring clients, we assign the same dedicated cleaner to your home so they learn your preferences and layout. Consistency is one of the things our clients value most.' },
   { question: 'Do you offer same-day cleaning?', answer: 'Yes. Call or text (212) 202-8400 and we\'ll dispatch a professional cleaner within hours. Same-day service is $100/hr.' },
   { question: 'How do I reschedule or cancel?', answer: 'Text or call us at least 24 hours before your scheduled cleaning. We\'ll reschedule at no charge. Cancellations with less than 24 hours notice may incur a fee.' },
@@ -37,7 +37,7 @@ const trustFAQs = [
   { question: 'What if I\'m not satisfied with the cleaning?', answer: 'We offer a satisfaction guarantee. If you\'re not happy with any part of the cleaning, contact us within 24 hours and we\'ll send a team back to address the issue at no extra charge.' },
   { question: 'Do you bring your own supplies?', answer: 'It\'s your choice. At $49/hr you provide the supplies. At $65/hr we bring everything — professional-grade cleaning products and all equipment needed.' },
   { question: 'Are there any contracts or commitments?', answer: 'No contracts. Stay because you\'re happy, not because you\'re locked in. Cancel recurring service anytime with 7 days notice.' },
-  { question: 'What areas do you serve?', answer: 'We serve Manhattan, Brooklyn, Queens, Long Island (Great Neck, Manhasset, Port Washington, Garden City, Roslyn), and New Jersey (Hoboken, Jersey City, Weehawken, Edgewater). Same rates everywhere.' },
+  { question: 'What areas do you serve?', answer: 'We serve Manhattan, Brooklyn, and Queens. Same rates everywhere — no travel surcharges.' },
   { question: 'How long does a cleaning take?', answer: 'Regular cleaning: 2–4 hours. Deep cleaning: 2–4 hours. Move-in/out: 4–8 hours. Post-renovation: 5–10 hours. Time depends on home size and condition.' },
 ]
 
@@ -45,7 +45,7 @@ const allFAQs = [...pricingFAQs, ...serviceFAQs, ...schedulingFAQs, ...trustFAQs
 
 const pageUrl = 'https://www.cleaningservicesunnysideny.com/frequently-asked-cleaning-service-related-questions'
 const pageTitle = 'NYC Cleaning Service FAQ — Pricing, Services & Scheduling | Sunnyside Clean NYC'
-const pageDescription = 'Answers to common questions about Sunnyside Clean NYC — pricing ($49–$100/hr), what\'s included, scheduling, insurance, service areas, and more. Serving Manhattan, Brooklyn, Queens & Long Island. (212) 202-8400'
+const pageDescription = 'Answers to common questions about Sunnyside Clean NYC — pricing ($49–$100/hr), what\'s included, scheduling, insurance, service areas, and more. Serving Manhattan, Brooklyn & Queens. (212) 202-8400'
 
 export const metadata: Metadata = {
   title: pageTitle,
@@ -92,14 +92,14 @@ export default function FAQPage() {
           description: pageDescription,
           type: 'FAQPage',
           breadcrumb: [
-            { name: 'Home', url: 'https://www.thenycmaid.com' },
+            { name: 'Home', url: 'https://www.cleaningservicesunnysideny.com' },
             { name: 'FAQ', url: pageUrl },
           ],
         }),
         localBusinessSchema(),
         howToBookSchema(),
         breadcrumbSchema([
-          { name: 'Home', url: 'https://www.thenycmaid.com' },
+          { name: 'Home', url: 'https://www.cleaningservicesunnysideny.com' },
           { name: 'FAQ', url: pageUrl },
         ]),
         faqSchema(allFAQs),
@@ -132,7 +132,7 @@ export default function FAQPage() {
       </section>
 
       <div className="max-w-5xl mx-auto px-4 py-12">
-        <Breadcrumbs items={[{ name: 'FAQ', href: '/nyc-cleaning-service-frequently-asked-questions-in-2025' }]} />
+        <Breadcrumbs items={[{ name: 'FAQ', href: '/frequently-asked-cleaning-service-related-questions' }]} />
 
         {/* FAQ Sections */}
         {sections.map(section => (
@@ -175,7 +175,7 @@ export default function FAQPage() {
                 <p className="font-[family-name:var(--font-bebas)] text-4xl text-[#1E2A4A] tracking-wide">$100<span className="text-xl text-gray-300">/hr</span></p>
               </div>
             </div>
-            <Link href="/updated-nyc-maid-service-industry-pricing" className="inline-block mt-6 text-[#1E2A4A] font-semibold underline underline-offset-4 hover:no-underline">
+            <Link href="/nyc-cleaning-service-pricing" className="inline-block mt-6 text-[#1E2A4A] font-semibold underline underline-offset-4 hover:no-underline">
               View Full Pricing Details &rarr;
             </Link>
           </div>
@@ -199,22 +199,22 @@ export default function FAQPage() {
 
         {/* Helpful links */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-16">
-          <Link href="/nyc-maid-service-services-offered-by-the-nyc-maid" className="group border border-gray-200 rounded-xl p-6 hover:border-[#A8F0DC] transition-all">
+          <Link href="/nyc-cleaning-services-offered" className="group border border-gray-200 rounded-xl p-6 hover:border-[#A8F0DC] transition-all">
             <p className="font-semibold text-[#1E2A4A] group-hover:underline underline-offset-2 mb-1">View All Services</p>
             <p className="text-gray-500 text-sm">10 cleaning services for every situation</p>
           </Link>
-          <Link href="/service-areas-served-by-the-nyc-maid" className="group border border-gray-200 rounded-xl p-6 hover:border-[#A8F0DC] transition-all">
+          <Link href="/service-areas" className="group border border-gray-200 rounded-xl p-6 hover:border-[#A8F0DC] transition-all">
             <p className="font-semibold text-[#1E2A4A] group-hover:underline underline-offset-2 mb-1">Service Areas</p>
-            <p className="text-gray-500 text-sm">Manhattan, Brooklyn, Queens, LI &amp; NJ</p>
+            <p className="text-gray-500 text-sm">Manhattan, Brooklyn &amp; Queens</p>
           </Link>
-          <Link href="/nyc-customer-reviews-for-the-nyc-maid" className="group border border-gray-200 rounded-xl p-6 hover:border-[#A8F0DC] transition-all">
+          <a href="https://share.google/Iq9oblq3vJr07aP27" target="_blank" rel="noopener noreferrer" className="group border border-gray-200 rounded-xl p-6 hover:border-[#A8F0DC] transition-all">
             <p className="font-semibold text-[#1E2A4A] group-hover:underline underline-offset-2 mb-1">Read Reviews</p>
             <p className="text-gray-500 text-sm">27 verified 5-star Google reviews</p>
-          </Link>
+          </a>
         </div>
       </div>
 
-      <CTABlock title="Ready to Book Your Cleaning?" subtitle="Text or call — trusted by New Yorkers across Manhattan, Brooklyn, Queens, Long Island & New Jersey." />
+      <CTABlock title="Ready to Book Your Cleaning?" subtitle="Text or call — trusted by New Yorkers across Manhattan, Brooklyn & Queens." />
     </>
   )
 }

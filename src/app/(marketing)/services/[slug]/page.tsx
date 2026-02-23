@@ -26,7 +26,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const url = `https://www.cleaningservicesunnysideny.com/services/${slug}`
   const title = `${service.name} in NYC From ${service.priceRange.split('\u2013')[0]} | 5-Star Rated | Sunnyside Clean NYC`
-  const description = `Professional ${service.name.toLowerCase()} across Manhattan, Brooklyn, Queens, Long Island & NJ. ${service.features.slice(0, 2).join(', ')} & more. From ${service.priceRange.split('\u2013')[0]}. 5.0★ Google. (212) 202-8400`
+  const description = `Professional ${service.name.toLowerCase()} across Manhattan, Brooklyn & Queens. ${service.features.slice(0, 2).join(', ')} & more. From ${service.priceRange.split('\u2013')[0]}. 5.0★ Google. (212) 202-8400`
 
   return {
     title: { absolute: title },
@@ -86,7 +86,7 @@ export default async function ServicePage({ params }: Props) {
               <h1 className="font-[family-name:var(--font-bebas)] text-4xl md:text-5xl lg:text-6xl text-white tracking-wide leading-[0.95] mb-5">
                 {rich?.heroH1 || `${service.name} in NYC — Professional & Affordable`}
               </h1>
-              <p className="text-[#A8F0DC]/80 text-sm font-medium tracking-wide uppercase mb-4">Sunnyside Clean NYC — A NYC Maid Company</p>
+              <p className="text-[#A8F0DC]/80 text-sm font-medium tracking-wide uppercase mb-4">Sunnyside Clean NYC — A NYC Maid Services Company</p>
               <p className="text-blue-200/60 text-lg leading-relaxed mb-6">
                 {rich?.heroSubtitle || content.intro}
               </p>
@@ -321,7 +321,7 @@ export default async function ServicePage({ params }: Props) {
             <div>
               <h3 className="font-[family-name:var(--font-bebas)] text-xl text-[#1E2A4A] tracking-wide mb-2">{service.name} Cost Summary</h3>
               <p className="text-[#1E2A4A]/80 leading-relaxed">{rich.pricingNote}</p>
-              <Link href="/pricing" className="inline-block mt-3 text-[#1E2A4A] font-semibold text-sm underline underline-offset-4">Full pricing details &rarr;</Link>
+              <Link href="/nyc-cleaning-service-pricing" className="inline-block mt-3 text-[#1E2A4A] font-semibold text-sm underline underline-offset-4">Full pricing details &rarr;</Link>
             </div>
           </div>
         </section>

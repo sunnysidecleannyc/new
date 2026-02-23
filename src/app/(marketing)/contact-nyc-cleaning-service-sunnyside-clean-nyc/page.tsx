@@ -9,7 +9,7 @@ import CTABlock from '@/components/marketing/CTABlock'
 
 const url = 'https://www.cleaningservicesunnysideny.com/contact-nyc-cleaning-service-sunnyside-clean-nyc'
 const title = 'Contact Sunnyside Clean NYC | Call or Text (212) 202-8400 | Free Quote'
-const description = 'Contact Sunnyside Clean NYC for a free cleaning quote. Text or call (212) 202-8400, email hello@cleaningservicesunnysideny.com, or book online. Service from $49/hr across NYC, Brooklyn, Queens, LI & NJ. 5.0★ Google.'
+const description = 'Contact Sunnyside Clean NYC for a free cleaning quote. Text or call (212) 202-8400, email hello@cleaningservicesunnysideny.com, or book online. Service from $49/hr across Manhattan, Brooklyn & Queens. 5.0★ Google.'
 
 export const metadata: Metadata = {
   title: { absolute: title },
@@ -25,7 +25,7 @@ const contactFaqs = [
   { question: 'Do I need to call to book, or can I text?', answer: 'Texting is our preferred method — it\'s faster for both of us. You can also call, email hello@cleaningservicesunnysideny.com, or book online at thenycmaid.com/book.' },
   { question: 'What information do you need for a quote?', answer: 'Your address (or neighborhood), number of bedrooms and bathrooms, the type of cleaning you need (regular, deep, move-in/out, etc.), and your preferred date. That\'s it — we\'ll handle the rest.' },
   { question: 'How quickly can you schedule a cleaning?', answer: 'Usually within 24–48 hours. For same-day service, text us before 10am for the best chance of afternoon availability. Same-day is $100/hr.' },
-  { question: 'What areas do you serve?', answer: 'All of Manhattan, Brooklyn, Queens, Long Island (North Shore including Great Neck, Manhasset, Port Washington), and northern New Jersey (Jersey City, Hoboken, Weehawken, Edgewater, Fort Lee). Same rates everywhere.' },
+  { question: 'What areas do you serve?', answer: 'All of Manhattan, Brooklyn, and Queens. Same rates everywhere — no travel surcharges.' },
   { question: 'What are your hours?', answer: 'Office hours are Monday–Saturday 7am–7pm. Our sales and booking line is available 24/7 — call or text anytime and we typically respond within 15 minutes.' },
   { question: 'Is there any obligation when I ask for a quote?', answer: 'None at all. Get a quote, think about it, and book when you\'re ready. No pressure, no follow-up calls, no sales tactics.' },
   { question: 'Can I book for someone else?', answer: 'Yes. Many clients book cleanings for family members, tenants, or Airbnb properties. Just provide the service address and any access instructions.' },
@@ -111,9 +111,9 @@ export default function ContactPage() {
               <h2 className="font-[family-name:var(--font-bebas)] text-2xl text-[#1E2A4A] tracking-wide mb-2">Book Online</h2>
               <p className="text-[#1E2A4A] text-lg font-bold">cleaningservicesunnysideny.com</p>
               <p className="text-gray-500 text-sm mt-3">Submit your details online and we&apos;ll confirm your appointment within the hour.</p>
-              <Link href="/book/new" className="inline-block mt-5 bg-[#1E2A4A] text-white px-6 py-3 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#1E2A4A]/90 transition-colors">
+              <a href="https://www.thenycmaid.com/book" className="inline-block mt-5 bg-[#1E2A4A] text-white px-6 py-3 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#1E2A4A]/90 transition-colors">
                 Book Now
-              </Link>
+              </a>
             </div>
           </div>
         </div>
@@ -143,7 +143,7 @@ export default function ContactPage() {
               <div className="bg-gray-50 rounded-xl p-5">
                 <p className="text-xs font-semibold text-gray-400 tracking-[0.15em] uppercase mb-2">Main Office</p>
                 <p className="text-[#1E2A4A] font-medium">150 W 47th St, New York, NY 10036</p>
-                <p className="text-gray-500 text-sm mt-1">Serving all five boroughs, Long Island &amp; NJ</p>
+                <p className="text-gray-500 text-sm mt-1">Serving Manhattan, Brooklyn &amp; Queens</p>
               </div>
             </div>
 
@@ -181,7 +181,7 @@ export default function ContactPage() {
         <div className="max-w-7xl mx-auto px-4">
           <h2 className="text-xs font-semibold text-gray-400 tracking-[0.25em] uppercase mb-3 text-center">Where We Serve</h2>
           <p className="font-[family-name:var(--font-bebas)] text-3xl md:text-4xl text-[#1E2A4A] tracking-wide text-center mb-4">Same Rates Across Every Location</p>
-          <p className="text-gray-500 text-center max-w-2xl mx-auto mb-10">No travel fees, no zone surcharges. Manhattan to Long Island — you pay the same flat hourly rate.</p>
+          <p className="text-gray-500 text-center max-w-2xl mx-auto mb-10">No travel fees, no zone surcharges. You pay the same flat hourly rate across Manhattan, Brooklyn &amp; Queens.</p>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
             {AREAS.map(area => (
               <Link

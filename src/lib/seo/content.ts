@@ -22,9 +22,9 @@ function pick<T>(arr: T[], seed: string, offset = 0): T {
 export function homepageContent() {
   return {
     title: 'NYC Cleaning Service & House Cleaning From $49/hr | 5-Star Rated | Sunnyside Clean NYC',
-    metaDescription: 'NYC\'s top-rated cleaning service from $49/hr. House cleaning across Manhattan, Brooklyn, Queens, Long Island & NJ. Licensed, insured. 5.0★ Google. (212) 202-8400',
+    metaDescription: 'NYC\'s top-rated cleaning service from $49/hr. House cleaning across Manhattan, Brooklyn & Queens. Licensed, insured. 5.0★ Google. (212) 202-8400',
     h1: 'NYC\'s #1 Rated Cleaning Service & House Cleaning — From $49/hr',
-    subtitle: 'Professional house cleaning across Manhattan, Brooklyn, Queens, Long Island & New Jersey. Licensed, insured, and loved by thousands of clients.',
+    subtitle: 'Professional house cleaning across Manhattan, Brooklyn & Queens. Licensed, insured, and loved by thousands of clients.',
   }
 }
 
@@ -42,14 +42,6 @@ const areaIntros: Record<string, string[]> = {
   queens: [
     'Queens is NYC\'s most diverse borough, and our cleaning team serves every neighborhood with reliable, thorough service.',
     'From Long Island City high-rises to Forest Hills gardens, we bring professional cleaning to all of Queens.',
-  ],
-  'long-island': [
-    'Long Island\'s luxury homes and estates require premium cleaning services — that\'s exactly what we deliver.',
-    'From Great Neck estates to Garden City colonials, our Long Island team provides meticulous, detail-oriented cleaning.',
-  ],
-  'new-jersey': [
-    'The NJ waterfront communities deserve NYC-quality cleaning service — and that\'s exactly what we bring across the Hudson.',
-    'Hoboken brownstones, Jersey City high-rises, Weehawken waterfronts — our NJ team delivers thorough, reliable cleaning.',
   ],
 }
 
@@ -170,7 +162,7 @@ export function neighborhoodServiceContent(neighborhood: Neighborhood, service: 
 export function serviceContent(service: Service) {
   return {
     title: `${service.name} Services | NYC, Brooklyn, Queens`,
-    metaDescription: `Professional ${service.name.toLowerCase()} across NYC, Brooklyn, Queens, Long Island & NJ. ${service.features.slice(0, 2).join(', ')} & more. ${service.priceRange}. 5.0★ Google. (212) 202-8400`,
+    metaDescription: `Professional ${service.name.toLowerCase()} across Manhattan, Brooklyn & Queens. ${service.features.slice(0, 2).join(', ')} & more. ${service.priceRange}. 5.0★ Google. (212) 202-8400`,
     h1: `${service.name} Services`,
     intro: service.description,
   }
@@ -369,11 +361,11 @@ const richContentMap: Record<string, ServiceRichContent> = {
   },
 
   'weekly-cleaning': {
-    heroH1: 'NYC Weekly Maid Service — Never Come Home to a Mess Again',
-    tipsTitle: 'Weekly Cleaning Secrets From NYC\'s Top-Rated Maids',
+    heroH1: 'NYC Weekly Cleaning Service — Never Come Home to a Mess Again',
+    tipsTitle: 'Weekly Cleaning Secrets From NYC\'s Top-Rated Cleaners',
     heroSubtitle: 'The same professional cleaner every week, maintaining your home to the highest standard. Walk in to a spotless apartment every single time — without lifting a finger.',
     whatIs: {
-      heading: 'What Is Weekly Maid Service?',
+      heading: 'What Is Weekly Cleaning Service?',
       subheading: 'Weekly service is the gold standard of home maintenance. Your assigned cleaner comes on the same day each week, maintaining your apartment in consistently perfect condition.',
       body: [
         'Weekly cleaning service means you never have to think about cleaning again. Every week, your dedicated cleaner arrives on schedule, cleans your entire apartment to your standards, and leaves everything spotless.',
@@ -382,7 +374,7 @@ const richContentMap: Record<string, ServiceRichContent> = {
       ],
     },
     whenToBook: {
-      title: 'Who Benefits Most From Weekly Maid Service?',
+      title: 'Who Benefits Most From Weekly Cleaning Service?',
       items: [
         'Busy professionals who work long hours and value coming home to a clean apartment',
         'Families with children — kids create messes faster than you can clean them',
@@ -924,7 +916,7 @@ export function commonServiceFAQs(service: Service): { question: string; answer:
     { question: 'Are your cleaners background-checked?', answer: 'Yes. Every cleaner on our team undergoes a comprehensive background check before their first assignment. We also carry general liability insurance and bonding for your protection. You can trust that the person entering your home has been fully vetted.' },
     { question: 'Do I need to be home during the cleaning?', answer: 'No. Many clients leave a key, provide a door code, or arrange access through their doorman or building management. You\'re welcome to be home or away — whatever is most comfortable. We\'ll text you when we arrive and when we\'re done.' },
     { question: 'How do I book a cleaning?', answer: 'Text or call (212) 202-8400. Tell us your address, preferred date, and any special requests. We\'ll confirm your appointment and match you with a cleaner, usually within the hour. You can also book online at thenycmaid.com/book.' },
-    { question: 'What areas do you serve?', answer: 'We serve all of Manhattan, Brooklyn, Queens, Long Island (North Shore), and northern New Jersey (Hudson County). Same rates everywhere — no travel surcharges regardless of location.' },
+    { question: 'What areas do you serve?', answer: 'We serve all of Manhattan, Brooklyn, and Queens — 267+ neighborhoods across NYC. Same rates everywhere — no travel surcharges regardless of location.' },
     { question: 'Do I pay before or after the cleaning?', answer: 'After. We never charge upfront or take deposits. You pay only after the cleaning is complete, before the cleaner leaves. We accept cash, Venmo, Zelle (hello@cleaningservicesunnysideny.com), and credit card.' },
     { question: 'What if I\'m not satisfied with the cleaning?', answer: 'Let us know within 24 hours and we\'ll send a cleaner back to address any issues at no additional cost. We stand behind our work — your satisfaction is non-negotiable.' },
     { question: 'Do you bring your own cleaning supplies?', answer: 'At $65/hr, yes — we bring professional-grade products, microfiber systems, and a commercial vacuum. At $49/hr, you provide your own supplies. Either way, we\'re happy to use specific products you prefer (eco-friendly, hypoallergenic, etc.).' },
