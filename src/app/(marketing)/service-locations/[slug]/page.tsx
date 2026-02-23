@@ -109,7 +109,7 @@ export default async function ServiceLocationPage({ params }: Props) {
                 <h1 className="font-[family-name:var(--font-bebas)] text-4xl md:text-5xl lg:text-6xl text-white tracking-wide leading-[0.95] mb-5">
                   {area.name} Cleaning Service &amp; House Cleaning — From $49/hr
                 </h1>
-                <p className="text-[#A8F0DC]/80 text-sm font-medium tracking-wide uppercase mb-4">Sunnyside Clean NYC — A NYC Maid Services Company</p>
+                <p className="text-[#A8F0DC]/80 text-sm font-medium tracking-wide uppercase mb-4">Sunnyside Clean NYC — A NYC Cleaning Services Company</p>
                 <p className="text-blue-200/60 text-lg leading-relaxed mb-6">{content.intro}</p>
                 <div className="flex flex-wrap gap-x-6 gap-y-2 mb-8">
                   <span className="text-[#A8F0DC] text-sm font-medium">&#10003; From $49/hr</span>
@@ -275,7 +275,7 @@ export default async function ServiceLocationPage({ params }: Props) {
             <h1 className="font-[family-name:var(--font-bebas)] text-5xl md:text-7xl lg:text-8xl text-[#1E2A4A] tracking-wide leading-[0.9] mb-3">
               {neighborhood.name} Cleaning Service &amp; House Cleaning
             </h1>
-            <p className="text-gray-400 text-sm font-medium tracking-wide uppercase mb-5">Sunnyside Clean NYC — A NYC Maid Services Company</p>
+            <p className="text-gray-400 text-sm font-medium tracking-wide uppercase mb-5">Sunnyside Clean NYC — A NYC Cleaning Services Company</p>
             <p className="text-gray-500 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed mb-8">{content.intro}</p>
             {/* Landmark pills */}
             <div className="flex flex-wrap justify-center gap-2 mb-10">

@@ -9,7 +9,7 @@ import CTABlock from '@/components/marketing/CTABlock'
 
 const url = 'https://www.cleaningservicesunnysideny.com/contact-nyc-cleaning-service-sunnyside-clean-nyc'
 const title = 'Contact Sunnyside Clean NYC | Call or Text (212) 202-8400 | Free Quote'
-const description = 'Contact Sunnyside Clean NYC for a free cleaning quote. Text or call (212) 202-8400, email hello@cleaningservicesunnysideny.com, or book online. Service from $49/hr across Manhattan, Brooklyn & Queens. 5.0★ Google.'
+const description = 'Contact Sunnyside Clean NYC for a free cleaning quote. Text or call (212) 202-8400, email hi@thenycmaid.com, or book online. Service from $49/hr across Manhattan, Brooklyn & Queens. 5.0★ Google.'
 
 export const metadata: Metadata = {
   title: { absolute: title },
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
 
 const contactFaqs = [
   { question: 'What\'s the fastest way to get a quote?', answer: 'Text (212) 202-8400 with your address, home size (bedrooms/bathrooms), and what type of cleaning you need. Most quotes are delivered within 15 minutes.' },
-  { question: 'Do I need to call to book, or can I text?', answer: 'Texting is our preferred method — it\'s faster for both of us. You can also call, email hello@cleaningservicesunnysideny.com, or book online at thenycmaid.com/book/new.' },
+  { question: 'Do I need to call to book, or can I text?', answer: 'Texting is our preferred method — it\'s faster for both of us. You can also call, email hi@thenycmaid.com, or book online at thenycmaid.com/book/new.' },
   { question: 'What information do you need for a quote?', answer: 'Your address (or neighborhood), number of bedrooms and bathrooms, the type of cleaning you need (regular, deep, move-in/out, etc.), and your preferred date. That\'s it — we\'ll handle the rest.' },
   { question: 'How quickly can you schedule a cleaning?', answer: 'Usually within 24–48 hours. For same-day service, text us before 10am for the best chance of afternoon availability. Same-day is $100/hr.' },
   { question: 'What areas do you serve?', answer: 'All of Manhattan, Brooklyn, and Queens. Same rates everywhere — no travel surcharges.' },
@@ -96,9 +96,9 @@ export default function ContactPage() {
                 <span className="text-[#1E2A4A] text-2xl">&#9993;</span>
               </div>
               <h2 className="font-[family-name:var(--font-bebas)] text-2xl text-[#1E2A4A] tracking-wide mb-2">Email Us</h2>
-              <a href="mailto:hello@cleaningservicesunnysideny.com" className="text-[#1E2A4A] text-lg font-bold hover:underline underline-offset-4">hello@cleaningservicesunnysideny.com</a>
+              <a href="mailto:hi@thenycmaid.com" className="text-[#1E2A4A] text-lg font-bold hover:underline underline-offset-4">hi@thenycmaid.com</a>
               <p className="text-gray-500 text-sm mt-3">For detailed requests, photos, or questions. We respond within 2 hours.</p>
-              <a href="mailto:hello@cleaningservicesunnysideny.com" className="inline-block mt-5 bg-[#1E2A4A] text-white px-6 py-3 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#1E2A4A]/90 transition-colors">
+              <a href="mailto:hi@thenycmaid.com" className="inline-block mt-5 bg-[#1E2A4A] text-white px-6 py-3 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#1E2A4A]/90 transition-colors">
                 Send Email
               </a>
             </div>

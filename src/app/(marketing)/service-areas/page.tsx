@@ -88,7 +88,7 @@ export default function AreasIndexPage() {
           <h1 className="font-[family-name:var(--font-bebas)] text-4xl md:text-6xl lg:text-7xl text-white tracking-wide leading-[0.95] mb-6">
             {totalNeighborhoods}+ Neighborhoods Across Manhattan, Brooklyn &amp; Queens
           </h1>
-          <p className="text-[#A8F0DC]/80 text-sm font-medium tracking-wide uppercase mb-4">Sunnyside Clean NYC — A NYC Maid Services Company</p>
+          <p className="text-[#A8F0DC]/80 text-sm font-medium tracking-wide uppercase mb-4">Sunnyside Clean NYC — A NYC Cleaning Services Company</p>
           <p className="text-blue-200/80 text-lg max-w-2xl leading-relaxed mb-10">
             Professional house cleaning from $49/hr in every neighborhood we serve. Same rates, same quality, same background-checked cleaners — whether you&apos;re in Manhattan, Brooklyn, or Queens.
           </p>

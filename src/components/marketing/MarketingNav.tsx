@@ -68,7 +68,7 @@ export default function MarketingNav() {
           <div className="flex items-center justify-between h-[72px]">
             <Link href="/" className="flex-shrink-0">
               <Image src="/images/sunnyside-clean-nyc.png" alt="Sunnyside Clean NYC" width={160} height={48} className="h-10 sm:h-12 w-auto" priority />
-              <span className="block text-[9px] text-[#1E2A4A]/50 font-semibold tracking-[0.15em] uppercase mt-0.5">A NYC Maid Services Company</span>
+              <span className="block text-[9px] text-[#1E2A4A]/50 font-semibold tracking-[0.15em] uppercase mt-0.5">A NYC Cleaning Services Company</span>
             </Link>
 
             <nav className="hidden lg:flex items-center justify-center flex-1 gap-8 mx-8">
@@ -142,7 +142,7 @@ export default function MarketingNav() {
           <div className="bg-white flex items-center justify-between px-5 py-4">
             <Link href="/" onClick={closeMenu}>
               <Image src="/images/sunnyside-clean-nyc.png" alt="Sunnyside Clean NYC" width={140} height={42} className="h-9 w-auto" />
-              <span className="block text-[8px] text-[#1E2A4A]/50 font-semibold tracking-[0.15em] uppercase mt-0.5">A NYC Maid Services Company</span>
+              <span className="block text-[8px] text-[#1E2A4A]/50 font-semibold tracking-[0.15em] uppercase mt-0.5">A NYC Cleaning Services Company</span>
             </Link>
             <button onClick={closeMenu} aria-label="Close navigation menu" className="p-2 text-[#1E2A4A]">
               <svg aria-hidden="true" className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">

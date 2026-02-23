@@ -51,7 +51,7 @@ const homepageFAQs = [
   { question: 'How do I book a cleaning?', answer: 'Text or call us at (212) 202-8400. We typically schedule within 24-48 hours, with same-day availability for urgent requests.' },
   { question: 'Can I book online?', answer: 'Yes! You can book directly through our website. Just click "Book Online" in the menu, or text us if you prefer a personal touch.' },
   { question: 'Do you offer same-day cleaning?', answer: 'Yes. Same-day and emergency cleaning is available at $100/hour. We dispatch a professional cleaner to your door within hours.' },
-  { question: 'What payment methods do you accept?', answer: 'We accept credit cards, debit cards, Zelle (hello@cleaningservicesunnysideny.com), Venmo, Apple Pay, and cash. You can also pay securely online through our payment portal.' },
+  { question: 'What payment methods do you accept?', answer: 'We accept credit cards, debit cards, Zelle (hi@thenycmaid.com), Venmo, Apple Pay, and cash. You can also pay securely online through our payment portal.' },
   { question: 'Do I need to tip my cleaner?', answer: 'Tipping is never required but always appreciated. If you feel your cleaner did a great job, a tip is a wonderful way to show it.' },
 
   // Services
@@ -97,7 +97,7 @@ const homepageFAQs = [
   { question: 'What if I am not happy with the cleaning?', answer: 'Your satisfaction is guaranteed. If you are not happy with any aspect of the clean, contact us within 24 hours and we will send someone back to make it right at no extra charge.' },
   { question: 'How do you maintain quality?', answer: 'We use detailed checklists, conduct regular quality reviews, and only work with experienced, vetted cleaners. Every clean is held to the same high standard.' },
   { question: 'Do you have reviews I can read?', answer: 'Yes! We have a 5.0-star Google rating. You can read verified reviews on our Reviews page or on Google directly.' },
-  { question: 'How long have you been in business?', answer: 'Sunnyside Clean NYC has been serving the New York City metro area since 2018. A NYC Maid Services Company — we have cleaned thousands of homes and built a loyal client base through consistent quality.' },
+  { question: 'How long have you been in business?', answer: 'Sunnyside Clean NYC has been serving the New York City metro area since 2018. A NYC Cleaning Services Company — we have cleaned thousands of homes and built a loyal client base through consistent quality.' },
 
   // Special Situations
   { question: 'Can you clean if I have pets?', answer: 'Absolutely. We love pets! Just let us know so we can plan accordingly. We are experienced with homes that have dogs, cats, and other animals.' },
@@ -108,7 +108,7 @@ const homepageFAQs = [
 
   // Referral & Extras
   { question: 'Do you have a referral program?', answer: 'Yes! Refer a friend and earn 10% commission on every cleaning they book — not just the first one. It is recurring income for as long as they stay a client. Sign up on our Referral Program page.' },
-  { question: 'How do I contact you?', answer: 'Text or call (212) 202-8400, or email hello@cleaningservicesunnysideny.com. Texting is the fastest way to reach us.' },
+  { question: 'How do I contact you?', answer: 'Text or call (212) 202-8400, or email hi@thenycmaid.com. Texting is the fastest way to reach us.' },
 ]
 
 export default function HomePage() {
@@ -657,7 +657,7 @@ export default function HomePage() {
                 {[
                   'Payment is requested when the cleaning is nearly complete',
                   'You see the results before you pay',
-                  'Accepted methods: Zelle (hello@cleaningservicesunnysideny.com) or Apple Pay',
+                  'Accepted methods: Zelle (hi@thenycmaid.com) or Apple Pay',
                   'No processing fees, no delays, no chargebacks',
                   'Cleaner remains on site until payment is completed',
                 ].map(item => (
@@ -706,7 +706,7 @@ export default function HomePage() {
             <p className="text-gray-600 leading-relaxed mb-6">
               That&apos;s why our clients in <Link href="/service-areas/upper-west-side-cleaning-services" className="text-[#1E2A4A] underline underline-offset-2">the Upper West Side</Link>, <Link href="/service-areas/park-slope-cleaning-services" className="text-[#1E2A4A] underline underline-offset-2">Park Slope</Link>, <Link href="/service-areas/long-island-city-cleaning-services" className="text-[#1E2A4A] underline underline-offset-2">Long Island City</Link>, and <Link href="/service-areas/astoria-cleaning-services" className="text-[#1E2A4A] underline underline-offset-2">Astoria</Link> keep rebooking — they know exactly who&apos;s coming, and they trust them completely.
             </p>
-            <a href="mailto:hello@cleaningservicesunnysideny.com" className="text-[#1E2A4A] font-semibold text-sm hover:underline underline-offset-4">Join Our Cleaning Team &rarr;</a>
+            <a href="mailto:hi@thenycmaid.com" className="text-[#1E2A4A] font-semibold text-sm hover:underline underline-offset-4">Join Our Cleaning Team &rarr;</a>
           </div>
           <div>
             <h2 className="text-xs font-semibold text-gray-400 tracking-[0.2em] uppercase mb-3">The Ideal Cleaning Service Client</h2>

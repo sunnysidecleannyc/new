@@ -10,7 +10,7 @@ import CTABlock from '@/components/marketing/CTABlock'
 
 const url = 'https://www.cleaningservicesunnysideny.com/about-nyc-cleaning-service-sunnyside-clean-nyc'
 const title = 'About Sunnyside Clean NYC | Affordable, Reliable NYC Cleaning Since 2018'
-const description = 'Sunnyside Clean NYC is one of NYC\'s most trusted cleaning services — affordable rates from $49/hr, reliable background-checked cleaners, and consistent quality since 2018. A NYC Maid Services Company. Serving 267+ neighborhoods. 5.0★ Google. (212) 202-8400'
+const description = 'Sunnyside Clean NYC is one of NYC\'s most trusted cleaning services — affordable rates from $49/hr, reliable background-checked cleaners, and consistent quality since 2018. A NYC Cleaning Services Company. Serving 267+ neighborhoods. 5.0★ Google. (212) 202-8400'
 
 export const metadata: Metadata = {
   title: { absolute: title },
@@ -244,7 +244,7 @@ export default function AboutPage() {
             <p className="text-[#1E2A4A]/80 leading-relaxed">
               If you&apos;re an experienced cleaner who takes pride in their work, we&apos;d love to hear from you. Competitive pay, flexible hours, respectful management, and steady work.
             </p>
-            <a href="mailto:hello@cleaningservicesunnysideny.com" className="inline-block mt-3 text-[#1E2A4A] font-semibold text-sm underline underline-offset-4">Contact us about open positions &rarr;</a>
+            <a href="mailto:hi@thenycmaid.com" className="inline-block mt-3 text-[#1E2A4A] font-semibold text-sm underline underline-offset-4">Contact us about open positions &rarr;</a>
           </div>
         </div>
       </section>
