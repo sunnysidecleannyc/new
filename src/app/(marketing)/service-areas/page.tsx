@@ -201,7 +201,7 @@ export default function AreasIndexPage() {
             We&apos;re always expanding. Text or call us with your address and we&apos;ll let you know if we cover your area — we probably do.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-5">
-            <a href="https://www.thenycmaid.com/book" className="bg-[#1E2A4A] text-white px-10 py-4 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#1E2A4A]/90 transition-colors">
+            <a href="https://www.thenycmaid.com/book/new" className="bg-[#1E2A4A] text-white px-10 py-4 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#1E2A4A]/90 transition-colors">
               Book a Cleaning
             </a>
             <a href="tel:2122028400" className="text-[#1E2A4A] font-semibold underline underline-offset-4 hover:no-underline">

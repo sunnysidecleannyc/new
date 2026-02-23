@@ -26,7 +26,7 @@ export default function NotFound() {
             <span className="text-white/20">|</span>
             <Link href="/nyc-cleaning-services-offered" className="text-sm text-[#A8F0DC]/70 hover:text-[#A8F0DC] transition-colors">Services</Link>
             <span className="text-white/20">|</span>
-            <a href="https://www.thenycmaid.com/book" className="text-sm text-[#A8F0DC]/70 hover:text-[#A8F0DC] transition-colors">Book Online</a>
+            <a href="https://www.thenycmaid.com/book/new" className="text-sm text-[#A8F0DC]/70 hover:text-[#A8F0DC] transition-colors">Book Online</a>
           </div>
         </div>
       </div>

@@ -24,7 +24,7 @@ const serviceFAQs = [
 ]
 
 const schedulingFAQs = [
-  { question: 'How do I book a cleaning?', answer: 'Text or call (212) 202-8400, or book online at thenycmaid.com/book. We typically schedule within 24–48 hours. Same-day availability for urgent requests.' },
+  { question: 'How do I book a cleaning?', answer: 'Text or call (212) 202-8400, or book online at thenycmaid.com/book/new. We typically schedule within 24–48 hours. Same-day availability for urgent requests.' },
   { question: 'Can I get the same cleaner each time?', answer: 'Yes. For recurring clients, we assign the same dedicated cleaner to your home so they learn your preferences and layout. Consistency is one of the things our clients value most.' },
   { question: 'Do you offer same-day cleaning?', answer: 'Yes. Call or text (212) 202-8400 and we\'ll dispatch a professional cleaner within hours. Same-day service is $100/hr.' },
   { question: 'How do I reschedule or cancel?', answer: 'Text or call us at least 24 hours before your scheduled cleaning. We\'ll reschedule at no charge. Cancellations with less than 24 hours notice may incur a fee.' },

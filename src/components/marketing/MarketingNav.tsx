@@ -112,13 +112,13 @@ export default function MarketingNav() {
               </div>
             </nav>
 
-            <a href="https://www.thenycmaid.com/book" className="hidden lg:inline-block bg-[#A8F0DC] text-[#1E2A4A] px-6 py-2.5 rounded-md font-bold text-sm tracking-widest uppercase hover:bg-[#8DE8CC] transition-colors whitespace-nowrap">
+            <a href="https://www.thenycmaid.com/book/new" className="hidden lg:inline-block bg-[#A8F0DC] text-[#1E2A4A] px-6 py-2.5 rounded-md font-bold text-sm tracking-widest uppercase hover:bg-[#8DE8CC] transition-colors whitespace-nowrap">
               Book a Cleaning
             </a>
 
             {/* Mobile hamburger */}
             <div className="lg:hidden flex items-center gap-3">
-              <a href="https://www.thenycmaid.com/book" className="bg-[#A8F0DC] text-[#1E2A4A] px-4 py-2 rounded-md font-bold text-xs tracking-widest uppercase">
+              <a href="https://www.thenycmaid.com/book/new" className="bg-[#A8F0DC] text-[#1E2A4A] px-4 py-2 rounded-md font-bold text-xs tracking-widest uppercase">
                 Book a Cleaning
               </a>
               <button onClick={() => setMobileOpen(!mobileOpen)} aria-label="Open navigation menu" aria-expanded={mobileOpen} className="p-2 text-[#1E2A4A]">
@@ -188,7 +188,7 @@ export default function MarketingNav() {
               )}
 
               <div className="border-t border-white/10 mt-4 pt-4 space-y-1">
-                <a href="https://www.thenycmaid.com/book" onClick={closeMenu} className="block py-3 text-[#A8F0DC] font-medium">Book a Cleaning</a>
+                <a href="https://www.thenycmaid.com/book/new" onClick={closeMenu} className="block py-3 text-[#A8F0DC] font-medium">Book a Cleaning</a>
                 <a href="https://buy.stripe.com/8x2aEZ4FL0wYfxe5f0fnO03" target="_blank" rel="noopener noreferrer" onClick={closeMenu} className="block py-3 text-[#A8F0DC] font-medium">Pay Now</a>
               </div>
 
