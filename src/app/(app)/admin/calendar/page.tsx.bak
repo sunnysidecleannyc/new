@@ -1,0 +1,263 @@
+'use client'
+import { useEffect, useState } from 'react'
+import FullCalendar from '@fullcalendar/react'
+import dayGridPlugin from '@fullcalendar/daygrid'
+import timeGridPlugin from '@fullcalendar/timegrid'
+import interactionPlugin from '@fullcalendar/interaction'
+
+interface Client { id: string; name: string; phone: string; address: string }
+interface Cleaner { id: string; name: string }
+interface Booking {
+  id: string
+  start_time: string
+  end_time: string
+  service_type: string
+  price: number
+  status: string
+  payment_status: string
+  payment_method: string | null
+  notes: string | null
+  client_id: string
+  cleaner_id: string
+  clients: Client | null
+  cleaners: Cleaner | null
+}
+
+interface BookingEvent {
+  id: string
+  title: string
+  start: string
+  end: string
+  backgroundColor: string
+  extendedProps: { booking: Booking }
+}
+
+const CLEANER_COLORS = [
+  '#3b82f6', '#10b981', '#f59e0b', '#ef4444', '#8b5cf6', 
+  '#ec4899', '#14b8a6', '#f97316'
+]
+
+export default function CalendarPage() {
+  const [bookings, setBookings] = useState<BookingEvent[]>([])
+  const [allBookings, setAllBookings] = useState<Booking[]>([])
+  const [cleaners, setCleaners] = useState<Cleaner[]>([])
+  const [clients, setClients] = useState<Client[]>([])
+  const [selectedCleaner, setSelectedCleaner] = useState<string>('')
+  const [selectedStatuses, setSelectedStatuses] = useState<string[]>(['scheduled', 'completed'])
+  const [cleanerColors, setCleanerColors] = useState<Record<string, string>>({})
+
+  useEffect(() => {
+    loadBookings()
+    loadClients()
+    loadCleaners()
+  }, [])
+
+  useEffect(() => {
+    filterBookings()
+  }, [allBookings, selectedCleaner, selectedStatuses, cleanerColors])
+
+  const loadBookings = async () => {
+    const res = await fetch('/api/bookings')
+    if (res.ok) {
+      const data = await res.json()
+      setAllBookings(data)
+    }
+  }
+
+  const loadClients = async () => {
+    const res = await fetch('/api/clients')
+    if (res.ok) setClients(await res.json())
+  }
+
+  const loadCleaners = async () => {
+    const res = await fetch('/api/cleaners')
+    if (res.ok) {
+      const data = await res.json()
+      setCleaners(data)
+      
+      const colors: Record<string, string> = {}
+      data.forEach((cleaner: Cleaner, index: number) => {
+        colors[cleaner.id] = CLEANER_COLORS[index % CLEANER_COLORS.length]
+      })
+      setCleanerColors(colors)
+    }
+  }
+
+  const filterBookings = () => {
+    let filtered = [...allBookings]
+    
+    if (selectedCleaner) {
+      filtered = filtered.filter(b => b.cleaner_id === selectedCleaner)
+    }
+    
+    if (selectedStatuses.length > 0) {
+      filtered = filtered.filter(b => selectedStatuses.includes(b.status))
+    }
+    
+    const events = filtered.map((b: Booking) => ({
+      id: b.id,
+      title: `${b.clients?.name || 'Client'} - ${b.cleaners?.name || 'Staff'}`,
+      start: b.start_time,
+      end: b.end_time,
+      backgroundColor: cleanerColors[b.cleaner_id] || '#000000',
+      extendedProps: { booking: b }
+    }))
+    
+    setBookings(events)
+  }
+
+  const toggleStatus = (status: string) => {
+    if (selectedStatuses.includes(status)) {
+      setSelectedStatuses(selectedStatuses.filter(s => s !== status))
+    } else {
+      setSelectedStatuses([...selectedStatuses, status])
+    }
+  }
+
+  const handleEventClick = (info: any) => {
+    window.location.href = `/dashboard/bookings`
+  }
+
+  return (
+    <div className="min-h-screen bg-white">
+      <header className="border-b border-gray-200 px-6 py-4">
+        <div className="flex justify-between items-center">
+          <h1 className="text-xl font-semibold text-black">The NYC Maid</h1>
+          <nav className="flex gap-8">
+            <a href="/dashboard" className="text-gray-500 hover:text-black">Dashboard</a>
+            <a href="/dashboard/calendar" className="text-black font-medium border-b-2 border-black pb-1">Calendar</a>
+            <a href="/dashboard/bookings" className="text-gray-500 hover:text-black">Bookings</a>
+            <a href="/dashboard/clients" className="text-gray-500 hover:text-black">Clients</a>
+            <a href="/dashboard/cleaners" className="text-gray-500 hover:text-black">Team</a>
+            <a href="/dashboard/websites" className="text-gray-500 hover:text-black">Websites</a>
+          </nav>
+        </div>
+      </header>
+
+      <main className="p-6">
+        {/* Filters */}
+        <div className="mb-6 flex flex-wrap gap-4 items-center bg-gray-50 p-4 rounded-lg">
+          {/* Cleaner Filter */}
+          <div>
+            <label className="block text-xs font-medium text-gray-600 mb-1">Team Member</label>
+            <select
+              value={selectedCleaner}
+              onChange={(e) => setSelectedCleaner(e.target.value)}
+              className="px-3 py-2 border border-gray-300 rounded-lg text-black text-sm"
+            >
+              <option value="">All Team</option>
+              {cleaners.map(c => (
+                <option key={c.id} value={c.id}>{c.name}</option>
+              ))}
+            </select>
+          </div>
+
+          {/* Status Checkboxes */}
+          <div>
+            <label className="block text-xs font-medium text-gray-600 mb-1">Status</label>
+            <div className="flex gap-3">
+              <label className="flex items-center gap-2 cursor-pointer">
+                <input
+                  type="checkbox"
+                  checked={selectedStatuses.includes('scheduled')}
+                  onChange={() => toggleStatus('scheduled')}
+                  className="w-4 h-4"
+                />
+                <span className="text-sm text-gray-700">Scheduled</span>
+              </label>
+              <label className="flex items-center gap-2 cursor-pointer">
+                <input
+                  type="checkbox"
+                  checked={selectedStatuses.includes('completed')}
+                  onChange={() => toggleStatus('completed')}
+                  className="w-4 h-4"
+                />
+                <span className="text-sm text-gray-700">Completed</span>
+              </label>
+              <label className="flex items-center gap-2 cursor-pointer">
+                <input
+                  type="checkbox"
+                  checked={selectedStatuses.includes('cancelled')}
+                  onChange={() => toggleStatus('cancelled')}
+                  className="w-4 h-4"
+                />
+                <span className="text-sm text-gray-700">Cancelled</span>
+              </label>
+            </div>
+          </div>
+
+          {/* Color Legend */}
+          <div className="ml-auto">
+            <label className="block text-xs font-medium text-gray-600 mb-1">Team Colors</label>
+            <div className="flex gap-2 flex-wrap">
+              {cleaners.map(cleaner => (
+                <div key={cleaner.id} className="flex items-center gap-1">
+                  <div
+                    className="w-3 h-3 rounded"
+                    style={{ backgroundColor: cleanerColors[cleaner.id] }}
+                  />
+                  <span className="text-xs text-gray-600">{cleaner.name}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        {/* Calendar */}
+        <div className="border border-gray-200 rounded-lg p-4 bg-white">
+          <FullCalendar
+            plugins={[dayGridPlugin, timeGridPlugin, interactionPlugin]}
+            initialView="timeGridWeek"
+            headerToolbar={{
+              left: 'prev,next today',
+              center: 'title',
+              right: 'dayGridMonth,timeGridWeek,timeGridDay'
+            }}
+            events={bookings}
+            eventClick={handleEventClick}
+            editable={false}
+            selectable={true}
+            slotMinTime="06:00:00"
+            slotMaxTime="22:00:00"
+            height="auto"
+            eventDisplay="block"
+            eventTimeFormat={{
+              hour: 'numeric',
+              minute: '2-digit',
+              meridiem: 'short'
+            }}
+          />
+        </div>
+
+        <p className="text-gray-500 text-sm mt-4">
+          Click event to view details • Use filters to focus on specific team members or statuses
+        </p>
+
+        {/* Stats */}
+        <div className="mt-6 grid grid-cols-3 gap-4">
+          <div className="bg-blue-50 p-4 rounded-lg">
+            <div className="text-sm text-blue-600 font-medium">Scheduled</div>
+            <div className="text-2xl font-bold text-blue-900">
+              {allBookings.filter(b => b.status === 'scheduled' && 
+                (selectedCleaner ? b.cleaner_id === selectedCleaner : true)).length}
+            </div>
+          </div>
+          <div className="bg-green-50 p-4 rounded-lg">
+            <div className="text-sm text-green-600 font-medium">Completed</div>
+            <div className="text-2xl font-bold text-green-900">
+              {allBookings.filter(b => b.status === 'completed' && 
+                (selectedCleaner ? b.cleaner_id === selectedCleaner : true)).length}
+            </div>
+          </div>
+          <div className="bg-gray-50 p-4 rounded-lg">
+            <div className="text-sm text-gray-600 font-medium">Total</div>
+            <div className="text-2xl font-bold text-gray-900">
+              {allBookings.filter(b => 
+                (selectedCleaner ? b.cleaner_id === selectedCleaner : true)).length}
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  )
+}

@@ -1,0 +1,256 @@
+'use client'
+import { useEffect, useState } from 'react'
+import AddressAutocomplete from '@/components/AddressAutocomplete'
+
+interface Client {
+  id: string
+  name: string
+  phone: string
+  email: string
+  address: string
+  address_line1: string
+  address_line2: string
+  city: string
+  state: string
+  zip: string
+  notes: string
+  pin: string
+  created_at: string
+}
+
+export default function ClientsPage() {
+  const [clients, setClients] = useState<Client[]>([])
+  const [loading, setLoading] = useState(true)
+  const [showModal, setShowModal] = useState(false)
+  const [editingClient, setEditingClient] = useState<Client | null>(null)
+  const [form, setForm] = useState({ name: '', phone: '', email: '', address_line1: '', address_line2: '', city: '', state: '', zip: '', notes: '', pin: '' })
+  const [saving, setSaving] = useState(false)
+  const [searchTerm, setSearchTerm] = useState('')
+
+  // Filter and sort clients
+  const filteredClients = clients
+    .filter(c => {
+      if (!searchTerm) return true
+      const search = searchTerm.toLowerCase()
+      return c.name.toLowerCase().includes(search) ||
+             c.phone?.toLowerCase().includes(search) ||
+             c.email?.toLowerCase().includes(search) ||
+             c.address?.toLowerCase().includes(search) ||
+             c.address_line1?.toLowerCase().includes(search)
+    })
+    .sort((a, b) => a.name.localeCompare(b.name))
+
+  useEffect(() => { loadClients() }, [])
+
+  const loadClients = async () => {
+    const res = await fetch('/api/clients')
+    if (res.ok) setClients(await res.json())
+    setLoading(false)
+  }
+
+  const openCreate = () => {
+    setEditingClient(null)
+    setForm({ name: '', phone: '', email: '', address_line1: '', address_line2: '', city: '', state: '', zip: '', notes: '', pin: '' })
+    setShowModal(true)
+  }
+
+  const openEdit = (client: Client) => {
+    setEditingClient(client)
+    setForm({ 
+      name: client.name || '', 
+      phone: client.phone || '', 
+      email: client.email || '', 
+      address_line1: client.address_line1 || client.address || '',
+      address_line2: client.address_line2 || '',
+      city: client.city || '',
+      state: client.state || '',
+      zip: client.zip || '',
+      notes: client.notes || '',
+      pin: client.pin || client.phone?.replace(/\D/g, '').slice(-4) || ''
+    })
+    setShowModal(true)
+  }
+
+  const handleAddressSelect = (addr: { address_line1: string, city: string, state: string, zip: string }) => {
+    setForm({ ...form, ...addr })
+  }
+
+  // Auto-fill PIN when phone changes (only for new clients)
+  const handlePhoneChange = (phone: string) => {
+    const digits = phone.replace(/\D/g, '')
+    const newPin = digits.length >= 4 ? digits.slice(-4) : ''
+    if (!editingClient) {
+      setForm({ ...form, phone, pin: newPin })
+    } else {
+      setForm({ ...form, phone })
+    }
+  }
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault()
+    setSaving(true)
+    
+    const fullAddress = [form.address_line1, form.address_line2, form.city, form.state, form.zip].filter(Boolean).join(', ')
+    const payload = { ...form, address: fullAddress }
+    
+    if (editingClient) {
+      await fetch('/api/clients/' + editingClient.id, {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+      })
+    } else {
+      await fetch('/api/clients', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+      })
+    }
+    
+    setShowModal(false)
+    loadClients()
+    setSaving(false)
+  }
+
+  const handleDelete = async () => {
+    if (!editingClient || !confirm('Delete this client?')) return
+    await fetch('/api/clients/' + editingClient.id, { method: 'DELETE' })
+    setShowModal(false)
+    loadClients()
+  }
+
+  const getPin = (client: Client) => {
+    return client.pin || client.phone?.replace(/\D/g, '').slice(-4) || '----'
+  }
+
+  const getDisplayAddress = (client: Client) => {
+    if (client.address_line1) {
+      return client.address_line1 + (client.address_line2 ? ' ' + client.address_line2 : '')
+    }
+    return client.address || '-'
+  }
+
+  return (
+    <div className="min-h-screen bg-white">
+      <header className="border-b border-gray-200 px-6 py-4">
+        <div className="flex justify-between items-center">
+          <h1 className="text-xl font-semibold text-black">The NYC Maid</h1>
+          <nav className="flex gap-8">
+            <a href="/dashboard" className="text-gray-500 hover:text-black">Dashboard</a>
+            <a href="/dashboard/calendar" className="text-gray-500 hover:text-black">Calendar</a>
+            <a href="/dashboard/bookings" className="text-gray-500 hover:text-black">Bookings</a>
+            <a href="/dashboard/clients" className="text-black font-medium border-b-2 border-black pb-1">Clients</a>
+            <a href="/dashboard/cleaners" className="text-gray-500 hover:text-black">Team</a>
+            <a href="/dashboard/websites" className="text-gray-500 hover:text-black">Websites</a>
+          </nav>
+        </div>
+      </header>
+
+      <main className="p-6">
+        <div className="flex justify-between items-center mb-6">
+          <h2 className="text-lg font-semibold text-black">All Clients <span className="font-normal text-gray-500">| {filteredClients.length}</span></h2>
+          <button onClick={openCreate} className="bg-black text-white px-4 py-2 rounded-lg font-medium hover:bg-gray-800">Add Client</button>
+        </div>
+
+        <div className="mb-4">
+          <input 
+            type="text" 
+            placeholder="Search clients by name, phone, email, or address..." 
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
+            className="w-full px-4 py-2 border border-gray-300 rounded-lg text-black"
+          />
+        </div>
+
+        <div className="border border-gray-200 rounded-lg overflow-hidden">
+          {loading ? <p className="p-6 text-gray-500">Loading...</p> : filteredClients.length === 0 ? <p className="p-6 text-gray-500">{searchTerm ? 'No clients match your search' : 'No clients yet.'}</p> : (
+            <table className="w-full">
+              <thead className="bg-gray-50 border-b border-gray-200">
+                <tr>
+                  <th className="text-left p-4 font-medium text-black text-sm">Name</th>
+                  <th className="text-left p-4 font-medium text-black text-sm">Phone</th>
+                  <th className="text-left p-4 font-medium text-black text-sm">Email</th>
+                  <th className="text-left p-4 font-medium text-black text-sm">PIN</th>
+                  <th className="text-left p-4 font-medium text-black text-sm">Address</th>
+                  <th className="text-left p-4 font-medium text-black text-sm"></th>
+                </tr>
+              </thead>
+              <tbody>
+                {filteredClients.map((c) => (
+                  <tr key={c.id} className="border-b border-gray-100 hover:bg-gray-50 cursor-pointer" onClick={() => openEdit(c)}>
+                    <td className="p-4 text-black font-medium">{c.name}</td>
+                    <td className="p-4 text-gray-600">{c.phone || '-'}</td>
+                    <td className="p-4 text-gray-600">{c.email || '-'}</td>
+                    <td className="p-4"><span className="font-mono bg-gray-100 px-2 py-1 rounded text-sm">{getPin(c)}</span></td>
+                    <td className="p-4 text-gray-600 max-w-xs truncate">{getDisplayAddress(c)}</td>
+                    <td className="p-4 text-gray-400">Edit</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          )}
+        </div>
+      </main>
+
+      {showModal && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+          <div className="bg-white rounded-lg p-6 w-full max-w-md max-h-[90vh] overflow-y-auto">
+            <h3 className="text-lg font-semibold text-black mb-4">{editingClient ? 'Edit Client' : 'Add Client'}</h3>
+            <form onSubmit={handleSubmit}>
+              <div className="space-y-4">
+                <div>
+                  <label className="block text-sm font-medium text-black mb-1">Name *</label>
+                  <input type="text" required value={form.name} onChange={(e) => setForm({ ...form, name: e.target.value })} className="w-full px-3 py-2 border border-gray-300 rounded-lg text-black" />
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-black mb-1">Phone *</label>
+                  <input type="tel" required value={form.phone} onChange={(e) => handlePhoneChange(e.target.value)} className="w-full px-3 py-2 border border-gray-300 rounded-lg text-black" />
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-black mb-1">Email</label>
+                  <input type="email" value={form.email} onChange={(e) => setForm({ ...form, email: e.target.value })} className="w-full px-3 py-2 border border-gray-300 rounded-lg text-black" />
+                </div>
+                
+                <AddressAutocomplete 
+                  onSelect={handleAddressSelect}
+                  initialValue={form.address_line1}
+                />
+                
+                <div className="grid grid-cols-3 gap-2">
+                  <div>
+                    <label className="block text-sm font-medium text-black mb-1">City</label>
+                    <input type="text" value={form.city} onChange={(e) => setForm({ ...form, city: e.target.value })} className="w-full px-3 py-2 border border-gray-300 rounded-lg text-black text-sm" />
+                  </div>
+                  <div>
+                    <label className="block text-sm font-medium text-black mb-1">State</label>
+                    <input type="text" value={form.state} onChange={(e) => setForm({ ...form, state: e.target.value })} className="w-full px-3 py-2 border border-gray-300 rounded-lg text-black text-sm" maxLength={2} />
+                  </div>
+                  <div>
+                    <label className="block text-sm font-medium text-black mb-1">Zip</label>
+                    <input type="text" value={form.zip} onChange={(e) => setForm({ ...form, zip: e.target.value })} className="w-full px-3 py-2 border border-gray-300 rounded-lg text-black text-sm" maxLength={10} />
+                  </div>
+                </div>
+                
+                <div>
+                  <label className="block text-sm font-medium text-black mb-1">Portal PIN</label>
+                  <input type="text" inputMode="numeric" maxLength={4} value={form.pin} onChange={(e) => setForm({ ...form, pin: e.target.value.replace(/\D/g, '') })} placeholder="Auto-fills from phone" className="w-full px-3 py-2 border border-gray-300 rounded-lg text-black font-mono" />
+                  <p className="text-xs text-gray-500 mt-1">Auto-generated from last 4 digits of phone</p>
+                </div>
+                
+                <div>
+                  <label className="block text-sm font-medium text-black mb-1">Notes</label>
+                  <textarea value={form.notes} onChange={(e) => setForm({ ...form, notes: e.target.value })} className="w-full px-3 py-2 border border-gray-300 rounded-lg text-black" rows={2} />
+                </div>
+              </div>
+              <div className="flex gap-3 mt-6">
+                {editingClient && <button type="button" onClick={handleDelete} className="px-4 py-2 text-red-600 hover:bg-red-50 rounded-lg">Delete</button>}
+                <button type="button" onClick={() => setShowModal(false)} className="flex-1 px-4 py-2 border border-gray-300 rounded-lg text-black">Cancel</button>
+                <button type="submit" disabled={saving} className="flex-1 px-4 py-2 bg-black text-white rounded-lg">{saving ? '...' : 'Save'}</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      )}
+    </div>
+  )
+}

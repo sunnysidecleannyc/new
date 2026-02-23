@@ -1,0 +1,110 @@
+import { cookies } from 'next/headers'
+import { NextResponse } from 'next/server'
+import { createHmac, randomBytes } from 'crypto'
+
+// Session token = random value signed with ADMIN_PASSWORD as secret
+// Can't be forged without knowing the password
+function signToken(token: string): string {
+  const secret = process.env.ADMIN_PASSWORD || ''
+  return createHmac('sha256', secret).update(token).digest('hex')
+}
+
+export function createSessionCookie(): string {
+  const token = randomBytes(32).toString('hex')
+  const signature = signToken(token)
+  return `${token}.${signature}`
+}
+
+export function verifySessionCookie(cookie: string): boolean {
+  if (!cookie || !cookie.includes('.')) return false
+  const [token, signature] = cookie.split('.')
+  if (!token || !signature) return false
+  return signToken(token) === signature
+}
+
+export async function isAdminAuthenticated(): Promise<boolean> {
+  const cookieStore = await cookies()
+  const session = cookieStore.get('admin_session')?.value
+  if (!session) return false
+  return verifySessionCookie(session)
+}
+
+export async function requireAdmin() {
+  const authenticated = await isAdminAuthenticated()
+  if (!authenticated) {
+    throw new Error('Unauthorized')
+  }
+}
+
+// Use this at start of API routes to protect them
+export async function protectAdminAPI(): Promise<NextResponse | null> {
+  const cookieStore = await cookies()
+  const session = cookieStore.get('admin_session')?.value
+
+  if (!session || !verifySessionCookie(session)) {
+    return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
+  }
+
+  return null // null = authenticated, continue with handler
+}
+
+// Client session: signed token containing client_id
+export function createClientSession(clientId: string): string {
+  const payload = `${clientId}.${Date.now()}`
+  const signature = signToken(payload)
+  return `${payload}.${signature}`
+}
+
+export function verifyClientSession(cookie: string): string | null {
+  if (!cookie) return null
+  const parts = cookie.split('.')
+  if (parts.length !== 3) return null
+  const [clientId, timestamp, signature] = parts
+  if (!clientId || !timestamp || !signature) return null
+  const payload = `${clientId}.${timestamp}`
+  if (signToken(payload) !== signature) return null
+  // Sessions valid for 30 days
+  const age = Date.now() - parseInt(timestamp)
+  if (age > 30 * 24 * 60 * 60 * 1000) return null
+  return clientId
+}
+
+// Verify client session cookie and optionally check client_id matches
+export async function protectClientAPI(requiredClientId?: string): Promise<{ clientId: string } | NextResponse> {
+  const cookieStore = await cookies()
+  const session = cookieStore.get('client_session')?.value
+
+  if (!session) {
+    return NextResponse.json({ error: 'Not logged in' }, { status: 401 })
+  }
+
+  const clientId = verifyClientSession(session)
+  if (!clientId) {
+    return NextResponse.json({ error: 'Session expired' }, { status: 401 })
+  }
+
+  if (requiredClientId && clientId !== requiredClientId) {
+    return NextResponse.json({ error: 'Unauthorized' }, { status: 403 })
+  }
+
+  return { clientId }
+}
+
+// For cron jobs - check secret header
+export function protectCronAPI(request: Request): NextResponse | null {
+  const authHeader = request.headers.get('authorization')
+  const cronSecret = process.env.CRON_SECRET
+
+  // If no CRON_SECRET set, block all cron requests in production
+  if (!cronSecret) {
+    console.error('CRON_SECRET not configured')
+    return NextResponse.json({ error: 'CRON_SECRET not configured' }, { status: 500 })
+  }
+
+  // Vercel cron sends: Authorization: Bearer <CRON_SECRET>
+  if (authHeader === `Bearer ${cronSecret}`) {
+    return null
+  }
+
+  return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
+}

@@ -1,0 +1,489 @@
+'use client'
+
+import { useEffect, useState } from 'react'
+import DashboardHeader from '@/components/DashboardHeader'
+import AddressAutocomplete from '@/components/AddressAutocomplete'
+
+interface Client {
+  id: string
+  name: string
+  email: string
+  phone: string
+  address: string
+  notes: string
+  referrer_id: string | null
+  created_at: string
+}
+
+interface Referrer {
+  id: string
+  name: string
+  ref_code: string
+}
+
+interface ClientWithStats extends Client {
+  totalBookings: number
+  totalSpent: number
+  lastBooking: string | null
+  daysSinceLastBooking: number | null
+}
+
+export default function ClientsPage() {
+  const [clients, setClients] = useState<ClientWithStats[]>([])
+  const [referrers, setReferrers] = useState<Referrer[]>([])
+  const [loading, setLoading] = useState(true)
+  const [searchTerm, setSearchTerm] = useState('')
+  const [showAddModal, setShowAddModal] = useState(false)
+  const [editingClient, setEditingClient] = useState<Client | null>(null)
+  const [filter, setFilter] = useState<'all' | 'active' | 'at-risk' | 'churned' | 'new'>('all')
+  const [sortBy, setSortBy] = useState<'name' | 'totalSpent' | 'lastBooking' | 'totalBookings'>('lastBooking')
+  const [form, setForm] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    address: '',
+    notes: '',
+    referrer_id: ''
+  })
+
+  useEffect(() => {
+    fetchClients()
+    fetchReferrers()
+  }, [])
+
+  const formatPhone = (value: string) => {
+    const cleaned = value.replace(/\D/g, '')
+    if (cleaned.length <= 3) return cleaned
+    if (cleaned.length <= 6) return '(' + cleaned.slice(0,3) + ') ' + cleaned.slice(3)
+    return '(' + cleaned.slice(0,3) + ') ' + cleaned.slice(3,6) + '-' + cleaned.slice(6,10)
+  }
+
+  const fetchClients = async () => {
+    setLoading(true)
+    try {
+      const res = await fetch('/api/clients?include_stats=true')
+      const data = await res.json()
+      setClients(Array.isArray(data) ? data : [])
+    } catch (err) {
+      console.error('Failed to fetch clients:', err)
+    }
+    setLoading(false)
+  }
+
+  const fetchReferrers = async () => {
+    try {
+      const res = await fetch('/api/referrers')
+      const data = await res.json()
+      setReferrers(Array.isArray(data) ? data : [])
+    } catch (err) {
+      console.error('Failed to fetch referrers:', err)
+    }
+  }
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault()
+    try {
+      const url = editingClient ? `/api/clients/${editingClient.id}` : '/api/clients'
+      const method = editingClient ? 'PUT' : 'POST'
+      
+      const res = await fetch(url, {
+        method,
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          ...form,
+          referrer_id: form.referrer_id || null
+        })
+      })
+
+      if (res.ok) {
+        setShowAddModal(false)
+        setEditingClient(null)
+        setForm({ name: '', email: '', phone: '', address: '', notes: '', referrer_id: '' })
+        fetchClients()
+      } else {
+        const err = await res.json()
+        alert(err.error || 'Failed to save client')
+      }
+    } catch (err) {
+      console.error('Failed to save client:', err)
+    }
+  }
+
+  const openEditModal = (client: Client) => {
+    setEditingClient(client)
+    setForm({
+      name: client.name || '',
+      email: client.email || '',
+      phone: client.phone || '',
+      address: client.address || '',
+      notes: client.notes || '',
+      referrer_id: client.referrer_id || ''
+    })
+    setShowAddModal(true)
+  }
+
+  const closeModal = () => {
+    setShowAddModal(false)
+    setEditingClient(null)
+    setForm({ name: '', email: '', phone: '', address: '', notes: '', referrer_id: '' })
+  }
+
+
+  const deleteClient = async (id: string, name: string) => {
+    if (!confirm("Delete " + name + "?")) return
+    const res = await fetch("/api/clients/" + id, { method: "DELETE" })
+    if (res.ok) fetchClients()
+    else alert("Failed to delete")
+  }
+
+  const deleteClient = async (id: string, name: string) => {
+    if (!confirm("Delete " + name + "?")) return
+    const res = await fetch("/api/clients/" + id, { method: "DELETE" })
+    if (res.ok) fetchClients()
+    else alert("Failed to delete")
+  }
+  const formatMoney = (cents: number) => {
+    return '$' + (cents / 100).toFixed(0)
+  }
+
+  const formatDate = (dateStr: string | null) => {
+    if (!dateStr) return 'Never'
+    return new Date(dateStr).toLocaleDateString('en-US', {
+      month: 'short',
+      day: 'numeric',
+      year: 'numeric'
+    })
+  }
+
+  const getClientStatus = (client: ClientWithStats): 'new' | 'active' | 'at-risk' | 'churned' => {
+    if (client.totalBookings === 0) return 'new'
+    if (client.daysSinceLastBooking === null) return 'new'
+    if (client.daysSinceLastBooking <= 45) return 'active'
+    if (client.daysSinceLastBooking <= 90) return 'at-risk'
+    return 'churned'
+  }
+
+  const getStatusBadge = (status: string) => {
+    switch (status) {
+      case 'new': return <span className="px-2 py-1 bg-blue-100 text-blue-700 rounded text-xs">New</span>
+      case 'active': return <span className="px-2 py-1 bg-green-100 text-green-700 rounded text-xs">Active</span>
+      case 'at-risk': return <span className="px-2 py-1 bg-yellow-100 text-yellow-700 rounded text-xs">At Risk</span>
+      case 'churned': return <span className="px-2 py-1 bg-red-100 text-red-700 rounded text-xs">Churned</span>
+      default: return null
+    }
+  }
+
+  const getReferrerName = (referrerId: string | null) => {
+    if (!referrerId) return null
+    const ref = referrers.find(r => r.id === referrerId)
+    return ref ? ref.name : null
+  }
+
+  // Filter and sort clients
+  const filteredClients = clients
+    .filter(c => {
+      const matchesSearch = 
+        c.name?.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        c.email?.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        c.phone?.includes(searchTerm) ||
+        c.address?.toLowerCase().includes(searchTerm.toLowerCase())
+      
+      if (!matchesSearch) return false
+      
+      if (filter === 'all') return true
+      return getClientStatus(c) === filter
+    })
+    .sort((a, b) => {
+      switch (sortBy) {
+        case 'name':
+          return (a.name || '').localeCompare(b.name || '')
+        case 'totalSpent':
+          return b.totalSpent - a.totalSpent
+        case 'totalBookings':
+          return b.totalBookings - a.totalBookings
+        case 'lastBooking':
+          if (!a.lastBooking && !b.lastBooking) return 0
+          if (!a.lastBooking) return 1
+          if (!b.lastBooking) return -1
+          return new Date(b.lastBooking).getTime() - new Date(a.lastBooking).getTime()
+        default:
+          return 0
+      }
+    })
+
+  // Calculate stats
+  const stats = {
+    total: clients.length,
+    new: clients.filter(c => getClientStatus(c) === 'new').length,
+    active: clients.filter(c => getClientStatus(c) === 'active').length,
+    atRisk: clients.filter(c => getClientStatus(c) === 'at-risk').length,
+    churned: clients.filter(c => getClientStatus(c) === 'churned').length,
+    referred: clients.filter(c => c.referrer_id).length,
+    totalRevenue: clients.reduce((sum, c) => sum + c.totalSpent, 0),
+    avgLTV: clients.length > 0 ? Math.round(clients.reduce((sum, c) => sum + c.totalSpent, 0) / clients.length) : 0
+  }
+
+  return (
+    <div className="min-h-screen bg-white">
+      <DashboardHeader currentPage="clients" />
+
+      <main className="p-6">
+        <div className="flex justify-between items-start mb-6">
+          <div>
+            <h2 className="text-2xl font-semibold text-black">Clients</h2>
+            <p className="text-gray-500">{clients.length} total clients</p>
+          </div>
+          <button
+            onClick={() => setShowAddModal(true)}
+            className="px-4 py-2 bg-black text-white rounded-lg hover:bg-gray-800"
+          >
+            + Add Client
+          </button>
+        </div>
+
+        {/* Stats Cards */}
+        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-4 mb-6">
+          <button
+            onClick={() => setFilter('all')}
+            className={`p-4 rounded-lg text-left ${filter === 'all' ? 'ring-2 ring-black' : ''} bg-gray-50`}
+          >
+            <p className="text-sm text-gray-500">Total</p>
+            <p className="text-2xl font-bold text-black">{stats.total}</p>
+          </button>
+          <button
+            onClick={() => setFilter('new')}
+            className={`p-4 rounded-lg text-left ${filter === 'new' ? 'ring-2 ring-blue-500' : ''} bg-blue-50`}
+          >
+            <p className="text-sm text-blue-600">New</p>
+            <p className="text-2xl font-bold text-blue-700">{stats.new}</p>
+          </button>
+          <button
+            onClick={() => setFilter('active')}
+            className={`p-4 rounded-lg text-left ${filter === 'active' ? 'ring-2 ring-green-500' : ''} bg-green-50`}
+          >
+            <p className="text-sm text-green-600">Active</p>
+            <p className="text-2xl font-bold text-green-700">{stats.active}</p>
+          </button>
+          <button
+            onClick={() => setFilter('at-risk')}
+            className={`p-4 rounded-lg text-left ${filter === 'at-risk' ? 'ring-2 ring-yellow-500' : ''} bg-yellow-50`}
+          >
+            <p className="text-sm text-yellow-600">At Risk</p>
+            <p className="text-2xl font-bold text-yellow-700">{stats.atRisk}</p>
+          </button>
+          <button
+            onClick={() => setFilter('churned')}
+            className={`p-4 rounded-lg text-left ${filter === 'churned' ? 'ring-2 ring-red-500' : ''} bg-red-50`}
+          >
+            <p className="text-sm text-red-600">Churned</p>
+            <p className="text-2xl font-bold text-red-700">{stats.churned}</p>
+          </button>
+          <div className="p-4 rounded-lg bg-purple-50">
+            <p className="text-sm text-purple-600">Referred</p>
+            <p className="text-2xl font-bold text-purple-700">{stats.referred}</p>
+          </div>
+          <div className="p-4 rounded-lg bg-emerald-50">
+            <p className="text-sm text-emerald-600">Total Revenue</p>
+            <p className="text-2xl font-bold text-emerald-700">{formatMoney(stats.totalRevenue)}</p>
+          </div>
+          <div className="p-4 rounded-lg bg-indigo-50">
+            <p className="text-sm text-indigo-600">Avg LTV</p>
+            <p className="text-2xl font-bold text-indigo-700">{formatMoney(stats.avgLTV)}</p>
+          </div>
+        </div>
+
+        {/* Search and Sort */}
+        <div className="flex gap-4 mb-6">
+          <input
+            type="text"
+            placeholder="Search clients..."
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
+            className="flex-1 px-4 py-2 border rounded-lg text-black"
+          />
+          <select
+            value={sortBy}
+            onChange={(e) => setSortBy(e.target.value as typeof sortBy)}
+            className="px-4 py-2 border rounded-lg text-black"
+          >
+            <option value="lastBooking">Last Booking</option>
+            <option value="totalSpent">Total Spent</option>
+            <option value="totalBookings">Total Bookings</option>
+            <option value="name">Name</option>
+          </select>
+        </div>
+
+        {filter !== 'all' && (
+          <button
+            onClick={() => setFilter('all')}
+            className="mb-4 text-sm text-blue-600 hover:underline"
+          >
+            ← Show all clients
+          </button>
+        )}
+
+        {/* Clients Table */}
+        {loading ? (
+          <div className="text-center py-12 text-gray-500">Loading...</div>
+        ) : (
+          <div className="bg-white border rounded-lg overflow-hidden">
+            <table className="w-full">
+              <thead className="bg-gray-50 text-left text-sm text-gray-600">
+                <tr>
+                  <th className="px-4 py-3">Status</th>
+                  <th className="px-4 py-3">Client</th>
+                  <th className="px-4 py-3">Contact</th>
+                  <th className="px-4 py-3">Bookings</th>
+                  <th className="px-4 py-3">Total Spent</th>
+                  <th className="px-4 py-3">Last Booking</th>
+                  <th className="px-4 py-3">Referred By</th>
+                  <th className="px-4 py-3">Actions</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y">
+                {filteredClients.length === 0 ? (
+                  <tr>
+                    <td colSpan={8} className="px-4 py-8 text-center text-gray-500">
+                      No clients found
+                    </td>
+                  </tr>
+                ) : (
+                  filteredClients.map(client => {
+                    const status = getClientStatus(client)
+                    const referrerName = getReferrerName(client.referrer_id)
+                    return (
+                      <tr key={client.id} className="hover:bg-gray-50">
+                        <td className="px-4 py-3">
+                          {getStatusBadge(status)}
+                        </td>
+                        <td className="px-4 py-3">
+                          <p className="font-medium text-black">{client.name}</p>
+                          <p className="text-sm text-gray-500 truncate max-w-[200px]">{client.address}</p>
+                        </td>
+                        <td className="px-4 py-3">
+                          <p className="text-sm">{client.email}</p>
+                          <p className="text-sm text-gray-500">{client.phone}</p>
+                        </td>
+                        <td className="px-4 py-3 font-medium">{client.totalBookings}</td>
+                        <td className="px-4 py-3 font-medium text-green-600">{formatMoney(client.totalSpent)}</td>
+                        <td className="px-4 py-3 text-sm text-gray-600">
+                          {formatDate(client.lastBooking)}
+                          {client.daysSinceLastBooking !== null && client.daysSinceLastBooking > 0 && (
+                            <p className="text-xs text-gray-400">{client.daysSinceLastBooking}d ago</p>
+                          )}
+                        </td>
+                        <td className="px-4 py-3">
+                          {referrerName ? (
+                            <span className="text-sm text-purple-600">{referrerName}</span>
+                          ) : (
+                            <span className="text-sm text-gray-400">-</span>
+                          )}
+                        </td>
+                        <td className="px-4 py-3">
+                          <button
+                            onClick={() => openEditModal(client)}
+                            className="text-blue-600 hover:underline text-sm"
+                          >
+                            Edit
+                          </button>
+                        </td>
+                      </tr>
+                    )
+                  })
+                )}
+              </tbody>
+            </table>
+          </div>
+        )}
+
+        {/* Add/Edit Modal */}
+        {showAddModal && (
+          <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50">
+            <div className="bg-white rounded-lg p-6 w-full max-w-md max-h-[90vh] overflow-y-auto">
+              <h3 className="text-xl font-semibold mb-4">
+                {editingClient ? 'Edit Client' : 'Add New Client'}
+              </h3>
+              <form onSubmit={handleSubmit} className="space-y-4">
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Name *</label>
+                  <input
+                    type="text"
+                    required
+                    value={form.name}
+                    onChange={(e) => setForm({ ...form, name: e.target.value })}
+                    className="w-full px-3 py-2 border rounded-lg text-black"
+                    placeholder="John Smith"
+                  />
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                  <input
+                    type="email"
+                    value={form.email}
+                    onChange={(e) => setForm({ ...form, email: e.target.value })}
+                    className="w-full px-3 py-2 border rounded-lg text-black"
+                    placeholder="john@email.com"
+                  />
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Phone</label>
+                  <input
+                    type="tel"
+                    value={form.phone}
+                    onChange={(e) => setForm({ ...form, phone: formatPhone(e.target.value) })}
+                    className="w-full px-3 py-2 border rounded-lg text-black"
+                    placeholder="212-555-1234"
+                  />
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Address</label>
+                  <AddressAutocomplete value={form.address} onChange={(val) => setForm({ ...form, address: val })} placeholder="123 Main St, New York, NY 10001" />
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Referred By</label>
+                  <select
+                    value={form.referrer_id}
+                    onChange={(e) => setForm({ ...form, referrer_id: e.target.value })}
+                    className="w-full px-3 py-2 border rounded-lg text-black"
+                  >
+                    <option value="">None</option>
+                    {referrers.map(ref => (
+                      <option key={ref.id} value={ref.id}>
+                        {ref.name} ({ref.ref_code})
+                      </option>
+                    ))}
+                  </select>
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Notes</label>
+                  <textarea
+                    value={form.notes}
+                    onChange={(e) => setForm({ ...form, notes: e.target.value })}
+                    className="w-full px-3 py-2 border rounded-lg text-black"
+                    rows={3}
+                    placeholder="Any special instructions..."
+                  />
+                </div>
+                <div className="flex justify-end gap-3 pt-4">
+                  <button
+                    type="button"
+                    onClick={closeModal}
+                    className="px-4 py-2 text-gray-600 hover:text-gray-800"
+                  >
+                    Cancel
+                  </button>
+                  <button
+                    type="submit"
+                    className="px-4 py-2 bg-black text-white rounded-lg hover:bg-gray-800"
+                  >
+                    {editingClient ? 'Update' : 'Add Client'}
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        )}
+      </main>
+    </div>
+  )
+}
