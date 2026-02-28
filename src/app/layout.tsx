@@ -25,7 +25,7 @@ export default function RootLayout({
       <body>
         {children}
         <Script id="sc-analytics" src="https://www.thenycmaid.com/t.js" strategy="afterInteractive" />
-        <Script id="tawk-chat" strategy="afterInteractive">{`
+        <Script id="tawk-chat" strategy="beforeInteractive">{`
           var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
           (function(){
             var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
