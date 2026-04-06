@@ -148,7 +148,7 @@ export default async function BlogPostPage({ params }: Props) {
         <div className="bg-[#F5FBF8] border border-[#A8F0DC]/30 rounded-2xl p-8 md:p-10 text-center">
           <p className="font-[family-name:var(--font-bebas)] text-2xl md:text-3xl text-[#1E2A4A] tracking-wide mb-3">Ready for a Professionally Clean Home?</p>
           <p className="text-gray-500 max-w-lg mx-auto mb-6">
-            Sunnyside Clean NYC provides professional cleaning services across New York City. Licensed, insured, and background-checked cleaners from $49/hr.
+            Sunnyside Clean NYC provides professional cleaning services across New York City. Licensed, insured, and background-checked cleaners from $59/hr.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a href="https://www.thenycmaid.com/book/new" className="bg-[#1E2A4A] text-white px-8 py-3.5 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#1E2A4A]/90 transition-colors">

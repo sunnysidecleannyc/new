@@ -151,7 +151,7 @@ const faqData = [
 
 export const metadata: Metadata = {
   title: 'The 100 Best Cleaning Tips for NYC Apartments | Sunnyside Clean NYC',
-  description: 'The definitive list — 100 expert cleaning tips for NYC apartments from professional cleaners. Kitchen, bathroom, floors, pets & more. From $49/hr. (212) 202-8400',
+  description: 'The definitive list — 100 expert cleaning tips for NYC apartments from professional cleaners. Kitchen, bathroom, floors, pets & more. From $59/hr. (212) 202-8400',
   alternates: { canonical: 'https://www.cleaningservicesunnysideny.com/cleaning-tips-and-tricks' },
   openGraph: {
     title: '100 Best Cleaning Tips | Sunnyside Clean NYC',
@@ -252,7 +252,7 @@ export default function TipsPage() {
             {/* Mid-page CTA every 3 categories */}
             {(cat.id === 'bedroom' || cat.id === 'laundry' || cat.id === 'pets') && (
               <div className="bg-[#A8F0DC]/15 border border-[#A8F0DC]/30 rounded-xl p-6 mt-8 flex flex-col md:flex-row items-center justify-between gap-4">
-                <p className="text-[#1E2A4A] font-medium">Rather have a pro handle it? We start at $49/hr.</p>
+                <p className="text-[#1E2A4A] font-medium">Rather have a pro handle it? We start at $59/hr.</p>
                 <a href="tel:2122028400" className="border-2 border-[#1E2A4A] text-[#1E2A4A] px-6 py-2.5 rounded-md font-bold text-sm tracking-widest uppercase hover:bg-[#1E2A4A] hover:text-white transition-colors flex-shrink-0">
                   (212) 202-8400
                 </a>

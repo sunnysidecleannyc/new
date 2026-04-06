@@ -33,8 +33,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (area) {
     const content = areaContent(area)
     const url = `https://www.cleaningservicesunnysideny.com/service-areas/${slug}`
-    const title = `${area.name} Cleaning Service & House Cleaning From $49/hr | Sunnyside Clean NYC`
-    const description = `Professional house cleaning in ${area.name} from $49/hr. Deep cleaning, weekly cleaning service, move-in/out & more. Licensed, insured, 5.0★ Google. (212) 202-8400`
+    const title = `${area.name} Cleaning Service & House Cleaning From $59/hr | Sunnyside Clean NYC`
+    const description = `Professional house cleaning in ${area.name} from $59/hr. Deep cleaning, weekly cleaning service, move-in/out & more. Licensed, insured, 5.0★ Google. (212) 202-8400`
     return {
       title: { absolute: title },
       description,
@@ -50,8 +50,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     const neighborhoodArea = getArea(neighborhood.area)!
     const content = neighborhoodContent(neighborhood, neighborhoodArea)
     const url = `https://www.cleaningservicesunnysideny.com/service-areas/${slug}`
-    const title = `${neighborhood.name} Cleaning Service & House Cleaning From $49/hr | Sunnyside Clean NYC`
-    const description = `Professional cleaning in ${neighborhood.name}, ${neighborhoodArea.name}. Serving ${neighborhood.housing_types.slice(0, 2).join(', ')} near ${neighborhood.landmarks[0]}. From $49/hr. 5.0★ Google. (212) 202-8400`
+    const title = `${neighborhood.name} Cleaning Service & House Cleaning From $59/hr | Sunnyside Clean NYC`
+    const description = `Professional cleaning in ${neighborhood.name}, ${neighborhoodArea.name}. Serving ${neighborhood.housing_types.slice(0, 2).join(', ')} near ${neighborhood.landmarks[0]}. From $59/hr. 5.0★ Google. (212) 202-8400`
     return {
       title: { absolute: title },
       description,
@@ -88,12 +88,12 @@ export default async function SlugPage({ params }: Props) {
                   <span className="text-blue-200/60 text-sm">5.0 on Google &middot; 27 verified reviews</span>
                 </div>
                 <h1 className="font-[family-name:var(--font-bebas)] text-4xl md:text-5xl lg:text-6xl text-white tracking-wide leading-[0.95] mb-5">
-                  {area.name} Cleaning Service &amp; House Cleaning — From $49/hr
+                  {area.name} Cleaning Service &amp; House Cleaning — From $59/hr
                 </h1>
                 <p className="text-[#A8F0DC]/80 text-sm font-medium tracking-wide uppercase mb-4">Sunnyside Clean NYC — A NYC Maid Services Company</p>
                 <p className="text-blue-200/60 text-lg leading-relaxed mb-6">{content.intro}</p>
                 <div className="flex flex-wrap gap-x-6 gap-y-2 mb-8">
-                  <span className="text-[#A8F0DC] text-sm font-medium">&#10003; From $49/hr</span>
+                  <span className="text-[#A8F0DC] text-sm font-medium">&#10003; From $59/hr</span>
                   <span className="text-[#A8F0DC] text-sm font-medium">&#10003; No money upfront</span>
                   <span className="text-[#A8F0DC] text-sm font-medium">&#10003; Licensed &amp; insured</span>
                   <span className="text-[#A8F0DC] text-sm font-medium">&#10003; Background-checked</span>
@@ -113,11 +113,11 @@ export default async function SlugPage({ params }: Props) {
                   <p className="text-xs font-semibold text-gray-400 tracking-[0.2em] uppercase mb-5">Flat Hourly Rate — All {area.name}</p>
                   <div className="flex items-center gap-4 mb-5">
                     <div className="flex-1 bg-gray-100 rounded-xl py-5 px-4 text-center">
-                      <p className="font-[family-name:var(--font-bebas)] text-5xl text-[#1E2A4A] tracking-wide leading-none">$49<span className="text-xl text-gray-400">/hr</span></p>
+                      <p className="font-[family-name:var(--font-bebas)] text-5xl text-[#1E2A4A] tracking-wide leading-none">$59<span className="text-xl text-gray-400">/hr</span></p>
                       <p className="text-gray-500 text-xs mt-2">Your supplies</p>
                     </div>
                     <div className="flex-1 bg-[#1E2A4A] rounded-xl py-5 px-4 text-center">
-                      <p className="font-[family-name:var(--font-bebas)] text-5xl text-white tracking-wide leading-none">$65<span className="text-xl text-blue-200/40">/hr</span></p>
+                      <p className="font-[family-name:var(--font-bebas)] text-5xl text-white tracking-wide leading-none">$75<span className="text-xl text-blue-200/40">/hr</span></p>
                       <p className="text-[#A8F0DC]/70 text-xs mt-2">We bring everything</p>
                     </div>
                   </div>
@@ -284,12 +284,12 @@ export default async function SlugPage({ params }: Props) {
               <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
                 <div className="flex items-center gap-6">
                   <div className="flex items-baseline gap-1.5">
-                    <span className="font-[family-name:var(--font-bebas)] text-3xl text-white tracking-wide">$49</span>
+                    <span className="font-[family-name:var(--font-bebas)] text-3xl text-white tracking-wide">$59</span>
                     <span className="text-blue-200/50 text-sm">/hr &middot; your supplies</span>
                   </div>
                   <div className="hidden sm:block w-px h-6 bg-white/20" />
                   <div className="flex items-baseline gap-1.5">
-                    <span className="font-[family-name:var(--font-bebas)] text-3xl text-[#A8F0DC] tracking-wide">$65</span>
+                    <span className="font-[family-name:var(--font-bebas)] text-3xl text-[#A8F0DC] tracking-wide">$75</span>
                     <span className="text-blue-200/50 text-sm">/hr &middot; we bring everything</span>
                   </div>
                 </div>
@@ -416,7 +416,7 @@ export default async function SlugPage({ params }: Props) {
             <div>
               <h3 className="font-[family-name:var(--font-bebas)] text-xl text-[#1E2A4A] tracking-wide mb-2">{neighborhood.name} Cleaning Costs</h3>
               <p className="text-[#1E2A4A]/80 leading-relaxed">
-                House cleaning in {neighborhood.name} starts at $49/hr with your supplies or $65/hr when we bring everything. A typical {neighborhood.name} apartment cleaning runs $98–$260 depending on size and service type. Deep cleans, move-in/move-out, and post-renovation jobs take longer but use the same flat hourly rate. No travel fees, no surge pricing — {neighborhood.name} residents pay the same rate as every other neighborhood we serve.
+                House cleaning in {neighborhood.name} starts at $59/hr with your supplies or $75/hr when we bring everything. A typical {neighborhood.name} apartment cleaning runs $98–$260 depending on size and service type. Deep cleans, move-in/move-out, and post-renovation jobs take longer but use the same flat hourly rate. No travel fees, no surge pricing — {neighborhood.name} residents pay the same rate as every other neighborhood we serve.
               </p>
               <Link href="/nyc-cleaning-service-pricing" className="inline-block mt-3 text-[#1E2A4A] font-semibold text-sm underline underline-offset-4">Full pricing details &rarr;</Link>
             </div>

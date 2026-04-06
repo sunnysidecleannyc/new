@@ -1,7 +1,7 @@
 {
-  "name": "The NYC Maid",
-  "short_name": "NYC Maid",
-  "description": "NYC House Cleaning & Maid Service From $49/hr — Licensed, Insured, 5.0★ Google",
+  "name": "Sunnyside Clean NYC",
+  "short_name": "Sunnyside Clean",
+  "description": "NYC House Cleaning Service From $59/hr — Licensed, Insured, 5.0★ Google",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",

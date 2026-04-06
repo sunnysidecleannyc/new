@@ -37,7 +37,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const area = getArea(neighborhood.area)!
   const url = `https://www.cleaningservicesunnysideny.com/${slug}/${serviceSlug}`
-  const title = `${service.name} in ${neighborhood.name}, ${area.name} From $49/hr | Sunnyside Clean NYC`
+  const title = `${service.name} in ${neighborhood.name}, ${area.name} From $59/hr | Sunnyside Clean NYC`
   const description = `Professional ${service.name.toLowerCase()} in ${neighborhood.name}, ${area.name}. ${service.features.slice(0, 3).join(', ')} & more. ${service.priceRange}. 5.0★ Google. (212) 202-8400`
 
   return {
@@ -237,7 +237,7 @@ export default async function NeighborhoodServicePage({ params }: Props) {
           <div>
             <h3 className="font-[family-name:var(--font-bebas)] text-xl text-[#1E2A4A] tracking-wide mb-2">{service.name} Pricing in {neighborhood.name}</h3>
             <p className="text-[#1E2A4A]/80 leading-relaxed">
-              {service.name} in {neighborhood.name} typically costs {service.priceRange} and takes {service.duration}. We charge a flat hourly rate — $49/hr with your supplies or $65/hr when we bring everything. No travel fees, no surge pricing, no hidden costs. {neighborhood.name} residents pay the same rate as every other neighborhood we serve.
+              {service.name} in {neighborhood.name} typically costs {service.priceRange} and takes {service.duration}. We charge a flat hourly rate — $59/hr with your supplies or $75/hr when we bring everything. No travel fees, no surge pricing, no hidden costs. {neighborhood.name} residents pay the same rate as every other neighborhood we serve.
             </p>
             <Link href="/nyc-cleaning-service-pricing" className="inline-block mt-3 text-[#1E2A4A] font-semibold text-sm underline underline-offset-4">Full pricing details &rarr;</Link>
           </div>

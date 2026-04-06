@@ -357,12 +357,12 @@ export function localBusinessSchema(neighborhood?: Neighborhood, area?: Area) {
       {
         '@type': 'Offer',
         name: 'Client Supplies & Equipment',
-        priceSpecification: { '@type': 'UnitPriceSpecification', price: '49.00', priceCurrency: 'USD', unitCode: 'HUR', unitText: 'per hour' },
+        priceSpecification: { '@type': 'UnitPriceSpecification', price: '59.00', priceCurrency: 'USD', unitCode: 'HUR', unitText: 'per hour' },
       },
       {
         '@type': 'Offer',
         name: 'We Bring Everything',
-        priceSpecification: { '@type': 'UnitPriceSpecification', price: '65.00', priceCurrency: 'USD', unitCode: 'HUR', unitText: 'per hour' },
+        priceSpecification: { '@type': 'UnitPriceSpecification', price: '75.00', priceCurrency: 'USD', unitCode: 'HUR', unitText: 'per hour' },
       },
       {
         '@type': 'Offer',
@@ -489,7 +489,7 @@ export function pricingOffersSchema() {
         description: 'You provide the cleaning supplies and equipment. We bring the expertise.',
         priceSpecification: {
           '@type': 'UnitPriceSpecification',
-          price: '49.00',
+          price: '59.00',
           priceCurrency: 'USD',
           unitCode: 'HUR',
           unitText: 'per hour',
@@ -504,7 +504,7 @@ export function pricingOffersSchema() {
         description: 'We bring all supplies and professional-grade equipment. Just open the door.',
         priceSpecification: {
           '@type': 'UnitPriceSpecification',
-          price: '65.00',
+          price: '75.00',
           priceCurrency: 'USD',
           unitCode: 'HUR',
           unitText: 'per hour',
@@ -750,7 +750,7 @@ export function homepageSchemas() {
     webSiteSchema(),
     webPageSchema({
       url,
-      name: 'NYC Cleaning Service & House Cleaning From $49/hr | 5-Star Rated | Sunnyside Clean NYC',
+      name: 'NYC Cleaning Service & House Cleaning From $59/hr | 5-Star Rated | Sunnyside Clean NYC',
       description: BUSINESS.description,
       type: 'CollectionPage',
       speakable: ['h1', '.hero-description'],
@@ -769,8 +769,8 @@ export function homepageSchemas() {
 
 export function areaPageSchemas(area: Area) {
   const url = `${BUSINESS.url}/service-areas/${area.urlSlug}`
-  const title = `${area.name} Cleaning Service & House Cleaning From $49/hr | Sunnyside Clean NYC`
-  const description = `Professional house cleaning in ${area.name} from $49/hr. Deep cleaning, weekly cleaning service, move-in/out & more. Licensed, insured, 5.0★ Google. ${BUSINESS.phoneDisplay}`
+  const title = `${area.name} Cleaning Service & House Cleaning From $59/hr | Sunnyside Clean NYC`
+  const description = `Professional house cleaning in ${area.name} from $59/hr. Deep cleaning, weekly cleaning service, move-in/out & more. Licensed, insured, 5.0★ Google. ${BUSINESS.phoneDisplay}`
   return [
     organizationSchema(),
     webSiteSchema(),
@@ -796,8 +796,8 @@ export function areaPageSchemas(area: Area) {
 
 export function neighborhoodPageSchemas(neighborhood: Neighborhood, area: Area) {
   const url = `${BUSINESS.url}/service-areas/${neighborhood.urlSlug}`
-  const title = `${neighborhood.name} Cleaning Service & House Cleaning From $49/hr | Sunnyside Clean NYC`
-  const description = `Professional cleaning in ${neighborhood.name}, ${area.name}. Serving ${neighborhood.housing_types.slice(0, 2).join(', ')} near ${neighborhood.landmarks[0]}. From $49/hr. 5.0★ Google. ${BUSINESS.phoneDisplay}`
+  const title = `${neighborhood.name} Cleaning Service & House Cleaning From $59/hr | Sunnyside Clean NYC`
+  const description = `Professional cleaning in ${neighborhood.name}, ${area.name}. Serving ${neighborhood.housing_types.slice(0, 2).join(', ')} near ${neighborhood.landmarks[0]}. From $59/hr. 5.0★ Google. ${BUSINESS.phoneDisplay}`
   return [
     organizationSchema(),
     webSiteSchema(),
@@ -837,7 +837,7 @@ export function neighborhoodPageSchemas(neighborhood: Neighborhood, area: Area) 
 
 export function neighborhoodServicePageSchemas(neighborhood: Neighborhood, service: Service, area: Area) {
   const url = `${BUSINESS.url}/${neighborhood.urlSlug}/${service.slug}`
-  const title = `${service.name} in ${neighborhood.name}, ${area.name} From $49/hr | Sunnyside Clean NYC`
+  const title = `${service.name} in ${neighborhood.name}, ${area.name} From $59/hr | Sunnyside Clean NYC`
   const description = `Professional ${service.name.toLowerCase()} in ${neighborhood.name}, ${area.name}. ${service.features.slice(0, 3).join(', ')} & more. ${service.priceRange}. 5.0★ Google. ${BUSINESS.phoneDisplay}`
   return [
     organizationSchema(),

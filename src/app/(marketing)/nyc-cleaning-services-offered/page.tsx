@@ -9,11 +9,11 @@ import CTABlock from '@/components/marketing/CTABlock'
 
 export const metadata: Metadata = {
   title: { absolute: 'NYC Cleaning Services — Deep Clean, Move-In/Out & More | Sunnyside Clean NYC' },
-  description: 'All cleaning services by Sunnyside Clean NYC from $49/hr. Deep cleaning, weekly cleaning, move-in/out, same-day, office cleaning and more. Manhattan, Brooklyn & Queens.',
+  description: 'All cleaning services by Sunnyside Clean NYC from $59/hr. Deep cleaning, weekly cleaning, move-in/out, same-day, office cleaning and more. Manhattan, Brooklyn & Queens.',
   alternates: { canonical: 'https://www.cleaningservicesunnysideny.com/nyc-cleaning-services-offered' },
   openGraph: {
     title: 'NYC Cleaning Services — Deep Clean, Weekly & More | Sunnyside Clean NYC',
-    description: 'Professional cleaning services from $49/hr across Manhattan, Brooklyn & Queens. Licensed, insured, 5-star rated.',
+    description: 'Professional cleaning services from $59/hr across Manhattan, Brooklyn & Queens. Licensed, insured, 5-star rated.',
     url: 'https://www.cleaningservicesunnysideny.com/nyc-cleaning-services-offered',
   },
 }
@@ -44,7 +44,7 @@ export default function ServicesIndexPage() {
             From <Link href="/services/nyc-maid-service" className="text-[#A8F0DC] underline underline-offset-2">weekly cleaning service</Link> and <Link href="/services/nyc-deep-cleaning-service" className="text-[#A8F0DC] underline underline-offset-2">deep cleaning</Link> to <Link href="/services/nyc-moving-cleaning-service" className="text-[#A8F0DC] underline underline-offset-2">move-in/move-out</Link>, <Link href="/services/nyc-house-cleaning-service" className="text-[#A8F0DC] underline underline-offset-2">house cleaning</Link>, and <Link href="/services/nyc-same-day-cleaning-service" className="text-[#A8F0DC] underline underline-offset-2">same-day emergency service</Link> — our background-checked, insured cleaners handle it all across Manhattan, Brooklyn &amp; Queens.
           </p>
           <div className="flex flex-wrap gap-x-6 gap-y-2 mb-10">
-            <span className="text-[#A8F0DC] text-sm font-medium">&#10003; From $49/hr</span>
+            <span className="text-[#A8F0DC] text-sm font-medium">&#10003; From $59/hr</span>
             <span className="text-[#A8F0DC] text-sm font-medium">&#10003; No money upfront</span>
             <span className="text-[#A8F0DC] text-sm font-medium">&#10003; Licensed &amp; insured</span>
             <span className="text-[#A8F0DC] text-sm font-medium">&#10003; Background-checked</span>
@@ -109,11 +109,11 @@ export default function ServicesIndexPage() {
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 max-w-3xl mx-auto mb-10">
             <div className="bg-white rounded-2xl p-6">
               <p className="text-xs font-semibold text-gray-400 tracking-[0.15em] uppercase mb-2">Client Supplies</p>
-              <p className="font-[family-name:var(--font-bebas)] text-4xl text-[#1E2A4A] tracking-wide">$49<span className="text-xl text-gray-300">/hr</span></p>
+              <p className="font-[family-name:var(--font-bebas)] text-4xl text-[#1E2A4A] tracking-wide">$59<span className="text-xl text-gray-300">/hr</span></p>
             </div>
             <div className="bg-[#1E2A4A] rounded-2xl p-6 shadow-lg">
               <p className="text-xs font-semibold text-[#A8F0DC]/70 tracking-[0.15em] uppercase mb-2">We Bring Everything</p>
-              <p className="font-[family-name:var(--font-bebas)] text-4xl text-white tracking-wide">$65<span className="text-xl text-blue-200/40">/hr</span></p>
+              <p className="font-[family-name:var(--font-bebas)] text-4xl text-white tracking-wide">$75<span className="text-xl text-blue-200/40">/hr</span></p>
             </div>
             <div className="bg-white rounded-2xl p-6">
               <p className="text-xs font-semibold text-gray-400 tracking-[0.15em] uppercase mb-2">Same-Day</p>
@@ -152,7 +152,7 @@ export default function ServicesIndexPage() {
             {[
               { title: 'Background-Checked & Insured', desc: 'Every cleaner is fully vetted, background-checked, and covered by our general liability insurance and bonding.' },
               { title: 'No Money Upfront', desc: 'You pay only after the cleaning is complete, before the cleaner leaves. No deposits, no pre-charges.' },
-              { title: 'Flat Hourly Rate', desc: 'Same rate regardless of service type or neighborhood. $49/hr with your supplies, $65/hr when we bring everything.' },
+              { title: 'Flat Hourly Rate', desc: 'Same rate regardless of service type or neighborhood. $59/hr with your supplies, $75/hr when we bring everything.' },
               { title: 'Same Cleaner Every Time', desc: 'For recurring services, we match you with the same cleaner so they learn your home and your preferences.' },
               { title: 'No Contracts', desc: 'Stay because you\'re happy, not because you\'re locked in. Cancel recurring service with 7 days notice.' },
             ].map(item => (

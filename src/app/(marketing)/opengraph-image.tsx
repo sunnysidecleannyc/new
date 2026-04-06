@@ -1,7 +1,7 @@
 import { ImageResponse } from 'next/og'
 
 export const runtime = 'edge'
-export const alt = 'Sunnyside Clean NYC — NYC House Cleaning Service From $49/hr'
+export const alt = 'Sunnyside Clean NYC — NYC House Cleaning Service From $59/hr'
 export const size = { width: 1200, height: 630 }
 export const contentType = 'image/png'
 
@@ -13,7 +13,7 @@ export default function Image() {
           <div style={{ fontSize: 80, fontWeight: 800, color: 'white', letterSpacing: '0.02em', marginBottom: 16 }}>Sunnyside Clean NYC</div>
           <div style={{ fontSize: 36, color: '#A8F0DC', fontWeight: 600, marginBottom: 32 }}>NYC House Cleaning Service</div>
           <div style={{ display: 'flex', alignItems: 'center', gap: 24, fontSize: 26, color: 'rgba(255,255,255,0.75)' }}>
-            <span>From $49/hr</span>
+            <span>From $59/hr</span>
             <span style={{ color: 'rgba(255,255,255,0.3)' }}>|</span>
             <span>Licensed & Insured</span>
             <span style={{ color: 'rgba(255,255,255,0.3)' }}>|</span>

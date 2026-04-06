@@ -105,11 +105,11 @@ export default async function ServicePage({ params }: Props) {
                 <p className="text-xs font-semibold text-gray-400 tracking-[0.2em] uppercase mb-5">Flat Hourly Rate — No Hidden Fees</p>
                 <div className="flex items-center gap-4 mb-5">
                   <div className="flex-1 bg-gray-100 rounded-xl py-5 px-4 text-center">
-                    <p className="font-[family-name:var(--font-bebas)] text-5xl text-[#1E2A4A] tracking-wide leading-none">$49<span className="text-xl text-gray-400">/hr</span></p>
+                    <p className="font-[family-name:var(--font-bebas)] text-5xl text-[#1E2A4A] tracking-wide leading-none">$59<span className="text-xl text-gray-400">/hr</span></p>
                     <p className="text-gray-500 text-xs mt-2">Your supplies</p>
                   </div>
                   <div className="flex-1 bg-[#1E2A4A] rounded-xl py-5 px-4 text-center">
-                    <p className="font-[family-name:var(--font-bebas)] text-5xl text-white tracking-wide leading-none">$65<span className="text-xl text-blue-200/40">/hr</span></p>
+                    <p className="font-[family-name:var(--font-bebas)] text-5xl text-white tracking-wide leading-none">$75<span className="text-xl text-blue-200/40">/hr</span></p>
                     <p className="text-[#A8F0DC]/70 text-xs mt-2">We bring everything</p>
                   </div>
                 </div>

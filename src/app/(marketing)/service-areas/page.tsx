@@ -13,7 +13,7 @@ const totalNeighborhoods = allNeighborhoods.length
 
 const areaFAQs = [
   { question: 'What areas does Sunnyside Clean NYC serve?', answer: `We serve ${totalNeighborhoods}+ neighborhoods across Manhattan, Brooklyn, and Queens. Same rates and same quality everywhere.` },
-  { question: 'Do you charge extra for certain neighborhoods?', answer: 'No. Our rates are the same regardless of neighborhood or borough — $49/hr with your supplies, $65/hr when we bring everything. No travel fees, no surge pricing.' },
+  { question: 'Do you charge extra for certain neighborhoods?', answer: 'No. Our rates are the same regardless of neighborhood or borough — $59/hr with your supplies, $75/hr when we bring everything. No travel fees, no surge pricing.' },
   { question: 'Are all services available in every area?', answer: 'Yes. Every service we offer — deep cleaning, regular cleaning, move-in/out, post-renovation, office, same-day — is available in all neighborhoods we serve.' },
   { question: 'Do you serve areas outside of these neighborhoods?', answer: 'We may. If you don\'t see your neighborhood listed, call or text (212) 202-8400 and we\'ll let you know. We\'re always expanding.' },
   { question: 'Do I get the same cleaner in my area?', answer: 'Yes. For recurring clients, we assign a dedicated cleaner who lives near your area so they can arrive consistently and on time.' },
@@ -24,7 +24,7 @@ const areaFAQs = [
 
 const pageUrl = 'https://www.cleaningservicesunnysideny.com/service-areas'
 const pageTitle = `Service Areas — ${totalNeighborhoods}+ Neighborhoods in Manhattan, Brooklyn & Queens | Sunnyside Clean NYC`
-const pageDescription = `Sunnyside Clean NYC serves ${totalNeighborhoods}+ neighborhoods across Manhattan, Brooklyn & Queens. Same rates everywhere — $49/hr. Find professional cleaning in your neighborhood. (212) 202-8400`
+const pageDescription = `Sunnyside Clean NYC serves ${totalNeighborhoods}+ neighborhoods across Manhattan, Brooklyn & Queens. Same rates everywhere — $59/hr. Find professional cleaning in your neighborhood. (212) 202-8400`
 
 export const metadata: Metadata = {
   title: pageTitle,
@@ -90,10 +90,10 @@ export default function AreasIndexPage() {
           </h1>
           <p className="text-[#A8F0DC]/80 text-sm font-medium tracking-wide uppercase mb-4">Sunnyside Clean NYC — A NYC Maid Services Company</p>
           <p className="text-blue-200/80 text-lg max-w-2xl leading-relaxed mb-10">
-            Professional house cleaning from $49/hr in every neighborhood we serve. Same rates, same quality, same background-checked cleaners — whether you&apos;re in Manhattan, Brooklyn, or Queens.
+            Professional house cleaning from $59/hr in every neighborhood we serve. Same rates, same quality, same background-checked cleaners — whether you&apos;re in Manhattan, Brooklyn, or Queens.
           </p>
           <div className="flex flex-wrap gap-x-6 gap-y-2">
-            <span className="text-[#A8F0DC] text-sm font-medium">&#10003; From $49/hr</span>
+            <span className="text-[#A8F0DC] text-sm font-medium">&#10003; From $59/hr</span>
             <span className="text-[#A8F0DC] text-sm font-medium">&#10003; Same rate everywhere</span>
             <span className="text-[#A8F0DC] text-sm font-medium">&#10003; No travel fees</span>
             <span className="text-[#A8F0DC] text-sm font-medium">&#10003; All services available</span>

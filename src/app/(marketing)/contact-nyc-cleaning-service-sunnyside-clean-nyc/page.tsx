@@ -9,7 +9,7 @@ import CTABlock from '@/components/marketing/CTABlock'
 
 const url = 'https://www.cleaningservicesunnysideny.com/contact-nyc-cleaning-service-sunnyside-clean-nyc'
 const title = 'Contact Sunnyside Clean NYC | Call or Text (212) 202-8400 | Free Quote'
-const description = 'Contact Sunnyside Clean NYC for a free cleaning quote. Text or call (212) 202-8400, email hi@thenycmaid.com, or book online. Service from $49/hr across Manhattan, Brooklyn & Queens. 5.0★ Google.'
+const description = 'Contact Sunnyside Clean NYC for a free cleaning quote. Text or call (212) 202-8400, email hi@thenycmaid.com, or book online. Service from $59/hr across Manhattan, Brooklyn & Queens. 5.0★ Google.'
 
 export const metadata: Metadata = {
   title: { absolute: title },
