@@ -24,7 +24,7 @@ const contactFaqs = [
   { question: 'What\'s the fastest way to get a quote?', answer: 'Text (212) 202-8400 with your address, home size (bedrooms/bathrooms), and what type of cleaning you need. Most quotes are delivered within 15 minutes.' },
   { question: 'Do I need to call to book, or can I text?', answer: 'Texting is our preferred method — it\'s faster for both of us. You can also call, email hi@thenycmaid.com, or book online at cleaningservicesunnysideny.com.' },
   { question: 'What information do you need for a quote?', answer: 'Your address (or neighborhood), number of bedrooms and bathrooms, the type of cleaning you need (regular, deep, move-in/out, etc.), and your preferred date. That\'s it — we\'ll handle the rest.' },
-  { question: 'How quickly can you schedule a cleaning?', answer: 'Usually within 24–48 hours. For same-day service, text us before 10am for the best chance of afternoon availability. Same-day is $100/hr.' },
+  { question: 'How quickly can you schedule a cleaning?', answer: 'Usually within 24–48 hours. For same-day service, text us before 10am for the best chance of afternoon availability. Same-day is $99/hr.' },
   { question: 'What areas do you serve?', answer: 'All of Manhattan, Brooklyn, and Queens. Same rates everywhere — no travel surcharges.' },
   { question: 'What are your hours?', answer: 'Office hours are Monday–Saturday 7am–7pm. Our sales and booking line is available 24/7 — call or text anytime and we typically respond within 15 minutes.' },
   { question: 'Is there any obligation when I ask for a quote?', answer: 'None at all. Get a quote, think about it, and book when you\'re ready. No pressure, no follow-up calls, no sales tactics.' },

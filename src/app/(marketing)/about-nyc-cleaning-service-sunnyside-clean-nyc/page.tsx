@@ -84,7 +84,7 @@ export default function AboutPage() {
                   What started in Sunnyside quickly grew across all five boroughs and beyond. That approach has earned us a perfect 5.0-star rating on Google with 27 verified reviews, thousands of completed cleanings, and a client base that includes everyone from studios in Astoria to brownstones in Park Slope to offices in Midtown. Many of our clients have been with us for years — and they stay because we deliver the same quality every single visit.
                 </p>
                 <p>
-                  Today we serve {ALL_NEIGHBORHOODS.length}+ neighborhoods across Manhattan, Brooklyn, and Queens. Our team is bilingual (English and Spanish), background-checked, licensed, and insured. And our prices haven&apos;t changed — $59/hr with your supplies, $75/hr when we bring everything.
+                  Today we serve {ALL_NEIGHBORHOODS.length}+ neighborhoods across Manhattan, Brooklyn, and Queens. Our team is bilingual (English and Spanish), background-checked, licensed, and insured. Our pricing is straightforward — $59/hr with your supplies (recurring: 10% off weekly, 5% off biweekly/monthly), $79/hr when we bring everything (recurring: 20% off weekly, 10% off biweekly/monthly).
                 </p>
               </div>
             </div>

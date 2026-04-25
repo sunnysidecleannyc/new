@@ -8,12 +8,12 @@ import CTABlock from '@/components/marketing/CTABlock'
 const L = (href: string, text: string) => `<a href="${href}" class="text-[#1E2A4A] underline underline-offset-2">${text}</a>`
 
 const pricingFAQs = [
-  { question: 'How much does house cleaning cost in NYC?', answer: `Our standard rate is $59/hr when you provide supplies, $75/hr when we bring everything, and $100/hr for ${L('/services/nyc-same-day-cleaning-service', 'same-day emergency service')}. A typical studio takes 2–3 hours. See our ${L('/nyc-cleaning-service-pricing', 'full pricing details')} or get a free custom quote based on your home size and cleaning needs.` },
-  { question: 'Do you charge a flat rate or hourly?', answer: `We charge by the hour. The rate is the same regardless of service type or neighborhood — $59/hr with your supplies, $75/hr when we bring everything. No hidden fees, no surge pricing. See ${L('/nyc-cleaning-service-pricing', 'pricing')}.` },
+  { question: 'How much does house cleaning cost in NYC?', answer: `Our standard rate is $59/hr when you provide supplies (recurring: 10% off weekly, 5% off biweekly/monthly), $79/hr when we bring everything (recurring: 20% off weekly, 10% off biweekly/monthly), and $99/hr for ${L('/services/nyc-same-day-cleaning-service', 'same-day emergency service')}. A typical studio takes 2–3 hours. See our ${L('/nyc-cleaning-service-pricing', 'full pricing details')} or get a free custom quote based on your home size and cleaning needs.` },
+  { question: 'Do you charge a flat rate or hourly?', answer: `We charge by the hour. The rate is the same regardless of service type or neighborhood — $59/hr with your supplies (recurring: 10% off weekly, 5% off biweekly/monthly), $79/hr when we bring everything (recurring: 20% off weekly, 10% off biweekly/monthly). No hidden fees, no surge pricing. See ${L('/nyc-cleaning-service-pricing', 'pricing')}.` },
   { question: 'Is there a minimum charge?', answer: `Our minimum is 2 hours per visit. Most ${L('/services/nyc-apartment-cleaning-service', 'apartment cleanings')} take 2–4 hours depending on size and condition.` },
   { question: 'Do I pay before or after the cleaning?', answer: 'You pay after the cleaning is complete, before the cleaner leaves. No deposits, no pre-charges, no money upfront.' },
   { question: 'What payment methods do you accept?', answer: 'We accept cash, credit card, debit card, Zelle (hi@thenycmaid.com), Venmo, and Apple Pay. You choose what works best for you.' },
-  { question: 'Do you offer discounts for recurring cleanings?', answer: `Our hourly rate stays the same for all cleanings. The savings with ${L('/services/nyc-maid-service', 'recurring service')} come from shorter cleaning times — a well-maintained home takes less time to clean each visit.` },
+  { question: 'Do you offer discounts for recurring cleanings?', answer: `Yes — discounts depend on the rate tier. $79/hr (we supply): save 20% weekly or 10% biweekly/monthly. $59/hr (you supply): save 10% weekly or 5% biweekly/monthly. On top of that, ${L('/services/nyc-maid-service', 'recurring service')} takes less time because your home stays consistently clean — so you save twice over.` },
 ]
 
 const serviceFAQs = [
@@ -28,7 +28,7 @@ const serviceFAQs = [
 const schedulingFAQs = [
   { question: 'How do I book a cleaning?', answer: 'Text or call (212) 202-8400, or book online at cleaningservicesunnysideny.com. We typically schedule within 24–48 hours. Same-day availability for urgent requests.' },
   { question: 'Can I get the same cleaner each time?', answer: `Yes. For ${L('/services/nyc-maid-service', 'recurring clients')}, we assign the same dedicated cleaner to your home so they learn your preferences and layout. Consistency is one of the things our clients value most.` },
-  { question: 'Do you offer same-day cleaning?', answer: `Yes. Our ${L('/services/nyc-same-day-cleaning-service', 'same-day cleaning service')} dispatches a professional cleaner within hours. Call or text (212) 202-8400. Same-day service is $100/hr.` },
+  { question: 'Do you offer same-day cleaning?', answer: `Yes. Our ${L('/services/nyc-same-day-cleaning-service', 'same-day cleaning service')} dispatches a professional cleaner within hours. Call or text (212) 202-8400. Same-day service is $99/hr.` },
   { question: 'How do I reschedule or cancel?', answer: 'Text or call us at least 24 hours before your scheduled cleaning. We\'ll reschedule at no charge. Cancellations with less than 24 hours notice may incur a fee.' },
   { question: 'What hours do you operate?', answer: 'Office hours are Monday through Saturday 7am to 7pm. Sales and booking inquiries are available 24/7 — call or text (212) 202-8400 anytime.' },
 ]
@@ -37,7 +37,7 @@ const trustFAQs = [
   { question: 'Are your cleaners licensed and insured?', answer: `Yes. All of our cleaners are fully licensed, insured, and background-checked. We carry general liability insurance and bonding for your complete protection and peace of mind. ${L('/about-nyc-cleaning-service-sunnyside-clean-nyc', 'Learn more about us')}.` },
   { question: 'Do I need to be home during the cleaning?', answer: 'No. Many of our clients provide a key, lockbox code, or doorman access. If you prefer to be home, that\'s perfectly fine too.' },
   { question: 'What if I\'m not satisfied with the cleaning?', answer: `We offer a satisfaction guarantee. If you're not happy with any part of the cleaning, ${L('/contact-nyc-cleaning-service-sunnyside-clean-nyc', 'contact us')} within 24 hours and we'll send a team back to address the issue at no extra charge.` },
-  { question: 'Do you bring your own supplies?', answer: `It's your choice. At $59/hr you provide the supplies. At $75/hr we bring everything — professional-grade cleaning products and all equipment needed. See ${L('/nyc-cleaning-service-pricing', 'pricing details')}.` },
+  { question: 'Do you bring your own supplies?', answer: `It's your choice. At $59/hr you provide the supplies. At $79/hr we bring everything — professional-grade cleaning products and all equipment needed. See ${L('/nyc-cleaning-service-pricing', 'pricing details')}.` },
   { question: 'Are there any contracts or commitments?', answer: `No contracts. Stay because you're happy, not because you're locked in. Cancel ${L('/services/nyc-maid-service', 'recurring service')} anytime with 7 days notice.` },
   { question: 'What areas do you serve?', answer: `We serve ${L('/service-areas/manhattan-cleaning-services', 'Manhattan')}, ${L('/service-areas/brooklyn-cleaning-services', 'Brooklyn')}, and ${L('/service-areas/queens-cleaning-services', 'Queens')}. Same rates everywhere — no travel surcharges. See all ${L('/service-areas', '267+ neighborhoods')}.` },
   { question: 'How long does a cleaning take?', answer: `${L('/services/nyc-house-cleaning-service', 'Regular cleaning')}: 2–4 hours. ${L('/services/nyc-deep-cleaning-service', 'Deep cleaning')}: 2–4 hours. ${L('/services/nyc-moving-cleaning-service', 'Move-in/out')}: 4–8 hours. Time depends on home size and condition.` },
@@ -49,7 +49,7 @@ const schemaFAQs = allFAQs.map(f => ({ question: f.question, answer: stripHtml(f
 
 const pageUrl = 'https://www.cleaningservicesunnysideny.com/frequently-asked-cleaning-service-related-questions'
 const pageTitle = 'NYC Cleaning Service FAQ — Pricing, Services & Scheduling | Sunnyside Clean NYC'
-const pageDescription = 'Answers to common questions about Sunnyside Clean NYC — pricing ($59–$100/hr), what\'s included, scheduling, insurance, service areas, and more. Serving Manhattan, Brooklyn & Queens. (212) 202-8400'
+const pageDescription = 'Answers to common questions about Sunnyside Clean NYC — pricing ($59–$99/hr), what\'s included, scheduling, insurance, service areas, and more. Serving Manhattan, Brooklyn & Queens. (212) 202-8400'
 
 export const metadata: Metadata = {
   title: pageTitle,
@@ -167,14 +167,16 @@ export default function FAQPage() {
               <div className="bg-white rounded-xl p-5">
                 <p className="text-xs font-semibold text-gray-400 tracking-[0.15em] uppercase mb-1">Client Supplies</p>
                 <p className="font-[family-name:var(--font-bebas)] text-4xl text-[#1E2A4A] tracking-wide">$59<span className="text-xl text-gray-300">/hr</span></p>
+                <p className="text-[#1E2A4A] text-[10px] font-semibold tracking-wide mt-1">10% off weekly &middot; 5% off biweekly/monthly</p>
               </div>
               <div className="bg-[#1E2A4A] rounded-xl p-5">
                 <p className="text-xs font-semibold text-[#A8F0DC]/70 tracking-[0.15em] uppercase mb-1">We Bring Everything</p>
-                <p className="font-[family-name:var(--font-bebas)] text-4xl text-white tracking-wide">$75<span className="text-xl text-blue-200/40">/hr</span></p>
+                <p className="font-[family-name:var(--font-bebas)] text-4xl text-white tracking-wide">$79<span className="text-xl text-blue-200/40">/hr</span></p>
+                <p className="text-[#A8F0DC] text-[10px] font-semibold tracking-wide mt-1">20% off weekly &middot; 10% off biweekly/monthly</p>
               </div>
               <div className="bg-white rounded-xl p-5">
                 <p className="text-xs font-semibold text-gray-400 tracking-[0.15em] uppercase mb-1">Same-Day</p>
-                <p className="font-[family-name:var(--font-bebas)] text-4xl text-[#1E2A4A] tracking-wide">$100<span className="text-xl text-gray-300">/hr</span></p>
+                <p className="font-[family-name:var(--font-bebas)] text-4xl text-[#1E2A4A] tracking-wide">$99<span className="text-xl text-gray-300">/hr</span></p>
               </div>
             </div>
             <Link href="/nyc-cleaning-service-pricing" className="inline-block mt-6 text-[#1E2A4A] font-semibold underline underline-offset-4 hover:no-underline">

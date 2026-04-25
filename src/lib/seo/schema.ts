@@ -362,12 +362,12 @@ export function localBusinessSchema(neighborhood?: Neighborhood, area?: Area) {
       {
         '@type': 'Offer',
         name: 'We Bring Everything',
-        priceSpecification: { '@type': 'UnitPriceSpecification', price: '75.00', priceCurrency: 'USD', unitCode: 'HUR', unitText: 'per hour' },
+        priceSpecification: { '@type': 'UnitPriceSpecification', price: '79.00', priceCurrency: 'USD', unitCode: 'HUR', unitText: 'per hour' },
       },
       {
         '@type': 'Offer',
         name: 'Same-Day / Emergency',
-        priceSpecification: { '@type': 'UnitPriceSpecification', price: '100.00', priceCurrency: 'USD', unitCode: 'HUR', unitText: 'per hour' },
+        priceSpecification: { '@type': 'UnitPriceSpecification', price: '99.00', priceCurrency: 'USD', unitCode: 'HUR', unitText: 'per hour' },
       },
     ],
     review: GOOGLE_REVIEWS.slice(0, 5).map(r => ({
@@ -504,7 +504,7 @@ export function pricingOffersSchema() {
         description: 'We bring all supplies and professional-grade equipment. Just open the door.',
         priceSpecification: {
           '@type': 'UnitPriceSpecification',
-          price: '75.00',
+          price: '79.00',
           priceCurrency: 'USD',
           unitCode: 'HUR',
           unitText: 'per hour',
@@ -519,7 +519,7 @@ export function pricingOffersSchema() {
         description: 'Need it today? We dispatch a professional cleaner to your door within hours.',
         priceSpecification: {
           '@type': 'UnitPriceSpecification',
-          price: '100.00',
+          price: '99.00',
           priceCurrency: 'USD',
           unitCode: 'HUR',
           unitText: 'per hour',

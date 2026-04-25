@@ -136,7 +136,7 @@ export default async function ServiceLocationPage({ params }: Props) {
                       <p className="text-gray-500 text-xs mt-2">Your supplies</p>
                     </div>
                     <div className="flex-1 bg-[#1E2A4A] rounded-xl py-5 px-4 text-center">
-                      <p className="font-[family-name:var(--font-bebas)] text-5xl text-white tracking-wide leading-none">$75<span className="text-xl text-blue-200/40">/hr</span></p>
+                      <p className="font-[family-name:var(--font-bebas)] text-5xl text-white tracking-wide leading-none">$79<span className="text-xl text-blue-200/40">/hr</span></p>
                       <p className="text-[#A8F0DC]/70 text-xs mt-2">We bring everything</p>
                     </div>
                   </div>
@@ -431,7 +431,7 @@ export default async function ServiceLocationPage({ params }: Props) {
             <div>
               <h3 className="font-[family-name:var(--font-bebas)] text-xl text-[#1E2A4A] tracking-wide mb-2">{neighborhood.name} Cleaning Costs</h3>
               <p className="text-[#1E2A4A]/80 leading-relaxed">
-                House cleaning in {neighborhood.name} starts at $59/hr with your supplies or $75/hr when we bring everything. A typical {neighborhood.name} apartment cleaning runs $98–$260 depending on size and service type. Deep cleans, move-in/move-out, and post-renovation jobs take longer but use the same flat hourly rate. No travel fees, no surge pricing — {neighborhood.name} residents pay the same rate as every other neighborhood we serve.
+                House cleaning in {neighborhood.name} starts at $59/hr with your supplies (recurring: 10% off weekly, 5% off biweekly/monthly) or $79/hr when we bring everything (recurring: 20% off weekly, 10% off biweekly/monthly). A typical {neighborhood.name} apartment cleaning runs $98–$260 depending on size and service type. Deep cleans, move-in/move-out, and post-renovation jobs take longer but use the same flat hourly rate. No travel fees, no surge pricing — {neighborhood.name} residents pay the same rate as every other neighborhood we serve.
               </p>
               <Link href="/nyc-cleaning-service-pricing" className="inline-block mt-3 text-[#1E2A4A] font-semibold text-sm underline underline-offset-4">Full pricing details &rarr;</Link>
             </div>

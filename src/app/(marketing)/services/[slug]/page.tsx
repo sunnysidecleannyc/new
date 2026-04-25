@@ -107,15 +107,17 @@ export default async function ServicePage({ params }: Props) {
                   <div className="flex-1 bg-gray-100 rounded-xl py-5 px-4 text-center">
                     <p className="font-[family-name:var(--font-bebas)] text-5xl text-[#1E2A4A] tracking-wide leading-none">$59<span className="text-xl text-gray-400">/hr</span></p>
                     <p className="text-gray-500 text-xs mt-2">Your supplies</p>
+                    <p className="text-[#1E2A4A] text-[10px] font-semibold mt-1">10% off weekly &middot; 5% biweekly/monthly</p>
                   </div>
                   <div className="flex-1 bg-[#1E2A4A] rounded-xl py-5 px-4 text-center">
-                    <p className="font-[family-name:var(--font-bebas)] text-5xl text-white tracking-wide leading-none">$75<span className="text-xl text-blue-200/40">/hr</span></p>
+                    <p className="font-[family-name:var(--font-bebas)] text-5xl text-white tracking-wide leading-none">$79<span className="text-xl text-blue-200/40">/hr</span></p>
                     <p className="text-[#A8F0DC]/70 text-xs mt-2">We bring everything</p>
+                    <p className="text-[#A8F0DC] text-[10px] font-semibold mt-1">20% off weekly &middot; 10% biweekly/monthly</p>
                   </div>
                 </div>
                 {service.slug === 'same-day-cleaning' && (
                   <div className="bg-amber-50 border border-amber-200 rounded-xl p-3 mb-5 text-center">
-                    <p className="font-[family-name:var(--font-bebas)] text-2xl text-[#1E2A4A] tracking-wide">$100<span className="text-sm text-gray-400">/hr</span></p>
+                    <p className="font-[family-name:var(--font-bebas)] text-2xl text-[#1E2A4A] tracking-wide">$99<span className="text-sm text-gray-400">/hr</span></p>
                     <p className="text-amber-700 text-xs">Same-day dispatch</p>
                   </div>
                 )}
