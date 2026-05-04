@@ -50,7 +50,7 @@ const homepageFAQs = [
   { question: 'How much does house cleaning cost in NYC?', answer: `Our ${L('/services/nyc-house-cleaning-service', 'house cleaning services')} start at $59/hour when you provide supplies (recurring: 10% off weekly, 5% off biweekly/monthly), or $79/hour when we bring everything (recurring: 20% off weekly, 10% off biweekly/monthly). ${L('/services/nyc-same-day-cleaning-service', 'Same-day and emergency service')} is $99/hour. See ${L('/nyc-cleaning-service-pricing', 'full pricing details')}.` },
   { question: 'Do you charge by the hour or a flat rate?', answer: `We charge by the hour. The rate is the same regardless of service type or neighborhood — $59/hr with your supplies (recurring: 10% off weekly, 5% off biweekly/monthly), $79/hr when we bring everything (recurring: 20% off weekly, 10% off biweekly/monthly). No inflated flat-rate quotes. See ${L('/nyc-cleaning-service-pricing', 'pricing')}.` },
   { question: 'Is there a minimum number of hours?', answer: `We have a 2-hour minimum for most bookings. This ensures our cleaners have enough time to deliver a thorough, quality clean. Most ${L('/services/nyc-apartment-cleaning-service', 'apartment cleanings')} take 2–4 hours.` },
-  { question: 'How do I book a cleaning?', answer: 'Text or call us at (212) 202-8400. We typically schedule within 24-48 hours, with same-day availability for urgent requests.' },
+  { question: 'How do I book a cleaning?', answer: 'Text or call us at (212) 202-9030. We typically schedule within 24-48 hours, with same-day availability for urgent requests.' },
   { question: 'Can I book online?', answer: 'Yes! You can book directly through our website. Just click "Book Online" in the menu, or text us if you prefer a personal touch.' },
   { question: 'Do you offer same-day cleaning?', answer: `Yes. ${L('/services/nyc-same-day-cleaning-service', 'Same-day and emergency cleaning')} is available at $99/hour. We dispatch a professional cleaner to your door within hours.` },
   { question: 'What payment methods do you accept?', answer: 'We accept credit cards, debit cards, Zelle (hi@thenycmaid.com), Venmo, Apple Pay, and cash. You can also pay securely online through our payment portal.' },
@@ -84,7 +84,7 @@ const homepageFAQs = [
   { question: 'How far in advance should I book?', answer: `We recommend booking 2-3 days in advance for regular cleanings. For ${L('/services/nyc-same-day-cleaning-service', 'same-day service')}, contact us as early as possible and we will do our best to accommodate.` },
   { question: 'What is your cancellation policy?', answer: 'We ask for 24 hours notice for cancellations or rescheduling. Same-day cancellations may be subject to a fee. We understand things come up and always try to be flexible.' },
   { question: 'Can I reschedule my cleaning?', answer: 'Of course. Just text or call us at least 24 hours before your appointment and we will find a new time that works for you.' },
-  { question: 'What days and hours are you available?', answer: 'Our office is open Monday through Saturday 7am–7pm. Our sales and booking line is available 24/7 — call or text (212) 202-8400 anytime.' },
+  { question: 'What days and hours are you available?', answer: 'Our office is open Monday through Saturday 7am–7pm. Our sales and booking line is available 24/7 — call or text (212) 202-9030 anytime.' },
   { question: 'Do you clean on weekends?', answer: 'Yes, we offer Saturday appointments from 7am–7pm. Sunday availability may be limited — contact us to check.' },
   { question: 'Do you offer recurring cleaning schedules?', answer: `Yes. We offer ${L('/services/nyc-maid-service', 'weekly, bi-weekly, and monthly recurring cleaning')}. Recurring clients get priority scheduling and a consistent cleaner.` },
 
@@ -110,7 +110,7 @@ const homepageFAQs = [
 
   // Referral & Extras
   { question: 'Do you have a referral program?', answer: 'Yes! Refer a friend and earn 10% commission on every cleaning they book — not just the first one. It is recurring income for as long as they stay a client.' },
-  { question: 'How do I contact you?', answer: `Text or call (212) 202-8400, or email hi@thenycmaid.com. Texting is the fastest way to reach us. You can also visit our ${L('/contact-nyc-cleaning-service-sunnyside-clean-nyc', 'contact page')}.` },
+  { question: 'How do I contact you?', answer: `Text or call (212) 202-9030, or email hi@thenycmaid.com. Texting is the fastest way to reach us. You can also visit our ${L('/contact-nyc-cleaning-service-sunnyside-clean-nyc', 'contact page')}.` },
 ]
 
 export default function HomePage() {
@@ -179,10 +179,10 @@ export default function HomePage() {
 
           {/* CTA: text or call */}
           <div className="flex flex-col sm:flex-row items-start gap-5">
-            <a href="sms:2122028400" className="bg-[#A8F0DC] text-[#1E2A4A] px-10 py-4 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#8DE8CC] transition-colors">
-              Text (212) 202-8400
+            <a href="sms:2122029030" className="bg-[#A8F0DC] text-[#1E2A4A] px-10 py-4 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#8DE8CC] transition-colors">
+              Text (212) 202-9030
             </a>
-            <a href="tel:2122028400" className="text-blue-200/70 font-medium text-lg py-4 hover:text-white transition-colors underline underline-offset-4">
+            <a href="tel:2122029030" className="text-blue-200/70 font-medium text-lg py-4 hover:text-white transition-colors underline underline-offset-4">
               or Call Us
             </a>
           </div>
@@ -217,11 +217,11 @@ export default function HomePage() {
                 <Link href="/about-nyc-cleaning-service-sunnyside-clean-nyc" className="inline-block bg-[#1E2A4A] text-white px-6 py-3 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#1E2A4A]/90 transition-colors">
                   Learn More About Us
                 </Link>
-                <a href="sms:2122028400" className="inline-block bg-[#A8F0DC] text-[#1E2A4A] px-6 py-3 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#8DE8CC] transition-colors">
+                <a href="sms:2122029030" className="inline-block bg-[#A8F0DC] text-[#1E2A4A] px-6 py-3 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#8DE8CC] transition-colors">
                   Text Us
                 </a>
-                <a href="tel:2122028400" className="text-[#1E2A4A] font-semibold hover:underline underline-offset-4">
-                  or Call (212) 202-8400
+                <a href="tel:2122029030" className="text-[#1E2A4A] font-semibold hover:underline underline-offset-4">
+                  or Call (212) 202-9030
                 </a>
               </div>
             </div>
@@ -451,7 +451,7 @@ export default function HomePage() {
               <Link href="/nyc-cleaning-service-pricing" className="inline-block bg-[#1E2A4A] text-white px-8 py-3.5 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#1E2A4A]/90 transition-colors">
                 View Full Pricing Details
               </Link>
-              <a href="sms:2122028400" className="inline-block bg-[#A8F0DC] text-[#1E2A4A] px-8 py-3.5 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#8DE8CC] transition-colors">
+              <a href="sms:2122029030" className="inline-block bg-[#A8F0DC] text-[#1E2A4A] px-8 py-3.5 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#8DE8CC] transition-colors">
                 Text for a Quote
               </a>
             </div>
@@ -583,11 +583,11 @@ export default function HomePage() {
               Every cleaner on our team is fully background-checked and insured. Whether you need a <Link href="/services/nyc-apartment-cleaning-service" className="text-[#1E2A4A] underline underline-offset-2">regular apartment cleaning</Link> in <Link href="/service-areas/manhattan-cleaning-services" className="text-[#1E2A4A] underline underline-offset-2">Manhattan</Link>, a <Link href="/services/nyc-deep-cleaning-service" className="text-[#1E2A4A] underline underline-offset-2">deep clean</Link> in <Link href="/service-areas/brooklyn-cleaning-services" className="text-[#1E2A4A] underline underline-offset-2">Brooklyn</Link>, or <Link href="/services/nyc-house-cleaning-service" className="text-[#1E2A4A] underline underline-offset-2">Airbnb turnover cleaning</Link> in <Link href="/service-areas/queens-cleaning-services" className="text-[#1E2A4A] underline underline-offset-2">Queens</Link> — we&apos;ve got you covered. <Link href="/about-nyc-cleaning-service-sunnyside-clean-nyc" className="text-[#1E2A4A] underline underline-offset-2">Learn more about our company</Link>.
             </p>
             <div className="flex flex-col sm:flex-row items-start gap-4">
-              <a href="sms:2122028400" className="inline-block bg-[#A8F0DC] text-[#1E2A4A] px-8 py-3.5 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#8DE8CC] transition-colors">
+              <a href="sms:2122029030" className="inline-block bg-[#A8F0DC] text-[#1E2A4A] px-8 py-3.5 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#8DE8CC] transition-colors">
                 Text Us
               </a>
-              <a href="tel:2122028400" className="inline-block text-[#1E2A4A] font-semibold py-3.5 hover:underline underline-offset-4">
-                or Call (212) 202-8400
+              <a href="tel:2122029030" className="inline-block text-[#1E2A4A] font-semibold py-3.5 hover:underline underline-offset-4">
+                or Call (212) 202-9030
               </a>
             </div>
           </div>

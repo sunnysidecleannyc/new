@@ -50,10 +50,10 @@ export default function ServicesIndexPage() {
             <span className="text-[#A8F0DC] text-sm font-medium">&#10003; Background-checked</span>
           </div>
           <div className="flex flex-col sm:flex-row items-start gap-5">
-            <a href="sms:2122028400" className="bg-[#A8F0DC] text-[#1E2A4A] px-10 py-4 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#8DE8CC] transition-colors">
-              Text (212) 202-8400
+            <a href="sms:2122029030" className="bg-[#A8F0DC] text-[#1E2A4A] px-10 py-4 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#8DE8CC] transition-colors">
+              Text (212) 202-9030
             </a>
-            <a href="tel:2122028400" className="text-blue-200/70 font-medium text-lg py-4 hover:text-white transition-colors underline underline-offset-4">
+            <a href="tel:2122029030" className="text-blue-200/70 font-medium text-lg py-4 hover:text-white transition-colors underline underline-offset-4">
               or Call Us
             </a>
           </div>
@@ -142,11 +142,11 @@ export default function ServicesIndexPage() {
               Our cleaners serve <Link href="/service-areas/nyc-cleaning-services" className="text-[#1E2A4A] underline underline-offset-2">Manhattan</Link>, <Link href="/service-areas/brooklyn-cleaning-services" className="text-[#1E2A4A] underline underline-offset-2">Brooklyn</Link>, and <Link href="/service-areas/queens-cleaning-services" className="text-[#1E2A4A] underline underline-offset-2">Queens</Link> — same rates, same quality, no travel fees.
             </p>
             <div className="flex flex-col sm:flex-row items-start gap-4">
-              <a href="sms:2122028400" className="inline-block bg-[#A8F0DC] text-[#1E2A4A] px-8 py-3.5 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#8DE8CC] transition-colors">
+              <a href="sms:2122029030" className="inline-block bg-[#A8F0DC] text-[#1E2A4A] px-8 py-3.5 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#8DE8CC] transition-colors">
                 Text Us to Book
               </a>
-              <a href="tel:2122028400" className="inline-block text-[#1E2A4A] font-semibold py-3.5 hover:underline underline-offset-4">
-                or Call (212) 202-8400
+              <a href="tel:2122029030" className="inline-block text-[#1E2A4A] font-semibold py-3.5 hover:underline underline-offset-4">
+                or Call (212) 202-9030
               </a>
             </div>
           </div>

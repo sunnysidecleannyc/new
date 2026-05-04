@@ -26,7 +26,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const url = `https://www.cleaningservicesunnysideny.com/services/${slug}`
   const title = `${service.name} in NYC From ${service.priceRange.split('\u2013')[0]} | 5-Star Rated | Sunnyside Clean NYC`
-  const description = `Professional ${service.name.toLowerCase()} across Manhattan, Brooklyn & Queens. ${service.features.slice(0, 2).join(', ')} & more. From ${service.priceRange.split('\u2013')[0]}. 5.0★ Google. (212) 202-8400`
+  const description = `Professional ${service.name.toLowerCase()} across Manhattan, Brooklyn & Queens. ${service.features.slice(0, 2).join(', ')} & more. From ${service.priceRange.split('\u2013')[0]}. 5.0★ Google. (212) 202-9030`
 
   return {
     title: { absolute: title },
@@ -92,10 +92,10 @@ export default async function ServicePage({ params }: Props) {
               </p>
               <div className="flex flex-col sm:flex-row items-start gap-4">
                 <a href="https://www.thenycmaid.com/book/new" className="bg-[#A8F0DC] text-[#1E2A4A] px-8 py-3.5 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#8DE8CC] transition-colors">
-                  Book a Cleaning
+                  Self Booking $20 OFF
                 </a>
-                <a href="tel:2122028400" className="text-blue-200/60 font-medium py-3.5 hover:text-white transition-colors underline underline-offset-4">
-                  or Call (212) 202-8400
+                <a href="tel:2122029030" className="text-blue-200/60 font-medium py-3.5 hover:text-white transition-colors underline underline-offset-4">
+                  or Call (212) 202-9030
                 </a>
               </div>
             </div>
@@ -127,7 +127,7 @@ export default async function ServicePage({ params }: Props) {
                   <p className="text-[#1E2A4A]/60 text-xs mt-1">Pay only for time worked &middot; No upfront cost</p>
                 </div>
                 <a href="https://www.thenycmaid.com/book/new" className="block text-center bg-[#A8F0DC] text-[#1E2A4A] px-6 py-3.5 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#8DE8CC] transition-colors">
-                  Book a Cleaning
+                  Self Booking $20 OFF
                 </a>
               </div>
             </div>
@@ -156,9 +156,9 @@ export default async function ServicePage({ params }: Props) {
                 )}
                 <div className="flex flex-col sm:flex-row items-start gap-3">
                   <a href="https://www.thenycmaid.com/book/new" className="bg-[#A8F0DC] text-[#1E2A4A] px-6 py-3 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#8DE8CC] transition-colors">
-                    Book a Cleaning
+                    Self Booking $20 OFF
                   </a>
-                  <a href="tel:2122028400" className="text-[#1E2A4A]/60 font-medium py-3 hover:text-[#1E2A4A] transition-colors underline underline-offset-4">
+                  <a href="tel:2122029030" className="text-[#1E2A4A]/60 font-medium py-3 hover:text-[#1E2A4A] transition-colors underline underline-offset-4">
                     or Call Us
                   </a>
                 </div>
@@ -214,9 +214,9 @@ export default async function ServicePage({ params }: Props) {
                 <p className="text-gray-500 leading-relaxed mb-6">A regular clean maintains your home. A deep clean resets it. See exactly what&apos;s covered in each service so you know which one you need.</p>
                 <div className="flex flex-col sm:flex-row items-start gap-3">
                   <a href="https://www.thenycmaid.com/book/new" className="bg-[#A8F0DC] text-[#1E2A4A] px-6 py-3 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#8DE8CC] transition-colors">
-                    Book a Cleaning
+                    Self Booking $20 OFF
                   </a>
-                  <a href="tel:2122028400" className="text-[#1E2A4A]/60 font-medium py-3 hover:text-[#1E2A4A] transition-colors underline underline-offset-4">
+                  <a href="tel:2122029030" className="text-[#1E2A4A]/60 font-medium py-3 hover:text-[#1E2A4A] transition-colors underline underline-offset-4">
                     or Call Us
                   </a>
                 </div>
@@ -253,7 +253,7 @@ export default async function ServicePage({ params }: Props) {
                 <h2 className="font-[family-name:var(--font-bebas)] text-3xl md:text-4xl text-[#1E2A4A] tracking-wide leading-tight mb-4">{rich.whenToBook.title}</h2>
                 <p className="text-gray-500 leading-relaxed mb-6">If any of these apply to you, a professional {service.name.toLowerCase()} is the move. Book online or call and we&apos;ll get you on the schedule.</p>
                 <a href="https://www.thenycmaid.com/book/new" className="inline-block bg-[#A8F0DC] text-[#1E2A4A] px-6 py-3 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#8DE8CC] transition-colors">
-                  Book a Cleaning
+                  Self Booking $20 OFF
                 </a>
               </div>
               <div className="lg:col-span-3 grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -380,7 +380,7 @@ export default async function ServicePage({ params }: Props) {
           <p className="font-[family-name:var(--font-bebas)] text-3xl md:text-4xl text-white tracking-wide text-center mb-12">Book in 3 Simple Steps</p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
-              { n: '01', t: 'Book Online or Call', d: 'Book online at cleaningservicesunnysideny.com or call (212) 202-8400 with your address, preferred date, and any special requests.' },
+              { n: '01', t: 'Book Online or Call', d: 'Book online at cleaningservicesunnysideny.com or call (212) 202-9030 with your address, preferred date, and any special requests.' },
               { n: '02', t: 'We Confirm', d: 'We match you with a background-checked, insured cleaner and lock in your appointment — usually within the hour.' },
               { n: '03', t: 'Pay After', d: 'Your cleaner arrives on time, does the work, and you pay only after the cleaning is complete. No deposits ever.' },
             ].map(s => (
@@ -393,7 +393,7 @@ export default async function ServicePage({ params }: Props) {
           </div>
           <div className="flex justify-center mt-10">
             <a href="https://www.thenycmaid.com/book/new" className="bg-[#A8F0DC] text-[#1E2A4A] px-10 py-4 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#8DE8CC] transition-colors">
-              Book a Cleaning
+              Self Booking $20 OFF
             </a>
           </div>
         </div>

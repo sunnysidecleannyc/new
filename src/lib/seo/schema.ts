@@ -8,8 +8,8 @@ const BUSINESS = {
   name: 'Sunnyside Clean NYC',
   legalName: 'Sunnyside Clean NYC — A NYC Maid Services Company',
   url: 'https://www.cleaningservicesunnysideny.com',
-  phone: '+1-212-202-8400',
-  phoneDisplay: '(212) 202-8400',
+  phone: '+1-212-202-9030',
+  phoneDisplay: '(212) 202-9030',
   email: 'hi@thenycmaid.com',
   logo: 'https://www.cleaningservicesunnysideny.com/icon-512.png',
   image: 'https://www.cleaningservicesunnysideny.com/icon-512.png',
@@ -613,7 +613,7 @@ export function siteNavigationSchema() {
       { '@type': 'WebPage', name: 'Blog', url: `${BUSINESS.url}/cleaning-tips-and-tricks` },
       { '@type': 'WebPage', name: 'About', url: `${BUSINESS.url}/about-nyc-cleaning-service-sunnyside-clean-nyc` },
       { '@type': 'WebPage', name: 'Contact', url: `${BUSINESS.url}/contact-nyc-cleaning-service-sunnyside-clean-nyc` },
-      { '@type': 'WebPage', name: 'Book Now', url: 'https://www.thenycmaid.com/book/new' },
+      { '@type': 'WebPage', name: 'Self Booking $20 OFF', url: 'https://www.thenycmaid.com/book/new' },
     ],
   }
 }
@@ -634,7 +634,7 @@ export function howToBookSchema() {
       {
         '@type': 'HowToStep',
         name: 'Contact Us',
-        text: 'Call (212) 202-8400, text us, or book online at cleaningservicesunnysideny.com',
+        text: 'Call (212) 202-9030, text us, or book online at cleaningservicesunnysideny.com',
         url: 'https://www.thenycmaid.com/book/new',
         position: 1,
       },

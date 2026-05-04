@@ -19,7 +19,7 @@ export default function Image() {
             <span style={{ color: 'rgba(255,255,255,0.3)' }}>|</span>
             <span>5.0★ Google</span>
           </div>
-          <div style={{ fontSize: 28, color: '#A8F0DC', marginTop: 40, fontWeight: 600, letterSpacing: '0.1em' }}>(212) 202-8400</div>
+          <div style={{ fontSize: 28, color: '#A8F0DC', marginTop: 40, fontWeight: 600, letterSpacing: '0.1em' }}>(212) 202-9030</div>
         </div>
         <div style={{ fontSize: 18, color: 'rgba(255,255,255,0.4)', letterSpacing: '0.15em' }}>MANHATTAN · BROOKLYN · QUEENS</div>
       </div>

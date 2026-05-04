@@ -22,7 +22,7 @@ function pick<T>(arr: T[], seed: string, offset = 0): T {
 export function homepageContent() {
   return {
     title: 'NYC Cleaning Service & House Cleaning From $59/hr | 5-Star Rated | Sunnyside Clean NYC',
-    metaDescription: 'NYC\'s top-rated cleaning service from $59/hr. House cleaning across Manhattan, Brooklyn & Queens. Licensed, insured. 5.0★ Google. (212) 202-8400',
+    metaDescription: 'NYC\'s top-rated cleaning service from $59/hr. House cleaning across Manhattan, Brooklyn & Queens. Licensed, insured. 5.0★ Google. (212) 202-9030',
     h1: 'NYC\'s #1 Rated Cleaning Service & House Cleaning — From $59/hr',
     subtitle: 'Professional house cleaning across Manhattan, Brooklyn & Queens. Licensed, insured, and loved by thousands of clients.',
   }
@@ -49,7 +49,7 @@ export function areaContent(area: Area) {
   const intros = areaIntros[area.slug] || areaIntros['manhattan']
   return {
     title: `House Cleaning Services in ${area.name}`,
-    metaDescription: `Professional cleaning in ${area.name} from $59/hr. Deep cleaning, weekly service, move-in/out & more. 5.0★ Google. (212) 202-8400`,
+    metaDescription: `Professional cleaning in ${area.name} from $59/hr. Deep cleaning, weekly service, move-in/out & more. 5.0★ Google. (212) 202-9030`,
     h1: `Professional Cleaning Services in ${area.name}`,
     intro: pick(intros, area.slug),
   }
@@ -78,7 +78,7 @@ export function neighborhoodContent(neighborhood: Neighborhood, area: Area) {
 
   return {
     title: `${h1} | ${area.name}`,
-    metaDescription: `Professional cleaning in ${neighborhood.name}, ${area.name} from $59/hr. Serving ${neighborhood.housing_types.slice(0, 2).join(', ')} near ${neighborhood.landmarks[0]}. 5.0★ Google. (212) 202-8400`,
+    metaDescription: `Professional cleaning in ${neighborhood.name}, ${area.name} from $59/hr. Serving ${neighborhood.housing_types.slice(0, 2).join(', ')} near ${neighborhood.landmarks[0]}. 5.0★ Google. (212) 202-9030`,
     h1,
     intro,
   }
@@ -144,7 +144,7 @@ export function neighborhoodServiceContent(neighborhood: Neighborhood, service: 
 
   return {
     title: `${h1} | ${area.name}`,
-    metaDescription: `${service.name} in ${neighborhood.name}, ${area.name}. ${service.features.slice(0, 2).join(', ')} & more. ${service.priceRange}. 5.0★ Google. (212) 202-8400`,
+    metaDescription: `${service.name} in ${neighborhood.name}, ${area.name}. ${service.features.slice(0, 2).join(', ')} & more. ${service.priceRange}. 5.0★ Google. (212) 202-9030`,
     h1,
     intro,
     whyUs: [
@@ -162,7 +162,7 @@ export function neighborhoodServiceContent(neighborhood: Neighborhood, service: 
 export function serviceContent(service: Service) {
   return {
     title: `${service.name} Services | NYC, Brooklyn, Queens`,
-    metaDescription: `Professional ${service.name.toLowerCase()} across Manhattan, Brooklyn & Queens. ${service.features.slice(0, 2).join(', ')} & more. ${service.priceRange}. 5.0★ Google. (212) 202-8400`,
+    metaDescription: `Professional ${service.name.toLowerCase()} across Manhattan, Brooklyn & Queens. ${service.features.slice(0, 2).join(', ')} & more. ${service.priceRange}. 5.0★ Google. (212) 202-9030`,
     h1: `${service.name} Services`,
     intro: service.description,
   }
@@ -685,7 +685,7 @@ const richContentMap: Record<string, ServiceRichContent> = {
       ],
     },
     nycTips: [
-      { title: 'Text us early for best availability', detail: 'Same-day requests sent before 10am have the best chance of afternoon availability. After noon, same-day availability drops significantly. Text (212) 202-8400 as early as possible for the best shot at a same-day slot.' },
+      { title: 'Text us early for best availability', detail: 'Same-day requests sent before 10am have the best chance of afternoon availability. After noon, same-day availability drops significantly. Text (212) 202-9030 as early as possible for the best shot at a same-day slot.' },
       { title: 'Prioritize the rooms your guests will see', detail: 'If guests are arriving tonight, tell your cleaner to start with the bathroom and living areas — the spaces guests actually use. Kitchen next. Bedrooms last. This way, even if time runs short, the important rooms are spotless.' },
       { title: 'Same-day is a premium service — plan ahead when possible', detail: 'At $99/hr, same-day service costs roughly double our regular rate. If you know you\'ll need cleaning this week, booking 2–3 days ahead at $59–$79/hr saves significant money. Same-day is for genuine emergencies.' },
       { title: 'Keep a set of supplies ready', detail: 'Same-day cleaners may not have time to bring a full supply kit. Having a basic set at home — spray cleaner, paper towels, trash bags, a vacuum — ensures the cleaner can start immediately without supply delays.' },
@@ -717,7 +717,7 @@ const richContentMap: Record<string, ServiceRichContent> = {
       { question: 'Is same-day cleaning the same quality as regular service?', answer: 'Identical. You\'re getting the same background-checked, insured, experienced cleaners doing the same thorough work. The only difference is the scheduling urgency and the premium rate that compensates for last-minute logistics.' },
       { question: 'What if no cleaner is available today?', answer: 'If we can\'t accommodate same-day, we\'ll offer the earliest available slot — often the next morning. We\'d rather be honest about availability than send someone who can\'t do the job properly.' },
       { question: 'Can I request a same-day deep clean?', answer: 'Same-day availability is best suited for regular-scope cleaning (2–4 hours). A full deep clean requires 4–8 hours, which is difficult to fit into a same-day schedule. If you need a deep clean urgently, we\'ll do our best to arrange it but recommend booking at least 24 hours ahead.' },
-      { question: 'How do I book same-day service?', answer: 'Text or call (212) 202-8400 as early in the day as possible. Text is fastest — we\'ll confirm availability and estimated arrival time within minutes. Morning requests before 10am have the best availability for afternoon service.' },
+      { question: 'How do I book same-day service?', answer: 'Text or call (212) 202-9030 as early in the day as possible. Text is fastest — we\'ll confirm availability and estimated arrival time within minutes. Morning requests before 10am have the best availability for afternoon service.' },
     ],
   },
 
@@ -880,7 +880,7 @@ export function neighborhoodFAQs(neighborhood: Neighborhood, area: Area): { ques
     },
     {
       question: `How do I book a cleaning in ${neighborhood.name}?`,
-      answer: `You can book online through our website, call us at (212) 202-8400, or text us. We typically can schedule within 24-48 hours, with same-day availability for urgent requests.`,
+      answer: `You can book online through our website, call us at (212) 202-9030, or text us. We typically can schedule within 24-48 hours, with same-day availability for urgent requests.`,
     },
     {
       question: `What cleaning services do you offer in ${neighborhood.name}?`,
@@ -915,7 +915,7 @@ export function commonServiceFAQs(service: Service): { question: string; answer:
   return [
     { question: 'Are your cleaners background-checked?', answer: 'Yes. Every cleaner on our team undergoes a comprehensive background check before their first assignment. We also carry general liability insurance and bonding for your protection. You can trust that the person entering your home has been fully vetted.' },
     { question: 'Do I need to be home during the cleaning?', answer: 'No. Many clients leave a key, provide a door code, or arrange access through their doorman or building management. You\'re welcome to be home or away — whatever is most comfortable. We\'ll text you when we arrive and when we\'re done.' },
-    { question: 'How do I book a cleaning?', answer: 'Text or call (212) 202-8400. Tell us your address, preferred date, and any special requests. We\'ll confirm your appointment and match you with a cleaner, usually within the hour. You can also book online at cleaningservicesunnysideny.com.' },
+    { question: 'How do I book a cleaning?', answer: 'Text or call (212) 202-9030. Tell us your address, preferred date, and any special requests. We\'ll confirm your appointment and match you with a cleaner, usually within the hour. You can also book online at cleaningservicesunnysideny.com.' },
     { question: 'What areas do you serve?', answer: 'We serve all of Manhattan, Brooklyn, and Queens — 267+ neighborhoods across NYC. Same rates everywhere — no travel surcharges regardless of location.' },
     { question: 'Do I pay before or after the cleaning?', answer: 'After. We never charge upfront or take deposits. You pay only after the cleaning is complete, before the cleaner leaves. We accept cash, Venmo, Zelle (hi@thenycmaid.com), and credit card.' },
     { question: 'What if I\'m not satisfied with the cleaning?', answer: 'Let us know within 24 hours and we\'ll send a cleaner back to address any issues at no additional cost. We stand behind our work — your satisfaction is non-negotiable.' },
@@ -930,7 +930,7 @@ export function commonServiceFAQs(service: Service): { question: string; answer:
     { question: 'What if I need to cancel or reschedule?', answer: 'For one-time services, we have a no-cancellation policy once confirmed. For recurring services, we require 7 days notice to cancel and 3 days notice to reschedule within the same week. This protects our cleaners\' schedules.' },
     { question: 'Do you clean apartments, houses, or both?', answer: 'Both. We clean apartments (studios through 4+ bedrooms), townhouses, brownstones, single-family homes, lofts, and penthouses. The hourly rate is the same regardless of home type.' },
     { question: 'How do you handle pets during cleaning?', answer: 'We\'re pet-friendly. If you have pets, let us know when booking so we can match you with a pet-comfortable cleaner. We ask that aggressive animals be secured in a separate room during the cleaning for everyone\'s safety.' },
-    { question: 'Do you offer gift certificates?', answer: 'Yes — cleaning makes a great gift. Text us at (212) 202-8400 to purchase a gift certificate in any amount. We\'ll send a digital certificate that the recipient can redeem for any service.' },
+    { question: 'Do you offer gift certificates?', answer: 'Yes — cleaning makes a great gift. Text us at (212) 202-9030 to purchase a gift certificate in any amount. We\'ll send a digital certificate that the recipient can redeem for any service.' },
     { question: 'What happens if something is damaged during cleaning?', answer: 'We carry general liability insurance specifically for this reason. If a cleaner accidentally damages something in your home, report it within 24 hours and we\'ll work with you to resolve it through our insurance coverage.' },
     { question: 'Do you have a referral program?', answer: 'Yes. Refer a friend and earn money every time they book a cleaning — not just the first time. Visit cleaningservicesunnysideny.com/referral or text us for details. It\'s one of the most generous referral programs in NYC cleaning.' },
   ]

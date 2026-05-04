@@ -50,13 +50,13 @@ export default function MarketingNav() {
               <span className="text-white/20">-</span>
               <span className="text-white/80 font-semibold">Open 24/7</span>
               <span className="text-white/20">&middot;</span>
-              <a href="tel:2122028400" className="inline-flex items-center gap-1 text-[#A8F0DC] font-semibold tracking-widest uppercase text-[10px] hover:text-white transition-colors">
-                <svg aria-hidden="true" className="w-3 h-3 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.24 1.01l-2.2 2.2z"/></svg>
-                <span>(212) 202-8400</span>
-              </a>
-              <a href="sms:2122028400" className="inline-flex items-center gap-1 text-[#A8F0DC] font-semibold tracking-widest uppercase text-[10px] hover:text-white transition-colors">
+              <a href="sms:2122029030" className="inline-flex items-center gap-1 text-[#A8F0DC] font-semibold tracking-widest uppercase text-[10px] hover:text-white transition-colors">
                 <svg aria-hidden="true" className="w-3 h-3 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H5.17L4 17.17V4h16v12zM7 9h2v2H7zm4 0h2v2h-2zm4 0h2v2h-2z"/></svg>
-                <span>(212) 202-8400</span>
+                <span>Sales: (212) 202-9030</span>
+              </a>
+              <a href="sms:6464900130" className="inline-flex items-center gap-1 text-[#A8F0DC] font-semibold tracking-widest uppercase text-[10px] hover:text-white transition-colors">
+                <svg aria-hidden="true" className="w-3 h-3 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H5.17L4 17.17V4h16v12zM7 9h2v2H7zm4 0h2v2h-2zm4 0h2v2h-2z"/></svg>
+                <span>Support: (646) 490-0130</span>
               </a>
             </div>
             <div className="hidden lg:flex items-center gap-4" />
@@ -110,13 +110,13 @@ export default function MarketingNav() {
             </nav>
 
             <a href="https://www.thenycmaid.com/book/new" className="hidden lg:inline-block bg-[#A8F0DC] text-[#1E2A4A] px-6 py-2.5 rounded-md font-bold text-sm tracking-widest uppercase hover:bg-[#8DE8CC] transition-colors whitespace-nowrap">
-              Book a Cleaning
+              Self Booking $20 OFF
             </a>
 
             {/* Mobile hamburger */}
             <div className="lg:hidden flex items-center gap-3">
               <a href="https://www.thenycmaid.com/book/new" className="bg-[#A8F0DC] text-[#1E2A4A] px-4 py-2 rounded-md font-bold text-xs tracking-widest uppercase">
-                Book a Cleaning
+                Self Booking $20 OFF
               </a>
               <button onClick={() => setMobileOpen(!mobileOpen)} aria-label="Open navigation menu" aria-expanded={mobileOpen} className="p-2 text-[#1E2A4A]">
                 <svg aria-hidden="true" className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -184,13 +184,13 @@ export default function MarketingNav() {
               )}
 
               <div className="border-t border-white/10 mt-4 pt-4 space-y-1">
-                <a href="https://www.thenycmaid.com/book/new" onClick={closeMenu} className="block py-3 text-[#A8F0DC] font-medium">Book a Cleaning</a>
+                <a href="https://www.thenycmaid.com/book/new" onClick={closeMenu} className="block py-3 text-[#A8F0DC] font-medium">Self Booking $20 OFF</a>
                 <a href="https://buy.stripe.com/8x2aEZ4FL0wYfxe5f0fnO03" target="_blank" rel="noopener noreferrer" onClick={closeMenu} className="block py-3 text-[#A8F0DC] font-medium">Pay Now</a>
               </div>
 
               <div className="border-t border-white/10 mt-4 pt-6 space-y-3 text-center">
-                <a href="sms:2122028400" className="block bg-[#A8F0DC] text-[#1E2A4A] py-3 rounded-lg font-bold text-sm tracking-widest uppercase">Text (212) 202-8400</a>
-                <a href="tel:2122028400" className="block text-white/50 font-medium text-sm">or Call Us</a>
+                <a href="sms:2122029030" className="block bg-[#A8F0DC] text-[#1E2A4A] py-3 rounded-lg font-bold text-sm tracking-widest uppercase">Text Sales: 212.202.9030</a>
+                <a href="sms:6464900130" className="block bg-[#1E2A4A] text-white py-3 rounded-lg font-bold text-sm tracking-widest uppercase border border-white/20">Text Support: 646.490.0130</a>
               </div>
             </div>
           </div>
