@@ -14,8 +14,8 @@ export default function CTABlock({ title, subtitle }: { title?: string; subtitle
           <a href="https://www.thenycmaid.com/book/new" className="bg-[#1E2A4A] text-white px-8 py-3.5 rounded-md font-bold text-sm tracking-widest uppercase hover:bg-[#1E2A4A]/90 transition-colors">
             Self Booking $20 OFF
           </a>
-          <a href="tel:2122029030" className="border-2 border-[#1E2A4A] text-[#1E2A4A] px-8 py-3.5 rounded-md font-bold text-sm tracking-widest uppercase hover:bg-[#1E2A4A] hover:text-white transition-colors">
-            Call (212) 202-9030
+          <a href="tel:2122028400" className="border-2 border-[#1E2A4A] text-[#1E2A4A] px-8 py-3.5 rounded-md font-bold text-sm tracking-widest uppercase hover:bg-[#1E2A4A] hover:text-white transition-colors">
+            Call (212) 202-8400
           </a>
         </div>
       </div>

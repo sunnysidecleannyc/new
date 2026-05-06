@@ -8,7 +8,7 @@ import CTABlock from '@/components/marketing/CTABlock'
 
 const url = 'https://www.cleaningservicesunnysideny.com/nyc-cleaning-service-pricing'
 const title = 'NYC Cleaning Service Pricing From $59/hr | Transparent Rates | Sunnyside Clean NYC'
-const description = 'Transparent hourly cleaning rates across Manhattan, Brooklyn & Queens. $59/hr your supplies (10% off weekly, 5% biweekly/monthly), $79/hr we bring everything (20% off weekly, 10% biweekly/monthly), $99/hr same-day. No hidden fees. 5.0★ Google. (212) 202-9030'
+const description = 'Transparent hourly cleaning rates across Manhattan, Brooklyn & Queens. $59/hr your supplies (10% off weekly, 5% biweekly/monthly), $79/hr we bring everything (20% off weekly, 10% biweekly/monthly), $99/hr same-day. No hidden fees. 5.0★ Google. (212) 202-8400'
 
 export const metadata: Metadata = {
   title: { absolute: title },
@@ -31,10 +31,10 @@ const pricingFaqs = [
   { question: 'What payment methods do you accept?', answer: 'Cash, Venmo, Zelle (hi@thenycmaid.com), and credit card (via Stripe). Payment is collected after the cleaning is complete. No deposits, no pre-authorization holds.' },
   { question: 'Do you offer discounts for recurring service?', answer: 'Our hourly rate stays the same for recurring service, but recurring cleanings take less time because your home stays consistently clean. A weekly client\'s cleaning might take 2 hours vs. 4 hours for a first-time deep clean — so you naturally pay less per visit.' },
   { question: 'Is there a cancellation fee?', answer: 'For one-time services, we have a no-cancellation policy once confirmed. For recurring services, we require 7 days notice to cancel and 3 days notice to reschedule. This protects our cleaners\' schedules and livelihoods.' },
-  { question: 'Do you offer free estimates?', answer: 'Yes. Text or call (212) 202-9030 with your address, home size, and service type and we\'ll provide a custom quote within minutes. No obligation, no pressure.' },
+  { question: 'Do you offer free estimates?', answer: 'Yes. Text or call (212) 202-8400 with your address, home size, and service type and we\'ll provide a custom quote within minutes. No obligation, no pressure.' },
   { question: 'Are your cleaners insured?', answer: 'Yes. We carry general liability insurance and bonding. Every cleaner is covered while working in your home. If anything is accidentally damaged, we handle it through our insurance.' },
   { question: 'How long does a typical cleaning take?', answer: 'Regular apartment cleaning: 2–4 hours. Deep cleaning: 3–6 hours. Move-in/out: 4–8 hours. Post-construction: 5–10 hours. We estimate the time upfront so you know the approximate cost before we start.' },
-  { question: 'Can I get a quote without booking?', answer: 'Absolutely. Text (212) 202-9030 with your apartment details and we\'ll send a quote. No commitment required. Most quotes are delivered within 15 minutes.' },
+  { question: 'Can I get a quote without booking?', answer: 'Absolutely. Text (212) 202-8400 with your apartment details and we\'ll send a quote. No commitment required. Most quotes are delivered within 15 minutes.' },
 ]
 
 export default function PricingPage() {
@@ -115,7 +115,7 @@ export default function PricingPage() {
             </div>
 
             <div className="flex justify-center mt-8">
-              <a href="sms:2122029030" className="bg-[#A8F0DC] text-[#1E2A4A] px-10 py-4 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#8DE8CC] transition-colors">
+              <a href="sms:2122028400" className="bg-[#A8F0DC] text-[#1E2A4A] px-10 py-4 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#8DE8CC] transition-colors">
                 Text for a Free Quote
               </a>
             </div>
@@ -228,7 +228,7 @@ export default function PricingPage() {
           <p className="font-[family-name:var(--font-bebas)] text-3xl md:text-4xl text-[#1E2A4A] tracking-wide text-center mb-12">Get a Quote in 3 Steps</p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
-              { n: '01', t: 'Text or Call', d: 'Reach us at (212) 202-9030 with your address, home size, and what type of cleaning you need.' },
+              { n: '01', t: 'Text or Call', d: 'Reach us at (212) 202-8400 with your address, home size, and what type of cleaning you need.' },
               { n: '02', t: 'Get Your Quote', d: 'We\'ll reply with a custom quote based on your home\'s size, condition, and service type — usually within 15 minutes.' },
               { n: '03', t: 'Pay After', d: 'We clean, you inspect, you pay. No deposits, no upfront charges. Cash, Venmo, Zelle (hi@thenycmaid.com), or credit card.' },
             ].map(s => (
@@ -240,8 +240,8 @@ export default function PricingPage() {
             ))}
           </div>
           <div className="flex justify-center mt-10">
-            <a href="sms:2122029030" className="bg-[#1E2A4A] text-white px-10 py-4 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#1E2A4A]/90 transition-colors">
-              Text (212) 202-9030
+            <a href="sms:2122028400" className="bg-[#1E2A4A] text-white px-10 py-4 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#1E2A4A]/90 transition-colors">
+              Text (212) 202-8400
             </a>
           </div>
         </div>

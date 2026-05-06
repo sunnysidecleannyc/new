@@ -93,7 +93,7 @@ export default function MarketingFooter() {
               <li><a href="https://buy.stripe.com/8x2aEZ4FL0wYfxe5f0fnO03" target="_blank" rel="noopener noreferrer" className="text-sm hover:text-white transition-colors">Make a Payment</a></li>
               <li><a href="https://www.thenycmaid.com/book/new" className="text-sm hover:text-white transition-colors">Self Booking $20 OFF</a></li>
               <li><Link href="/cleaning-tips-and-tricks" className="text-sm hover:text-white transition-colors">Cleaning Tips</Link></li>
-              <li><a href="sms:2122029030" className="text-sm hover:text-white transition-colors">Sales: (212) 202-9030</a></li>
+              <li><a href="sms:2122028400" className="text-sm hover:text-white transition-colors">Sales: (212) 202-8400</a></li>
               <li><a href="sms:6464900130" className="text-sm hover:text-white transition-colors">Support: (646) 490-0130</a></li>
               <li><a href="mailto:hi@thenycmaid.com" className="text-sm hover:text-white transition-colors">Email Us</a></li>
             </ul>
@@ -111,7 +111,7 @@ export default function MarketingFooter() {
             <a href="https://www.thenycmaid.com/legal" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300 transition-colors">Legal</a>
             <a href="https://www.thenycmaid.com/do-not-share-policy" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300 transition-colors">Do Not Share</a>
           </div>
-          <p className="text-xs text-gray-500">&copy; {new Date().getFullYear()} Sunnyside Clean NYC &middot; A NYC Maid Services Company &middot; <a href="tel:2122029030" className="text-[#A8F0DC]/70 hover:text-[#A8F0DC]">(212) 202-9030</a> &middot; NYC Web Design by{' '}<a href="https://www.consortiumnyc.com/" target="_blank" rel="noopener noreferrer" className="text-[#A8F0DC] font-semibold hover:text-white underline underline-offset-2 decoration-[#A8F0DC]/50">Consortium NYC</a></p>
+          <p className="text-xs text-gray-500">&copy; {new Date().getFullYear()} Sunnyside Clean NYC &middot; A NYC Maid Services Company &middot; <a href="tel:2122028400" className="text-[#A8F0DC]/70 hover:text-[#A8F0DC]">(212) 202-8400</a> &middot; NYC Web Design by{' '}<a href="https://www.consortiumnyc.com/" target="_blank" rel="noopener noreferrer" className="text-[#A8F0DC] font-semibold hover:text-white underline underline-offset-2 decoration-[#A8F0DC]/50">Consortium NYC</a></p>
         </div>
       </div>
 

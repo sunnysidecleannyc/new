@@ -26,11 +26,11 @@ const serviceFAQs = [
 ]
 
 const schedulingFAQs = [
-  { question: 'How do I book a cleaning?', answer: 'Text or call (212) 202-9030, or book online at cleaningservicesunnysideny.com. We typically schedule within 24–48 hours. Same-day availability for urgent requests.' },
+  { question: 'How do I book a cleaning?', answer: 'Text or call (212) 202-8400, or book online at cleaningservicesunnysideny.com. We typically schedule within 24–48 hours. Same-day availability for urgent requests.' },
   { question: 'Can I get the same cleaner each time?', answer: `Yes. For ${L('/services/nyc-maid-service', 'recurring clients')}, we assign the same dedicated cleaner to your home so they learn your preferences and layout. Consistency is one of the things our clients value most.` },
-  { question: 'Do you offer same-day cleaning?', answer: `Yes. Our ${L('/services/nyc-same-day-cleaning-service', 'same-day cleaning service')} dispatches a professional cleaner within hours. Call or text (212) 202-9030. Same-day service is $99/hr.` },
+  { question: 'Do you offer same-day cleaning?', answer: `Yes. Our ${L('/services/nyc-same-day-cleaning-service', 'same-day cleaning service')} dispatches a professional cleaner within hours. Call or text (212) 202-8400. Same-day service is $99/hr.` },
   { question: 'How do I reschedule or cancel?', answer: 'Text or call us at least 24 hours before your scheduled cleaning. We\'ll reschedule at no charge. Cancellations with less than 24 hours notice may incur a fee.' },
-  { question: 'What hours do you operate?', answer: 'Office hours are Monday through Saturday 7am to 7pm. Sales and booking inquiries are available 24/7 — call or text (212) 202-9030 anytime.' },
+  { question: 'What hours do you operate?', answer: 'Office hours are Monday through Saturday 7am to 7pm. Sales and booking inquiries are available 24/7 — call or text (212) 202-8400 anytime.' },
 ]
 
 const trustFAQs = [
@@ -49,7 +49,7 @@ const schemaFAQs = allFAQs.map(f => ({ question: f.question, answer: stripHtml(f
 
 const pageUrl = 'https://www.cleaningservicesunnysideny.com/frequently-asked-cleaning-service-related-questions'
 const pageTitle = 'NYC Cleaning Service FAQ — Pricing, Services & Scheduling | Sunnyside Clean NYC'
-const pageDescription = 'Answers to common questions about Sunnyside Clean NYC — pricing ($59–$99/hr), what\'s included, scheduling, insurance, service areas, and more. Serving Manhattan, Brooklyn & Queens. (212) 202-9030'
+const pageDescription = 'Answers to common questions about Sunnyside Clean NYC — pricing ($59–$99/hr), what\'s included, scheduling, insurance, service areas, and more. Serving Manhattan, Brooklyn & Queens. (212) 202-8400'
 
 export const metadata: Metadata = {
   title: pageTitle,
@@ -121,7 +121,7 @@ export default function FAQPage() {
             Frequently Asked Questions About NYC House Cleaning Services
           </h1>
           <p className="text-blue-200/80 text-lg max-w-2xl leading-relaxed mb-10">
-            Everything you need to know about pricing, services, scheduling, and how we work — answered by our team. Can&apos;t find your question? Call <a href="tel:2122029030" className="text-[#A8F0DC] underline underline-offset-2">(212) 202-9030</a>.
+            Everything you need to know about pricing, services, scheduling, and how we work — answered by our team. Can&apos;t find your question? Call <a href="tel:2122028400" className="text-[#A8F0DC] underline underline-offset-2">(212) 202-8400</a>.
           </p>
 
           {/* Quick nav */}
@@ -192,10 +192,10 @@ export default function FAQPage() {
             We&apos;re happy to answer anything. Text or call us — most questions are answered within minutes.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-5">
-            <a href="sms:2122029030" className="bg-[#A8F0DC] text-[#1E2A4A] px-10 py-4 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#8DE8CC] transition-colors">
-              Text (212) 202-9030
+            <a href="sms:2122028400" className="bg-[#A8F0DC] text-[#1E2A4A] px-10 py-4 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#8DE8CC] transition-colors">
+              Text (212) 202-8400
             </a>
-            <a href="tel:2122029030" className="text-blue-200/70 font-medium text-lg hover:text-white transition-colors underline underline-offset-4">
+            <a href="tel:2122028400" className="text-blue-200/70 font-medium text-lg hover:text-white transition-colors underline underline-offset-4">
               or Call Us
             </a>
           </div>

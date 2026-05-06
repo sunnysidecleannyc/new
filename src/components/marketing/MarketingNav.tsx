@@ -50,9 +50,9 @@ export default function MarketingNav() {
               <span className="text-white/20">-</span>
               <span className="text-white/80 font-semibold">Open 24/7</span>
               <span className="text-white/20">&middot;</span>
-              <a href="sms:2122029030" className="inline-flex items-center gap-1 text-[#A8F0DC] font-semibold tracking-widest uppercase text-[10px] hover:text-white transition-colors">
+              <a href="sms:2122028400" className="inline-flex items-center gap-1 text-[#A8F0DC] font-semibold tracking-widest uppercase text-[10px] hover:text-white transition-colors">
                 <svg aria-hidden="true" className="w-3 h-3 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H5.17L4 17.17V4h16v12zM7 9h2v2H7zm4 0h2v2h-2zm4 0h2v2h-2z"/></svg>
-                <span>Sales: (212) 202-9030</span>
+                <span>Sales: (212) 202-8400</span>
               </a>
               <a href="sms:6464900130" className="inline-flex items-center gap-1 text-[#A8F0DC] font-semibold tracking-widest uppercase text-[10px] hover:text-white transition-colors">
                 <svg aria-hidden="true" className="w-3 h-3 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H5.17L4 17.17V4h16v12zM7 9h2v2H7zm4 0h2v2h-2zm4 0h2v2h-2z"/></svg>
@@ -189,7 +189,7 @@ export default function MarketingNav() {
               </div>
 
               <div className="border-t border-white/10 mt-4 pt-6 space-y-3 text-center">
-                <a href="sms:2122029030" className="block bg-[#A8F0DC] text-[#1E2A4A] py-3 rounded-lg font-bold text-sm tracking-widest uppercase">Text Sales: 212.202.9030</a>
+                <a href="sms:2122028400" className="block bg-[#A8F0DC] text-[#1E2A4A] py-3 rounded-lg font-bold text-sm tracking-widest uppercase">Text Sales: 212.202.8400</a>
                 <a href="sms:6464900130" className="block bg-[#1E2A4A] text-white py-3 rounded-lg font-bold text-sm tracking-widest uppercase border border-white/20">Text Support: 646.490.0130</a>
               </div>
             </div>

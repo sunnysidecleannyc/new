@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     template: '%s | Sunnyside Clean NYC',
     default: 'Sunnyside Clean NYC - Professional Cleaning Services in NYC From $59/hr',
   },
-  description: 'NYC house cleaning & cleaning service from $59/hr. Manhattan, Brooklyn & Queens. Licensed, insured, 5.0★ rated. Book online or call (212) 202-9030.',
+  description: 'NYC house cleaning & cleaning service from $59/hr. Manhattan, Brooklyn & Queens. Licensed, insured, 5.0★ rated. Book online or call (212) 202-8400.',
   metadataBase: new URL('https://www.cleaningservicesunnysideny.com'),
   manifest: '/manifest.json',
   keywords: [
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Sunnyside Clean NYC - NYC Cleaning Service From $59/hr',
-    description: 'Professional house cleaning across NYC. 5.0★ rated. Licensed & insured. Book online or call (212) 202-9030.',
+    description: 'Professional house cleaning across NYC. 5.0★ rated. Licensed & insured. Book online or call (212) 202-8400.',
   },
   robots: {
     index: true,
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     'geo.placename': 'New York City',
     'geo.position': '40.7589;-73.9851',
     'ICBM': '40.7589, -73.9851',
-    'contact:phone_number': '+1-212-202-9030',
+    'contact:phone_number': '+1-212-202-8400',
     'contact:email': 'hi@thenycmaid.com',
     'business:contact_data:street_address': '150 W 47th St',
     'business:contact_data:locality': 'New York',

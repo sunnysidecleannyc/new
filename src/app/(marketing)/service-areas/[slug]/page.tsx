@@ -34,7 +34,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     const content = areaContent(area)
     const url = `https://www.cleaningservicesunnysideny.com/service-areas/${slug}`
     const title = `${area.name} Cleaning Service & House Cleaning From $59/hr | Sunnyside Clean NYC`
-    const description = `Professional house cleaning in ${area.name} from $59/hr. Deep cleaning, weekly cleaning service, move-in/out & more. Licensed, insured, 5.0★ Google. (212) 202-9030`
+    const description = `Professional house cleaning in ${area.name} from $59/hr. Deep cleaning, weekly cleaning service, move-in/out & more. Licensed, insured, 5.0★ Google. (212) 202-8400`
     return {
       title: { absolute: title },
       description,
@@ -51,7 +51,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     const content = neighborhoodContent(neighborhood, neighborhoodArea)
     const url = `https://www.cleaningservicesunnysideny.com/service-areas/${slug}`
     const title = `${neighborhood.name} Cleaning Service & House Cleaning From $59/hr | Sunnyside Clean NYC`
-    const description = `Professional cleaning in ${neighborhood.name}, ${neighborhoodArea.name}. Serving ${neighborhood.housing_types.slice(0, 2).join(', ')} near ${neighborhood.landmarks[0]}. From $59/hr. 5.0★ Google. (212) 202-9030`
+    const description = `Professional cleaning in ${neighborhood.name}, ${neighborhoodArea.name}. Serving ${neighborhood.housing_types.slice(0, 2).join(', ')} near ${neighborhood.landmarks[0]}. From $59/hr. 5.0★ Google. (212) 202-8400`
     return {
       title: { absolute: title },
       description,
@@ -102,8 +102,8 @@ export default async function SlugPage({ params }: Props) {
                   <a href="https://www.thenycmaid.com/book/new" className="bg-[#A8F0DC] text-[#1E2A4A] px-8 py-3.5 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#8DE8CC] transition-colors">
                     Self Booking $20 OFF
                   </a>
-                  <a href="tel:2122029030" className="text-blue-200/60 font-medium py-3.5 hover:text-white transition-colors underline underline-offset-4">
-                    or Call (212) 202-9030
+                  <a href="tel:2122028400" className="text-blue-200/60 font-medium py-3.5 hover:text-white transition-colors underline underline-offset-4">
+                    or Call (212) 202-8400
                   </a>
                 </div>
               </div>
@@ -203,7 +203,7 @@ export default async function SlugPage({ params }: Props) {
             <p className="font-[family-name:var(--font-bebas)] text-3xl md:text-4xl text-white tracking-wide text-center mb-12">Book {area.name} Cleaning in 3 Steps</p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {[
-                { n: '01', t: 'Book Online or Call', d: `Book online at cleaningservicesunnysideny.com or call (212) 202-9030 with your ${area.name} address, preferred date, and any special requests.` },
+                { n: '01', t: 'Book Online or Call', d: `Book online at cleaningservicesunnysideny.com or call (212) 202-8400 with your ${area.name} address, preferred date, and any special requests.` },
                 { n: '02', t: 'We Confirm', d: 'We match you with a background-checked, insured cleaner and lock in your appointment — usually within the hour.' },
                 { n: '03', t: 'Pay After', d: 'Your cleaner arrives on time, does the work, and you pay only after the cleaning is complete. No deposits ever.' },
               ].map(s => (
@@ -273,8 +273,8 @@ export default async function SlugPage({ params }: Props) {
               <a href="https://www.thenycmaid.com/book/new" className="bg-[#1E2A4A] text-white px-10 py-4 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#1E2A4A]/90 transition-colors">
                 Self Booking $20 OFF
               </a>
-              <a href="tel:2122029030" className="text-[#1E2A4A] font-semibold py-4 hover:underline underline-offset-4">
-                or Call (212) 202-9030
+              <a href="tel:2122028400" className="text-[#1E2A4A] font-semibold py-4 hover:underline underline-offset-4">
+                or Call (212) 202-8400
               </a>
             </div>
           </div>
@@ -333,8 +333,8 @@ export default async function SlugPage({ params }: Props) {
                   <a href="https://www.thenycmaid.com/book/new" className="inline-block bg-[#A8F0DC] text-[#1E2A4A] px-6 py-3 rounded-lg font-bold text-sm tracking-widest uppercase hover:bg-[#8DE8CC] transition-colors">
                     Self Booking $20 OFF
                   </a>
-                  <a href="tel:2122029030" className="text-[#1E2A4A] font-semibold hover:underline underline-offset-4">
-                    or Call (212) 202-9030
+                  <a href="tel:2122028400" className="text-[#1E2A4A] font-semibold hover:underline underline-offset-4">
+                    or Call (212) 202-8400
                   </a>
                 </div>
               </div>
@@ -458,7 +458,7 @@ export default async function SlugPage({ params }: Props) {
             <p className="font-[family-name:var(--font-bebas)] text-3xl md:text-4xl text-white tracking-wide text-center mb-12">Book {neighborhood.name} Cleaning in 3 Steps</p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {[
-                { n: '01', t: 'Book Online or Call', d: `Book online at cleaningservicesunnysideny.com or call (212) 202-9030 with your ${neighborhood.name} address, preferred date, and any special requests.` },
+                { n: '01', t: 'Book Online or Call', d: `Book online at cleaningservicesunnysideny.com or call (212) 202-8400 with your ${neighborhood.name} address, preferred date, and any special requests.` },
                 { n: '02', t: 'We Confirm', d: 'We match you with a background-checked, insured cleaner and lock in your appointment — usually within the hour.' },
                 { n: '03', t: 'Pay After', d: 'Your cleaner arrives on time, does the work, and you pay only after the cleaning is complete. No deposits ever.' },
               ].map(s => (
